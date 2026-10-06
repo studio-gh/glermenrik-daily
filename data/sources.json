@@ -1,23 +1,405 @@
 [
-{"name":"It's Nice That","url":"https://www.itsnicethat.com/","feed":"https://www.itsnicethat.com/rss","kind":"culture","territories":["ART","DESIGN","DIRECTION"]},
-{"name":"Creative Boom","url":"https://www.creativeboom.com/","feed":"https://www.creativeboom.com/feed/","kind":"culture","territories":["ART","DESIGN","CULTURE"]},
-{"name":"Dezeen","url":"https://www.dezeen.com/","feed":"https://www.dezeen.com/feed/","kind":"culture","territories":["SPACE","DESIGN","OBJECT"]},
-{"name":"designboom","url":"https://www.designboom.com/","feed":"https://www.designboom.com/feed/","kind":"culture","territories":["DESIGN","SPACE","TECH","OBJECT"]},
-{"name":"Abduzeedo","url":"https://abduzeedo.com/","feed":"https://abduzeedo.com/rss.xml","kind":"culture","territories":["DESIGN","DIRECTION","TECH"]},
-{"name":"Packaging of the World","url":"https://packagingoftheworld.com/","feed":"https://feeds.feedburner.com/packagingoftheworld","kind":"culture","territories":["DESIGN","OBJECT"]},
-{"name":"Design Milk","url":"https://design-milk.com/","feed":"https://design-milk.com/feed/","kind":"culture","territories":["DESIGN","OBJECT","SPACE"]},
-{"name":"LBB","url":"https://lbbonline.com/","feed":"https://lbbonline.com/news/feed/","kind":"culture","territories":["DIRECTION","CULTURE","MOTION"]},
-{"name":"Wallpaper*","url":"https://www.wallpaper.com/","feed":"https://www.wallpaper.com/rss","kind":"culture","territories":["DESIGN","SPACE","CULTURE"]},
-{"name":"Cool Hunting","url":"https://coolhunting.com/","feed":"https://coolhunting.com/feed/","kind":"culture","territories":["CULTURE","OBJECT","DESIGN"]},
-{"name":"Yanko Design","url":"https://www.yankodesign.com/","feed":"https://www.yankodesign.com/feed/","kind":"culture","territories":["DESIGN","TECH","OBJECT"]},
-{"name":"Creative Review","url":"https://www.creativereview.co.uk/","feed":"https://www.creativereview.co.uk/feed/","kind":"culture","territories":["DESIGN","DIRECTION","CULTURE"]},
-{"name":"Figma Release Notes","url":"https://www.figma.com/release-notes/","feed":"https://www.figma.com/release-notes/feed/atom.xml","kind":"software","product":"Figma","territories":["DESIGN","TECH","DIRECTION"]},
-{"name":"Adobe Creative Cloud","url":"https://blog.adobe.com/en/topics/creative-cloud","mode":"html","kind":"software","product":"Adobe","territories":["DESIGN","DIRECTION","TECH"]},
-{"name":"Blender Releases","url":"https://www.blender.org/releases/","mode":"html","kind":"software","product":"Blender","territories":["DESIGN","3D","TECH"]},
-{"name":"Canva Newsroom","url":"https://www.canva.com/newsroom/news/","mode":"html","kind":"software","product":"Canva","territories":["DESIGN","AI","DIRECTION"]},
-{"name":"OpenAI News","url":"https://openai.com/news/company-announcements/","feed":"https://openai.com/news/rss.xml","kind":"ai","product":"OpenAI","territories":["AI","TECH","CULTURE"]},
-{"name":"Google AI","url":"https://blog.google/technology/ai/","feed":"https://blog.google/innovation-and-ai/technology/ai/rss/","kind":"ai","product":"Google AI","territories":["AI","TECH","DESIGN"]},
-{"name":"Midjourney Updates","url":"https://updates.midjourney.com/","mode":"html","kind":"ai","product":"Midjourney","territories":["AI","IMAGE","DESIGN"]},
-{"name":"Adobe Firefly","url":"https://blog.adobe.com/en/topics/firefly","mode":"html","kind":"ai","product":"Firefly","territories":["AI","IMAGE","MOTION","DESIGN"]},
-{"name":"Runway News","url":"https://runwayml.com/news/","mode":"html","kind":"ai","product":"Runway","territories":["AI","MOTION","IMAGE","CULTURE"]}
+  {
+    "name": "It's Nice That",
+    "url": "https://www.itsnicethat.com/",
+    "feed": "https://www.itsnicethat.com/rss",
+    "kind": "culture",
+    "territories": [
+      "ART",
+      "DESIGN",
+      "DIRECTION"
+    ]
+  },
+  {
+    "name": "Creative Boom",
+    "url": "https://www.creativeboom.com/",
+    "feed": "https://www.creativeboom.com/feed/",
+    "kind": "culture",
+    "territories": [
+      "ART",
+      "DESIGN",
+      "CULTURE"
+    ]
+  },
+  {
+    "name": "Dezeen",
+    "url": "https://www.dezeen.com/",
+    "feed": "https://www.dezeen.com/feed/",
+    "kind": "culture",
+    "territories": [
+      "SPACE",
+      "DESIGN",
+      "OBJECT"
+    ]
+  },
+  {
+    "name": "designboom",
+    "url": "https://www.designboom.com/",
+    "feed": "https://www.designboom.com/feed/",
+    "kind": "culture",
+    "territories": [
+      "DESIGN",
+      "SPACE",
+      "TECH",
+      "OBJECT"
+    ]
+  },
+  {
+    "name": "Abduzeedo",
+    "url": "https://abduzeedo.com/",
+    "feed": "https://abduzeedo.com/rss.xml",
+    "kind": "culture",
+    "territories": [
+      "DESIGN",
+      "DIRECTION",
+      "TECH"
+    ]
+  },
+  {
+    "name": "Packaging of the World",
+    "url": "https://packagingoftheworld.com/",
+    "feed": "https://feeds.feedburner.com/packagingoftheworld",
+    "kind": "culture",
+    "territories": [
+      "DESIGN",
+      "OBJECT"
+    ]
+  },
+  {
+    "name": "Design Milk",
+    "url": "https://design-milk.com/",
+    "feed": "https://design-milk.com/feed/",
+    "kind": "culture",
+    "territories": [
+      "DESIGN",
+      "OBJECT",
+      "SPACE"
+    ]
+  },
+  {
+    "name": "LBB",
+    "url": "https://lbbonline.com/",
+    "feed": "https://lbbonline.com/news/feed/",
+    "kind": "culture",
+    "territories": [
+      "DIRECTION",
+      "CULTURE",
+      "MOTION"
+    ]
+  },
+  {
+    "name": "Wallpaper*",
+    "url": "https://www.wallpaper.com/",
+    "feed": "https://www.wallpaper.com/rss",
+    "kind": "culture",
+    "territories": [
+      "DESIGN",
+      "SPACE",
+      "CULTURE"
+    ]
+  },
+  {
+    "name": "Cool Hunting",
+    "url": "https://coolhunting.com/",
+    "feed": "https://coolhunting.com/feed/",
+    "kind": "culture",
+    "territories": [
+      "CULTURE",
+      "OBJECT",
+      "DESIGN"
+    ]
+  },
+  {
+    "name": "Yanko Design",
+    "url": "https://www.yankodesign.com/",
+    "feed": "https://www.yankodesign.com/feed/",
+    "kind": "culture",
+    "territories": [
+      "DESIGN",
+      "TECH",
+      "OBJECT"
+    ]
+  },
+  {
+    "name": "Creative Review",
+    "url": "https://www.creativereview.co.uk/",
+    "feed": "https://www.creativereview.co.uk/feed/",
+    "kind": "culture",
+    "territories": [
+      "DESIGN",
+      "DIRECTION",
+      "CULTURE"
+    ]
+  },
+  {
+    "name": "Figma Release Notes",
+    "url": "https://www.figma.com/release-notes/",
+    "feed": "https://www.figma.com/release-notes/feed/atom.xml",
+    "kind": "software",
+    "product": "Figma",
+    "territories": [
+      "DESIGN",
+      "TECH",
+      "DIRECTION"
+    ]
+  },
+  {
+    "name": "Adobe Creative Cloud",
+    "url": "https://blog.adobe.com/en/topics/creative-cloud",
+    "mode": "html",
+    "kind": "software",
+    "product": "Adobe",
+    "territories": [
+      "DESIGN",
+      "DIRECTION",
+      "TECH"
+    ]
+  },
+  {
+    "name": "Blender Releases",
+    "url": "https://www.blender.org/releases/",
+    "mode": "html",
+    "kind": "software",
+    "product": "Blender",
+    "territories": [
+      "DESIGN",
+      "3D",
+      "TECH"
+    ]
+  },
+  {
+    "name": "Canva Newsroom",
+    "url": "https://www.canva.com/newsroom/news/",
+    "mode": "html",
+    "kind": "software",
+    "product": "Canva",
+    "territories": [
+      "DESIGN",
+      "AI",
+      "DIRECTION"
+    ]
+  },
+  {
+    "name": "OpenAI News",
+    "url": "https://openai.com/news/company-announcements/",
+    "feed": "https://openai.com/news/rss.xml",
+    "kind": "ai",
+    "product": "OpenAI",
+    "territories": [
+      "AI",
+      "TECH",
+      "CULTURE"
+    ]
+  },
+  {
+    "name": "Google AI",
+    "url": "https://blog.google/technology/ai/",
+    "feed": "https://blog.google/innovation-and-ai/technology/ai/rss/",
+    "kind": "ai",
+    "product": "Google AI",
+    "territories": [
+      "AI",
+      "TECH",
+      "DESIGN"
+    ]
+  },
+  {
+    "name": "Midjourney Updates",
+    "url": "https://updates.midjourney.com/",
+    "mode": "html",
+    "kind": "ai",
+    "product": "Midjourney",
+    "territories": [
+      "AI",
+      "IMAGE",
+      "DESIGN"
+    ]
+  },
+  {
+    "name": "Adobe Firefly",
+    "url": "https://blog.adobe.com/en/topics/firefly",
+    "mode": "html",
+    "kind": "ai",
+    "product": "Firefly",
+    "territories": [
+      "AI",
+      "IMAGE",
+      "MOTION",
+      "DESIGN"
+    ]
+  },
+  {
+    "name": "Runway News",
+    "url": "https://runwayml.com/news/",
+    "mode": "html",
+    "kind": "ai",
+    "product": "Runway",
+    "territories": [
+      "AI",
+      "MOTION",
+      "IMAGE",
+      "CULTURE"
+    ]
+  },
+  {
+    "name": "The Art of Noticing",
+    "url": "https://robwalker.substack.com/",
+    "feed": "https://robwalker.substack.com/feed",
+    "kind": "thinking",
+    "role": "noticing",
+    "priority": 5,
+    "territories": [
+      "WILD",
+      "ART",
+      "CULTURE"
+    ]
+  },
+  {
+    "name": "Design, Explained",
+    "url": "https://designexplained.substack.com/",
+    "feed": "https://designexplained.substack.com/feed",
+    "kind": "thinking",
+    "role": "design-thinking",
+    "priority": 5,
+    "territories": [
+      "DESIGN",
+      "DIRECTION",
+      "NERD",
+      "AI"
+    ]
+  },
+  {
+    "name": "Into Design Systems + AI",
+    "url": "https://intodesignsystems.substack.com/",
+    "feed": "https://intodesignsystems.substack.com/feed",
+    "kind": "thinking",
+    "role": "systems-ai",
+    "priority": 5,
+    "territories": [
+      "DESIGN",
+      "TECH",
+      "AI",
+      "NERD"
+    ]
+  },
+  {
+    "name": "Bits to Brands",
+    "url": "https://bitstobrands.substack.com/",
+    "feed": "https://bitstobrands.substack.com/feed",
+    "kind": "thinking",
+    "role": "branding",
+    "priority": 5,
+    "territories": [
+      "DIRECTION",
+      "DESIGN",
+      "CULTURE"
+    ]
+  },
+  {
+    "name": "MANDA REFS",
+    "url": "https://mandarefs.substack.com/",
+    "feed": "https://mandarefs.substack.com/feed",
+    "kind": "newsletter",
+    "role": "brazil-digital-culture",
+    "priority": 4,
+    "territories": [
+      "CULTURE",
+      "TECH",
+      "DESIGN",
+      "WILD"
+    ]
+  },
+  {
+    "name": "Tira do papel",
+    "url": "https://tiradopapel.substack.com/",
+    "feed": "https://tiradopapel.substack.com/feed",
+    "kind": "newsletter",
+    "role": "brazil-wild",
+    "priority": 4,
+    "territories": [
+      "WILD",
+      "CULTURE",
+      "MAKE"
+    ]
+  },
+  {
+    "name": "Why Design Is Hard",
+    "url": "https://whydesignishard.substack.com/",
+    "feed": "https://whydesignishard.substack.com/feed",
+    "kind": "thinking",
+    "role": "design-career",
+    "priority": 4,
+    "territories": [
+      "DESIGN",
+      "DIRECTION",
+      "THINK"
+    ]
+  },
+  {
+    "name": "The Real Brand Life",
+    "url": "https://madebyjames.substack.com/",
+    "feed": "https://madebyjames.substack.com/feed",
+    "kind": "thinking",
+    "role": "branding",
+    "priority": 4,
+    "territories": [
+      "DIRECTION",
+      "DESIGN",
+      "CULTURE"
+    ]
+  },
+  {
+    "name": "Logo Histories",
+    "url": "https://www.logohistories.com/",
+    "mode": "html",
+    "kind": "archive",
+    "role": "identity-history",
+    "priority": 5,
+    "territories": [
+      "DESIGN",
+      "DIRECTION",
+      "ART"
+    ]
+  },
+  {
+    "name": "Typeverything Fonts",
+    "url": "https://typeverything.substack.com/",
+    "feed": "https://typeverything.substack.com/feed",
+    "kind": "visual-newsletter",
+    "role": "type",
+    "priority": 5,
+    "territories": [
+      "DESIGN",
+      "TYPE",
+      "ART"
+    ]
+  },
+  {
+    "name": "Sketchnote Lab",
+    "url": "https://www.sketchnotelab.com/",
+    "feed": "https://www.sketchnotelab.com/feed",
+    "kind": "thinking",
+    "role": "visual-thinking",
+    "priority": 5,
+    "territories": [
+      "MAKE",
+      "NERD",
+      "DESIGN",
+      "WILD"
+    ]
+  },
+  {
+    "name": "The Creative Act",
+    "url": "https://rickrubin.substack.com/",
+    "feed": "https://rickrubin.substack.com/feed",
+    "kind": "thinking",
+    "role": "creative-practice",
+    "priority": 5,
+    "territories": [
+      "THINK",
+      "MAKE",
+      "WILD",
+      "CULTURE"
+    ]
+  }
 ]
