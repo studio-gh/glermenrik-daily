@@ -1,0 +1,21 @@
+name: Glermenrik Daily Engine
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 12 * * *'
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch feeds
+        run: python3 scripts/fetch_feeds.py
+      - name: Commit edition
+        run: |
+          git config user.name 'glermenrik-daily-bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add data/articles.json
+          git diff --cached --quiet && echo 'No changes' || git commit -m 'chore: refresh daily edition'
+          git push
