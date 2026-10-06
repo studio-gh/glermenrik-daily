@@ -1,10 +1,10 @@
-name: Glermenrik Daily Engine
+name: Glermenrik Creative Den Engine
 on:
   workflow_dispatch:
   push:
     paths:
       - 'data/sources.json'
-      - 'scripts/fetch_feeds.py'
+      - 'scripts/**'
       - '.github/workflows/daily.yml'
   schedule:
     - cron: '15 12 * * *'
@@ -22,15 +22,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: Fetch feeds
         run: python3 scripts/fetch_feeds.py
+      - name: Build editorial edition
+        run: python3 scripts/build_edition.py
       - name: Commit edition
         run: |
           git config user.name 'glermenrik-daily-bot'
           git config user.email 'actions@users.noreply.github.com'
-          git add data/articles.json
+          git add data/articles.json data/daily.json data/history
           if git diff --cached --quiet; then
             echo 'No changes'
             exit 0
           fi
-          git commit -m 'chore: refresh daily edition'
+          git commit -m 'chore: refresh creative den edition'
           git pull --rebase origin main
           git push
