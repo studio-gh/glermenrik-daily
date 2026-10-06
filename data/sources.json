@@ -2,7 +2,7 @@
   {
     "name": "It's Nice That",
     "url": "https://www.itsnicethat.com/",
-    "feed": "https://www.itsnicethat.com/rss",
+    "feed": "https://feeds2.feedburner.com/itsnicethat/SlXC",
     "kind": "culture",
     "territories": [
       "ART",
@@ -17,7 +17,8 @@
       "TYPE",
       "PRINT",
       "MOTION"
-    ]
+    ],
+    "priority": 5
   },
   {
     "name": "Creative Boom",
@@ -36,7 +37,8 @@
       "TYPE",
       "PRINT",
       "ILLUSTRATION"
-    ]
+    ],
+    "priority": 4
   },
   {
     "name": "Dezeen",
@@ -82,7 +84,8 @@
       "WEB",
       "TYPE",
       "MOTION"
-    ]
+    ],
+    "priority": 4
   },
   {
     "name": "Packaging of the World",
@@ -98,7 +101,8 @@
       "DESIGN",
       "PACKAGING",
       "BRAND"
-    ]
+    ],
+    "priority": 4
   },
   {
     "name": "Design Milk",
@@ -186,7 +190,8 @@
       "TYPE",
       "PRINT",
       "MOTION"
-    ]
+    ],
+    "priority": 5
   },
   {
     "name": "Figma Release Notes",
@@ -547,7 +552,7 @@
     "feed": "https://thedieline.com/feed",
     "kind": "culture",
     "role": "packaging",
-    "priority": 5,
+    "priority": 4,
     "territories": [
       "DESIGN",
       "BRAND",
@@ -603,7 +608,7 @@
     "feed": "https://www.slanted.de/feed",
     "kind": "culture",
     "role": "design-typography",
-    "priority": 5,
+    "priority": 4,
     "territories": [
       "DESIGN",
       "TYPE",
