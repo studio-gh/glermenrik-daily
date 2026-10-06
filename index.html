@@ -4,51 +4,211 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Creative Den</title>
+<meta name="theme-color" content="#102b46">
 <style>
-:root{--blue:#102b46;--paper:#f0eadc;--ink:#132235;--muted:#6a665e;--line:rgba(240,234,220,.22)}
-*{box-sizing:border-box}html,body{margin:0;background:var(--blue);color:var(--paper);font-family:Arial,sans-serif}body{min-height:100vh;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:28px 28px}a{color:inherit}.shell{max-width:1500px;margin:auto;padding:24px}.top{display:flex;justify-content:space-between;gap:24px;align-items:end}.eyebrow,.meta,.source{font:11px/1.25 monospace;text-transform:uppercase;letter-spacing:.08em}.title{font-size:clamp(48px,8vw,100px);line-height:.86;letter-spacing:-.06em;margin:8px 0}.brand{margin:10px 0 14px}.brand img{display:block;width:min(720px,78vw);height:auto;max-height:150px;object-fit:contain;object-position:left center}.sub{max-width:760px;color:#c8c3b8;font-size:14px;line-height:1.45}.button,.chip{background:transparent;color:var(--paper);border:1px solid #f0eadc66;padding:8px 12px;font:11px monospace;cursor:pointer;text-transform:uppercase}.chip.active,.button:hover{background:var(--paper);color:var(--blue)}.meta{display:flex;justify-content:space-between;gap:12px;border-block:1px solid #f0eadc33;padding:10px 0;margin:18px 0}.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}.content{display:grid;grid-template-columns:1.6fr .75fr;gap:18px}.paper{background:var(--paper);color:var(--ink)}.hero{display:grid;grid-template-rows:1fr auto;min-height:560px}.hero img{width:100%;height:100%;min-height:320px;object-fit:cover;background:#d8d0c0}.copy{padding:22px}.hero h2{font-size:clamp(34px,5vw,68px);line-height:.92;margin:8px 0}.hero p{font-size:16px;line-height:1.45}.side{display:flex;flex-direction:column;gap:18px}.card{padding:18px}.card h3,.section-head h3{margin:0 0 10px;font-size:28px;letter-spacing:-.04em}.signal{border-top:1px solid #13223522;padding-top:12px;margin-top:12px}.signal h4{font-size:18px;line-height:1.08;margin:5px 0}.signal p{font-size:12px;line-height:1.35;color:#625e57;margin:0}.section{margin-top:20px}.section-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px}.section-head span{color:#c8c3b8}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.item{background:var(--paper);color:var(--ink)}.media{position:relative;overflow:hidden;background:#d8d0c0;isolation:isolate}.media.has-image{background-image:var(--image)}.media.has-image:before{content:"";position:absolute;inset:-12px;background-image:var(--image);background-size:cover;background-position:center;filter:blur(18px);transform:scale(1.08);opacity:.34;z-index:0}.media.has-image:after{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(135deg,rgba(16,43,70,.08),transparent 48%,rgba(16,43,70,.18)),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.09'/%3E%3C/svg%3E");mix-blend-mode:multiply;pointer-events:none}.media img{position:relative;z-index:1;width:100%;height:100%;object-fit:cover;display:block}.item .media{aspect-ratio:1.35}.hero .media{min-height:320px}.media.empty-media{min-height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(145deg,#ddd5c6,#e8e1d5)}.media.empty-media:after{content:"IMAGE / NOT AVAILABLE";font:10px monospace;letter-spacing:.12em;color:#7a756d;z-index:1}.media.tool-placeholder{background:linear-gradient(135deg,#d4cbbb,#ebe4d7)}.media.tool-placeholder:before{content:"";position:absolute;inset:0;background-image:linear-gradient(90deg,#13223512 1px,transparent 1px),linear-gradient(#13223512 1px,transparent 1px);background-size:22px 22px}.media.tool-placeholder:after{content:"OFFICIAL UPDATE";position:absolute;top:10px;left:10px;z-index:2;font:8px monospace;letter-spacing:.12em;color:#13223588}.placeholder-label{position:relative;z-index:2;font:bold 18px Arial,sans-serif;letter-spacing:-.03em;color:#132235;text-transform:uppercase}.media.empty-media .empty-mark{position:absolute;width:44%;height:1px;background:#13223522}.image-credit{position:absolute;left:10px;bottom:10px;z-index:3;font:9px monospace;text-transform:uppercase;letter-spacing:.08em;color:#f0eadc;text-shadow:0 1px 5px #0009;opacity:.9}.item .copy{padding:12px}.item h4{font-size:18px;line-height:1.05;margin:6px 0}.item p{font-size:12px;line-height:1.35;color:#625e57;margin:0}.watch-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.watch{padding:18px;min-height:260px}.watch-header{display:flex;justify-content:space-between;gap:12px;align-items:baseline;border-bottom:1px solid #13223522;padding-bottom:10px;margin-bottom:4px}.watch-item{padding:13px 0;border-bottom:1px solid #13223522}.watch-item:last-child{border-bottom:0}.watch-item .name{font:bold 12px monospace;text-transform:uppercase}.watch-item h4{font-size:19px;line-height:1.08;margin:5px 0}.watch-item p{margin:0;font-size:12px;line-height:1.4;color:#625e57}.badge{display:inline-block;padding:3px 6px;border:1px solid #13223555;font:9px monospace;text-transform:uppercase;vertical-align:middle}.empty{padding:24px;border:1px dashed #f0eadc66;color:#c8c3b8}.foot{padding-top:24px;color:#9fa5aa;font:10px monospace;display:flex;justify-content:space-between}@media(max-width:1000px){.content{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}.top{display:block}.watch-grid{grid-template-columns:1fr}}@media(max-width:620px){.grid{grid-template-columns:1fr}.meta{display:block}.title{font-size:58px}}
+:root{
+ --blue:#102b46;--paper:#efe8da;--paper2:#f6f0e5;--ink:#132235;--muted:#67635d;
+ --hair:rgba(19,34,53,.14);--grid:rgba(239,232,218,.18);--accent:#ff9b17;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--blue);color:var(--paper);font-family:Arial,Helvetica,sans-serif;
+ background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+ background-size:28px 28px}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.035;
+ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+a{color:inherit}
+button,input{font:inherit}
+button{cursor:pointer}
+.shell{max-width:1500px;margin:auto;padding:22px 28px 34px}
+.mono{font:10px/1.2 monospace;text-transform:uppercase;letter-spacing:.1em}
+.header{display:grid;grid-template-columns:1fr auto;gap:28px;align-items:end;padding-bottom:18px}
+.brand{width:min(650px,72vw);margin:8px 0 10px}.brand img{display:block;width:100%;height:auto}
+.deck{max-width:780px;color:#c9c2b7;font-size:14px;line-height:1.5}
+.header-tools{display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+.button{border:1px solid #efe8da55;background:transparent;color:var(--paper);padding:8px 11px;text-transform:uppercase;font:10px monospace;letter-spacing:.08em}
+.button:hover{background:var(--paper);color:var(--blue)}
+.topline{display:flex;justify-content:space-between;gap:18px;border-block:1px solid #efe8da33;padding:9px 0;margin-bottom:13px}
+.nav{display:flex;gap:7px;flex-wrap:wrap;align-items:center;margin-bottom:16px}
+.chip{border:1px solid #efe8da55;background:transparent;color:var(--paper);padding:8px 10px;text-transform:uppercase;font:10px monospace;letter-spacing:.05em}
+.chip:hover,.chip.active{background:var(--paper);color:var(--blue)}
+.search{min-width:220px;border:1px solid #efe8da55;background:transparent;color:var(--paper);padding:8px 10px;outline:none}
+.search::placeholder{color:#b7afa2}
+.search:focus{border-color:#efe8da}
+.section{margin-top:26px;scroll-margin-top:18px}
+.section-head{display:flex;justify-content:space-between;gap:18px;align-items:baseline;margin-bottom:9px}
+.section-head h2{font-size:30px;line-height:1;margin:0;letter-spacing:-.05em}
+.section-head .meta{color:#c7c0b4}
+.hero-layout{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(300px,.8fr);gap:16px}
+.paper{background:var(--paper);color:var(--ink)}
+.hero{min-height:620px;display:grid;grid-template-rows:minmax(340px,1fr) auto}
+.copy{padding:20px}
+.hero h1{font-size:clamp(42px,5vw,76px);line-height:.92;letter-spacing:-.055em;margin:7px 0 10px}
+.hero p{font-size:16px;line-height:1.5;max-width:900px;margin:0}
+.kicker{font:10px monospace;text-transform:uppercase;letter-spacing:.08em;color:#69645d}
+.side{display:flex;flex-direction:column;gap:16px}
+.card{padding:17px}
+.card h3{margin:0 0 12px;font-size:25px;letter-spacing:-.04em}
+.signal{padding:12px 0;border-top:1px solid var(--hair)}
+.signal:first-of-type{border-top:0;padding-top:0}
+.signal .source{font:9px monospace;text-transform:uppercase;letter-spacing:.06em}
+.signal h4{font-size:18px;line-height:1.04;margin:4px 0}
+.signal p{font-size:12px;line-height:1.4;color:var(--muted);margin:0}
+.make{display:flex;flex-direction:column;justify-content:space-between;min-height:180px}
+.make .instruction{font-size:18px;line-height:1.25}
+.make .ref{margin-top:18px;padding-top:11px;border-top:1px solid var(--hair);font-size:12px}
+.actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:14px}
+.action{border:1px solid #13223533;background:transparent;color:var(--ink);padding:7px 9px;font:9px monospace;text-transform:uppercase;letter-spacing:.06em}
+.action:hover{background:var(--ink);color:var(--paper)}
+.media{position:relative;overflow:hidden;isolation:isolate;background:#d8d0c2}
+.media.has-image{background-image:var(--image)}
+.media.has-image:before{content:"";position:absolute;inset:-14px;background:var(--image) center/cover no-repeat;filter:blur(20px);transform:scale(1.08);opacity:.42;z-index:0}
+.media.has-image:after{content:"";position:absolute;inset:0;background:
+ linear-gradient(135deg,rgba(16,43,70,.06),transparent 45%,rgba(16,43,70,.16)),
+ url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.78' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.075'/%3E%3C/svg%3E");
+ mix-blend-mode:multiply;z-index:2;pointer-events:none}
+.media img{position:relative;z-index:1;display:block;width:100%;height:100%;object-fit:cover}
+.hero .media{min-height:340px}
+.empty-media{min-height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#d7cfbf,#ece5d8)}
+.empty-media:after{content:"";position:absolute;inset:12px;border:1px solid #13223518}
+.empty-mark{width:52%;height:1px;background:#13223525;position:absolute}
+.placeholder-label{position:relative;z-index:2;font-size:24px;font-weight:700;letter-spacing:-.04em;color:var(--ink);text-transform:uppercase}
+.image-credit{position:absolute;left:10px;bottom:9px;z-index:3;font:8px monospace;text-transform:uppercase;letter-spacing:.08em;color:#f0eadc;text-shadow:0 1px 5px #000;opacity:.9}
+.feast-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:11px}
+.feast-card{background:var(--paper);color:var(--ink);overflow:hidden}
+.feast-card .media{aspect-ratio:1.15}
+.feast-card .copy{padding:11px}
+.feast-card h3{font-size:17px;line-height:1.06;margin:5px 0 6px;letter-spacing:-.025em}
+.feast-card p{font-size:11px;line-height:1.35;color:var(--muted);margin:0}
+.save-row{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:9px}
+.tiny{font:8px monospace;text-transform:uppercase;letter-spacing:.06em;color:#777067}
+.save{border:0;background:transparent;color:var(--ink);padding:0;font:9px monospace;text-transform:uppercase}
+.save.on{color:var(--accent);font-weight:700}
+.watch-grid{display:grid;grid-template-columns:1.5fr .85fr;gap:16px}
+.watch-list{background:var(--paper);padding:13px;color:var(--ink);display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.watch-card{border:1px solid var(--hair);background:var(--paper2);overflow:hidden}
+.watch-card .media{height:128px}.watch-copy{padding:10px}.watch-copy .name{font:9px monospace;text-transform:uppercase;letter-spacing:.06em}.watch-copy h3{font-size:17px;line-height:1.05;margin:5px 0}.watch-copy p{font-size:11px;line-height:1.35;color:var(--muted);margin:0}.watch-note{padding:18px;display:flex;flex-direction:column;justify-content:space-between}.watch-note h3{font-size:23px;margin:0 0 9px}.watch-note p{font-size:13px;line-height:1.5}.note-rule{padding-top:13px;border-top:1px solid var(--hair);font:9px monospace;text-transform:uppercase;letter-spacing:.08em}
+.wild-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.wild-card{background:#e4dccd;color:var(--ink);padding:13px;min-height:150px;border:1px solid #1322351a}.wild-card .mono{color:#716c64}.wild-card h3{font-size:17px;line-height:1.08;margin:8px 0}.wild-card p{font-size:11px;line-height:1.35;color:var(--muted);margin:0}
+.drawer,.modal{position:fixed;inset:0;background:rgba(8,21,34,.62);z-index:20;display:none;padding:30px}
+.drawer.show,.modal.show{display:block}
+.drawer-inner{margin-left:auto;max-width:540px;height:100%;background:var(--paper);color:var(--ink);padding:20px;overflow:auto}
+.modal-inner{max-width:920px;margin:5vh auto;background:var(--paper);color:var(--ink);padding:20px;max-height:90vh;overflow:auto}
+.overlay-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;border-bottom:1px solid var(--hair);padding-bottom:12px;margin-bottom:14px}.overlay-head h2{margin:0;font-size:29px;letter-spacing:-.04em}.close{border:1px solid #13223533;background:transparent;padding:6px 8px;font:10px monospace}
+.library-item{padding:12px 0;border-bottom:1px solid var(--hair)}.library-item h3{font-size:16px;margin:4px 0}.library-item p{font-size:11px;color:var(--muted);margin:0}
+.related{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.related .paper{padding:11px;border:1px solid var(--hair)}.related h3{font-size:16px;line-height:1.05;margin:5px 0}.related .mono{color:var(--muted)}
+.search-results{position:absolute;top:100%;left:0;right:0;background:var(--paper);color:var(--ink);border:1px solid var(--hair);max-height:380px;overflow:auto;z-index:15}.search-box{position:relative;flex:1;min-width:240px}.search-results a{display:block;padding:11px 13px;border-bottom:1px solid var(--hair);text-decoration:none}.search-results a:hover{background:var(--paper2)}
+.footer{display:flex;justify-content:space-between;gap:16px;margin-top:30px;padding-top:12px;border-top:1px solid #efe8da33;color:#aaa397;font:9px monospace;text-transform:uppercase;letter-spacing:.08em}
+@media(max-width:1050px){.hero-layout,.watch-grid{grid-template-columns:1fr}.feast-grid{grid-template-columns:repeat(3,1fr)}.wild-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:720px){.shell{padding:15px}.header{grid-template-columns:1fr}.header-tools{align-items:flex-start}.topline{display:block}.topline>div{margin-bottom:6px}.brand{width:86vw}.feast-grid{grid-template-columns:repeat(2,1fr)}.watch-list{grid-template-columns:1fr}.wild-grid{grid-template-columns:1fr 1fr}.related{grid-template-columns:1fr}.hero{min-height:auto}.hero .media{min-height:260px}}
 </style>
 </head>
 <body>
 <div class="shell">
-<header class="top"><div><div class="eyebrow">Studio GH / Daily Intelligence Desk</div><div class="brand"><img src="./assets/creative-den-type.svg" alt="Creative Den"></div><div class="sub">A living visual culture desk. The point is not to read everything. It is to notice what might change the way you look, think or create.</div></div><button class="button" id="refresh">Refresh</button></header>
-<div class="meta"><div id="date">TODAY</div><div id="status">Loading...</div><div>LOOK / THINK / MAKE / KNOW / WANDER</div></div>
-<div class="filters" id="filters"></div>
-<main id="app"><div class="empty">Building today's edition...</div></main>
-<footer class="foot"><span>Built for Glermenrik</span><span>Source-led · software watch · creative AI watch</span></footer>
+<header class="header">
+  <div>
+    <div class="mono">Studio GH / Daily Intelligence Desk</div>
+    <div class="brand"><img src="./assets/creative-den-type.svg" alt="Creative Den"></div>
+    <div class="deck">A living visual culture desk. Not a firehose. A daily cut of things worth seeing, thinking about, trying, and keeping.</div>
+  </div>
+  <div class="header-tools">
+    <button class="button" id="refresh">Refresh edition</button>
+    <button class="button" id="libraryBtn">Library <span id="libraryCount">0</span></button>
+  </div>
+</header>
+
+<div class="topline mono"><div id="date">TODAY</div><div id="status">Loading...</div><div>LOOK / THINK / MAKE / KNOW / WANDER</div></div>
+
+<nav class="nav">
+  <button class="chip active" data-section="TODAY">TODAY</button>
+  <button class="chip" data-section="FEAST">FEAST</button>
+  <button class="chip" data-section="TOOL WATCH">TOOL WATCH</button>
+  <button class="chip" data-section="AI IMPACT">AI IMPACT</button>
+  <button class="chip" data-section="WILD">WILD</button>
+  <div class="search-box">
+    <input id="search" class="search" placeholder="Search the Den  /" autocomplete="off">
+    <div id="searchResults" class="search-results" style="display:none"></div>
+  </div>
+</nav>
+
+<main id="app"></main>
+
+<div class="drawer" id="drawer">
+  <div class="drawer-inner">
+    <div class="overlay-head"><h2>LIBRARY</h2><button class="close" id="closeDrawer">CLOSE</button></div>
+    <div class="mono" id="libraryIntro">Saved on this device.</div>
+    <div id="libraryList"></div>
+  </div>
 </div>
+
+<div class="modal" id="modal">
+  <div class="modal-inner">
+    <div class="overlay-head"><h2>RABBIT HOLE</h2><button class="close" id="closeModal">CLOSE</button></div>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<footer class="footer"><span>Creative Den · Studio GH</span><span id="health">Source health loading</span></footer>
+</div>
+
 <script>
-var S={items:[],filter:"ALL"};
+var state={articles:[],edition:null,filter:"ALL",saved:new Set(JSON.parse(localStorage.getItem("creative-den-saved")||"[]"))};
+var $=function(id){return document.getElementById(id)};
 function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(m){return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"}[m]})}
 function date(s){if(!s)return"";var d=new Date(s);return isNaN(d)?"":d.toLocaleDateString("en-GB",{day:"2-digit",month:"short",year:"numeric"})}
 function img(i){return i.image||(i.enclosure&&i.enclosure.link)||""}
-function media(i,hero){var u=img(i);if(!u)return "<div class='media empty-media'><span class='empty-mark'></span></div>";var e=esc(u).replace(/'/g,"%27");return "<div class='media has-image' style=\"--image:url('"+e+"')\"><img loading='"+(hero?"eager":"lazy")+"' src='"+e+"' alt=''><span class='image-credit'>SOURCE IMAGE · "+esc(i.source||"")+"</span></div>"}
-function matches(i){if(S.filter==="ALL")return true;if(S.filter==="SOFTWARE")return i.sourceKind==="software";if(S.filter==="AI")return i.sourceKind==="ai";return String(i.territory||"").toUpperCase()===S.filter||(i.categories||[]).some(function(x){return String(x).toUpperCase()===S.filter})}
-function filters(){var c=["ALL","ART","DESIGN","DIRECTION","SPACE","OBJECT","TECH","CULTURE","SOFTWARE","AI","WILD"];var out="";c.forEach(function(x){out+="<button class='chip "+(S.filter===x?"active":"")+"' data-f='"+x+"'>"+x+"</button>"});document.getElementById("filters").innerHTML=out;document.querySelectorAll("[data-f]").forEach(function(b){b.onclick=function(){S.filter=b.getAttribute("data-f");render()}})}
-function card(i){return "<article class='item'><a href='"+esc(i.link)+"' target='_blank' rel='noopener'>"+media(i,false)+"</a><div class='copy'><div class='source'>"+esc(i.source||"SOURCE")+" · "+esc(date(i.pubDate)||"LIVE")+"</div><h4><a href='"+esc(i.link)+"' target='_blank' rel='noopener'>"+esc(i.title)+"</a></h4><p>"+esc(i.description||"")+"</p></div></article>"}
-function watchItem(i){return "<article class='watch-item'><div class='name'>"+esc(i.product||i.source||"SOURCE")+" <span class='badge'>"+(i.sourceKind==="software"?"FEATURE":"AI")+"</span></div><h4><a href='"+esc(i.link)+"' target='_blank' rel='noopener'>"+esc(i.title)+"</a></h4><p>"+esc(i.description||("Official update from "+(i.source||"source")))+"</p></article>"}
+function save(id){if(state.saved.has(id))state.saved.delete(id);else state.saved.add(id);localStorage.setItem("creative-den-saved",JSON.stringify(Array.from(state.saved)));updateSaveUI();renderLibrary()}
+function updateSaveUI(){document.querySelectorAll("[data-save]").forEach(function(b){var on=state.saved.has(b.getAttribute("data-save"));b.textContent=on?"SAVED":"SAVE";b.classList.toggle("on",on)});$("libraryCount").textContent=state.saved.size}
+function media(i,hero){var u=img(i);if(!u)return "<div class='media empty-media'><span class='placeholder-label'>"+esc(i.product||i.source||"VISUAL")+"</span><span class='empty-mark'></span></div>";return "<div class='media has-image' style=\"--image:url('"+esc(u).replace(/'/g,"%27")+"')\"><img loading='"+(hero?"eager":"lazy")+"' src='"+esc(u)+"' alt=''><span class='image-credit'>SOURCE IMAGE · "+esc(i.source||"")+"</span></div>"}
+function buttonSave(i){return "<button class='save "+(state.saved.has(i.id)?"on":"")+"' data-save='"+esc(i.id)+"'>"+(state.saved.has(i.id)?"SAVED":"SAVE")+"</button>"}
+function feastCard(i){return "<article class='feast-card'><a href='"+esc(i.link)+"' target='_blank' rel='noopener'>"+media(i,false)+"</a><div class='copy'><div class='mono'>"+esc(i.source||"SOURCE")+" · "+esc(date(i.publishedAt||i.pubDate)||"LIVE")+"</div><h3><a href='"+esc(i.link)+"' target='_blank' rel='noopener'>"+esc(i.title)+"</a></h3><p>"+esc(i.description||"")+"</p><div class='save-row'><button class='action' data-rabbit='"+esc(i.id)+"'>Rabbit hole →</button>"+buttonSave(i)+"</div></div></article>"}
+function watchCard(i){return "<article class='watch-card'><a href='"+esc(i.link)+"' target='_blank' rel='noopener'>"+media(i,false)+"</a><div class='watch-copy'><div class='name'>"+esc(i.product||i.source||"SOURCE")+" <span class='badge'>"+(i.sourceKind==="software"?"FEATURE":"AI")+"</span></div><h3><a href='"+esc(i.link)+"' target='_blank' rel='noopener'>"+esc(i.title)+"</a></h3><p>"+esc(i.description||"")+"</p><div class='actions'><button class='action' data-rabbit='"+esc(i.id)+"'>Explore →</button>"+buttonSave(i)+"</div></div></article>"}
+function wildCard(i){return "<article class='wild-card'><div class='mono'>"+esc(i.source||"SOURCE")+"</div><h3><a href='"+esc(i.link)+"' target='_blank' rel='noopener'>"+esc(i.title)+"</a></h3><p>"+esc(i.description||"")+"</p><div class='save-row'>"+buttonSave(i)+"</div></article>"}
+function relatedFor(item){return state.articles.filter(function(x){if(x.id===item.id)return false;var catsA=item.categories||[],catsB=x.categories||[];var overlap=catsA.filter(function(c){return catsB.indexOf(c)>=0}).length;var sameSource=x.source===item.source?1:0;var sameRole=x.sourceRole&&x.sourceRole===item.sourceRole?1:0;return overlap+sameSource+sameRole>0}).sort(function(a,b){var score=function(x){var ov=(item.categories||[]).filter(function(c){return (x.categories||[]).indexOf(c)>=0}).length;return ov+(x.source===item.source?1:0)+(x.sourceRole===item.sourceRole?1:0)};return score(b)-score(a)}).slice(0,9)}
+function rabbit(id){var item=state.articles.find(function(x){return x.id===id});if(!item)return;var rel=relatedFor(item);$("modalBody").innerHTML="<div class='mono'>"+esc(item.source||"SOURCE")+" · "+esc(item.territory||"WILD")+"</div><h3 style='font-size:34px;line-height:.95;letter-spacing:-.04em;margin:8px 0 6px'>"+esc(item.title)+"</h3><p style='max-width:760px;line-height:1.5'>"+esc(item.description||"")+"</p><div class='actions'><a class='action' href='"+esc(item.link)+"' target='_blank' rel='noopener'>Open source →</a>"+buttonSave(item)+"</div><hr style='border:0;border-top:1px solid var(--hair);margin:18px 0'><div class='mono'>RELATED MATERIAL</div><div class='related' style='margin-top:8px'>"+rel.map(function(x){return "<a class='paper' style='text-decoration:none' href='"+esc(x.link)+"' target='_blank' rel='noopener'><div class='mono'>"+esc(x.source||"SOURCE")+"</div><h3>"+esc(x.title)+"</h3><div class='mono'>"+esc((x.categories||[]).slice(0,3).join(" · "))+"</div></a>"}).join("")+"</div>";updateSaveUI();$("modal").classList.add("show")}
+function renderLibrary(){var list=state.articles.filter(function(x){return state.saved.has(x.id)});$("libraryList").innerHTML=list.length?list.map(function(i){return "<div class='library-item'><div class='mono'>"+esc(i.source||"SOURCE")+"</div><h3><a href='"+esc(i.link)+"' target='_blank' rel='noopener'>"+esc(i.title)+"</a></h3><p>"+esc(i.description||"")+"</p></div>"}).join(""):"<div class='library-item'><h3>Your den is empty.</h3><p>Save things that you want to come back to.</p></div>";updateSaveUI()}
+function renderFilters(){document.querySelectorAll("[data-section]").forEach(function(b){b.onclick=function(){var s=b.getAttribute("data-section");if(s==="TODAY"){$("app").scrollIntoView({behavior:"smooth"})}else{var id=s==="FEAST"?"feast":"section-"+s.toLowerCase().replace(/ /g,"-");var el=$(id);if(el)el.scrollIntoView({behavior:"smooth"})}}})}
 function render(){
- filters();
- var all=S.items.filter(matches),culture=all.filter(function(i){return i.sourceKind==="culture"}),software=all.filter(function(i){return i.sourceKind==="software"}),ai=all.filter(function(i){return i.sourceKind==="ai"&&!i.hideFromAiImpact});
- var visual=all.filter(function(i){return !!i.image});
- if(S.filter==="ALL") visual=culture.filter(function(i){return !!i.image});
- if(!visual.length) visual=all;
- if(!all.length){document.getElementById("app").innerHTML="<div class='empty'>No material in this filter yet.</div>";return}
- var h=visual[0]||all[0],sig=all.filter(function(i){return i!==h}).slice(0,4),feast=visual.filter(function(i){return i!==h}).slice(0,16);
- var sigHtml=sig.map(function(s){return "<div class='signal'><div class='source'>"+esc(s.source||"SOURCE")+"</div><h4><a href='"+esc(s.link)+"' target='_blank' rel='noopener'>"+esc(s.title)+"</a></h4><p>"+esc(s.description||"")+"</p></div>"}).join("");
- var feastHtml=feast.map(card).join("");
- var swHtml=software.slice(0,8).map(watchItem).join("");
- var aiHtml=ai.slice(0,8).map(watchItem).join("");
- document.getElementById("app").innerHTML=
- "<section class='content'>"+
- "<article class='paper hero'><a href='"+esc(h.link)+"' target='_blank' rel='noopener'>"+media(h,true)+"</a><div class='copy'><div class='source'>THE BIG THING · "+esc(h.source||"SOURCE")+"</div><h2><a href='"+esc(h.link)+"' target='_blank' rel='noopener'>"+esc(h.title)+"</a></h2><p>"+esc(h.description||"")+"</p><div class='source'>"+esc(date(h.pubDate)||"LIVE")+" · ORIGINAL SOURCE →</div></div></article>"+
- "<aside class='side'><section class='paper card'><h3>SIGNALS</h3>"+sigHtml+"</section><section class='paper card'><h3>MAKE SOMETHING</h3><p>Pick one reference. Extract the principle. Change one variable. Make a small experiment.</p><div class='source'>REFERENCE → PRINCIPLE → EXPERIMENT</div></section></aside></section>"+
- "<section class='section'><div class='section-head'><h3>VISUAL FEAST</h3><span class='source'>"+culture.length+" culture references</span></div><div class='grid'>"+feastHtml+"</div></section>"+
- "<section class='section'><div class='section-head'><h3>TOOL WATCH</h3><span class='source'>FEATURES / RELEASES</span></div><div class='watch-grid'><section class='paper watch'>"+(swHtml||"<div class='empty' style='color:#625e57;border-color:#13223555'>No software updates were returned in this run.</div>")+"</section><section class='paper watch'><div class='watch-header'><strong>WHAT CHANGED?</strong><span class='source'>Figma · Adobe · Blender · Canva</span></div><p style='font-size:13px;line-height:1.45'>This layer watches the tools that shape everyday creative production. A new feature appears here as a workflow change, not just another headline.</p><div class='source'>WATCH → UNDERSTAND → TRY</div></section></div></section>"+
- "<section class='section'><div class='section-head'><h3>AI IMPACT</h3><span class='source'>CREATIVE CONSEQUENCES, NOT AI NOISE</span></div><div class='watch-grid'><section class='paper watch ai'>"+(aiHtml||"<div class='empty' style='color:#625e57;border-color:#13223555'>No high-relevance creative AI updates were returned in this run.</div>")+"</section><section class='paper watch'><div class='watch-header'><strong>EDITORIAL FILTER</strong><span class='source'>WHY THIS MATTERS</span></div><p style='font-size:13px;line-height:1.45'>AI enters this room when it changes image making, motion, design tools, creative direction, authorship, provenance, or the economics of making things. Generic AI noise stays outside.</p><div class='source'>MODEL → WORKFLOW → CULTURE</div></section></div></section>";
+ var e=state.edition||{};
+ var hero=(e.bigThing&&e.bigThing[0])||state.articles.filter(function(x){return x.image})[0];
+ var signals=(e.signals||[]).slice(0,5),feast=(e.visualFeast||[]),tools=(e.toolWatch||[]),ais=(e.aiImpact||[]),wild=(e.wild||[]);
+ var make=e.makeSomething||{};
+ var health=e.sourceHealth||[];
+ var heroHtml=hero?"<section id='today' class='section'><div class='hero-layout'><article class='paper hero'><a href='"+esc(hero.link)+"' target='_blank' rel='noopener'>"+media(hero,true)+"</a><div class='copy'><div class='kicker'>THE BIG THING · "+esc(hero.source||"SOURCE")+"</div><h1><a href='"+esc(hero.link)+"' target='_blank' rel='noopener'>"+esc(hero.title)+"</a></h1><p>"+esc(hero.description||"")+"</p><div class='actions'><a class='action' href='"+esc(hero.link)+"' target='_blank' rel='noopener'>Read original →</a><button class='action' data-rabbit='"+esc(hero.id)+"'>Rabbit hole →</button>"+buttonSave(hero)+"</div></div></article><aside class='side'><section class='paper card'><h3>SIGNALS</h3>"+signals.map(function(s){return "<div class='signal'><div class='source'>"+esc(s.source||"SOURCE")+"</div><h4><a href='"+esc(s.link)+"' target='_blank' rel='noopener'>"+esc(s.title)+"</a></h4><p>"+esc(s.description||"")+"</p></div>"}).join("")+"</section><section class='paper card make'><div><h3>MAKE SOMETHING</h3><div class='instruction'>"+esc(make.instruction||"Pick one reference. Extract the principle. Change one variable.")+"</div></div><div class='ref'><div class='mono'>REFERENCE</div><strong>"+esc(make.reference||"")+"</strong><div class='mono' style='margin-top:5px'>"+esc(make.source||"")+"</div></div></section></aside></div></section>":"";
+ var feastHtml="<section id='feast' class='section'><div class='section-head'><h2>VISUAL FEAST</h2><div class='meta mono'>"+esc((e.counts&&e.counts.visual)||feast.length)+" image-led references</div></div><div class='feast-grid'>"+feast.map(feastCard).join("")+"</div></section>";
+ var toolHtml="<section id='section-tool-watch' class='section'><div class='section-head'><h2>TOOL WATCH</h2><div class='meta mono'>FEATURES / RELEASES</div></div><div class='watch-grid'><section class='watch-list'>"+(tools.length?tools.map(watchCard).join(""):"<div class='paper card'>No recent tool updates passed the filter.</div>")+"</section><section class='paper watch-note'><div><div class='mono'>FIGMA · ADOBE · BLENDER · CANVA</div><h3>WHAT CHANGED?</h3><p>A tool update earns a place here when it changes a real creative workflow. We care about what it lets you do differently tomorrow.</p></div><div class='note-rule'>WATCH → UNDERSTAND → TRY</div></section></div></section>";
+ var aiHtml="<section id='section-ai-impact' class='section'><div class='section-head'><h2>AI IMPACT</h2><div class='meta mono'>CREATIVE CONSEQUENCES, NOT AI NOISE</div></div><div class='watch-grid'><section class='watch-list'>"+(ais.length?ais.map(watchCard).join(""):"<div class='paper card'>No high-relevance creative AI updates passed the filter.</div>")+"</section><section class='paper watch-note'><div><div class='mono'>MODEL · WORKFLOW · CULTURE</div><h3>EDITORIAL FILTER</h3><p>AI enters this room when it changes image making, motion, design tools, creative direction, authorship, provenance, or the economics of making things.</p></div><div class='note-rule'>LESS AI NEWS · MORE CREATIVE CONSEQUENCE</div></section></div></section>";
+ var wildHtml="<section id='section-wild' class='section'><div class='section-head'><h2>WILD</h2><div class='meta mono'>THE SIDE DOOR</div></div><div class='wild-grid'>"+wild.map(wildCard).join("")+"</div></section>";
+ $("app").innerHTML=heroHtml+feastHtml+toolHtml+aiHtml+wildHtml;
+ document.querySelectorAll("[data-save]").forEach(function(b){b.onclick=function(ev){ev.preventDefault();save(b.getAttribute("data-save"))}});
+ document.querySelectorAll("[data-rabbit]").forEach(function(b){b.onclick=function(ev){ev.preventDefault();rabbit(b.getAttribute("data-rabbit"))}});
+ updateSaveUI();
+ $("health").textContent=(health.filter(function(x){return x.status==="LIVE"}).length)+" sources active · "+health.length+" watched";
 }
-async function load(){document.getElementById("status").textContent="Loading latest data...";try{var r=await fetch("./data/articles.json?ts="+Date.now(),{cache:"no-store"});if(!r.ok)throw Error();var d=await r.json();S.items=(Array.isArray(d)?d:d.items||[]).sort(function(a,b){return new Date(b.pubDate||b.fetchedAt||0)-new Date(a.pubDate||a.fetchedAt||0)});document.getElementById("date").textContent="TODAY / "+new Date().toLocaleDateString("en-GB",{day:"2-digit",month:"short",year:"numeric"});document.getElementById("status").textContent=S.items.length+" references · updated "+new Date().toLocaleTimeString("en-GB",{hour:"2-digit",minute:"2-digit"});render()}catch(e){document.getElementById("status").textContent="No edition data yet";document.getElementById("app").innerHTML="<div class='empty'>The interface is live, but the ingestion engine has not published an edition yet.</div>"}}
-document.getElementById("refresh").onclick=load;load();
+async function load(){
+ $("status").textContent="Loading edition...";
+ try{
+  var daily=await fetch("./data/daily.json?ts="+Date.now(),{cache:"no-store"});
+  var articles=await fetch("./data/articles.json?ts="+Date.now(),{cache:"no-store"});
+  state.edition=await daily.json();var d=await articles.json();state.articles=Array.isArray(d)?d:(d.items||[]);
+  $("date").textContent="TODAY / "+date(state.edition.editionDate||new Date());
+  $("status").textContent=(state.edition.counts&&state.edition.counts.all||state.articles.length)+" references · curated edition";
+  render();renderFilters();renderLibrary();
+ }catch(err){
+  $("status").textContent="Edition unavailable";
+  $("app").innerHTML="<div class='paper card' style='margin-top:20px'><h2>Creative Den is rebuilding.</h2><p>The shell is live. The next successful engine run will publish the next edition.</p></div>";
+ }
+}
+$("refresh").onclick=load;
+$("libraryBtn").onclick=function(){$("drawer").classList.add("show");renderLibrary()};
+$("closeDrawer").onclick=function(){$("drawer").classList.remove("show")};
+$("closeModal").onclick=function(){$("modal").classList.remove("show")};
+$("drawer").onclick=function(e){if(e.target===$("drawer"))$("drawer").classList.remove("show")};
+$("modal").onclick=function(e){if(e.target===$("modal"))$("modal").classList.remove("show")};
+var search=$("search"),results=$("searchResults");
+search.oninput=function(){var q=search.value.trim().toLowerCase();if(!q){results.style.display="none";return}var hits=state.articles.filter(function(i){return (i.title+" "+i.source+" "+(i.description||"")+" "+(i.categories||[]).join(" ")).toLowerCase().includes(q)}).slice(0,10);results.innerHTML=hits.length?hits.map(function(i){return "<a href='"+esc(i.link)+"' target='_blank' rel='noopener'><div class='mono'>"+esc(i.source||"SOURCE")+"</div><strong>"+esc(i.title)+"</strong></a>"}).join(""):"<div style='padding:12px;font-size:12px'>Nothing found.</div>";results.style.display="block"};
+document.addEventListener("click",function(e){if(!e.target.closest(".search-box"))results.style.display="none"});
+document.addEventListener("keydown",function(e){if(e.key==="/"&&document.activeElement!==search){e.preventDefault();search.focus()}if(e.key==="Escape"){$("drawer").classList.remove("show");$("modal").classList.remove("show");results.style.display="none"}});
+load();
 </script>
 </body>
 </html>
