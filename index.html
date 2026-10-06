@@ -11,7 +11,7 @@
 </head>
 <body>
 <div class="shell">
-<header class="top"><div><div class="eyebrow">Studio GH / Daily Intelligence Desk</div><div class="brand"><img src="./assets/creative-den-type.png" alt="Creative Den"></div><div class="sub">A living visual culture desk. The point is not to read everything. It is to notice what might change the way Glermenrik looks, thinks or creates.</div></div><button class="button" id="refresh">Refresh</button></header>
+<header class="top"><div><div class="eyebrow">Studio GH / Daily Intelligence Desk</div><div class="brand"><img src="./assets/creative-den-type.svg" alt="Creative Den"></div><div class="sub">A living visual culture desk. The point is not to read everything. It is to notice what might change the way you look, think or create.</div></div><button class="button" id="refresh">Refresh</button></header>
 <div class="meta"><div id="date">TODAY</div><div id="status">Loading...</div><div>LOOK / THINK / MAKE / KNOW / WANDER</div></div>
 <div class="filters" id="filters"></div>
 <main id="app"><div class="empty">Building today's edition...</div></main>
@@ -28,9 +28,9 @@ function card(i){return "<article class='item'><a href='"+esc(i.link)+"' target=
 function watchItem(i){return "<article class='watch-item'><div class='name'>"+esc(i.product||i.source||"SOURCE")+" <span class='badge'>"+(i.sourceKind==="software"?"FEATURE":"AI")+"</span></div><h4><a href='"+esc(i.link)+"' target='_blank' rel='noopener'>"+esc(i.title)+"</a></h4><p>"+esc(i.description||("Official update from "+(i.source||"source")))+"</p></article>"}
 function render(){
  filters();
- var a=S.items.filter(matches),culture=a.filter(function(i){return i.sourceKind==="culture"}),software=a.filter(function(i){return i.sourceKind==="software"}),ai=a.filter(function(i){return i.sourceKind==="ai"&&!i.hideFromAiImpact});
+ var all=S.items.filter(matches),culture=all.filter(function(i){return i.sourceKind==="culture"}),software=all.filter(function(i){return i.sourceKind==="software"}),ai=all.filter(function(i){return i.sourceKind==="ai"&&!i.hideFromAiImpact}),a=all; if(S.filter==="ALL"){a=(culture.filter(function(i){return !!i.image}).slice(0,1)).concat(software.slice(0,2),ai.filter(function(i){return i.creativeScore>0}).slice(0,2),culture.filter(function(i){return !i.image}).slice(0,1));}
  if(!a.length){document.getElementById("app").innerHTML="<div class='empty'>No material in this filter yet.</div>";return}
- var h=a[0],sig=a.slice(1,5),feast=a.slice(1,17);
+ var heroPool=(S.filter==="ALL"?culture.filter(function(i){return !!i.image}):a); var h=heroPool[0]||a[0],sig=a.filter(function(i){return i!==h}).slice(0,4),feast=(S.filter==="ALL"?culture.filter(function(i){return !!i.image}):a).slice(1,17);
  var sigHtml=sig.map(function(s){return "<div class='signal'><div class='source'>"+esc(s.source||"SOURCE")+"</div><h4><a href='"+esc(s.link)+"' target='_blank' rel='noopener'>"+esc(s.title)+"</a></h4><p>"+esc(s.description||"")+"</p></div>"}).join("");
  var feastHtml=feast.map(card).join("");
  var swHtml=software.slice(0,8).map(watchItem).join("");
