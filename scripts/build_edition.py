@@ -71,7 +71,7 @@ visual = [x for x in articles if x.get("image") and not x.get("hideFromAiImpact"
 graphic_positive = {
     "design", "graphic design", "brand design", "branding", "identity", "logo", "wordmark",
     "typography", "typeface", "font", "lettering", "poster", "print", "editorial", "magazine",
-    "book design", "book cover", "album cover", "packaging", "package design", "campaign",
+    "book design", "book cover", "album cover", "campaign",
     "art direction", "art director", "creative direction", "web design", "website", "web typography",
     "interface", "ui", "visual identity", "rebrand", "wayfinding", "signage", "publication",
     "zine", "brochure", "catalog", "lookbook"
