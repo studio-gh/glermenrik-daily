@@ -18,29 +18,8 @@
     "territory": "AI",
     "id": "39e7e8adcae93351",
     "section": "AI IMPACT",
-    "creativeScore": 5
-  },
-  {
-    "title": "Video Model Licensing",
-    "description": "Official update from Runway",
-    "link": "https://runwayml.com/model-licensing",
-    "pubDate": "",
-    "fetchedAt": "2026-10-06T01:25:11.280936+00:00",
-    "image": "",
-    "categories": [
-      "AI",
-      "MOTION",
-      "IMAGE",
-      "CULTURE"
-    ],
-    "source": "Runway News",
-    "sourceUrl": "https://runwayml.com/news/",
-    "sourceKind": "ai",
-    "product": "Runway",
-    "territory": "AI",
-    "id": "45d82bcf2ab9ac23",
-    "section": "AI IMPACT",
-    "creativeScore": 5
+    "creativeScore": 5,
+    "imageState": "placeholder"
   },
   {
     "title": "Chatham scales its capital markets expertise with OpenAI",
@@ -61,51 +40,8 @@
     "territory": "AI",
     "id": "2fec618f3a8862c7",
     "section": "AI IMPACT",
-    "creativeScore": 4
-  },
-  {
-    "title": "Policy Model",
-    "description": "Official update from Runway",
-    "link": "https://runwayml.com/product/robotics/policy-model",
-    "pubDate": "",
-    "fetchedAt": "2026-10-06T01:25:11.280930+00:00",
-    "image": "",
-    "categories": [
-      "AI",
-      "MOTION",
-      "IMAGE",
-      "CULTURE"
-    ],
-    "source": "Runway News",
-    "sourceUrl": "https://runwayml.com/news/",
-    "sourceKind": "ai",
-    "product": "Runway",
-    "territory": "AI",
-    "id": "c7697c6791f7bea0",
-    "section": "AI IMPACT",
-    "creativeScore": 4
-  },
-  {
-    "title": "Model Router",
-    "description": "Official update from Runway",
-    "link": "https://docs.dev.runwayml.com/model-routers/",
-    "pubDate": "",
-    "fetchedAt": "2026-10-06T01:25:11.280926+00:00",
-    "image": "",
-    "categories": [
-      "AI",
-      "MOTION",
-      "IMAGE",
-      "CULTURE"
-    ],
-    "source": "Runway News",
-    "sourceUrl": "https://runwayml.com/news/",
-    "sourceKind": "ai",
-    "product": "Runway",
-    "territory": "AI",
-    "id": "12a71f3a355252eb",
-    "section": "AI IMPACT",
-    "creativeScore": 4
+    "creativeScore": 4,
+    "imageState": "placeholder"
   },
   {
     "title": "Building advertising for the way people use AI",
@@ -128,7 +64,8 @@
     "territory": "AI",
     "id": "737d149a8f31eef2",
     "section": "AI IMPACT",
-    "creativeScore": 3
+    "creativeScore": 3,
+    "imageState": "placeholder"
   },
   {
     "title": "Co-creating the future of fashion with Google",
@@ -151,12 +88,33 @@
     "creativeScore": 3
   },
   {
-    "title": "Publications",
-    "description": "Official update from Runway",
-    "link": "https://runwayml.com/research/publications",
+    "title": "Policy Model",
+    "description": "",
+    "link": "https://runwayml.com/product/robotics/policy-model",
     "pubDate": "",
-    "fetchedAt": "2026-10-06T01:25:11.280949+00:00",
-    "image": "",
+    "image": "https://runway.com/opengraph-image.png?opengraph-image.1oltnwfb7pfkb.png",
+    "categories": [
+      "AI",
+      "MOTION",
+      "IMAGE",
+      "CULTURE",
+      "TECH"
+    ],
+    "source": "Runway News",
+    "sourceUrl": "https://runwayml.com/news/",
+    "sourceKind": "ai",
+    "product": "Runway",
+    "territory": "AI",
+    "id": "c7697c6791f7bea0",
+    "section": "AI IMPACT",
+    "creativeScore": 3
+  },
+  {
+    "title": "Runway Builders",
+    "description": "",
+    "link": "https://runwayml.com/product/builders",
+    "pubDate": "",
+    "image": "https://runway.com/opengraph-image.png?opengraph-image.1oltnwfb7pfkb.png",
     "categories": [
       "AI",
       "MOTION",
@@ -168,226 +126,7 @@
     "sourceKind": "ai",
     "product": "Runway",
     "territory": "AI",
-    "id": "65ce558ddb12f011",
-    "section": "AI IMPACT",
-    "creativeScore": 3
-  },
-  {
-    "title": "Research News",
-    "description": "Official update from Runway",
-    "link": "https://runwayml.com/news/research",
-    "pubDate": "",
-    "fetchedAt": "2026-10-06T01:25:11.280947+00:00",
-    "image": "",
-    "categories": [
-      "AI",
-      "MOTION",
-      "IMAGE",
-      "CULTURE"
-    ],
-    "source": "Runway News",
-    "sourceUrl": "https://runwayml.com/news/",
-    "sourceKind": "ai",
-    "product": "Runway",
-    "territory": "AI",
-    "id": "a094f2e05e068a9b",
-    "section": "AI IMPACT",
-    "creativeScore": 3
-  },
-  {
-    "title": "Research Hub",
-    "description": "Official update from Runway",
-    "link": "https://runwayml.com/research",
-    "pubDate": "",
-    "fetchedAt": "2026-10-06T01:25:11.280945+00:00",
-    "image": "",
-    "categories": [
-      "AI",
-      "MOTION",
-      "IMAGE",
-      "CULTURE"
-    ],
-    "source": "Runway News",
-    "sourceUrl": "https://runwayml.com/news/",
-    "sourceKind": "ai",
-    "product": "Runway",
-    "territory": "AI",
-    "id": "80ce97099711b8d9",
-    "section": "AI IMPACT",
-    "creativeScore": 3
-  },
-  {
-    "title": "For Education",
-    "description": "Official update from Runway",
-    "link": "https://runwayml.com/educators",
-    "pubDate": "",
-    "fetchedAt": "2026-10-06T01:25:11.280941+00:00",
-    "image": "",
-    "categories": [
-      "AI",
-      "MOTION",
-      "IMAGE",
-      "CULTURE"
-    ],
-    "source": "Runway News",
-    "sourceUrl": "https://runwayml.com/news/",
-    "sourceKind": "ai",
-    "product": "Runway",
-    "territory": "AI",
-    "id": "bc36611987692033",
-    "section": "AI IMPACT",
-    "creativeScore": 3
-  },
-  {
-    "title": "Customer Stories",
-    "description": "Official update from Runway",
-    "link": "https://runwayml.com/news/customers",
-    "pubDate": "",
-    "fetchedAt": "2026-10-06T01:25:11.280939+00:00",
-    "image": "",
-    "categories": [
-      "AI",
-      "MOTION",
-      "IMAGE",
-      "CULTURE"
-    ],
-    "source": "Runway News",
-    "sourceUrl": "https://runwayml.com/news/",
-    "sourceKind": "ai",
-    "product": "Runway",
-    "territory": "AI",
-    "id": "ce757bbf7eeac217",
-    "section": "AI IMPACT",
-    "creativeScore": 3
-  },
-  {
-    "title": "Data Security",
-    "description": "Official update from Runway",
-    "link": "https://runwayml.com/data-security",
-    "pubDate": "",
-    "fetchedAt": "2026-10-06T01:25:11.280937+00:00",
-    "image": "",
-    "categories": [
-      "AI",
-      "MOTION",
-      "IMAGE",
-      "CULTURE"
-    ],
-    "source": "Runway News",
-    "sourceUrl": "https://runwayml.com/news/",
-    "sourceKind": "ai",
-    "product": "Runway",
-    "territory": "AI",
-    "id": "420467f002428cdd",
-    "section": "AI IMPACT",
-    "creativeScore": 3
-  },
-  {
-    "title": "Data Augmentation",
-    "description": "Official update from Runway",
-    "link": "https://runwayml.com/product/robotics/data-augmentation",
-    "pubDate": "",
-    "fetchedAt": "2026-10-06T01:25:11.280934+00:00",
-    "image": "",
-    "categories": [
-      "AI",
-      "MOTION",
-      "IMAGE",
-      "CULTURE"
-    ],
-    "source": "Runway News",
-    "sourceUrl": "https://runwayml.com/news/",
-    "sourceKind": "ai",
-    "product": "Runway",
-    "territory": "AI",
-    "id": "500741be14d74a67",
-    "section": "AI IMPACT",
-    "creativeScore": 3
-  },
-  {
-    "title": "Offline Policy Evaluation",
-    "description": "Official update from Runway",
-    "link": "https://runwayml.com/product/robotics/policy-evaluation",
-    "pubDate": "",
-    "fetchedAt": "2026-10-06T01:25:11.280932+00:00",
-    "image": "",
-    "categories": [
-      "AI",
-      "MOTION",
-      "IMAGE",
-      "CULTURE"
-    ],
-    "source": "Runway News",
-    "sourceUrl": "https://runwayml.com/news/",
-    "sourceKind": "ai",
-    "product": "Runway",
-    "territory": "AI",
-    "id": "1b90138947e6533f",
-    "section": "AI IMPACT",
-    "creativeScore": 3
-  },
-  {
-    "title": "Documentation",
-    "description": "Official update from Runway",
-    "link": "https://docs.dev.runwayml.com/",
-    "pubDate": "",
-    "fetchedAt": "2026-10-06T01:25:11.280928+00:00",
-    "image": "",
-    "categories": [
-      "AI",
-      "MOTION",
-      "IMAGE",
-      "CULTURE"
-    ],
-    "source": "Runway News",
-    "sourceUrl": "https://runwayml.com/news/",
-    "sourceKind": "ai",
-    "product": "Runway",
-    "territory": "AI",
-    "id": "0c8f58e3b4312ae7",
-    "section": "AI IMPACT",
-    "creativeScore": 3
-  },
-  {
-    "title": "ChatGPT Plugin",
-    "description": "Official update from Runway",
-    "link": "https://runwayml.com/mcp/chatgpt",
-    "pubDate": "",
-    "fetchedAt": "2026-10-06T01:25:11.280923+00:00",
-    "image": "",
-    "categories": [
-      "AI",
-      "MOTION",
-      "IMAGE",
-      "CULTURE"
-    ],
-    "source": "Runway News",
-    "sourceUrl": "https://runwayml.com/news/",
-    "sourceKind": "ai",
-    "product": "Runway",
-    "territory": "AI",
-    "id": "2cd800293936c7c2",
-    "section": "AI IMPACT",
-    "creativeScore": 3
-  },
-  {
-    "title": "Alpha Changelog - 10/1/26",
-    "description": "Official update from Midjourney",
-    "link": "https://updates.midjourney.com/",
-    "pubDate": "",
-    "fetchedAt": "2026-10-06T01:25:10.638860+00:00",
-    "image": "",
-    "categories": [
-      "AI",
-      "IMAGE",
-      "DESIGN"
-    ],
-    "source": "Midjourney Updates",
-    "sourceUrl": "https://updates.midjourney.com/",
-    "sourceKind": "ai",
-    "product": "Midjourney",
-    "territory": "AI",
-    "id": "9dba7f04273ab307",
+    "id": "1dbaaac58b1ef7e9",
     "section": "AI IMPACT",
     "creativeScore": 3
   },
@@ -410,7 +149,8 @@
     "territory": "AI",
     "id": "62835f2ff6090a65",
     "section": "AI IMPACT",
-    "creativeScore": 2
+    "creativeScore": 2,
+    "imageState": "placeholder"
   },
   {
     "title": "Introducing GPT-6.1 Sol",
@@ -431,47 +171,223 @@
     "territory": "AI",
     "id": "54857aa39d28578e",
     "section": "AI IMPACT",
-    "creativeScore": 2
+    "creativeScore": 2,
+    "imageState": "placeholder"
   },
   {
-    "title": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
-    "description": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
-    "link": "https://blog.google/innovation-and-ai/technology/ai/winner-future-vision-xprize/",
-    "pubDate": "Mon, 28 Sep 2026 19:00:00 +0000",
-    "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/futurevisionxprize_social.max-600x600.format-webp.webp",
+    "title": "",
+    "description": "",
+    "link": "https://updates.midjourney.com/alpha-changelog-10-1-26/",
+    "pubDate": "",
+    "image": "https://static.ghost.org/v5.0.0/images/publication-cover.jpg",
     "categories": [
       "AI",
-      "TECH",
-      "DESIGN"
+      "IMAGE",
+      "DESIGN",
+      "TECH"
     ],
-    "source": "Google AI",
-    "sourceUrl": "https://blog.google/technology/ai/",
+    "source": "Midjourney Updates",
+    "sourceUrl": "https://updates.midjourney.com/",
     "sourceKind": "ai",
-    "product": "Google AI",
+    "product": "Midjourney",
     "territory": "AI",
-    "id": "be93eae5fec6a620",
+    "id": "37d61f0ea85b7104",
     "section": "AI IMPACT",
     "creativeScore": 2
   },
   {
-    "title": "Enterprise Sales",
-    "description": "Official update from Runway",
-    "link": "https://runwayml.com/enterprise-contact",
+    "title": "",
+    "description": "",
+    "link": "https://updates.midjourney.com/edit-updates-thumbnail-previews-and-more/",
     "pubDate": "",
-    "fetchedAt": "2026-10-06T01:25:11.280911+00:00",
-    "image": "",
+    "image": "https://static.ghost.org/v5.0.0/images/publication-cover.jpg",
+    "categories": [
+      "AI",
+      "IMAGE",
+      "DESIGN",
+      "TECH"
+    ],
+    "source": "Midjourney Updates",
+    "sourceUrl": "https://updates.midjourney.com/",
+    "sourceKind": "ai",
+    "product": "Midjourney",
+    "territory": "AI",
+    "id": "e302fcd634d1db3d",
+    "section": "AI IMPACT",
+    "creativeScore": 2
+  },
+  {
+    "title": "",
+    "description": "",
+    "link": "https://updates.midjourney.com/alpha-changelog-9-23-26/",
+    "pubDate": "",
+    "image": "https://static.ghost.org/v5.0.0/images/publication-cover.jpg",
+    "categories": [
+      "AI",
+      "IMAGE",
+      "DESIGN",
+      "TECH"
+    ],
+    "source": "Midjourney Updates",
+    "sourceUrl": "https://updates.midjourney.com/",
+    "sourceKind": "ai",
+    "product": "Midjourney",
+    "territory": "AI",
+    "id": "62184f2086d8311a",
+    "section": "AI IMPACT",
+    "creativeScore": 2
+  },
+  {
+    "title": "",
+    "description": "",
+    "link": "https://updates.midjourney.com/alpha-changelog-9-16-26/",
+    "pubDate": "",
+    "image": "https://static.ghost.org/v5.0.0/images/publication-cover.jpg",
+    "categories": [
+      "AI",
+      "IMAGE",
+      "DESIGN",
+      "TECH"
+    ],
+    "source": "Midjourney Updates",
+    "sourceUrl": "https://updates.midjourney.com/",
+    "sourceKind": "ai",
+    "product": "Midjourney",
+    "territory": "AI",
+    "id": "1008de48d73b9a6d",
+    "section": "AI IMPACT",
+    "creativeScore": 2
+  },
+  {
+    "title": "Offline Policy Evaluation",
+    "description": "",
+    "link": "https://runwayml.com/product/robotics/policy-evaluation",
+    "pubDate": "",
+    "image": "https://runway.com/opengraph-image.png?opengraph-image.1oltnwfb7pfkb.png",
     "categories": [
       "AI",
       "MOTION",
       "IMAGE",
-      "CULTURE"
+      "CULTURE",
+      "TECH"
     ],
     "source": "Runway News",
     "sourceUrl": "https://runwayml.com/news/",
     "sourceKind": "ai",
     "product": "Runway",
     "territory": "AI",
-    "id": "96349d5192a9c77c",
+    "id": "1b90138947e6533f",
+    "section": "AI IMPACT",
+    "creativeScore": 2
+  },
+  {
+    "title": "Data Augmentation",
+    "description": "",
+    "link": "https://runwayml.com/product/robotics/data-augmentation",
+    "pubDate": "",
+    "image": "https://runway.com/opengraph-image.png?opengraph-image.1oltnwfb7pfkb.png",
+    "categories": [
+      "AI",
+      "MOTION",
+      "IMAGE",
+      "CULTURE",
+      "TECH"
+    ],
+    "source": "Runway News",
+    "sourceUrl": "https://runwayml.com/news/",
+    "sourceKind": "ai",
+    "product": "Runway",
+    "territory": "AI",
+    "id": "500741be14d74a67",
+    "section": "AI IMPACT",
+    "creativeScore": 2
+  },
+  {
+    "title": "Customer Stories",
+    "description": "",
+    "link": "https://runwayml.com/news/customers",
+    "pubDate": "",
+    "image": "https://runway.com/opengraph-image.png?opengraph-image.1oltnwfb7pfkb.png",
+    "categories": [
+      "AI",
+      "MOTION",
+      "IMAGE",
+      "CULTURE",
+      "TECH"
+    ],
+    "source": "Runway News",
+    "sourceUrl": "https://runwayml.com/news/",
+    "sourceKind": "ai",
+    "product": "Runway",
+    "territory": "AI",
+    "id": "ce757bbf7eeac217",
+    "section": "AI IMPACT",
+    "creativeScore": 2
+  },
+  {
+    "title": "Research News",
+    "description": "",
+    "link": "https://runwayml.com/news/research",
+    "pubDate": "",
+    "image": "https://runway.com/opengraph-image.png?opengraph-image.1oltnwfb7pfkb.png",
+    "categories": [
+      "AI",
+      "MOTION",
+      "IMAGE",
+      "CULTURE",
+      "TECH"
+    ],
+    "source": "Runway News",
+    "sourceUrl": "https://runwayml.com/news/",
+    "sourceKind": "ai",
+    "product": "Runway",
+    "territory": "AI",
+    "id": "a094f2e05e068a9b",
+    "section": "AI IMPACT",
+    "creativeScore": 2
+  },
+  {
+    "title": "Publications",
+    "description": "",
+    "link": "https://runwayml.com/research/publications",
+    "pubDate": "",
+    "image": "",
+    "categories": [
+      "AI",
+      "MOTION",
+      "IMAGE",
+      "CULTURE",
+      "TECH"
+    ],
+    "source": "Runway News",
+    "sourceUrl": "https://runwayml.com/news/",
+    "sourceKind": "ai",
+    "product": "Runway",
+    "territory": "AI",
+    "id": "65ce558ddb12f011",
+    "section": "AI IMPACT",
+    "creativeScore": 2,
+    "imageState": "placeholder"
+  },
+  {
+    "title": "World Simulation",
+    "description": "",
+    "link": "https://runwayml.com/research/introducing-gwm-worlds-2",
+    "pubDate": "",
+    "image": "https://d3phaj0sisr2ct.cloudfront.net/site/research/gwm-worlds-2/images/gwm-worlds-2-card.webp",
+    "categories": [
+      "AI",
+      "MOTION",
+      "IMAGE",
+      "CULTURE",
+      "TECH"
+    ],
+    "source": "Runway News",
+    "sourceUrl": "https://runwayml.com/news/",
+    "sourceKind": "ai",
+    "product": "Runway",
+    "territory": "AI",
+    "id": "52501b54fdd07476",
     "section": "AI IMPACT",
     "creativeScore": 2
   },
@@ -494,7 +410,8 @@
     "territory": "AI",
     "id": "e93176f344fb8b8f",
     "section": "AI IMPACT",
-    "creativeScore": 1
+    "creativeScore": 1,
+    "imageState": "placeholder"
   },
   {
     "title": "Helping small businesses put AI to work",
@@ -515,7 +432,8 @@
     "territory": "AI",
     "id": "78691b79074b7b69",
     "section": "AI IMPACT",
-    "creativeScore": 1
+    "creativeScore": 1,
+    "imageState": "placeholder"
   },
   {
     "title": "Google Beam expands with new regions, partners, and customers",
@@ -536,28 +454,6 @@
     "product": "Google AI",
     "territory": "AI",
     "id": "90fc68dfe1ad5575",
-    "section": "AI IMPACT",
-    "creativeScore": 1
-  },
-  {
-    "title": "Recreating a 70-year love story frame by frame",
-    "description": "Discover how filmmakers and Google DeepMind used AI to recreate a couple's unrecorded past in the short film \"Love, Rendered.\"",
-    "link": "https://blog.google/innovation-and-ai/technology/ai/love-rendered-film/",
-    "pubDate": "Wed, 09 Sep 2026 16:00:00 +0000",
-    "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/LOVE_RENDERED_HERO_BLOG_SANS_LO.max-600x600.format-webp.webp",
-    "categories": [
-      "AI",
-      "TECH",
-      "DESIGN",
-      "IMAGE",
-      "GOOGLE DEEPMIND"
-    ],
-    "source": "Google AI",
-    "sourceUrl": "https://blog.google/technology/ai/",
-    "sourceKind": "ai",
-    "product": "Google AI",
-    "territory": "AI",
-    "id": "848e90a30e072b57",
     "section": "AI IMPACT",
     "creativeScore": 1
   },
@@ -626,29 +522,8 @@
     "territory": "AI",
     "id": "8f05d069141835c6",
     "section": "AI IMPACT",
-    "creativeScore": 1
-  },
-  {
-    "title": "Get ready for the game with new football features in Search",
-    "description": "Track live game feeds, explore detailed stats, and get custom fantasy recommendations directly in Search this season.",
-    "link": "https://blog.google/products-and-platforms/products/search/football-features-google-search/",
-    "pubDate": "Wed, 09 Sep 2026 16:00:00 +0000",
-    "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Football_on_Search_blog_header.max-600x600.format-webp.webp",
-    "categories": [
-      "AI",
-      "TECH",
-      "DESIGN",
-      "SEARCH"
-    ],
-    "source": "Google AI",
-    "sourceUrl": "https://blog.google/technology/ai/",
-    "sourceKind": "ai",
-    "product": "Google AI",
-    "territory": "AI",
-    "id": "14c4ab53aa1bab44",
-    "section": "AI IMPACT",
-    "creativeScore": 0,
-    "hideFromAiImpact": true
+    "creativeScore": 1,
+    "imageState": "placeholder"
   },
   {
     "title": "Introducing dots",
@@ -670,7 +545,8 @@
     "id": "d59fa3540f9621b7",
     "section": "AI IMPACT",
     "creativeScore": 0,
-    "hideFromAiImpact": true
+    "hideFromAiImpact": true,
+    "imageState": "placeholder"
   },
   {
     "title": "AI for Societal Impact",
@@ -758,29 +634,6 @@
     "hideFromAiImpact": true
   },
   {
-    "title": "3 ways to prep for your next big race with Search",
-    "description": "Search can help runners get race-day ready with registration alerts, tailored training plans, and more.",
-    "link": "https://blog.google/products-and-platforms/products/search/running-race-training-tips/",
-    "pubDate": "Thu, 10 Sep 2026 16:00:00 +0000",
-    "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Search_Race_Running_Tips.max-600x600.format-webp.webp",
-    "categories": [
-      "AI",
-      "TECH",
-      "DESIGN",
-      "SEARCH",
-      "SHOPPING"
-    ],
-    "source": "Google AI",
-    "sourceUrl": "https://blog.google/technology/ai/",
-    "sourceKind": "ai",
-    "product": "Google AI",
-    "territory": "AI",
-    "id": "560ada70c29907e4",
-    "section": "AI IMPACT",
-    "creativeScore": 0,
-    "hideFromAiImpact": true
-  },
-  {
     "title": "The eternal complement",
     "description": "Advanced AI may matter most for the routine work behind breakthrough ideas. Explore why execution could shape the next economy and the pace of progress.",
     "link": "https://openai.com/index/the-eternal-complement",
@@ -800,7 +653,8 @@
     "id": "86ebd7808b341deb",
     "section": "AI IMPACT",
     "creativeScore": 0,
-    "hideFromAiImpact": true
+    "hideFromAiImpact": true,
+    "imageState": "placeholder"
   },
   {
     "title": "How Albertsons Companies is reimagining retail from the inside out",
@@ -822,7 +676,8 @@
     "id": "7911d0cd0267f0f7",
     "section": "AI IMPACT",
     "creativeScore": 0,
-    "hideFromAiImpact": true
+    "hideFromAiImpact": true,
+    "imageState": "placeholder"
   },
   {
     "title": "The Den frees up 10-15 hours a week to grow with ChatGPT Work",
@@ -843,70 +698,26 @@
     "id": "23da436462149563",
     "section": "AI IMPACT",
     "creativeScore": 0,
-    "hideFromAiImpact": true
+    "hideFromAiImpact": true,
+    "imageState": "placeholder"
   },
   {
-    "title": "How we will do better for Australia",
-    "description": "OpenAI apologises for incidents involving Australian government websites and outlines stronger safeguards and support to strengthen Australia’s cyber defences.",
-    "link": "https://openai.com/index/how-we-will-do-better-for-australia",
-    "pubDate": "Mon, 28 Sep 2026 19:00:00 GMT",
-    "image": "",
+    "title": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
+    "description": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
+    "link": "https://blog.google/innovation-and-ai/technology/ai/winner-future-vision-xprize/",
+    "pubDate": "Mon, 28 Sep 2026 19:00:00 +0000",
+    "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/futurevisionxprize_social.max-600x600.format-webp.webp",
     "categories": [
       "AI",
       "TECH",
-      "CULTURE",
-      "COMPANY"
+      "DESIGN"
     ],
-    "source": "OpenAI News",
-    "sourceUrl": "https://openai.com/news/company-announcements/",
+    "source": "Google AI",
+    "sourceUrl": "https://blog.google/technology/ai/",
     "sourceKind": "ai",
-    "product": "OpenAI",
+    "product": "Google AI",
     "territory": "AI",
-    "id": "e37fc75be3144be5",
-    "section": "AI IMPACT",
-    "creativeScore": 0,
-    "hideFromAiImpact": true
-  },
-  {
-    "title": "Towards safety cases for frontier AI training",
-    "description": "Our early guidelines for safety cases in frontier AI training cover technical safeguards, operational practices, and investigating misalignment incidents",
-    "link": "https://openai.com/index/towards-safety-cases-for-frontier-ai-training",
-    "pubDate": "Mon, 28 Sep 2026 19:00:00 GMT",
-    "image": "",
-    "categories": [
-      "AI",
-      "TECH",
-      "CULTURE",
-      "SAFETY"
-    ],
-    "source": "OpenAI News",
-    "sourceUrl": "https://openai.com/news/company-announcements/",
-    "sourceKind": "ai",
-    "product": "OpenAI",
-    "territory": "AI",
-    "id": "ed0802020cdb230f",
-    "section": "AI IMPACT",
-    "creativeScore": 0,
-    "hideFromAiImpact": true
-  },
-  {
-    "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
-    "description": "OpenAI is expanding the Lenfest AI Collaborative and Fellowship Program with $5 million in funding and up to $5 million in software credits and engineering support.",
-    "link": "https://openai.com/index/lenfest-ai-collaborative-expansion",
-    "pubDate": "Mon, 28 Sep 2026 07:00:00 GMT",
-    "image": "",
-    "categories": [
-      "AI",
-      "TECH",
-      "CULTURE",
-      "COMPANY"
-    ],
-    "source": "OpenAI News",
-    "sourceUrl": "https://openai.com/news/company-announcements/",
-    "sourceKind": "ai",
-    "product": "OpenAI",
-    "territory": "AI",
-    "id": "ee57bba15d562522",
+    "id": "be93eae5fec6a620",
     "section": "AI IMPACT",
     "creativeScore": 0,
     "hideFromAiImpact": true
@@ -984,7 +795,7 @@
     "description": "",
     "link": "https://www.figma.com/release-notes/?title=figma-node-on-brand-content",
     "pubDate": "2026-09-17T00:00:00.000Z",
-    "image": "",
+    "image": "https://cdn.sanity.io/images/599r6htc/regionalized/342e17642c7afa81206490b0dd21c3e5724ae040-2400x1260.png?w=1200&amp;q=70&amp;fit=max&amp;auto=format",
     "categories": [
       "DESIGN",
       "TECH",
@@ -1049,47 +860,6 @@
     "creativeScore": 3
   },
   {
-    "title": "Web Design Inspiration: 3 Sites With Strong Visual Ideas",
-    "description": "Web design inspiration from A24, Butter and White Desert, with three homepage screenshots and a look at their type, imagery and layouts. A24: Web design inspiration from film A24 makes films and telev...",
-    "link": "https://abduzeedo.com/web-design-inspiration-01/",
-    "pubDate": "Sat, 03 Oct 2026 03:08:39 GMT",
-    "image": "https://cms.abduzeedo.com/sites/default/files/originals/a24-home-transparent.png",
-    "categories": [
-      "DESIGN",
-      "DIRECTION",
-      "TECH",
-      "IMAGE"
-    ],
-    "source": "Abduzeedo",
-    "sourceUrl": "https://abduzeedo.com/",
-    "sourceKind": "culture",
-    "product": "",
-    "territory": "DESIGN",
-    "id": "c77b9cdfe05af92d",
-    "section": "CULTURE",
-    "creativeScore": 3
-  },
-  {
-    "title": "How Pentagram Reimagined Brand Identity for De Bijloke",
-    "description": "Pentagram gives Ghent's De Bijloke a living identity: a fluid, oscilloscope-born brand built for classical, jazz and new music alike. The heart of the identity is a swooping mark that reads like a sou...",
-    "link": "https://abduzeedo.com/how-pentagram-reimagined-brand-identity-de-bijloke/",
-    "pubDate": "Sat, 03 Oct 2026 00:18:17 GMT",
-    "image": "https://cms.abduzeedo.com/sites/default/files/originals/hero_55.jpg",
-    "categories": [
-      "DESIGN",
-      "DIRECTION",
-      "TECH"
-    ],
-    "source": "Abduzeedo",
-    "sourceUrl": "https://abduzeedo.com/",
-    "sourceKind": "culture",
-    "product": "",
-    "territory": "DESIGN",
-    "id": "311fe74c0dab9f20",
-    "section": "CULTURE",
-    "creativeScore": 3
-  },
-  {
     "title": "Stokke’s Tripp Trapp is the ultimate child seat – now there’s a brand new MoMA Edition",
     "description": "In teaming up with The Museum of Modern Art to create the Tripp Trapp Chair MoMA Edition, Stokke has taken the museum’s signature colour palette to highlight the genius of Peter Opsvik’s 1972 design",
     "link": "https://www.wallpaper.com/design-interiors/furniture/stokkes-tripp-trapp-is-the-ultimate-child-seat-now-theres-a-brand-new-moma-edition",
@@ -1130,28 +900,6 @@
     "product": "",
     "territory": "ART",
     "id": "0429ae33ae657aaf",
-    "section": "CULTURE",
-    "creativeScore": 2
-  },
-  {
-    "title": "Listen to Jordic: The unlikely heart warning men need to hear",
-    "description": "A new campaign by Havas Lynx UK uses humour, music, and an unlikely Viking character to encourage blokes to recognise erectile dysfunction as a potential early warning sign of cardiovascular disease....",
-    "link": "https://www.creativeboom.com/news/listen-to-jordic-the-unlikely-voice-of-a-heart-health-warning-for-men/",
-    "pubDate": "Tue, 29 Sep 2026 14:00:00 +0000",
-    "image": "https://media.creativeboom.com/da7f2d4c-1ba9-4fff-b364-94574cf7fae7/conversions/a2ae971be41b4bac38bc60444b5a547047088389-medium.webp",
-    "categories": [
-      "ART",
-      "DESIGN",
-      "CULTURE",
-      "TECH",
-      "NEWS"
-    ],
-    "source": "Creative Boom",
-    "sourceUrl": "https://www.creativeboom.com/",
-    "sourceKind": "culture",
-    "product": "",
-    "territory": "ART",
-    "id": "6bac08963cf91ebc",
     "section": "CULTURE",
     "creativeScore": 2
   },
@@ -1595,31 +1343,31 @@
     "creativeScore": 2
   },
   {
-    "title": "How Rethink and Orchestre symphonique de Montréal Hijacked Montreal’s Metro Chime",
-    "description": "In a one-day immersive brand demonstration, Rethink and the OSM elevated Montrealers’ commute's most ordinary sound to prove that symphonic music makes everything epic",
-    "link": "https://lbbonline.com/news/rethink-orchestre-symphonique-de-montreal-symphonic-music-metro-chime",
-    "pubDate": "2026-10-06T01:25:07.142132+00:00",
-    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/orchestre-symphonique-de-montreal._HpdnyqW.png",
+    "title": "Motion adds custom styles, audio, text animations and Lottie export",
+    "description": "",
+    "link": "https://www.figma.com/release-notes/?title=motion-adds-styles-audio-animations-lottie",
+    "pubDate": "2026-09-30T00:00:00.000Z",
+    "image": "https://cdn.sanity.io/images/599r6htc/regionalized/342e17642c7afa81206490b0dd21c3e5724ae040-2400x1260.png?w=1200&amp;q=70&amp;fit=max&amp;auto=format",
     "categories": [
+      "DESIGN",
+      "TECH",
       "DIRECTION",
-      "CULTURE",
-      "MOTION",
-      "DESIGN"
+      "MOTION"
     ],
-    "source": "LBB",
-    "sourceUrl": "https://lbbonline.com/",
-    "sourceKind": "culture",
-    "product": "",
-    "territory": "DIRECTION",
-    "id": "fe4167457ba37117",
-    "section": "CULTURE",
+    "source": "Figma Release Notes",
+    "sourceUrl": "https://www.figma.com/release-notes/",
+    "sourceKind": "software",
+    "product": "Figma",
+    "territory": "DESIGN",
+    "id": "bd9b31b5b4226e2a",
+    "section": "TOOL WATCH",
     "creativeScore": 2
   },
   {
     "title": "Big Bank Boss Sings Ballad About Losing Customer Relationships For Perth Bank",
     "description": "P&N Bank's first major work from Perth indie Chapter, directed by Good Oil's David Robinson-Smith, introduces a new brand platform designed to last",
     "link": "https://lbbonline.com/news/p-n-bank-good-oil-chapter-banking-with-heart",
-    "pubDate": "2026-10-06T01:25:07.141994+00:00",
+    "pubDate": "",
     "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/ballad-of-bank-boss.9ATocDdN.png",
     "categories": [
       "DIRECTION",
@@ -1634,27 +1382,6 @@
     "territory": "DIRECTION",
     "id": "6a6529fed57b6f71",
     "section": "CULTURE",
-    "creativeScore": 2
-  },
-  {
-    "title": "Motion adds custom styles, audio, text animations and Lottie export",
-    "description": "",
-    "link": "https://www.figma.com/release-notes/?title=motion-adds-styles-audio-animations-lottie",
-    "pubDate": "2026-09-30T00:00:00.000Z",
-    "image": "",
-    "categories": [
-      "DESIGN",
-      "TECH",
-      "DIRECTION",
-      "MOTION"
-    ],
-    "source": "Figma Release Notes",
-    "sourceUrl": "https://www.figma.com/release-notes/",
-    "sourceKind": "software",
-    "product": "Figma",
-    "territory": "DESIGN",
-    "id": "bd9b31b5b4226e2a",
-    "section": "TOOL WATCH",
     "creativeScore": 2
   },
   {
@@ -1703,44 +1430,29 @@
     "creativeScore": 1
   },
   {
-    "title": "Why a laundry brand made four T-shirts you're not supposed to wash",
-    "description": "Ecover and Uncommon have been making tees from \"lucky charms\", and there's a lesson here for anyone selling behaviour change. Are you familiar with the concept of a 'lucky' item of clothing?...",
-    "link": "https://www.creativeboom.com/news/why-a-laundry-brand-made-t-shirts-youre-not-supposed-to-wash/",
-    "pubDate": "Tue, 29 Sep 2026 08:00:00 +0000",
-    "image": "https://media.creativeboom.com/6a60ec01-a1f5-4979-ab44-4d4a20c018cd/conversions/354e3314f026e6730327494979a58bf6e6e9f6a5-medium.webp",
+    "title": "Vosteed’s $200 titanium folder is slim enough to forget, sharp enough to remember",
+    "description": "Vosteed’s $200 titanium folder is slim enough to forget, sharp enough to remember The porcupine is one of nature’s better-engineered designs. It’s compact, self-sufficient, and its entire defense system lives in its skin rather than in added bulk....",
+    "link": "https://www.yankodesign.com/2026/10/05/vosteeds-200-titanium-folder-is-slim-enough-to-forget-sharp-enough-to-remember/?utm_source=rss&utm_medium=rss&utm_campaign=vosteeds-200-titanium-folder-is-slim-enough-to-forget-sharp-enough-to-remember",
+    "pubDate": "Tue, 06 Oct 2026 01:45:50 +0000",
+    "image": "https://www.yankodesign.com/images/design_news/2026/09/vosteeds-200-titanium-folder-is-slim-enough-to-forget-sharp-enough-to-remember/Vosteed-Porcupine-TiSlim-hero.jpg",
     "categories": [
-      "ART",
       "DESIGN",
-      "CULTURE",
-      "NEWS"
+      "TECH",
+      "OBJECT",
+      "ACCESSORIES",
+      "DEALS",
+      "EVERYDAYCARRY",
+      "PRODUCT DESIGN",
+      "EVERY DAY CARRY",
+      "KNIFE",
+      "SHOP"
     ],
-    "source": "Creative Boom",
-    "sourceUrl": "https://www.creativeboom.com/",
+    "source": "Yanko Design",
+    "sourceUrl": "https://www.yankodesign.com/",
     "sourceKind": "culture",
     "product": "",
-    "territory": "ART",
-    "id": "4073e98e3f64dfde",
-    "section": "CULTURE",
-    "creativeScore": 1
-  },
-  {
-    "title": "Faith In Nature turns a '90s rave anthem into 'Bees R Good' for its first-ever TV ad",
-    "description": "After over five decades of doing things the hard way, the independent personal care brand is making its television debut with a homemade bee and a tune that takes us back. I wasn't old enough to enjoy...",
-    "link": "https://www.creativeboom.com/news/faith-in-nature-turns-a-90s-rave-anthem-into-bees-r-good-for-its-first-ever-tv-ad/",
-    "pubDate": "Tue, 29 Sep 2026 08:00:00 +0000",
-    "image": "https://media.creativeboom.com/dabd69e4-dbb8-4a83-8cfc-4aba363f1830/conversions/bc824ecb83c8b6a0e1667cc5f08f4369f411b120-medium.webp",
-    "categories": [
-      "ART",
-      "DESIGN",
-      "CULTURE",
-      "NEWS"
-    ],
-    "source": "Creative Boom",
-    "sourceUrl": "https://www.creativeboom.com/",
-    "sourceKind": "culture",
-    "product": "",
-    "territory": "ART",
-    "id": "6aff74440d54aa4c",
+    "territory": "DESIGN",
+    "id": "5c7af43330286b57",
     "section": "CULTURE",
     "creativeScore": 1
   },
@@ -1937,51 +1649,6 @@
     "product": "",
     "territory": "DESIGN",
     "id": "dba741c67fb94ff6",
-    "section": "CULTURE",
-    "creativeScore": 1
-  },
-  {
-    "title": "Dreaming of the desert? This book has you covered, from modernist to adobe architecture",
-    "description": "'Desert Dreaming: Design in the Southwest and Beyond', a new book by Jessica Ritz, is an immersive journey across America's arid landscapes and the amazing homes within them",
-    "link": "https://www.wallpaper.com/architecture/residential/desert-dreaming-book",
-    "pubDate": "Sun, 04 Oct 2026 07:00:00 +0000",
-    "image": "https://cdn.mos.cms.futurecdn.net/zNM97t8Bn6BjrgAK4dU6Be-1920-80.jpg",
-    "categories": [
-      "DESIGN",
-      "SPACE",
-      "CULTURE",
-      "RESIDENTIAL",
-      "ARCHITECTURE"
-    ],
-    "source": "Wallpaper*",
-    "sourceUrl": "https://www.wallpaper.com/",
-    "sourceKind": "culture",
-    "product": "",
-    "territory": "DESIGN",
-    "id": "45e63a986f66893d",
-    "section": "CULTURE",
-    "creativeScore": 1
-  },
-  {
-    "title": "Be careful – women photographers are dangerous, says a new art book",
-    "description": "'Women Photographers Are Dangerous,' published by ACC Art Books, aims to give female photographers their time in the spotlight",
-    "link": "https://www.wallpaper.com/art/photography/be-careful-women-photographers-are-dangerous-says-a-new-art-book",
-    "pubDate": "Sun, 04 Oct 2026 06:00:00 +0000",
-    "image": "https://cdn.mos.cms.futurecdn.net/TXfpknbTSx6bBVGCWQbRTV-1920-80.gif",
-    "categories": [
-      "DESIGN",
-      "SPACE",
-      "CULTURE",
-      "IMAGE",
-      "PHOTOGRAPHY",
-      "ART AND CULTURE"
-    ],
-    "source": "Wallpaper*",
-    "sourceUrl": "https://www.wallpaper.com/",
-    "sourceKind": "culture",
-    "product": "",
-    "territory": "DESIGN",
-    "id": "fbe3bfe2c1eb9c98",
     "section": "CULTURE",
     "creativeScore": 1
   },
@@ -2355,30 +2022,6 @@
     "creativeScore": 1
   },
   {
-    "title": "The Selfie Camera on Your Phone Has Always Been in the Wrong Place",
-    "description": "The Selfie Camera on Your Phone Has Always Been in the Wrong Place Most budget phones have one screen you stare at and a back you think about. The Honor X5d s makes that back worth a second...",
-    "link": "https://www.yankodesign.com/2026/10/05/the-selfie-camera-on-your-phone-has-always-been-in-the-wrong-place/?utm_source=rss&utm_medium=rss&utm_campaign=the-selfie-camera-on-your-phone-has-always-been-in-the-wrong-place",
-    "pubDate": "Mon, 05 Oct 2026 10:20:53 +0000",
-    "image": "https://www.yankodesign.com/images/design_news/2026/10/the-selfie-camera-on-your-phone-has-always-been-in-the-wrong-place/honor-x5d-s-07.jpg",
-    "categories": [
-      "DESIGN",
-      "TECH",
-      "OBJECT",
-      "PHONES",
-      "TECHNOLOGY",
-      "HONOR",
-      "SMARTPHONES"
-    ],
-    "source": "Yanko Design",
-    "sourceUrl": "https://www.yankodesign.com/",
-    "sourceKind": "culture",
-    "product": "",
-    "territory": "DESIGN",
-    "id": "1adf4eddc5214096",
-    "section": "CULTURE",
-    "creativeScore": 1
-  },
-  {
     "title": "Pack it up and pack it in with Rimowa’s two new suitcase colourways",
     "description": "Umber and Ultramarine are the German premium luggage brand’s latest colourways for the season",
     "link": "https://www.wallpaper.com/travel/rimowa-new-suitcase-colours-umber-ultramarine",
@@ -2396,30 +2039,6 @@
     "product": "",
     "territory": "DESIGN",
     "id": "96bfdfb5c8ade64f",
-    "section": "CULTURE",
-    "creativeScore": 1
-  },
-  {
-    "title": "Nike Actually Made Sneakers That Look Like Grandma’s Couch",
-    "description": "Nike Actually Made Sneakers That Look Like Grandma’s Couch I lived in an era and a culture where our couches’ designs were pretty maximalist and contained a gazillion details. So when I see similar...",
-    "link": "https://www.yankodesign.com/2026/10/05/nike-actually-made-sneakers-that-look-like-grandmas-couch/?utm_source=rss&utm_medium=rss&utm_campaign=nike-actually-made-sneakers-that-look-like-grandmas-couch",
-    "pubDate": "Mon, 05 Oct 2026 09:15:25 +0000",
-    "image": "https://www.yankodesign.com/images/design_news/2026/10/nike-actually-made-sneakers-that-look-like-grandmas-couch/nike-brocade-01.jpg",
-    "categories": [
-      "DESIGN",
-      "TECH",
-      "OBJECT",
-      "FASHION",
-      "PRODUCT DESIGN",
-      "NIKE",
-      "SNEAKERS"
-    ],
-    "source": "Yanko Design",
-    "sourceUrl": "https://www.yankodesign.com/",
-    "sourceKind": "culture",
-    "product": "",
-    "territory": "DESIGN",
-    "id": "1251f312d31924a6",
     "section": "CULTURE",
     "creativeScore": 1
   },
@@ -2519,26 +2138,6 @@
     "creativeScore": 1
   },
   {
-    "title": "Auren: Inside tubik studio's New UI UX Design",
-    "description": "tubik studio crafts an architectural portfolio and ui ux design system for Auren, pairing Neue Montreal type with calm, spacious grids. Auren designs timeless homes and work spaces. Their practice cen...",
-    "link": "https://abduzeedo.com/auren-inside-tubik-studios-new-ui-ux-design/",
-    "pubDate": "Fri, 02 Oct 2026 22:07:20 GMT",
-    "image": "https://cms.abduzeedo.com/sites/default/files/originals/hero_auren-tubik-studio.jpg",
-    "categories": [
-      "DESIGN",
-      "DIRECTION",
-      "TECH"
-    ],
-    "source": "Abduzeedo",
-    "sourceUrl": "https://abduzeedo.com/",
-    "sourceKind": "culture",
-    "product": "",
-    "territory": "DESIGN",
-    "id": "09dc6d7539679c85",
-    "section": "CULTURE",
-    "creativeScore": 1
-  },
-  {
     "title": "Paola Lenti’s São Paulo Flagship Turns Architecture Into a Living Frame",
     "description": "Armentano Arquitetura pairs a precise metal-and-glass structure with a planted façade that will continue to transform the Italian furniture brand’s São Paulo home",
     "link": "https://design-milk.com/paola-lenti-sao-paulo-flagship/",
@@ -2607,431 +2206,11 @@
     "creativeScore": 1
   },
   {
-    "title": "Blender 2.81",
-    "description": "Official update from Blender",
-    "link": "https://www.blender.org/download/releases/2-81/",
-    "pubDate": "",
-    "fetchedAt": "2026-10-06T01:25:10.139747+00:00",
-    "image": "",
-    "categories": [
-      "DESIGN",
-      "3D",
-      "TECH"
-    ],
-    "source": "Blender Releases",
-    "sourceUrl": "https://www.blender.org/releases/",
-    "sourceKind": "software",
-    "product": "Blender",
-    "territory": "DESIGN",
-    "id": "101d6dd96c8b5671",
-    "section": "TOOL WATCH",
-    "creativeScore": 1
-  },
-  {
-    "title": "Blender 2.82",
-    "description": "Official update from Blender",
-    "link": "https://www.blender.org/download/releases/2-82/",
-    "pubDate": "",
-    "fetchedAt": "2026-10-06T01:25:10.139745+00:00",
-    "image": "",
-    "categories": [
-      "DESIGN",
-      "3D",
-      "TECH"
-    ],
-    "source": "Blender Releases",
-    "sourceUrl": "https://www.blender.org/releases/",
-    "sourceKind": "software",
-    "product": "Blender",
-    "territory": "DESIGN",
-    "id": "b713e3cf11352c51",
-    "section": "TOOL WATCH",
-    "creativeScore": 1
-  },
-  {
-    "title": "Blender 2.83 LTS",
-    "description": "Official update from Blender",
-    "link": "https://www.blender.org/download/releases/2-83/",
-    "pubDate": "",
-    "fetchedAt": "2026-10-06T01:25:10.139743+00:00",
-    "image": "",
-    "categories": [
-      "DESIGN",
-      "3D",
-      "TECH"
-    ],
-    "source": "Blender Releases",
-    "sourceUrl": "https://www.blender.org/releases/",
-    "sourceKind": "software",
-    "product": "Blender",
-    "territory": "DESIGN",
-    "id": "96638e34a5050d31",
-    "section": "TOOL WATCH",
-    "creativeScore": 1
-  },
-  {
-    "title": "Blender 2.90",
-    "description": "Official update from Blender",
-    "link": "https://www.blender.org/features/releases/2-90/",
-    "pubDate": "",
-    "fetchedAt": "2026-10-06T01:25:10.139741+00:00",
-    "image": "",
-    "categories": [
-      "DESIGN",
-      "3D",
-      "TECH"
-    ],
-    "source": "Blender Releases",
-    "sourceUrl": "https://www.blender.org/releases/",
-    "sourceKind": "software",
-    "product": "Blender",
-    "territory": "DESIGN",
-    "id": "9a4cd571fdb10b6d",
-    "section": "TOOL WATCH",
-    "creativeScore": 1
-  },
-  {
-    "title": "Blender 2.91",
-    "description": "Official update from Blender",
-    "link": "https://www.blender.org/download/releases/2-91/",
-    "pubDate": "",
-    "fetchedAt": "2026-10-06T01:25:10.139739+00:00",
-    "image": "",
-    "categories": [
-      "DESIGN",
-      "3D",
-      "TECH"
-    ],
-    "source": "Blender Releases",
-    "sourceUrl": "https://www.blender.org/releases/",
-    "sourceKind": "software",
-    "product": "Blender",
-    "territory": "DESIGN",
-    "id": "64548675ee1c7be1",
-    "section": "TOOL WATCH",
-    "creativeScore": 1
-  },
-  {
-    "title": "Blender 2.92",
-    "description": "Official update from Blender",
-    "link": "https://www.blender.org/download/releases/2-92/",
-    "pubDate": "",
-    "fetchedAt": "2026-10-06T01:25:10.139737+00:00",
-    "image": "",
-    "categories": [
-      "DESIGN",
-      "3D",
-      "TECH"
-    ],
-    "source": "Blender Releases",
-    "sourceUrl": "https://www.blender.org/releases/",
-    "sourceKind": "software",
-    "product": "Blender",
-    "territory": "DESIGN",
-    "id": "c1de5983193e1d32",
-    "section": "TOOL WATCH",
-    "creativeScore": 1
-  },
-  {
-    "title": "Blender 2.93 LTS",
-    "description": "Official update from Blender",
-    "link": "https://www.blender.org/download/releases/2-93/",
-    "pubDate": "",
-    "fetchedAt": "2026-10-06T01:25:10.139735+00:00",
-    "image": "",
-    "categories": [
-      "DESIGN",
-      "3D",
-      "TECH"
-    ],
-    "source": "Blender Releases",
-    "sourceUrl": "https://www.blender.org/releases/",
-    "sourceKind": "software",
-    "product": "Blender",
-    "territory": "DESIGN",
-    "id": "bc233cef23ac0bfb",
-    "section": "TOOL WATCH",
-    "creativeScore": 1
-  },
-  {
-    "title": "Blender 3.3 LTS",
-    "description": "Official update from Blender",
-    "link": "https://www.blender.org/features/releases/3-3/",
-    "pubDate": "",
-    "fetchedAt": "2026-10-06T01:25:10.139734+00:00",
-    "image": "",
-    "categories": [
-      "DESIGN",
-      "3D",
-      "TECH"
-    ],
-    "source": "Blender Releases",
-    "sourceUrl": "https://www.blender.org/releases/",
-    "sourceKind": "software",
-    "product": "Blender",
-    "territory": "DESIGN",
-    "id": "11ea4700455658bc",
-    "section": "TOOL WATCH",
-    "creativeScore": 1
-  },
-  {
-    "title": "Blender 3.6 LTS",
-    "description": "Official update from Blender",
-    "link": "https://www.blender.org/download/releases/3-6/",
-    "pubDate": "",
-    "fetchedAt": "2026-10-06T01:25:10.139732+00:00",
-    "image": "",
-    "categories": [
-      "DESIGN",
-      "3D",
-      "TECH"
-    ],
-    "source": "Blender Releases",
-    "sourceUrl": "https://www.blender.org/releases/",
-    "sourceKind": "software",
-    "product": "Blender",
-    "territory": "DESIGN",
-    "id": "13431f3282f372a3",
-    "section": "TOOL WATCH",
-    "creativeScore": 1
-  },
-  {
-    "title": "Blender 4.0",
-    "description": "Official update from Blender",
-    "link": "https://www.blender.org/download/releases/4-0/",
-    "pubDate": "",
-    "fetchedAt": "2026-10-06T01:25:10.139730+00:00",
-    "image": "",
-    "categories": [
-      "DESIGN",
-      "3D",
-      "TECH"
-    ],
-    "source": "Blender Releases",
-    "sourceUrl": "https://www.blender.org/releases/",
-    "sourceKind": "software",
-    "product": "Blender",
-    "territory": "DESIGN",
-    "id": "b5c3f5120798df18",
-    "section": "TOOL WATCH",
-    "creativeScore": 1
-  },
-  {
-    "title": "Blender 4.2 LTS",
-    "description": "Official update from Blender",
-    "link": "https://www.blender.org/download/releases/4-2/",
-    "pubDate": "",
-    "fetchedAt": "2026-10-06T01:25:10.139728+00:00",
-    "image": "",
-    "categories": [
-      "DESIGN",
-      "3D",
-      "TECH"
-    ],
-    "source": "Blender Releases",
-    "sourceUrl": "https://www.blender.org/releases/",
-    "sourceKind": "software",
-    "product": "Blender",
-    "territory": "DESIGN",
-    "id": "489dabc22de064c4",
-    "section": "TOOL WATCH",
-    "creativeScore": 1
-  },
-  {
-    "title": "Blender 4.5 LTS",
-    "description": "Official update from Blender",
-    "link": "https://www.blender.org/download/releases/4-5/",
-    "pubDate": "",
-    "fetchedAt": "2026-10-06T01:25:10.139725+00:00",
-    "image": "",
-    "categories": [
-      "DESIGN",
-      "3D",
-      "TECH"
-    ],
-    "source": "Blender Releases",
-    "sourceUrl": "https://www.blender.org/releases/",
-    "sourceKind": "software",
-    "product": "Blender",
-    "territory": "DESIGN",
-    "id": "3be3bf30743b91f7",
-    "section": "TOOL WATCH",
-    "creativeScore": 1
-  },
-  {
-    "title": "Long-Term Support",
-    "description": "Official update from Blender",
-    "link": "https://www.blender.org/releases/4-5/",
-    "pubDate": "",
-    "fetchedAt": "2026-10-06T01:25:10.139723+00:00",
-    "image": "",
-    "categories": [
-      "DESIGN",
-      "3D",
-      "TECH"
-    ],
-    "source": "Blender Releases",
-    "sourceUrl": "https://www.blender.org/releases/",
-    "sourceKind": "software",
-    "product": "Blender",
-    "territory": "DESIGN",
-    "id": "8d1eeaaa32ef5dce",
-    "section": "TOOL WATCH",
-    "creativeScore": 1
-  },
-  {
-    "title": "Long-Term Support",
-    "description": "Official update from Blender",
-    "link": "https://www.blender.org/releases/5-2/",
-    "pubDate": "",
-    "fetchedAt": "2026-10-06T01:25:10.139720+00:00",
-    "image": "",
-    "categories": [
-      "DESIGN",
-      "3D",
-      "TECH"
-    ],
-    "source": "Blender Releases",
-    "sourceUrl": "https://www.blender.org/releases/",
-    "sourceKind": "software",
-    "product": "Blender",
-    "territory": "DESIGN",
-    "id": "92f267df86aab46a",
-    "section": "TOOL WATCH",
-    "creativeScore": 1
-  },
-  {
-    "title": "predictable release cycle",
-    "description": "Official update from Blender",
-    "link": "https://developer.blender.org/docs/handbook/release_process/release_cycle/",
-    "pubDate": "",
-    "fetchedAt": "2026-10-06T01:25:10.139704+00:00",
-    "image": "",
-    "categories": [
-      "DESIGN",
-      "3D",
-      "TECH"
-    ],
-    "source": "Blender Releases",
-    "sourceUrl": "https://www.blender.org/releases/",
-    "sourceKind": "software",
-    "product": "Blender",
-    "territory": "DESIGN",
-    "id": "73571d208bdff200",
-    "section": "TOOL WATCH",
-    "creativeScore": 1
-  },
-  {
-    "title": "Object & Animal Partners with PUSH to Open in Asia",
-    "description": "The partnership will launch a new presence in Asia including Japan, China, Singapore and South East Asia, with an office in Tokyo opening as the first base",
-    "link": "https://lbbonline.com/news/object-animal-partners-with-push-to-open-in-asia",
-    "pubDate": "2026-10-06T01:25:07.142147+00:00",
-    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/object-animal-1.8GWiBbuq.png",
-    "categories": [
-      "DIRECTION",
-      "CULTURE",
-      "MOTION",
-      "TECH"
-    ],
-    "source": "LBB",
-    "sourceUrl": "https://lbbonline.com/",
-    "sourceKind": "culture",
-    "product": "",
-    "territory": "DIRECTION",
-    "id": "bd4eca5ff735b398",
-    "section": "CULTURE",
-    "creativeScore": 1
-  },
-  {
-    "title": "Electric Theatre Collective Launches in Warsaw",
-    "description": "Spearheaded by creative director Mikolaj Valencia, he is joined by CG supervisor Marek Gajowski, compositing lead Rafał Sadowy and longtime ETC collaborator and FX lead, Igor Velichko",
-    "link": "https://lbbonline.com/news/electric-theatre-collective-launches-in-warsaw",
-    "pubDate": "2026-10-06T01:25:07.142091+00:00",
-    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/etc-warsaw.1Jfo9liu.png",
-    "categories": [
-      "DIRECTION",
-      "CULTURE",
-      "MOTION",
-      "TECH"
-    ],
-    "source": "LBB",
-    "sourceUrl": "https://lbbonline.com/",
-    "sourceKind": "culture",
-    "product": "",
-    "territory": "DIRECTION",
-    "id": "e634a9d99583795d",
-    "section": "CULTURE",
-    "creativeScore": 1
-  },
-  {
-    "title": "'FARM SCHOOL’D': Stepping Out of the Classroom and into Something Wilder",
-    "description": "The team behind FARMUSE’s four-part documentary series, presented by Kubota, tells LBB’s April Summers how an initial idea about outdoor education evolved into an original series, and what they discovered along the way",
-    "link": "https://lbbonline.com/news/farmschool-d-stepping-out-of-the-classroom-and-into-something-wilder",
-    "pubDate": "2026-10-06T01:25:07.142073+00:00",
-    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/farm-schoold-farmuse.TwvzJ-MH.png",
-    "categories": [
-      "DIRECTION",
-      "CULTURE",
-      "MOTION",
-      "TECH"
-    ],
-    "source": "LBB",
-    "sourceUrl": "https://lbbonline.com/",
-    "sourceKind": "culture",
-    "product": "",
-    "territory": "DIRECTION",
-    "id": "10a617d05a9c0053",
-    "section": "CULTURE",
-    "creativeScore": 1
-  },
-  {
-    "title": "PROJECT ROCKIT, UnLtd Launch First National Campaign Asking Aussies to \"Give A Buck About Bullying\"",
-    "description": "The fundraising initiative was led by The Royals and OMD, and is the first work in collaboration with UnLtd since it became one of the organisation's charity partners",
-    "link": "https://lbbonline.com/news/project-rockit-unltd-the-royals-omd-give-a-buck-about-bullying",
-    "pubDate": "2026-10-06T01:25:07.141974+00:00",
-    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/project-rockit.ZfS0Ew7d.jpg",
-    "categories": [
-      "DIRECTION",
-      "CULTURE",
-      "MOTION",
-      "TECH"
-    ],
-    "source": "LBB",
-    "sourceUrl": "https://lbbonline.com/",
-    "sourceKind": "culture",
-    "product": "",
-    "territory": "DIRECTION",
-    "id": "8f801bd7e52b1e77",
-    "section": "CULTURE",
-    "creativeScore": 1
-  },
-  {
-    "title": "Bad Magic and Good Oil Personify Fun to Build New Zealand Home Loans’ Brand",
-    "description": "Exclusive: ECD Thomas Darlow and director Dave Wood told LBB the new character combats category tropes and the brand’s marketing growing stale",
-    "link": "https://lbbonline.com/news/bad-magic-good-oil-personify-fun-nzhl",
-    "pubDate": "2026-10-06T01:25:07.141956+00:00",
-    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/nzhl-bad-magic-goodoil.sLRVhMRH.png",
-    "categories": [
-      "DIRECTION",
-      "CULTURE",
-      "MOTION",
-      "DESIGN"
-    ],
-    "source": "LBB",
-    "sourceUrl": "https://lbbonline.com/",
-    "sourceKind": "culture",
-    "product": "",
-    "territory": "DIRECTION",
-    "id": "9ab9f61f1d35b4d6",
-    "section": "CULTURE",
-    "creativeScore": 1
-  },
-  {
     "title": "Connect multiple GitHub organizations to Figma",
     "description": "",
     "link": "https://www.figma.com/release-notes/?title=connect-multiple-github-organizations-to-figma",
     "pubDate": "2026-10-05T00:00:00.000Z",
-    "image": "",
+    "image": "https://cdn.sanity.io/images/599r6htc/regionalized/342e17642c7afa81206490b0dd21c3e5724ae040-2400x1260.png?w=1200&amp;q=70&amp;fit=max&amp;auto=format",
     "categories": [
       "DESIGN",
       "TECH",
@@ -3051,7 +2230,7 @@
     "description": "",
     "link": "https://www.figma.com/release-notes/?title=post-riffs-to-figma-community",
     "pubDate": "2026-09-30T00:00:00.000Z",
-    "image": "",
+    "image": "https://cdn.sanity.io/images/599r6htc/regionalized/342e17642c7afa81206490b0dd21c3e5724ae040-2400x1260.png?w=1200&amp;q=70&amp;fit=max&amp;auto=format",
     "categories": [
       "DESIGN",
       "TECH",
@@ -3071,7 +2250,7 @@
     "description": "",
     "link": "https://www.figma.com/release-notes/?title=smoother-design-collaboration",
     "pubDate": "2026-09-30T00:00:00.000Z",
-    "image": "",
+    "image": "https://cdn.sanity.io/images/599r6htc/regionalized/342e17642c7afa81206490b0dd21c3e5724ae040-2400x1260.png?w=1200&amp;q=70&amp;fit=max&amp;auto=format",
     "categories": [
       "DESIGN",
       "TECH",
@@ -3091,7 +2270,7 @@
     "description": "",
     "link": "https://www.figma.com/release-notes/?title=publish-weave-tools-to-the-figma-community",
     "pubDate": "2026-09-16T00:00:00.000Z",
-    "image": "",
+    "image": "https://cdn.sanity.io/images/599r6htc/regionalized/342e17642c7afa81206490b0dd21c3e5724ae040-2400x1260.png?w=1200&amp;q=70&amp;fit=max&amp;auto=format",
     "categories": [
       "DESIGN",
       "TECH",
@@ -3124,7 +2303,8 @@
     "territory": "DESIGN",
     "id": "012601c0abbf9d7e",
     "section": "TOOL WATCH",
-    "creativeScore": 1
+    "creativeScore": 1,
+    "imageState": "placeholder"
   },
   {
     "title": "Erase and drag to fill for vector editing",
@@ -3144,27 +2324,8 @@
     "territory": "DESIGN",
     "id": "e83223cac68ed320",
     "section": "TOOL WATCH",
-    "creativeScore": 1
-  },
-  {
-    "title": "Responsive spacing across design and CSS",
-    "description": "",
-    "link": "https://www.figma.com/release-notes/?title=responsive-spacing",
-    "pubDate": "2026-08-21T00:00:00.000Z",
-    "image": "",
-    "categories": [
-      "DESIGN",
-      "TECH",
-      "DIRECTION"
-    ],
-    "source": "Figma Release Notes",
-    "sourceUrl": "https://www.figma.com/release-notes/",
-    "sourceKind": "software",
-    "product": "Figma",
-    "territory": "DESIGN",
-    "id": "204be70bd31bbd5d",
-    "section": "TOOL WATCH",
-    "creativeScore": 1
+    "creativeScore": 1,
+    "imageState": "placeholder"
   },
   {
     "title": "Space art",
@@ -3206,21 +2367,86 @@
     "creativeScore": 1
   },
   {
-    "title": "Vida E Sleeve Design",
-    "description": "",
-    "link": "http://potw-demo.blogspot.com/feeds/3871640801882957312/comments/default",
-    "pubDate": "2011-10-04T22:07:00.000-07:00",
-    "image": "http://1.bp.blogspot.com/-B6J7ovqOk_E/Tovsi3tAwtI/AAAAAAAAAe0/5YXpHrftfC0/s72-c/1.jpg",
+    "title": "Bad Magic and Good Oil Personify Fun to Build New Zealand Home Loans’ Brand",
+    "description": "Exclusive: ECD Thomas Darlow and director Dave Wood told LBB the new character combats category tropes and the brand’s marketing growing stale",
+    "link": "https://lbbonline.com/news/bad-magic-good-oil-personify-fun-nzhl",
+    "pubDate": "",
+    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/nzhl-bad-magic-goodoil.sLRVhMRH.png",
     "categories": [
-      "DESIGN",
-      "OBJECT"
+      "DIRECTION",
+      "CULTURE",
+      "MOTION",
+      "DESIGN"
     ],
-    "source": "Packaging of the World",
-    "sourceUrl": "https://packagingoftheworld.com/",
+    "source": "LBB",
+    "sourceUrl": "https://lbbonline.com/",
     "sourceKind": "culture",
     "product": "",
-    "territory": "DESIGN",
-    "id": "501d5890a3a7a792",
+    "territory": "DIRECTION",
+    "id": "9ab9f61f1d35b4d6",
+    "section": "CULTURE",
+    "creativeScore": 1
+  },
+  {
+    "title": "PROJECT ROCKIT, UnLtd Launch First National Campaign Asking Aussies to \"Give A Buck About Bullying\"",
+    "description": "The fundraising initiative was led by The Royals and OMD, and is the first work in collaboration with UnLtd since it became one of the organisation's charity partners",
+    "link": "https://lbbonline.com/news/project-rockit-unltd-the-royals-omd-give-a-buck-about-bullying",
+    "pubDate": "",
+    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/project-rockit.ZfS0Ew7d.jpg",
+    "categories": [
+      "DIRECTION",
+      "CULTURE",
+      "MOTION",
+      "TECH"
+    ],
+    "source": "LBB",
+    "sourceUrl": "https://lbbonline.com/",
+    "sourceKind": "culture",
+    "product": "",
+    "territory": "DIRECTION",
+    "id": "8f801bd7e52b1e77",
+    "section": "CULTURE",
+    "creativeScore": 1
+  },
+  {
+    "title": "'FARM SCHOOL’D': Stepping Out of the Classroom and into Something Wilder",
+    "description": "The team behind FARMUSE’s four-part documentary series, presented by Kubota, tells LBB’s April Summers how an initial idea about outdoor education evolved into an original series, and what they discovered along the way",
+    "link": "https://lbbonline.com/news/farmschool-d-stepping-out-of-the-classroom-and-into-something-wilder",
+    "pubDate": "",
+    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/farm-schoold-farmuse.TwvzJ-MH.png",
+    "categories": [
+      "DIRECTION",
+      "CULTURE",
+      "MOTION",
+      "TECH"
+    ],
+    "source": "LBB",
+    "sourceUrl": "https://lbbonline.com/",
+    "sourceKind": "culture",
+    "product": "",
+    "territory": "DIRECTION",
+    "id": "10a617d05a9c0053",
+    "section": "CULTURE",
+    "creativeScore": 1
+  },
+  {
+    "title": "Electric Theatre Collective Launches in Warsaw",
+    "description": "Spearheaded by creative director Mikolaj Valencia, he is joined by CG supervisor Marek Gajowski, compositing lead Rafał Sadowy and longtime ETC collaborator and FX lead, Igor Velichko",
+    "link": "https://lbbonline.com/news/electric-theatre-collective-launches-in-warsaw",
+    "pubDate": "",
+    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/etc-warsaw.1Jfo9liu.png",
+    "categories": [
+      "DIRECTION",
+      "CULTURE",
+      "MOTION",
+      "TECH"
+    ],
+    "source": "LBB",
+    "sourceUrl": "https://lbbonline.com/",
+    "sourceKind": "culture",
+    "product": "",
+    "territory": "DIRECTION",
+    "id": "e634a9d99583795d",
     "section": "CULTURE",
     "creativeScore": 1
   },
@@ -3312,28 +2538,6 @@
     "product": "",
     "territory": "ART",
     "id": "20a335ddc7103aa1",
-    "section": "CULTURE",
-    "creativeScore": 0
-  },
-  {
-    "title": "Miu Miu drafts an all-star cast for a collection which marries sportswear and sophistication",
-    "description": "Discover the famous faces who walked for Miu Miu today (4 October 2026), from British acting royalty to a new generation of rising stars",
-    "link": "https://www.wallpaper.com/fashion-beauty/miu-miu-ss-2027-runway-show-jamie-bell-olivia-colman-emma-corrin",
-    "pubDate": "Sun, 04 Oct 2026 14:28:42 +0000",
-    "image": "https://cdn.mos.cms.futurecdn.net/ZxroepsWd2ja7Jxs8i75oX-1920-80.jpg",
-    "categories": [
-      "DESIGN",
-      "SPACE",
-      "CULTURE",
-      "TECH",
-      "FASHION & BEAUTY"
-    ],
-    "source": "Wallpaper*",
-    "sourceUrl": "https://www.wallpaper.com/",
-    "sourceKind": "culture",
-    "product": "",
-    "territory": "DESIGN",
-    "id": "e1682e47a87d441b",
     "section": "CULTURE",
     "creativeScore": 0
   },
@@ -3732,31 +2936,6 @@
     "creativeScore": 0
   },
   {
-    "title": "Flat-Pack Furniture That Actually Survives Your Next Move",
-    "description": "Flat-Pack Furniture That Actually Survives Your Next Move Flat-pack furniture is easy to appreciate on the day it arrives. It fits through the door, and you can usually put it together without much...",
-    "link": "https://www.yankodesign.com/2026/10/05/flat-pack-furniture-that-actually-survives-your-next-move/?utm_source=rss&utm_medium=rss&utm_campaign=flat-pack-furniture-that-actually-survives-your-next-move",
-    "pubDate": "Mon, 05 Oct 2026 08:15:00 +0000",
-    "image": "https://www.yankodesign.com/images/design_news/2026/10/flat-pack-furniture-that-actually-survives-your-next-move/flat-pack-08.jpg",
-    "categories": [
-      "DESIGN",
-      "TECH",
-      "OBJECT",
-      "FURNITURE",
-      "PRODUCT DESIGN",
-      "CHAIR",
-      "FLAT-PACK",
-      "TABLE"
-    ],
-    "source": "Yanko Design",
-    "sourceUrl": "https://www.yankodesign.com/",
-    "sourceKind": "culture",
-    "product": "",
-    "territory": "DESIGN",
-    "id": "42720a6de2d4605d",
-    "section": "CULTURE",
-    "creativeScore": 0
-  },
-  {
     "title": "‘You cannot manufacture what a place means culturally’: Silencio founder Arnaud Frisch on 15 years of cinematic nights out",
     "description": "Silencio made its name with David Lynch. Over a decade later, what keeps people coming back to this enigmatic boîte?",
     "link": "https://www.wallpaper.com/travel/silencio-arnaud-frisch-david-lynch-15-year-anniversary",
@@ -3801,205 +2980,11 @@
     "creativeScore": 0
   },
   {
-    "title": "MERACH’s new W60 Plus walking pad boasts 12 incline levels, RGB lights, and a built-in Bluetooth speaker",
-    "description": "MERACH’s new W60 Plus walking pad boasts 12 incline levels, RGB lights, and a built-in Bluetooth speaker The under-desk treadmill had its moment, arriving as the perfect sidekick for our sudden work-from-home lives (can you believe it’s been six whole years?). It...",
-    "link": "https://www.yankodesign.com/2026/10/04/merachs-new-w60-plus-walking-pad-boasts-12-incline-levels-rgb-lights-and-a-built-in-bluetooth-speaker/?utm_source=rss&utm_medium=rss&utm_campaign=merachs-new-w60-plus-walking-pad-boasts-12-incline-levels-rgb-lights-and-a-built-in-bluetooth-speaker",
-    "pubDate": "Mon, 05 Oct 2026 01:45:44 +0000",
-    "image": "https://www.yankodesign.com/images/design_news/2026/09/the-desk-treadmill-gets-a-serious-upgrade-12-incline-levels-rgb-lights-and-a-built-in-bluetooth-speaker/Merach-UltraWalk-W60-Plus.jpg",
-    "categories": [
-      "DESIGN",
-      "TECH",
-      "OBJECT",
-      "DEALS",
-      "HOMES",
-      "PRODUCT DESIGN",
-      "EXERCISE",
-      "SHOP",
-      "WALKER"
-    ],
-    "source": "Yanko Design",
-    "sourceUrl": "https://www.yankodesign.com/",
-    "sourceKind": "culture",
-    "product": "",
-    "territory": "DESIGN",
-    "id": "4fb595860e7cadb9",
-    "section": "CULTURE",
-    "creativeScore": 0
-  },
-  {
-    "title": "Sweet Rickey Appoints Phoebe Dubay Managing Director",
-    "description": "As national growth accelerates, the production company welcomes industry leader Phoebe Dubay as managing director to spearhead strategic growth and streamline internal operations",
-    "link": "https://lbbonline.com/news/sweet-rickey-appoints-phoebe-dubay-managing-director",
-    "pubDate": "2026-10-06T01:25:07.142159+00:00",
-    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/sweet-rickey-phoebe-dubay.0iZaBiIO.png",
-    "categories": [
-      "DIRECTION",
-      "CULTURE",
-      "MOTION",
-      "TECH"
-    ],
-    "source": "LBB",
-    "sourceUrl": "https://lbbonline.com/",
-    "sourceKind": "culture",
-    "product": "",
-    "territory": "DIRECTION",
-    "id": "2211e38fb42663e2",
-    "section": "CULTURE",
-    "creativeScore": 0
-  },
-  {
-    "title": "SuperBloom House Appoints Sean Daly as Director of Growth and New Business",
-    "description": "Before joining SuperBloom House, Sean built his agency career at TBWA\\Chiat\\Day, Deutsch LA, and Zambezi",
-    "link": "https://lbbonline.com/news/superbloom-house-sean-daly-director-growth-business",
-    "pubDate": "2026-10-06T01:25:07.142116+00:00",
-    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/sean-daly.E37ndeYx.png",
-    "categories": [
-      "DIRECTION",
-      "CULTURE",
-      "MOTION",
-      "TECH"
-    ],
-    "source": "LBB",
-    "sourceUrl": "https://lbbonline.com/",
-    "sourceKind": "culture",
-    "product": "",
-    "territory": "DIRECTION",
-    "id": "0b2624894a16fb93",
-    "section": "CULTURE",
-    "creativeScore": 0
-  },
-  {
-    "title": "Mountainfilm on Tour Returns to Chicago for First Time Since 2019",
-    "description": "Filmmaker Friday Chicago and Caymanite bring the Telluride festival's touring programme to Thalia Hall on November 18, presented by The North Face",
-    "link": "https://lbbonline.com/news/mountainfilm-on-tour-returns-to-chicago-for-first-time-since-2019",
-    "pubDate": "2026-10-06T01:25:07.142104+00:00",
-    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/caymanite-1.f4pp9Xzj.png",
-    "categories": [
-      "DIRECTION",
-      "CULTURE",
-      "MOTION",
-      "TECH"
-    ],
-    "source": "LBB",
-    "sourceUrl": "https://lbbonline.com/",
-    "sourceKind": "culture",
-    "product": "",
-    "territory": "DIRECTION",
-    "id": "1ecde81c8d0d90ff",
-    "section": "CULTURE",
-    "creativeScore": 0
-  },
-  {
-    "title": "One-Star Burger Reviews Become Vouchers for Carl's Jnr NZ",
-    "description": "TBWA\\New Zealand created the 'One-Star Swapper' to make the most of rivals' less-than-flattering critiques",
-    "link": "https://lbbonline.com/news/tbwa-nz-carls-jnr-one-star-swapper",
-    "pubDate": "2026-10-06T01:25:07.142055+00:00",
-    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/carls-jnr.Ivwkh0Yb.png",
-    "categories": [
-      "DIRECTION",
-      "CULTURE",
-      "MOTION",
-      "TECH"
-    ],
-    "source": "LBB",
-    "sourceUrl": "https://lbbonline.com/",
-    "sourceKind": "culture",
-    "product": "",
-    "territory": "DIRECTION",
-    "id": "0a4c1b7faefc5bac",
-    "section": "CULTURE",
-    "creativeScore": 0
-  },
-  {
-    "title": "jnr. Hires Bridget Yeates as Client Services Director",
-    "description": "She reunites with John Marshall, Ryan O'Connell, and Jenny Mak after two stints at Ogilvy, and four years in London at Grey. Ryan said, \"To be able to poach this level of talent might just be jnr.’s proudest moment thus far\"",
-    "link": "https://lbbonline.com/news/jnr-bridget-yeates-client-services-director",
-    "pubDate": "2026-10-06T01:25:07.142044+00:00",
-    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/jnr-bridget-yeates.JoedCBrU.jpg",
-    "categories": [
-      "DIRECTION",
-      "CULTURE",
-      "MOTION",
-      "TECH"
-    ],
-    "source": "LBB",
-    "sourceUrl": "https://lbbonline.com/",
-    "sourceKind": "culture",
-    "product": "",
-    "territory": "DIRECTION",
-    "id": "ebbe2fb1b78aad08",
-    "section": "CULTURE",
-    "creativeScore": 0
-  },
-  {
-    "title": "VML AUNZ Helps Likes of Red Cross, Foodbank, Choir of Hard Knocks For Worldwide Foundation Day",
-    "description": "Paul Bradbury said of the efforts spanning Sydney, Melbourne, Brisbane, Perth, Auckland, and Wellington, “Foundation Day is one of those days that really shows what VML is about\"",
-    "link": "https://lbbonline.com/news/vml-aunz-foundation-day-2026",
-    "pubDate": "2026-10-06T01:25:07.142024+00:00",
-    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/vml-foundation-day.y2mk02aZ.jpg",
-    "categories": [
-      "DIRECTION",
-      "CULTURE",
-      "MOTION",
-      "TECH"
-    ],
-    "source": "LBB",
-    "sourceUrl": "https://lbbonline.com/",
-    "sourceKind": "culture",
-    "product": "",
-    "territory": "DIRECTION",
-    "id": "544f3d9c0cfa09cf",
-    "section": "CULTURE",
-    "creativeScore": 0
-  },
-  {
-    "title": "Rideshare Driver Tells 'Very Possibly True' Night-Out Story Featuring Boy Soda and a Snake",
-    "description": "Howatson+Co's latest for Vodafone blends fact and fiction to introduce the new iPhone 18 Pro and Pro Max",
-    "link": "https://lbbonline.com/news/howatson-co-vodafone-a-very-possibly-true-story",
-    "pubDate": "2026-10-06T01:25:07.142007+00:00",
-    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/vodafone-2.UkCT1bGR.png",
-    "categories": [
-      "DIRECTION",
-      "CULTURE",
-      "MOTION",
-      "TECH"
-    ],
-    "source": "LBB",
-    "sourceUrl": "https://lbbonline.com/",
-    "sourceKind": "culture",
-    "product": "",
-    "territory": "DIRECTION",
-    "id": "641d9522b9b7aa7f",
-    "section": "CULTURE",
-    "creativeScore": 0
-  },
-  {
-    "title": "Women Who Will: Debbie Shirley",
-    "description": "Think HQ's research and insights director hopes \"that making a positive difference is the ultimate goal instead of focussing only on the bottom line\"",
-    "link": "https://lbbonline.com/news/women-who-will-debbie-shirley",
-    "pubDate": "2026-10-06T01:25:07.141919+00:00",
-    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/www-debbie-shirley.YxpEC5WA.png",
-    "categories": [
-      "DIRECTION",
-      "CULTURE",
-      "MOTION",
-      "TECH"
-    ],
-    "source": "LBB",
-    "sourceUrl": "https://lbbonline.com/",
-    "sourceKind": "culture",
-    "product": "",
-    "territory": "DIRECTION",
-    "id": "7ed04e47ad192293",
-    "section": "CULTURE",
-    "creativeScore": 0
-  },
-  {
     "title": "Vertical wrap available in auto layout",
     "description": "",
     "link": "https://www.figma.com/release-notes/?title=vertical-wrap-available-in-auto-layout",
     "pubDate": "2026-09-25T00:00:00.000Z",
-    "image": "",
+    "image": "https://cdn.sanity.io/images/599r6htc/regionalized/342e17642c7afa81206490b0dd21c3e5724ae040-2400x1260.png?w=1200&amp;q=70&amp;fit=max&amp;auto=format",
     "categories": [
       "DESIGN",
       "TECH",
@@ -4019,7 +3004,7 @@
     "description": "",
     "link": "https://www.figma.com/release-notes/?title=preview-inside-folders",
     "pubDate": "2026-09-16T00:00:00.000Z",
-    "image": "",
+    "image": "https://cdn.sanity.io/images/599r6htc/regionalized/342e17642c7afa81206490b0dd21c3e5724ae040-2400x1260.png?w=1200&amp;q=70&amp;fit=max&amp;auto=format",
     "categories": [
       "DESIGN",
       "TECH",
@@ -4039,7 +3024,7 @@
     "description": "",
     "link": "https://www.figma.com/release-notes/?title=control-opacity-at-scale",
     "pubDate": "2026-09-03T00:00:00.000Z",
-    "image": "",
+    "image": "https://cdn.sanity.io/images/599r6htc/regionalized/342e17642c7afa81206490b0dd21c3e5724ae040-2400x1260.png?w=1200&amp;q=70&amp;fit=max&amp;auto=format",
     "categories": [
       "DESIGN",
       "TECH",
@@ -4059,7 +3044,7 @@
     "description": "",
     "link": "https://www.figma.com/release-notes/?title=updates-to-generative-plugins-shaders",
     "pubDate": "2026-09-01T00:00:00.000Z",
-    "image": "",
+    "image": "https://cdn.sanity.io/images/599r6htc/regionalized/342e17642c7afa81206490b0dd21c3e5724ae040-2400x1260.png?w=1200&amp;q=70&amp;fit=max&amp;auto=format",
     "categories": [
       "DESIGN",
       "TECH",
@@ -4071,46 +3056,6 @@
     "product": "Figma",
     "territory": "DESIGN",
     "id": "a4f0dba702f60266",
-    "section": "TOOL WATCH",
-    "creativeScore": 0
-  },
-  {
-    "title": "Enterprise-managed authorization for MCP is now generally available",
-    "description": "",
-    "link": "https://www.figma.com/release-notes/?title=enterprise-managed-authorization-mcp",
-    "pubDate": "2026-08-24T00:00:00.000Z",
-    "image": "",
-    "categories": [
-      "DESIGN",
-      "TECH",
-      "DIRECTION"
-    ],
-    "source": "Figma Release Notes",
-    "sourceUrl": "https://www.figma.com/release-notes/",
-    "sourceKind": "software",
-    "product": "Figma",
-    "territory": "DESIGN",
-    "id": "2527c0559d15cb70",
-    "section": "TOOL WATCH",
-    "creativeScore": 0
-  },
-  {
-    "title": "Recommend resources you want users to discover and use",
-    "description": "",
-    "link": "https://www.figma.com/release-notes/?title=recommend-resources-you-want-users-to-discover-and-use",
-    "pubDate": "2026-08-17T00:00:00.000Z",
-    "image": "",
-    "categories": [
-      "DESIGN",
-      "TECH",
-      "DIRECTION"
-    ],
-    "source": "Figma Release Notes",
-    "sourceUrl": "https://www.figma.com/release-notes/",
-    "sourceKind": "software",
-    "product": "Figma",
-    "territory": "DESIGN",
-    "id": "a6b6e98c4b8574a1",
     "section": "TOOL WATCH",
     "creativeScore": 0
   },
@@ -4315,43 +3260,210 @@
     "creativeScore": 0
   },
   {
-    "title": "Maconini Abaphansi",
-    "description": "",
-    "link": "http://potw-demo.blogspot.com/feeds/3752857382923094996/comments/default",
-    "pubDate": "2011-10-04T22:08:00.000-07:00",
-    "image": "http://1.bp.blogspot.com/-9k0vza3hvxE/Tovn4O8bxQI/AAAAAAAAAeU/LroS2E-K65A/s72-c/MaconiniAbaphansi.jpg",
+    "title": "Women Who Will: Debbie Shirley",
+    "description": "Think HQ's research and insights director hopes \"that making a positive difference is the ultimate goal instead of focussing only on the bottom line\"",
+    "link": "https://lbbonline.com/news/women-who-will-debbie-shirley",
+    "pubDate": "",
+    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/www-debbie-shirley.YxpEC5WA.png",
     "categories": [
-      "DESIGN",
-      "OBJECT",
+      "DIRECTION",
+      "CULTURE",
+      "MOTION",
       "TECH"
     ],
-    "source": "Packaging of the World",
-    "sourceUrl": "https://packagingoftheworld.com/",
+    "source": "LBB",
+    "sourceUrl": "https://lbbonline.com/",
     "sourceKind": "culture",
     "product": "",
-    "territory": "DESIGN",
-    "id": "32897414297def13",
+    "territory": "DIRECTION",
+    "id": "7ed04e47ad192293",
     "section": "CULTURE",
     "creativeScore": 0
   },
   {
-    "title": "Graffiti FNB",
-    "description": "",
-    "link": "http://potw-demo.blogspot.com/feeds/7093115741966483822/comments/default",
-    "pubDate": "2011-10-04T22:06:00.000-07:00",
-    "image": "http://2.bp.blogspot.com/-D89xaeoNnaY/Tos8CywlbKI/AAAAAAAAAdc/b8oKkkaXQ6k/s72-c/grafitti.jpg",
+    "title": "Rideshare Driver Tells 'Very Possibly True' Night-Out Story Featuring Boy Soda and a Snake",
+    "description": "Howatson+Co's latest for Vodafone blends fact and fiction to introduce the new iPhone 18 Pro and Pro Max",
+    "link": "https://lbbonline.com/news/howatson-co-vodafone-a-very-possibly-true-story",
+    "pubDate": "",
+    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/vodafone-2.UkCT1bGR.png",
     "categories": [
-      "DESIGN",
-      "OBJECT",
+      "DIRECTION",
+      "CULTURE",
+      "MOTION",
       "TECH"
     ],
-    "source": "Packaging of the World",
-    "sourceUrl": "https://packagingoftheworld.com/",
+    "source": "LBB",
+    "sourceUrl": "https://lbbonline.com/",
     "sourceKind": "culture",
     "product": "",
-    "territory": "DESIGN",
-    "id": "706a48d7ff36aa0b",
+    "territory": "DIRECTION",
+    "id": "641d9522b9b7aa7f",
     "section": "CULTURE",
+    "creativeScore": 0
+  },
+  {
+    "title": "VML AUNZ Helps Likes of Red Cross, Foodbank, Choir of Hard Knocks For Worldwide Foundation Day",
+    "description": "Paul Bradbury said of the efforts spanning Sydney, Melbourne, Brisbane, Perth, Auckland, and Wellington, “Foundation Day is one of those days that really shows what VML is about\"",
+    "link": "https://lbbonline.com/news/vml-aunz-foundation-day-2026",
+    "pubDate": "",
+    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/vml-foundation-day.y2mk02aZ.jpg",
+    "categories": [
+      "DIRECTION",
+      "CULTURE",
+      "MOTION",
+      "TECH"
+    ],
+    "source": "LBB",
+    "sourceUrl": "https://lbbonline.com/",
+    "sourceKind": "culture",
+    "product": "",
+    "territory": "DIRECTION",
+    "id": "544f3d9c0cfa09cf",
+    "section": "CULTURE",
+    "creativeScore": 0
+  },
+  {
+    "title": "jnr. Hires Bridget Yeates as Client Services Director",
+    "description": "She reunites with John Marshall, Ryan O'Connell, and Jenny Mak after two stints at Ogilvy, and four years in London at Grey. Ryan said, \"To be able to poach this level of talent might just be jnr.’s proudest moment thus far\"",
+    "link": "https://lbbonline.com/news/jnr-bridget-yeates-client-services-director",
+    "pubDate": "",
+    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/jnr-bridget-yeates.JoedCBrU.jpg",
+    "categories": [
+      "DIRECTION",
+      "CULTURE",
+      "MOTION",
+      "TECH"
+    ],
+    "source": "LBB",
+    "sourceUrl": "https://lbbonline.com/",
+    "sourceKind": "culture",
+    "product": "",
+    "territory": "DIRECTION",
+    "id": "ebbe2fb1b78aad08",
+    "section": "CULTURE",
+    "creativeScore": 0
+  },
+  {
+    "title": "One-Star Burger Reviews Become Vouchers for Carl's Jnr NZ",
+    "description": "TBWA\\New Zealand created the 'One-Star Swapper' to make the most of rivals' less-than-flattering critiques",
+    "link": "https://lbbonline.com/news/tbwa-nz-carls-jnr-one-star-swapper",
+    "pubDate": "",
+    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/carls-jnr.Ivwkh0Yb.png",
+    "categories": [
+      "DIRECTION",
+      "CULTURE",
+      "MOTION",
+      "TECH"
+    ],
+    "source": "LBB",
+    "sourceUrl": "https://lbbonline.com/",
+    "sourceKind": "culture",
+    "product": "",
+    "territory": "DIRECTION",
+    "id": "0a4c1b7faefc5bac",
+    "section": "CULTURE",
+    "creativeScore": 0
+  },
+  {
+    "title": "Mountainfilm on Tour Returns to Chicago for First Time Since 2019",
+    "description": "Filmmaker Friday Chicago and Caymanite bring the Telluride festival's touring programme to Thalia Hall on November 18, presented by The North Face",
+    "link": "https://lbbonline.com/news/mountainfilm-on-tour-returns-to-chicago-for-first-time-since-2019",
+    "pubDate": "",
+    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/caymanite-1.f4pp9Xzj.png",
+    "categories": [
+      "DIRECTION",
+      "CULTURE",
+      "MOTION",
+      "TECH"
+    ],
+    "source": "LBB",
+    "sourceUrl": "https://lbbonline.com/",
+    "sourceKind": "culture",
+    "product": "",
+    "territory": "DIRECTION",
+    "id": "1ecde81c8d0d90ff",
+    "section": "CULTURE",
+    "creativeScore": 0
+  },
+  {
+    "title": "SuperBloom House Appoints Sean Daly as Director of Growth and New Business",
+    "description": "Before joining SuperBloom House, Sean built his agency career at TBWA\\Chiat\\Day, Deutsch LA, and Zambezi",
+    "link": "https://lbbonline.com/news/superbloom-house-sean-daly-director-growth-business",
+    "pubDate": "",
+    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/sean-daly.E37ndeYx.png",
+    "categories": [
+      "DIRECTION",
+      "CULTURE",
+      "MOTION",
+      "TECH"
+    ],
+    "source": "LBB",
+    "sourceUrl": "https://lbbonline.com/",
+    "sourceKind": "culture",
+    "product": "",
+    "territory": "DIRECTION",
+    "id": "0b2624894a16fb93",
+    "section": "CULTURE",
+    "creativeScore": 0
+  },
+  {
+    "title": "Long-Term Support",
+    "description": "",
+    "link": "https://www.blender.org/releases/5-2/",
+    "pubDate": "",
+    "image": "https://www.blender.org/wp-content/uploads/2026/06/splash5_2-480x270.webp",
+    "categories": [
+      "DESIGN",
+      "3D",
+      "TECH"
+    ],
+    "source": "Blender Releases",
+    "sourceUrl": "https://www.blender.org/releases/",
+    "sourceKind": "software",
+    "product": "Blender",
+    "territory": "DESIGN",
+    "id": "92f267df86aab46a",
+    "section": "TOOL WATCH",
+    "creativeScore": 0
+  },
+  {
+    "title": "Long-Term Support",
+    "description": "",
+    "link": "https://www.blender.org/releases/4-5/",
+    "pubDate": "",
+    "image": "https://www.blender.org/wp-content/uploads/2025/06/blender_splash_45.webp",
+    "categories": [
+      "DESIGN",
+      "3D",
+      "TECH"
+    ],
+    "source": "Blender Releases",
+    "sourceUrl": "https://www.blender.org/releases/",
+    "sourceKind": "software",
+    "product": "Blender",
+    "territory": "DESIGN",
+    "id": "8d1eeaaa32ef5dce",
+    "section": "TOOL WATCH",
+    "creativeScore": 0
+  },
+  {
+    "title": "4 Series | 2023 – 2025",
+    "description": "",
+    "link": "https://www.blender.org/releases/#4-series",
+    "pubDate": "",
+    "image": "https://www.blender.org/wp-content/uploads/2025/01/singularity_banner-480x270.jpg",
+    "categories": [
+      "DESIGN",
+      "3D",
+      "TECH"
+    ],
+    "source": "Blender Releases",
+    "sourceUrl": "https://www.blender.org/releases/",
+    "sourceKind": "software",
+    "product": "Blender",
+    "territory": "DESIGN",
+    "id": "e1c8fe993a610356",
+    "section": "TOOL WATCH",
     "creativeScore": 0
   }
 ]
