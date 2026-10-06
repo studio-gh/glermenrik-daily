@@ -3,6 +3,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 from datetime import datetime,timezone
 from urllib.request import Request,urlopen
+from urllib.parse import urljoin
 import xml.etree.ElementTree as ET
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -65,7 +66,7 @@ def html_extract(raw,src):
         for m in re.finditer(pat,text_content,flags=re.I):
             if len(m.groups())==2:
                 link,title=m.group(1),clean(m.group(2))
-                if link.startswith('/'): link='https://'+re.sub(r'^https?://','',src['url'])+link if False else src['url'].rstrip('/')+link
+                if link.startswith('/'): link=urljoin(src['url'],link)
             else:
                 title=clean(m.group(1));link=src['url']
             if not title or title.lower() in {'read story','read more','discover more','learn more','home','news'}:continue
@@ -91,7 +92,7 @@ for s in sources:
             items=RSSParser().feed(fetch(s['feed']))
         else:
             for title,link in html_extract(fetch(s['url']),s):
-                items.append({'title':title,'description':'Official update from '+s['product'],'link':link,'pubDate':datetime.now(timezone.utc).isoformat(),'image':'','categories':[]})
+                items.append({'title':title,'description':'Official update from '+s['product'],'link':link,'pubDate':'','fetchedAt':datetime.now(timezone.utc).isoformat(),'image':'','categories':[]})
         for x in items[:15]:
             cats=list(dict.fromkeys((s.get('territories') or [])+classify(x['title'],x.get('description',''),s['name'])+(x.get('categories') or [])))
             x.update(source=s['name'],sourceUrl=s['url'],sourceKind=s.get('kind','culture'),product=s.get('product',''),territory=s.get('territories',['WILD'])[0],categories=cats,id=hashlib.sha256((s['name']+'|'+x['link']).encode()).hexdigest()[:16])
