@@ -1,10 +1,10 @@
 {
   "editionDate": "2026-10-06",
-  "generatedAt": "2026-10-06T14:31:54.865513+00:00",
+  "generatedAt": "2026-10-06T14:32:51.584481+00:00",
   "counts": {
     "all": 221,
     "visual": 170,
-    "graphicDesign": 15,
+    "graphicDesign": 13,
     "culture": 162,
     "toolWatch": 2,
     "aiImpact": 3
@@ -120,8 +120,8 @@
       "sourcePriority": 4.0,
       "sourceRole": "packaging",
       "publishedAt": "2026-10-06T11:46:40+00:00",
-      "recencyScore": 7.89,
-      "editorialScore": 24.89,
+      "recencyScore": 7.88,
+      "editorialScore": 24.88,
       "sourceCountry": ""
     },
     {
@@ -301,8 +301,8 @@
       "sourcePriority": 4.0,
       "sourceRole": "packaging",
       "publishedAt": "2026-10-06T11:46:40+00:00",
-      "recencyScore": 7.89,
-      "editorialScore": 24.89,
+      "recencyScore": 7.88,
+      "editorialScore": 24.88,
       "sourceCountry": ""
     },
     {
@@ -1026,8 +1026,8 @@
       "sourcePriority": 4.0,
       "sourceRole": "packaging",
       "publishedAt": "2026-10-06T11:46:40+00:00",
-      "recencyScore": 7.89,
-      "editorialScore": 24.89,
+      "recencyScore": 7.88,
+      "editorialScore": 24.88,
       "sourceCountry": ""
     },
     {
@@ -1452,70 +1452,6 @@
       "publishedAt": "2011-10-05T05:16:00+00:00",
       "recencyScore": 0.0,
       "editorialScore": 14.2,
-      "sourceCountry": ""
-    },
-    {
-      "title": "Steve Martin and Martin Short Discover Funny Side of 2% Cash Back for Wells Fargo",
-      "description": "Campaign from BBDO New York, directed by Aaron Stoller through Biscuit Filmworks, tap into the duo’s signature comedic dynamic, as they discover what their Active Cash Credit Card can unlock",
-      "link": "https://lbbonline.com/news/steve-martin-martin-short-Wells-Fargo",
-      "pubDate": "",
-      "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/bbdo-new-york.tmkKxWrF.png",
-      "categories": [
-        "DIRECTION",
-        "CULTURE",
-        "MOTION",
-        "TECH"
-      ],
-      "source": "LBB",
-      "sourceUrl": "https://lbbonline.com/",
-      "sourceKind": "culture",
-      "product": "",
-      "territory": "DIRECTION",
-      "id": "becc6cae730b4f6d",
-      "section": "CULTURE",
-      "designScope": "motion-advertising",
-      "designFocus": [
-        "MOTION",
-        "DIRECTION"
-      ],
-      "creativeScore": 1,
-      "sourcePriority": 3.0,
-      "sourceRole": "editorial",
-      "publishedAt": "",
-      "recencyScore": 1.0,
-      "editorialScore": 13.0,
-      "sourceCountry": ""
-    },
-    {
-      "title": "Hannah Waddingham Gives Paula’s Choice a Peptide-Powered Pep Talk",
-      "description": "Created by Zerotrillion New York and directed by Bodega Studios, the campaign sees the Emmy-winning actress turn a morning mirror moment into a celebration of confidence, hydration and intensity",
-      "link": "https://lbbonline.com/news/zerotrillion-peptide-pep-talk-paulas-choice-hannah-waddingham",
-      "pubDate": "",
-      "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/paulas-choice-hannah-waddingham.ZBlPM5IA.png",
-      "categories": [
-        "DIRECTION",
-        "CULTURE",
-        "MOTION",
-        "TECH"
-      ],
-      "source": "LBB",
-      "sourceUrl": "https://lbbonline.com/",
-      "sourceKind": "culture",
-      "product": "",
-      "territory": "DIRECTION",
-      "id": "c80fbe53b0a56675",
-      "section": "CULTURE",
-      "designScope": "motion-advertising",
-      "designFocus": [
-        "MOTION",
-        "DIRECTION"
-      ],
-      "creativeScore": 0,
-      "sourcePriority": 3.0,
-      "sourceRole": "editorial",
-      "publishedAt": "",
-      "recencyScore": 1.0,
-      "editorialScore": 11.6,
       "sourceCountry": ""
     }
   ],
