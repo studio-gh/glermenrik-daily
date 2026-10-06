@@ -1,0 +1,14 @@
+[
+{"name":"It's Nice That","url":"https://www.itsnicethat.com/","feed":"https://www.itsnicethat.com/rss","territories":["ART","DESIGN","DIRECTION"]},
+{"name":"Creative Boom","url":"https://www.creativeboom.com/","feed":"https://www.creativeboom.com/feed/","territories":["ART","DESIGN","CULTURE"]},
+{"name":"Dezeen","url":"https://www.dezeen.com/","feed":"https://www.dezeen.com/feed/","territories":["SPACE","DESIGN","OBJECT"]},
+{"name":"designboom","url":"https://www.designboom.com/","feed":"https://www.designboom.com/feed/","territories":["DESIGN","SPACE","TECH","OBJECT"]},
+{"name":"Abduzeedo","url":"https://abduzeedo.com/","feed":"https://abduzeedo.com/rss.xml","territories":["DESIGN","DIRECTION","TECH"]},
+{"name":"Packaging of the World","url":"https://packagingoftheworld.com/","feed":"https://feeds.feedburner.com/packagingoftheworld","territories":["DESIGN","OBJECT"]},
+{"name":"Design Milk","url":"https://design-milk.com/","feed":"https://design-milk.com/feed/","territories":["DESIGN","OBJECT","SPACE"]},
+{"name":"LBB","url":"https://lbbonline.com/","feed":"https://lbbonline.com/news/feed/","territories":["DIRECTION","CULTURE","MOTION"]},
+{"name":"Wallpaper*","url":"https://www.wallpaper.com/","feed":"https://www.wallpaper.com/rss","territories":["DESIGN","SPACE","CULTURE"]},
+{"name":"Cool Hunting","url":"https://coolhunting.com/","feed":"https://coolhunting.com/feed/","territories":["CULTURE","OBJECT","DESIGN"]},
+{"name":"Yanko Design","url":"https://www.yankodesign.com/","feed":"https://www.yankodesign.com/feed/","territories":["DESIGN","TECH","OBJECT"]},
+{"name":"Creative Review","url":"https://www.creativereview.co.uk/","feed":"https://www.creativereview.co.uk/feed/","territories":["DESIGN","DIRECTION","CULTURE"]}
+]
