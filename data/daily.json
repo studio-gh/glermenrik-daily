@@ -1,10 +1,10 @@
 {
   "editionDate": "2026-10-06",
-  "generatedAt": "2026-10-06T14:32:51.584481+00:00",
+  "generatedAt": "2026-10-06T14:33:46.057729+00:00",
   "counts": {
     "all": 221,
     "visual": 170,
-    "graphicDesign": 13,
+    "graphicDesign": 12,
     "culture": 162,
     "toolWatch": 2,
     "aiImpact": 3
@@ -224,8 +224,8 @@
       "sourcePriority": 4.0,
       "sourceRole": "editorial",
       "publishedAt": "2026-10-05T22:06:34+00:00",
-      "recencyScore": 7.32,
-      "editorialScore": 22.92,
+      "recencyScore": 7.31,
+      "editorialScore": 22.91,
       "sourceCountry": ""
     }
   ],
@@ -452,8 +452,8 @@
       "sourcePriority": 4.0,
       "sourceRole": "editorial",
       "publishedAt": "2026-10-05T22:06:34+00:00",
-      "recencyScore": 7.32,
-      "editorialScore": 22.92,
+      "recencyScore": 7.31,
+      "editorialScore": 22.91,
       "sourceCountry": ""
     },
     {
@@ -585,8 +585,8 @@
       "sourcePriority": 4.0,
       "sourceRole": "editorial",
       "publishedAt": "2026-10-05T07:00:00+00:00",
-      "recencyScore": 6.69,
-      "editorialScore": 22.29,
+      "recencyScore": 6.68,
+      "editorialScore": 22.28,
       "sourceCountry": ""
     },
     {
@@ -956,43 +956,6 @@
   ],
   "graphicDesign": [
     {
-      "title": "Capturing the Surreal in Camera",
-      "description": "Pedro and Teófila González, the visionary siblings behind photography duo I’m blue I’m pink, discuss how their vivid, offbeat style resonates with the bravest of brands.",
-      "link": "https://www.commarts.com/columns/i-m-blue-i-m-pink",
-      "pubDate": "Tue, 06 Oct 2026 00:00:00 GMT",
-      "image": "https://image2.commarts.com/images1/5/6/8/1/1/1186503_0_480_NzY2MTE0OTgwMjA3MjUyMjc4_f.jpg",
-      "categories": [
-        "DESIGN",
-        "DIRECTION",
-        "CULTURE",
-        "IMAGE",
-        "ARTICLE"
-      ],
-      "source": "Communication Arts",
-      "sourceUrl": "https://www.commarts.com/",
-      "sourceKind": "culture",
-      "product": "",
-      "territory": "DESIGN",
-      "id": "ea64ab23406e56c0",
-      "section": "CULTURE",
-      "designScope": "graphic",
-      "designFocus": [
-        "DESIGN",
-        "BRAND",
-        "PRINT",
-        "MOTION",
-        "DIRECTION",
-        "ILLUSTRATION"
-      ],
-      "creativeScore": 2,
-      "sourcePriority": 5.0,
-      "sourceRole": "visual-communication",
-      "publishedAt": "2026-10-06T00:00:00+00:00",
-      "recencyScore": 7.39,
-      "editorialScore": 25.19,
-      "sourceCountry": ""
-    },
-    {
       "title": "Maeve and ‘Dungeon Crawler Carl’ Spawn New Chocolate Collection",
       "description": "Chocolate brand Maeve has partnered with author Matt Dinniman to launch a series of sweet treats inspired by the world of Dungeon Crawler Carl, with packaging designed by Young Jerks. The post Maeve and ‘Dungeon Crawler Carl’ Spawn New Chocolate Collection appeared first on DIELINE .",
       "link": "https://thedieline.com/maeve-and-dungeon-crawler-carl-spawn-new-chocolate-collection/",
@@ -1144,8 +1107,8 @@
       "sourcePriority": 4.0,
       "sourceRole": "editorial",
       "publishedAt": "2026-10-05T22:06:34+00:00",
-      "recencyScore": 7.32,
-      "editorialScore": 22.92,
+      "recencyScore": 7.31,
+      "editorialScore": 22.91,
       "sourceCountry": ""
     },
     {
@@ -1214,8 +1177,8 @@
       "sourcePriority": 4.0,
       "sourceRole": "editorial",
       "publishedAt": "2026-10-05T07:00:00+00:00",
-      "recencyScore": 6.69,
-      "editorialScore": 22.29,
+      "recencyScore": 6.68,
+      "editorialScore": 22.28,
       "sourceCountry": ""
     },
     {
