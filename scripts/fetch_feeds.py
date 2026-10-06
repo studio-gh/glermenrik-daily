@@ -173,7 +173,9 @@ for src in sources:
                 "territory": (src.get("territories") or ["WILD"])[0],
                 "categories": cats,
                 "id": hashlib.sha256((src["name"] + "|" + item["link"]).encode()).hexdigest()[:16],
-                "section": "TOOL WATCH" if src.get("kind") == "software" else ("AI IMPACT" if src.get("kind") == "ai" else "CULTURE")
+                "section": "TOOL WATCH" if src.get("kind") == "software" else ("AI IMPACT" if src.get("kind") == "ai" else "CULTURE"),
+                "designScope": src.get("designScope", ""),
+                "designFocus": src.get("designFocus", [])
             })
             rows.append(item)
 
