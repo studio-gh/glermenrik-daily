@@ -29,9 +29,12 @@ function card(i){return "<article class='item'><a href='"+esc(i.link)+"' target=
 function watchItem(i){return "<article class='watch-item'><div class='name'>"+esc(i.product||i.source||"SOURCE")+" <span class='badge'>"+(i.sourceKind==="software"?"FEATURE":"AI")+"</span></div><h4><a href='"+esc(i.link)+"' target='_blank' rel='noopener'>"+esc(i.title)+"</a></h4><p>"+esc(i.description||("Official update from "+(i.source||"source")))+"</p></article>"}
 function render(){
  filters();
- var all=S.items.filter(matches),culture=all.filter(function(i){return i.sourceKind==="culture"}),software=all.filter(function(i){return i.sourceKind==="software"}),ai=all.filter(function(i){return i.sourceKind==="ai"&&!i.hideFromAiImpact}),a=all; if(S.filter==="ALL"){a=(culture.filter(function(i){return !!i.image}).slice(0,1)).concat(software.slice(0,2),ai.filter(function(i){return i.creativeScore>0}).slice(0,2),culture.filter(function(i){return !i.image}).slice(0,1));}
- if(!a.length){document.getElementById("app").innerHTML="<div class='empty'>No material in this filter yet.</div>";return}
- var heroPool=(S.filter==="ALL"?culture.filter(function(i){return !!i.image}):a); var h=heroPool[0]||a[0],sig=a.filter(function(i){return i!==h}).slice(0,4),feast=(S.filter==="ALL"?culture.filter(function(i){return !!i.image}):a).slice(1,17);
+ var all=S.items.filter(matches),culture=all.filter(function(i){return i.sourceKind==="culture"}),software=all.filter(function(i){return i.sourceKind==="software"}),ai=all.filter(function(i){return i.sourceKind==="ai"&&!i.hideFromAiImpact});
+ var visual=all.filter(function(i){return !!i.image});
+ if(S.filter==="ALL") visual=culture.filter(function(i){return !!i.image});
+ if(!visual.length) visual=all;
+ if(!all.length){document.getElementById("app").innerHTML="<div class='empty'>No material in this filter yet.</div>";return}
+ var h=visual[0]||all[0],sig=all.filter(function(i){return i!==h}).slice(0,4),feast=visual.filter(function(i){return i!==h}).slice(0,16);
  var sigHtml=sig.map(function(s){return "<div class='signal'><div class='source'>"+esc(s.source||"SOURCE")+"</div><h4><a href='"+esc(s.link)+"' target='_blank' rel='noopener'>"+esc(s.title)+"</a></h4><p>"+esc(s.description||"")+"</p></div>"}).join("");
  var feastHtml=feast.map(card).join("");
  var swHtml=software.slice(0,8).map(watchItem).join("");
