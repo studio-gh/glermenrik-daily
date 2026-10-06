@@ -1,6 +1,11 @@
 name: Glermenrik Daily Engine
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - 'data/sources.json'
+      - 'scripts/fetch_feeds.py'
+      - '.github/workflows/daily.yml'
   schedule:
     - cron: '15 12 * * *'
 jobs:
