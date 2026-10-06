@@ -172,16 +172,6 @@
     "designScope": "product-tech",
     "designFocus": []
   },
-  {
-    "name": "Creative Review",
-    "url": "https://www.creativereview.co.uk/",
-    "feed": "https://www.creativereview.co.uk/feed/",
-    "kind": "culture",
-    "territories": [
-      "DESIGN",
-      "DIRECTION",
-      "CULTURE"
-    ],
     "designScope": "graphic",
     "designFocus": [
       "DESIGN",
@@ -524,18 +514,6 @@
     "designScope": "creative-practice",
     "designFocus": []
   },
-  {
-    "name": "Communication Arts",
-    "url": "https://www.commarts.com/",
-    "feed": "https://www.commarts.com/feed",
-    "kind": "culture",
-    "role": "visual-communication",
-    "priority": 5,
-    "territories": [
-      "DESIGN",
-      "DIRECTION",
-      "CULTURE"
-    ],
     "designScope": "graphic",
     "designFocus": [
       "DESIGN",
