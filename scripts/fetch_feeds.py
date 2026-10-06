@@ -109,13 +109,26 @@ for x in sorted(rows,key=lambda z:z.get('pubDate',''),reverse=True):
     if key in seen:continue
     seen.add(key);final.append(x)
 
-# Light relevance pass for AI: keep creative/design-impacting items ahead of generic AI business news.
-creative_terms=['design','creative','image','video','visual','art','photoshop','illustrator','figma','canva','blender','firefly','midjourney','runway','motion','typography','brand','creator','content','camera','music']
+# High-precision relevance pass for AI: keep creative consequences ahead of generic AI business noise.
+creative_terms=['design','creative','image','video','visual','art','photoshop','illustrator','figma','canva','blender','firefly','midjourney','runway','motion','typography','brand','creator','content','camera','music','animation','render','workflow','agent','multimodal','model','editing']
+noise_terms=['enterprise sales','careers','jobs','funding round','quarterly results','financial results','board appointment','recruiting','sales team','office opening']
 for x in final:
-    blob=(x['title']+' '+x.get('description','')+' '+' '.join(x.get('categories',[]))).lower()
-    x['creativeScore']=sum(1 for term in creative_terms if term in blob)
-    if x['sourceKind']=='ai' and x['creativeScore']<1:x['creativeScore']=0
-final.sort(key=lambda x:(x.get('sourceKind')=='ai',x.get('creativeScore',0),x.get('pubDate','')),reverse=True)
+    blob=(x['title']+' '+x.get('description','')).lower()
+    score=sum(1 for term in creative_terms if term in blob)
+    if x['sourceKind']=='ai':
+        if any(term in blob for term in noise_terms) and score < 2:
+            score=0
+        if x.get('product') in ('Midjourney','Runway','Firefly'):
+            score += 2
+        if x.get('product') in ('OpenAI','Google AI') and any(term in blob for term in ['image','video','creative','design','multimodal','gpt-','gemini','veo','image generation','vision']):
+            score += 2
+    x['creativeScore']=score
+
+for x in final:
+    if x['sourceKind']=='ai' and x['creativeScore']==0:
+        x['hideFromAiImpact']=True
+
+final.sort(key=lambda x:(x.get('sourceKind')=='ai',x.get('hideFromAiImpact',False)==False,x.get('creativeScore',0),x.get('pubDate') or x.get('fetchedAt','')),reverse=True)
 
 (ROOT/'data/articles.json').write_text(json.dumps(final[:350],ensure_ascii=False,indent=2),encoding='utf-8')
 print('Published',len(final[:350]),'references from',len(sources),'sources.')
