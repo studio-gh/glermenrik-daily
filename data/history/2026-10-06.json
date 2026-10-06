@@ -1,6 +1,6 @@
 {
   "editionDate": "2026-10-06",
-  "generatedAt": "2026-10-06T14:33:46.057729+00:00",
+  "generatedAt": "2026-10-06T14:35:00.663658+00:00",
   "counts": {
     "all": 221,
     "visual": 170,
@@ -685,8 +685,8 @@
       "sourcePriority": 3.0,
       "sourceRole": "editorial",
       "publishedAt": "2026-10-06T11:06:00+00:00",
-      "recencyScore": 7.86,
-      "editorialScore": 21.26,
+      "recencyScore": 7.85,
+      "editorialScore": 21.25,
       "sourceCountry": ""
     },
     {
@@ -1146,42 +1146,6 @@
       "sourceCountry": ""
     },
     {
-      "title": "Elizabeth Saloka paints groceries and gadgets onto rocks – yep, rocks",
-      "description": "From Bonne Maman jam to old food packaging, the New York-based artist transforms found rocks into tactile artworks. We always love hearing about a creative's first moments that inspired their wonderfu...",
-      "link": "https://www.creativeboom.com/work/elizabeth-saloka-paints-groceries-and-gadgets-onto-rocks-yep-rocks/",
-      "pubDate": "Mon, 05 Oct 2026 07:00:00 +0000",
-      "image": "https://media.creativeboom.com/8e938352-969f-41aa-bed3-57fc559cf255/conversions/dd295203e64ebeb7f5b69e02875e33c6969669c0-medium.webp",
-      "categories": [
-        "ART",
-        "DESIGN",
-        "CULTURE",
-        "TECH",
-        "WORK"
-      ],
-      "source": "Creative Boom",
-      "sourceUrl": "https://www.creativeboom.com/",
-      "sourceKind": "culture",
-      "product": "",
-      "territory": "ART",
-      "id": "0b7c4f84eddd8012",
-      "section": "CULTURE",
-      "designScope": "graphic",
-      "designFocus": [
-        "DESIGN",
-        "BRAND",
-        "TYPE",
-        "PRINT",
-        "ILLUSTRATION"
-      ],
-      "creativeScore": 2,
-      "sourcePriority": 4.0,
-      "sourceRole": "editorial",
-      "publishedAt": "2026-10-05T07:00:00+00:00",
-      "recencyScore": 6.68,
-      "editorialScore": 22.28,
-      "sourceCountry": ""
-    },
-    {
       "title": "Philip Lindeman builds a slightly haunted Sofia of night shops and stray cats in less than two weeks",
       "description": "For his new solo show, the Utrecht illustrator invented an entire after-dark city and barely slept in the process. What can an illustrator make in less than a fortnight? Quite a lot, I would imagine....",
       "link": "https://www.creativeboom.com/news/philip-lindeman-builds-a-slightly-haunted-sofia-of-night-shops-and-stray-cats-in-less-than-two-weeks/",
@@ -1215,6 +1179,42 @@
       "publishedAt": "2026-10-05T12:00:00+00:00",
       "recencyScore": 6.89,
       "editorialScore": 21.09,
+      "sourceCountry": ""
+    },
+    {
+      "title": "Fjällräven bets on the handmade with giant stitched banners by Miscellaneous Adventures",
+      "description": "Emma and Andrew Groves have spent the last 15 years building a creative life in the Lake District. Now Fjällräven has commissioned them to hand-sew its event banners from leftover outdoor gear. I don'...",
+      "link": "https://www.creativeboom.com/work/behold-these-giant-fabric-banners-that-prove-brands-as-big-as-fjallraven-are-betting-on-human-made/",
+      "pubDate": "Mon, 05 Oct 2026 08:00:00 +0000",
+      "image": "https://media.creativeboom.com/6d7849d8-2aa3-4bd0-8322-46b08b9efc76/conversions/07b52d8420b79bac3724f578647f2199cd5563fd-medium.webp",
+      "categories": [
+        "ART",
+        "DESIGN",
+        "CULTURE",
+        "TECH",
+        "WORK"
+      ],
+      "source": "Creative Boom",
+      "sourceUrl": "https://www.creativeboom.com/",
+      "sourceKind": "culture",
+      "product": "",
+      "territory": "ART",
+      "id": "fcf64599a5bb286d",
+      "section": "CULTURE",
+      "designScope": "graphic",
+      "designFocus": [
+        "DESIGN",
+        "BRAND",
+        "TYPE",
+        "PRINT",
+        "ILLUSTRATION"
+      ],
+      "creativeScore": 1,
+      "sourcePriority": 4.0,
+      "sourceRole": "editorial",
+      "publishedAt": "2026-10-05T08:00:00+00:00",
+      "recencyScore": 6.73,
+      "editorialScore": 20.93,
       "sourceCountry": ""
     },
     {
