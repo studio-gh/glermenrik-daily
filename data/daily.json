@@ -1,12 +1,12 @@
 {
   "editionDate": "2026-10-05",
-  "generatedAt": "2026-10-06T02:20:25.805672+00:00",
+  "generatedAt": "2026-10-06T02:22:08.916733+00:00",
   "counts": {
-    "all": 172,
-    "visual": 144,
-    "culture": 109,
+    "all": 166,
+    "visual": 137,
+    "culture": 107,
     "toolWatch": 2,
-    "aiImpact": 4
+    "aiImpact": 3
   },
   "bigThing": [
     {
@@ -420,8 +420,8 @@
       "sourcePriority": 3.0,
       "sourceRole": "editorial",
       "publishedAt": "2026-10-06T01:45:50+00:00",
-      "recencyScore": 7.98,
-      "editorialScore": 19.98,
+      "recencyScore": 7.97,
+      "editorialScore": 19.97,
       "sourceCountry": ""
     },
     {
@@ -616,8 +616,8 @@
       "sourcePriority": 5.0,
       "sourceRole": "visual-thinking",
       "publishedAt": "2026-10-01T19:01:46+00:00",
-      "recencyScore": 3.7,
-      "editorialScore": 18.7,
+      "recencyScore": 3.69,
+      "editorialScore": 18.69,
       "sourceCountry": ""
     },
     {
@@ -821,15 +821,17 @@
   ],
   "aiImpact": [
     {
-      "title": "A model guide for the GPT-6 family",
-      "description": "Learn how startups can choose GPT-6 models, tune reasoning effort, improve prompts and skills, coordinate tools, and prepare workflows for production.",
-      "link": "https://openai.com/index/practical-guide-building-gpt-6",
-      "pubDate": "Fri, 02 Oct 2026 16:15:00 GMT",
+      "title": "Building advertising for the way people use AI",
+      "description": "OpenAI introduces a new visual ad format in ChatGPT and expands measurement tools, attribution partnerships, and brand suitability for advertisers.",
+      "link": "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
+      "pubDate": "Mon, 05 Oct 2026 10:00:00 GMT",
       "image": "",
       "categories": [
         "AI",
         "TECH",
         "CULTURE",
+        "IMAGE",
+        "DESIGN",
         "PRODUCT"
       ],
       "source": "OpenAI News",
@@ -837,15 +839,15 @@
       "sourceKind": "ai",
       "product": "OpenAI",
       "territory": "AI",
-      "id": "39e7e8adcae93351",
+      "id": "737d149a8f31eef2",
       "section": "AI IMPACT",
-      "creativeScore": 5,
+      "creativeScore": 3,
       "imageState": "placeholder",
       "sourcePriority": 3.0,
       "sourceRole": "editorial",
-      "publishedAt": "2026-10-02T16:15:00+00:00",
-      "recencyScore": 4.58,
-      "editorialScore": 18.18,
+      "publishedAt": "2026-10-05T10:00:00+00:00",
+      "recencyScore": 7.32,
+      "editorialScore": 18.12,
       "sourceCountry": ""
     },
     {
@@ -901,33 +903,6 @@
       "recencyScore": 0.0,
       "editorialScore": 14.8,
       "sourceCountry": ""
-    },
-    {
-      "title": "",
-      "description": "",
-      "link": "https://updates.midjourney.com/alpha-changelog-10-1-26/",
-      "pubDate": "",
-      "image": "https://static.ghost.org/v5.0.0/images/publication-cover.jpg",
-      "categories": [
-        "AI",
-        "IMAGE",
-        "DESIGN",
-        "TECH"
-      ],
-      "source": "Midjourney Updates",
-      "sourceUrl": "https://updates.midjourney.com/",
-      "sourceKind": "ai",
-      "product": "Midjourney",
-      "territory": "AI",
-      "id": "37d61f0ea85b7104",
-      "section": "AI IMPACT",
-      "creativeScore": 2,
-      "sourcePriority": 3.0,
-      "sourceRole": "editorial",
-      "publishedAt": "",
-      "recencyScore": 1.0,
-      "editorialScore": 14.4,
-      "sourceCountry": ""
     }
   ],
   "wild": [
@@ -960,9 +935,9 @@
       "sourceCountry": ""
     },
     {
-      "title": "Terms of Use",
+      "title": "Information Collection Notice",
       "description": "",
-      "link": "https://substack.com/tos",
+      "link": "https://substack.com/ccpa#personal-data-collected",
       "pubDate": "",
       "image": "",
       "categories": [
@@ -976,7 +951,7 @@
       "sourceKind": "archive",
       "product": "",
       "territory": "DESIGN",
-      "id": "8797b5ff50dab4a4",
+      "id": "b08395199d098b26",
       "section": "CULTURE",
       "creativeScore": 0,
       "sourcePriority": 5.0,
@@ -1104,8 +1079,8 @@
     {
       "name": "Midjourney Updates",
       "kind": "ai",
-      "items": 4,
-      "status": "LIVE"
+      "items": 0,
+      "status": "QUIET"
     },
     {
       "name": "Adobe Firefly",
@@ -1170,7 +1145,7 @@
     {
       "name": "Logo Histories",
       "kind": "archive",
-      "items": 5,
+      "items": 3,
       "status": "LIVE"
     },
     {

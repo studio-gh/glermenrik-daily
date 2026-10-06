@@ -1,27 +1,5 @@
 [
   {
-    "title": "A model guide for the GPT-6 family",
-    "description": "Learn how startups can choose GPT-6 models, tune reasoning effort, improve prompts and skills, coordinate tools, and prepare workflows for production.",
-    "link": "https://openai.com/index/practical-guide-building-gpt-6",
-    "pubDate": "Fri, 02 Oct 2026 16:15:00 GMT",
-    "image": "",
-    "categories": [
-      "AI",
-      "TECH",
-      "CULTURE",
-      "PRODUCT"
-    ],
-    "source": "OpenAI News",
-    "sourceUrl": "https://openai.com/news/company-announcements/",
-    "sourceKind": "ai",
-    "product": "OpenAI",
-    "territory": "AI",
-    "id": "39e7e8adcae93351",
-    "section": "AI IMPACT",
-    "creativeScore": 5,
-    "imageState": "placeholder"
-  },
-  {
     "title": "Chatham scales its capital markets expertise with OpenAI",
     "description": "Chatham Financial uses Codex and GPT-5.6 to build technology and redesign workflows, cutting trade validation from 30 minutes to under 4.",
     "link": "https://openai.com/index/chatham-financial",
@@ -175,88 +153,26 @@
     "imageState": "placeholder"
   },
   {
-    "title": "",
-    "description": "",
-    "link": "https://updates.midjourney.com/alpha-changelog-10-1-26/",
-    "pubDate": "",
-    "image": "https://static.ghost.org/v5.0.0/images/publication-cover.jpg",
+    "title": "A model guide for the GPT-6 family",
+    "description": "Learn how startups can choose GPT-6 models, tune reasoning effort, improve prompts and skills, coordinate tools, and prepare workflows for production.",
+    "link": "https://openai.com/index/practical-guide-building-gpt-6",
+    "pubDate": "Fri, 02 Oct 2026 16:15:00 GMT",
+    "image": "",
     "categories": [
       "AI",
-      "IMAGE",
-      "DESIGN",
-      "TECH"
+      "TECH",
+      "CULTURE",
+      "PRODUCT"
     ],
-    "source": "Midjourney Updates",
-    "sourceUrl": "https://updates.midjourney.com/",
+    "source": "OpenAI News",
+    "sourceUrl": "https://openai.com/news/company-announcements/",
     "sourceKind": "ai",
-    "product": "Midjourney",
+    "product": "OpenAI",
     "territory": "AI",
-    "id": "37d61f0ea85b7104",
+    "id": "39e7e8adcae93351",
     "section": "AI IMPACT",
-    "creativeScore": 2
-  },
-  {
-    "title": "",
-    "description": "",
-    "link": "https://updates.midjourney.com/edit-updates-thumbnail-previews-and-more/",
-    "pubDate": "",
-    "image": "https://static.ghost.org/v5.0.0/images/publication-cover.jpg",
-    "categories": [
-      "AI",
-      "IMAGE",
-      "DESIGN",
-      "TECH"
-    ],
-    "source": "Midjourney Updates",
-    "sourceUrl": "https://updates.midjourney.com/",
-    "sourceKind": "ai",
-    "product": "Midjourney",
-    "territory": "AI",
-    "id": "e302fcd634d1db3d",
-    "section": "AI IMPACT",
-    "creativeScore": 2
-  },
-  {
-    "title": "",
-    "description": "",
-    "link": "https://updates.midjourney.com/alpha-changelog-9-23-26/",
-    "pubDate": "",
-    "image": "https://static.ghost.org/v5.0.0/images/publication-cover.jpg",
-    "categories": [
-      "AI",
-      "IMAGE",
-      "DESIGN",
-      "TECH"
-    ],
-    "source": "Midjourney Updates",
-    "sourceUrl": "https://updates.midjourney.com/",
-    "sourceKind": "ai",
-    "product": "Midjourney",
-    "territory": "AI",
-    "id": "62184f2086d8311a",
-    "section": "AI IMPACT",
-    "creativeScore": 2
-  },
-  {
-    "title": "",
-    "description": "",
-    "link": "https://updates.midjourney.com/alpha-changelog-9-16-26/",
-    "pubDate": "",
-    "image": "https://static.ghost.org/v5.0.0/images/publication-cover.jpg",
-    "categories": [
-      "AI",
-      "IMAGE",
-      "DESIGN",
-      "TECH"
-    ],
-    "source": "Midjourney Updates",
-    "sourceUrl": "https://updates.midjourney.com/",
-    "sourceKind": "ai",
-    "product": "Midjourney",
-    "territory": "AI",
-    "id": "1008de48d73b9a6d",
-    "section": "AI IMPACT",
-    "creativeScore": 2
+    "creativeScore": 2,
+    "imageState": "placeholder"
   },
   {
     "title": "Offline Policy Evaluation",
@@ -410,7 +326,8 @@
     "territory": "AI",
     "id": "e93176f344fb8b8f",
     "section": "AI IMPACT",
-    "creativeScore": 1,
+    "creativeScore": 0,
+    "hideFromAiImpact": true,
     "imageState": "placeholder"
   },
   {
@@ -432,7 +349,8 @@
     "territory": "AI",
     "id": "78691b79074b7b69",
     "section": "AI IMPACT",
-    "creativeScore": 1,
+    "creativeScore": 0,
+    "hideFromAiImpact": true,
     "imageState": "placeholder"
   },
   {
@@ -455,75 +373,8 @@
     "territory": "AI",
     "id": "90fc68dfe1ad5575",
     "section": "AI IMPACT",
-    "creativeScore": 1
-  },
-  {
-    "title": "AI for everyone in every language",
-    "description": "We’re moving beyond traditional text translation to build models that understand the world’s rich, living languages exactly as they are expressed.",
-    "link": "https://blog.google/innovation-and-ai/technology/ai/ai-for-every-language/",
-    "pubDate": "Tue, 15 Sep 2026 16:00:00 +0000",
-    "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AI_languages_blog_social.max-600x600.format-webp.webp",
-    "categories": [
-      "AI",
-      "TECH",
-      "DESIGN",
-      "ACCESSIBILITY",
-      "GOOGLE RESEARCH",
-      "NONPROFITS"
-    ],
-    "source": "Google AI",
-    "sourceUrl": "https://blog.google/technology/ai/",
-    "sourceKind": "ai",
-    "product": "Google AI",
-    "territory": "AI",
-    "id": "0b90b0b556e4af1b",
-    "section": "AI IMPACT",
-    "creativeScore": 1
-  },
-  {
-    "title": "DevFest is back",
-    "description": "DevFest 2026 is back and here’s how you can connect with one of the more than 800 global events to build, secure, and scale in the agentic AI era.",
-    "link": "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026/",
-    "pubDate": "Mon, 14 Sep 2026 16:00:00 +0000",
-    "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/DevFest.max-600x600.format-webp.webp",
-    "categories": [
-      "AI",
-      "TECH",
-      "DESIGN",
-      "GEMINI",
-      "GOOGLE CLOUD",
-      "DEVELOPER TOOLS"
-    ],
-    "source": "Google AI",
-    "sourceUrl": "https://blog.google/technology/ai/",
-    "sourceKind": "ai",
-    "product": "Google AI",
-    "territory": "AI",
-    "id": "2a8fc5619ccb1a13",
-    "section": "AI IMPACT",
-    "creativeScore": 1
-  },
-  {
-    "title": "Our approach to EU text provenance rules",
-    "description": "How OpenAI is approaching text watermarking under EU rules. Learn where watermarks apply, how detection works, and why access starts with researchers.",
-    "link": "https://openai.com/index/eu-text-provenance",
-    "pubDate": "Mon, 05 Oct 2026 15:00:00 GMT",
-    "image": "",
-    "categories": [
-      "AI",
-      "TECH",
-      "CULTURE",
-      "SAFETY"
-    ],
-    "source": "OpenAI News",
-    "sourceUrl": "https://openai.com/news/company-announcements/",
-    "sourceKind": "ai",
-    "product": "OpenAI",
-    "territory": "AI",
-    "id": "8f05d069141835c6",
-    "section": "AI IMPACT",
-    "creativeScore": 1,
-    "imageState": "placeholder"
+    "creativeScore": 0,
+    "hideFromAiImpact": true
   },
   {
     "title": "Introducing dots",
@@ -587,6 +438,30 @@
     "product": "Google AI",
     "territory": "AI",
     "id": "3cba135a260e5edd",
+    "section": "AI IMPACT",
+    "creativeScore": 0,
+    "hideFromAiImpact": true
+  },
+  {
+    "title": "AI for everyone in every language",
+    "description": "We’re moving beyond traditional text translation to build models that understand the world’s rich, living languages exactly as they are expressed.",
+    "link": "https://blog.google/innovation-and-ai/technology/ai/ai-for-every-language/",
+    "pubDate": "Tue, 15 Sep 2026 16:00:00 +0000",
+    "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AI_languages_blog_social.max-600x600.format-webp.webp",
+    "categories": [
+      "AI",
+      "TECH",
+      "DESIGN",
+      "ACCESSIBILITY",
+      "GOOGLE RESEARCH",
+      "NONPROFITS"
+    ],
+    "source": "Google AI",
+    "sourceUrl": "https://blog.google/technology/ai/",
+    "sourceKind": "ai",
+    "product": "Google AI",
+    "territory": "AI",
+    "id": "0b90b0b556e4af1b",
     "section": "AI IMPACT",
     "creativeScore": 0,
     "hideFromAiImpact": true
@@ -742,6 +617,53 @@
     "section": "AI IMPACT",
     "creativeScore": 0,
     "hideFromAiImpact": true
+  },
+  {
+    "title": "DevFest is back",
+    "description": "DevFest 2026 is back and here’s how you can connect with one of the more than 800 global events to build, secure, and scale in the agentic AI era.",
+    "link": "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026/",
+    "pubDate": "Mon, 14 Sep 2026 16:00:00 +0000",
+    "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/DevFest.max-600x600.format-webp.webp",
+    "categories": [
+      "AI",
+      "TECH",
+      "DESIGN",
+      "GEMINI",
+      "GOOGLE CLOUD",
+      "DEVELOPER TOOLS"
+    ],
+    "source": "Google AI",
+    "sourceUrl": "https://blog.google/technology/ai/",
+    "sourceKind": "ai",
+    "product": "Google AI",
+    "territory": "AI",
+    "id": "2a8fc5619ccb1a13",
+    "section": "AI IMPACT",
+    "creativeScore": 0,
+    "hideFromAiImpact": true
+  },
+  {
+    "title": "Our approach to EU text provenance rules",
+    "description": "How OpenAI is approaching text watermarking under EU rules. Learn where watermarks apply, how detection works, and why access starts with researchers.",
+    "link": "https://openai.com/index/eu-text-provenance",
+    "pubDate": "Mon, 05 Oct 2026 15:00:00 GMT",
+    "image": "",
+    "categories": [
+      "AI",
+      "TECH",
+      "CULTURE",
+      "SAFETY"
+    ],
+    "source": "OpenAI News",
+    "sourceUrl": "https://openai.com/news/company-announcements/",
+    "sourceKind": "ai",
+    "product": "OpenAI",
+    "territory": "AI",
+    "id": "8f05d069141835c6",
+    "section": "AI IMPACT",
+    "creativeScore": 0,
+    "hideFromAiImpact": true,
+    "imageState": "placeholder"
   },
   {
     "title": "New experts join Google’s AI & Economy team",
@@ -3672,27 +3594,6 @@
     "creativeScore": 0
   },
   {
-    "title": "Terms of Use",
-    "description": "",
-    "link": "https://substack.com/tos",
-    "pubDate": "",
-    "image": "",
-    "categories": [
-      "DESIGN",
-      "DIRECTION",
-      "ART",
-      "TECH"
-    ],
-    "source": "Logo Histories",
-    "sourceUrl": "https://www.logohistories.com/",
-    "sourceKind": "archive",
-    "product": "",
-    "territory": "DESIGN",
-    "id": "8797b5ff50dab4a4",
-    "section": "CULTURE",
-    "creativeScore": 0
-  },
-  {
     "title": "Information Collection Notice",
     "description": "",
     "link": "https://substack.com/ccpa#personal-data-collected",
@@ -3710,27 +3611,6 @@
     "product": "",
     "territory": "DESIGN",
     "id": "b08395199d098b26",
-    "section": "CULTURE",
-    "creativeScore": 0
-  },
-  {
-    "title": "Privacy Policy",
-    "description": "",
-    "link": "https://substack.com/privacy",
-    "pubDate": "",
-    "image": "",
-    "categories": [
-      "DESIGN",
-      "DIRECTION",
-      "ART",
-      "TECH"
-    ],
-    "source": "Logo Histories",
-    "sourceUrl": "https://www.logohistories.com/",
-    "sourceKind": "archive",
-    "product": "",
-    "territory": "DESIGN",
-    "id": "1995cdb6d01ae3cd",
     "section": "CULTURE",
     "creativeScore": 0
   },
