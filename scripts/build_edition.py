@@ -94,7 +94,8 @@ def is_graphic_design(item):
         return True
     if source in {"DIELINE", "Packaging of the World"}:
         return True
-    if source == "Sketchnote Lab":
+    if source in {"LBB", "Sketchnote Lab"}:
+        return False
         return False
     if source == "LBB":
         return any(k in blob for k in {"graphic", "title design", "brand", "identity", "poster", "campaign", "art direction"})
