@@ -67,8 +67,46 @@ def diverse_select(pool, limit, source_cap=2):
 
 culture = [x for x in articles if x.get("sourceKind") in ("culture", "visual-newsletter", "archive")]
 visual = [x for x in articles if x.get("image") and not x.get("hideFromAiImpact")]
-graphic = [x for x in articles if x.get("image") and x.get("designFocus") and x.get("sourceKind") not in ("software","ai")]
-graphic = [x for x in graphic if any(f in {"DESIGN","BRAND","WEB","TYPE","PRINT","PACKAGING","MOTION","ILLUSTRATION","DIRECTION"} for f in x.get("designFocus", []))]
+
+graphic_positive = {
+    "design", "graphic design", "brand design", "branding", "identity", "logo", "wordmark",
+    "typography", "typeface", "font", "lettering", "poster", "print", "editorial", "magazine",
+    "book design", "book cover", "album cover", "packaging", "package design", "campaign",
+    "art direction", "art director", "creative direction", "web design", "website", "web typography",
+    "interface", "ui", "visual identity", "rebrand", "wayfinding", "signage", "publication",
+    "zine", "brochure", "catalog", "lookbook"
+}
+graphic_negative = {
+    "architecture", "architectural", "interior", "interiors", "furniture", "chair", "table",
+    "lighting", "building", "house", "apartment", "real estate", "industrial design", "product design",
+    "kitchen", "bathroom", "landscape architecture", "urban planning", "restaurant interior",
+    "hotel interior", "sculpture", "ceramic", "installation", "fashion collection"
+}
+def is_graphic_design(item):
+    if not item.get("image") or item.get("sourceKind") in ("software", "ai"):
+        return False
+    focus = set(item.get("designFocus", []))
+    if not focus:
+        return False
+    source = item.get("source", "")
+    blob = (item.get("title", "") + " " + item.get("description", "") + " " + " ".join(item.get("categories", []))).lower()
+    if source in {"SiteInspire", "Typewolf"}:
+        return True
+    if source in {"DIELINE", "Packaging of the World"}:
+        return True
+    if source == "Sketchnote Lab":
+        return False
+    if source == "LBB":
+        return any(k in blob for k in {"graphic", "title design", "brand", "identity", "poster", "campaign", "art direction"})
+    positive = sum(1 for k in graphic_positive if k in blob)
+    negative = sum(1 for k in graphic_negative if k in blob)
+    if negative >= 2 and positive < 2:
+        return False
+    if negative >= 1 and positive == 0:
+        return False
+    return positive >= 1
+
+graphic = [x for x in articles if is_graphic_design(x)]
 tool = [x for x in articles if x.get("sourceKind") == "software"]
 ai = visible_pool([x for x in articles if x.get("sourceKind") == "ai" and x.get("creativeScore", 0) > 0])
 thinking = [x for x in articles if x.get("sourceKind") in ("thinking", "newsletter", "archive", "visual-newsletter")]
