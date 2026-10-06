@@ -18,7 +18,8 @@
       "PRINT",
       "MOTION"
     ],
-    "priority": 5
+    "priority": 5,
+    "accessPolicy": "free"
   },
   {
     "name": "Creative Boom",
@@ -38,7 +39,8 @@
       "PRINT",
       "ILLUSTRATION"
     ],
-    "priority": 4
+    "priority": 4,
+    "accessPolicy": "free"
   },
   {
     "name": "Dezeen",
@@ -51,7 +53,8 @@
       "OBJECT"
     ],
     "designScope": "architecture-object",
-    "designFocus": []
+    "designFocus": [],
+    "accessPolicy": "free"
   },
   {
     "name": "designboom",
@@ -65,7 +68,8 @@
       "OBJECT"
     ],
     "designScope": "architecture-object",
-    "designFocus": []
+    "designFocus": [],
+    "accessPolicy": "free"
   },
   {
     "name": "Abduzeedo",
@@ -85,7 +89,8 @@
       "TYPE",
       "MOTION"
     ],
-    "priority": 4
+    "priority": 4,
+    "accessPolicy": "free"
   },
   {
     "name": "Packaging of the World",
@@ -102,7 +107,8 @@
       "PACKAGING",
       "BRAND"
     ],
-    "priority": 4
+    "priority": 4,
+    "accessPolicy": "free"
   },
   {
     "name": "Design Milk",
@@ -115,7 +121,8 @@
       "SPACE"
     ],
     "designScope": "object-space",
-    "designFocus": []
+    "designFocus": [],
+    "accessPolicy": "free"
   },
   {
     "name": "LBB",
@@ -131,7 +138,8 @@
     "designFocus": [
       "MOTION",
       "DIRECTION"
-    ]
+    ],
+    "accessPolicy": "free"
   },
   {
     "name": "Wallpaper*",
@@ -144,7 +152,8 @@
       "CULTURE"
     ],
     "designScope": "architecture-object",
-    "designFocus": []
+    "designFocus": [],
+    "accessPolicy": "free"
   },
   {
     "name": "Cool Hunting",
@@ -157,7 +166,8 @@
       "DESIGN"
     ],
     "designScope": "culture-object",
-    "designFocus": []
+    "designFocus": [],
+    "accessPolicy": "free"
   },
   {
     "name": "Yanko Design",
@@ -170,18 +180,8 @@
       "OBJECT"
     ],
     "designScope": "product-tech",
-    "designFocus": []
-  },
-    "designScope": "graphic",
-    "designFocus": [
-      "DESIGN",
-      "BRAND",
-      "WEB",
-      "TYPE",
-      "PRINT",
-      "MOTION"
-    ],
-    "priority": 5
+    "designFocus": [],
+    "accessPolicy": "free"
   },
   {
     "name": "Figma Release Notes",
@@ -193,7 +193,8 @@
       "DESIGN",
       "TECH",
       "DIRECTION"
-    ]
+    ],
+    "accessPolicy": "free"
   },
   {
     "name": "Adobe Creative Cloud",
@@ -205,7 +206,8 @@
       "DESIGN",
       "DIRECTION",
       "TECH"
-    ]
+    ],
+    "accessPolicy": "free"
   },
   {
     "name": "Blender Releases",
@@ -217,7 +219,8 @@
       "DESIGN",
       "3D",
       "TECH"
-    ]
+    ],
+    "accessPolicy": "free"
   },
   {
     "name": "Canva Newsroom",
@@ -229,7 +232,8 @@
       "DESIGN",
       "AI",
       "DIRECTION"
-    ]
+    ],
+    "accessPolicy": "free"
   },
   {
     "name": "OpenAI News",
@@ -241,7 +245,8 @@
       "AI",
       "TECH",
       "CULTURE"
-    ]
+    ],
+    "accessPolicy": "free"
   },
   {
     "name": "Google AI",
@@ -253,7 +258,8 @@
       "AI",
       "TECH",
       "DESIGN"
-    ]
+    ],
+    "accessPolicy": "free"
   },
   {
     "name": "Midjourney Updates",
@@ -265,7 +271,8 @@
       "AI",
       "IMAGE",
       "DESIGN"
-    ]
+    ],
+    "accessPolicy": "free"
   },
   {
     "name": "Adobe Firefly",
@@ -278,7 +285,8 @@
       "IMAGE",
       "MOTION",
       "DESIGN"
-    ]
+    ],
+    "accessPolicy": "free"
   },
   {
     "name": "Runway News",
@@ -291,7 +299,8 @@
       "MOTION",
       "IMAGE",
       "CULTURE"
-    ]
+    ],
+    "accessPolicy": "free"
   },
   {
     "name": "The Art of Noticing",
@@ -306,7 +315,8 @@
       "CULTURE"
     ],
     "designScope": "thinking",
-    "designFocus": []
+    "designFocus": [],
+    "accessPolicy": "free"
   },
   {
     "name": "Design, Explained",
@@ -328,7 +338,8 @@
       "BRAND",
       "TYPE",
       "PRINT"
-    ]
+    ],
+    "accessPolicy": "free"
   },
   {
     "name": "Into Design Systems + AI",
@@ -348,7 +359,8 @@
       "WEB",
       "DESIGN",
       "AI"
-    ]
+    ],
+    "accessPolicy": "free"
   },
   {
     "name": "Bits to Brands",
@@ -367,7 +379,8 @@
       "BRAND",
       "DESIGN",
       "DIRECTION"
-    ]
+    ],
+    "accessPolicy": "free"
   },
   {
     "name": "MANDA REFS",
@@ -387,7 +400,8 @@
       "WEB",
       "DESIGN",
       "CULTURE"
-    ]
+    ],
+    "accessPolicy": "free"
   },
   {
     "name": "Tira do papel",
@@ -402,7 +416,8 @@
       "MAKE"
     ],
     "designScope": "wild",
-    "designFocus": []
+    "designFocus": [],
+    "accessPolicy": "free"
   },
   {
     "name": "Why Design Is Hard",
@@ -420,7 +435,8 @@
     "designFocus": [
       "DESIGN",
       "DIRECTION"
-    ]
+    ],
+    "accessPolicy": "free"
   },
   {
     "name": "The Real Brand Life",
@@ -439,7 +455,8 @@
       "BRAND",
       "DESIGN",
       "DIRECTION"
-    ]
+    ],
+    "accessPolicy": "free"
   },
   {
     "name": "Logo Histories",
@@ -458,7 +475,8 @@
       "BRAND",
       "DESIGN",
       "TYPE"
-    ]
+    ],
+    "accessPolicy": "free"
   },
   {
     "name": "Typeverything Fonts",
@@ -477,7 +495,8 @@
       "TYPE",
       "DESIGN",
       "PRINT"
-    ]
+    ],
+    "accessPolicy": "free"
   },
   {
     "name": "Sketchnote Lab",
@@ -496,7 +515,8 @@
     "designFocus": [
       "DESIGN",
       "MAKE"
-    ]
+    ],
+    "accessPolicy": "free"
   },
   {
     "name": "The Creative Act",
@@ -512,17 +532,8 @@
       "CULTURE"
     ],
     "designScope": "creative-practice",
-    "designFocus": []
-  },
-    "designScope": "graphic",
-    "designFocus": [
-      "DESIGN",
-      "BRAND",
-      "PRINT",
-      "MOTION",
-      "DIRECTION",
-      "ILLUSTRATION"
-    ]
+    "designFocus": [],
+    "accessPolicy": "free"
   },
   {
     "name": "DIELINE",
@@ -541,7 +552,8 @@
       "PACKAGING",
       "BRAND",
       "DESIGN"
-    ]
+    ],
+    "accessPolicy": "free"
   },
   {
     "name": "SiteInspire",
@@ -559,7 +571,8 @@
     "designFocus": [
       "WEB",
       "DESIGN"
-    ]
+    ],
+    "accessPolicy": "free"
   },
   {
     "name": "Typewolf",
@@ -578,7 +591,8 @@
       "TYPE",
       "WEB",
       "DESIGN"
-    ]
+    ],
+    "accessPolicy": "free"
   },
   {
     "name": "Slanted",
@@ -597,29 +611,7 @@
       "DESIGN",
       "TYPE",
       "PRINT"
-    ]
-  },
-  {
-    "name": "PRINT Magazine",
-    "url": "https://www.printmag.com/",
-    "feed": "https://www.printmag.com/feed/",
-    "kind": "culture",
-    "role": "graphic-print",
-    "priority": 5,
-    "territories": [
-      "DESIGN",
-      "PRINT",
-      "TYPE",
-      "BRAND"
     ],
-    "designScope": "graphic-print",
-    "designFocus": [
-      "DESIGN",
-      "PRINT",
-      "TYPE",
-      "BRAND",
-      "MOTION",
-      "ILLUSTRATION"
-    ]
+    "accessPolicy": "free"
   }
 ]
