@@ -89,7 +89,7 @@ def is_graphic_design(item):
     if not focus:
         return False
     source = item.get("source", "")
-    blob = (item.get("title", "") + " " + item.get("description", "") + " " + " ".join(item.get("categories", []))).lower()
+    blob = (item.get("title", "") + " " + item.get("description", "")).lower()
     if source in {"SiteInspire", "Typewolf"}:
         return True
     if source in {"DIELINE", "Packaging of the World"}:
