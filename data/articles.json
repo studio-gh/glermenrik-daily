@@ -17,6 +17,34 @@
     "id": "80bb54c349602328"
   },
   {
+    "title": "Disrupting a coordinated model-distillation campaign",
+    "description": "Learn how OpenAI disrupted a campaign to extract protected model reasoning and is strengthening defenses against adversarial distillation.",
+    "link": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
+    "pubDate": "Wed, 30 Sep 2026 10:30:00 GMT",
+    "image": "",
+    "categories": [
+      "SECURITY"
+    ],
+    "source": "OpenAI News",
+    "sourceUrl": "https://openai.com/news/company-announcements/",
+    "territory": "AI",
+    "id": "e93176f344fb8b8f"
+  },
+  {
+    "title": "Helping small businesses put AI to work",
+    "description": "OpenAI is partnering with America’s SBDC to expand hands-on AI training and local support for small businesses, alongside a new report on how small teams are using AI.",
+    "link": "https://openai.com/index/helping-small-businesses-put-ai-to-work",
+    "pubDate": "Wed, 30 Sep 2026 10:00:00 GMT",
+    "image": "",
+    "categories": [
+      "GLOBAL AFFAIRS"
+    ],
+    "source": "OpenAI News",
+    "sourceUrl": "https://openai.com/news/company-announcements/",
+    "territory": "AI",
+    "id": "78691b79074b7b69"
+  },
+  {
     "title": "Why Studio Playground asked a kidswear brand to design its team uniform",
     "description": "The European publisher teamed up with Oxox Club on a limited-edition workwear set that swaps conformity for freedom. If you've been invited to a big industry event, you'll recognise the stress of know...",
     "link": "https://www.creativeboom.com/work/why-publishing-firm-studio-playground-asked-a-kidswear-brand-to-design-its-team-uniform/",
@@ -57,6 +85,22 @@
     "sourceUrl": "https://www.creativeboom.com/",
     "territory": "ART",
     "id": "233cca4705d9fe6c"
+  },
+  {
+    "title": "Google Beam expands with new regions, partners, and customers",
+    "description": "We’re expanding Google Beam to five new countries, and partnering with Industrious for an extended network.",
+    "link": "https://blog.google/innovation-and-ai/technology/research/google-beam-expansion/",
+    "pubDate": "Wed, 23 Sep 2026 18:00:00 +0000",
+    "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Beam_hero.max-600x600.format-webp.webp",
+    "categories": [
+      "GOOGLE WORKSPACE",
+      "GOOGLE RESEARCH",
+      "AI"
+    ],
+    "source": "Google AI",
+    "sourceUrl": "https://blog.google/technology/ai/",
+    "territory": "AI",
+    "id": "90fc68dfe1ad5575"
   },
   {
     "title": "Louise French quit London, cycled the Andes, and came home an illustrator who gets things done",
@@ -108,6 +152,108 @@
     "id": "3a08ab33b3975f96"
   },
   {
+    "title": "DevDay 2026 Recap",
+    "description": "Explore more than 20 announcements from OpenAI DevDay 2026, including GPT-6 Astra, ChatGPT, Codex, APIs, security, and new tools for builders.",
+    "link": "https://openai.com/index/devday-2026-recap",
+    "pubDate": "Tue, 29 Sep 2026 10:00:00 GMT",
+    "image": "",
+    "categories": [
+      "COMPANY"
+    ],
+    "source": "OpenAI News",
+    "sourceUrl": "https://openai.com/news/company-announcements/",
+    "territory": "AI",
+    "id": "62835f2ff6090a65"
+  },
+  {
+    "title": "Introducing GPT-6.1 Sol",
+    "description": "Meet GPT-6.1 Sol: near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra’s standard API input and output token prices.",
+    "link": "https://openai.com/index/introducing-gpt-6-1-sol",
+    "pubDate": "Tue, 29 Sep 2026 10:00:00 GMT",
+    "image": "",
+    "categories": [
+      "PRODUCT"
+    ],
+    "source": "OpenAI News",
+    "sourceUrl": "https://openai.com/news/company-announcements/",
+    "territory": "AI",
+    "id": "54857aa39d28578e"
+  },
+  {
+    "title": "Introducing dots",
+    "description": "Dots by OpenAI are proactive assistants that can keep working across complex projects and everyday tasks. Learn how dots help you stay in control while work moves forward.",
+    "link": "https://openai.com/index/introducing-dots",
+    "pubDate": "Tue, 29 Sep 2026 00:00:00 GMT",
+    "image": "",
+    "categories": [
+      "PRODUCT"
+    ],
+    "source": "OpenAI News",
+    "sourceUrl": "https://openai.com/news/company-announcements/",
+    "territory": "AI",
+    "id": "d59fa3540f9621b7"
+  },
+  {
+    "title": "AI for Societal Impact",
+    "description": "Explore this collection to see how experts and local leaders are using AI breakthroughs to ensure everyone can share the opportunity of AI.",
+    "link": "https://blog.google/innovation-and-ai/technology/ai/ai-for-societal-impact/",
+    "pubDate": "Tue, 15 Sep 2026 16:00:00 +0000",
+    "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/Health_Header.gif",
+    "categories": [
+      "AI"
+    ],
+    "source": "Google AI",
+    "sourceUrl": "https://blog.google/technology/ai/",
+    "territory": "AI",
+    "id": "813c6ea734307cab"
+  },
+  {
+    "title": "Building AI to accelerate science and improve lives",
+    "description": "The true measure of AI is who it helps. Here’s how it’s impacting lives today. We're focused on key areas where advanced technology can help make extraordinary progress …",
+    "link": "https://blog.google/innovation-and-ai/technology/ai/ai-applications-science-people/",
+    "pubDate": "Tue, 15 Sep 2026 16:00:00 +0000",
+    "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/SocialShare_hD2gcAw.max-600x600.format-webp.webp",
+    "categories": [
+      "GOOGLE RESEARCH",
+      "AI"
+    ],
+    "source": "Google AI",
+    "sourceUrl": "https://blog.google/technology/ai/",
+    "territory": "AI",
+    "id": "3cba135a260e5edd"
+  },
+  {
+    "title": "AI for everyone in every language",
+    "description": "We’re moving beyond traditional text translation to build models that understand the world’s rich, living languages exactly as they are expressed.",
+    "link": "https://blog.google/innovation-and-ai/technology/ai/ai-for-every-language/",
+    "pubDate": "Tue, 15 Sep 2026 16:00:00 +0000",
+    "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AI_languages_blog_social.max-600x600.format-webp.webp",
+    "categories": [
+      "ACCESSIBILITY",
+      "GOOGLE RESEARCH",
+      "NONPROFITS",
+      "AI"
+    ],
+    "source": "Google AI",
+    "sourceUrl": "https://blog.google/technology/ai/",
+    "territory": "AI",
+    "id": "0b90b0b556e4af1b"
+  },
+  {
+    "title": "New insights from Google’s AI & Economy ATLAS",
+    "description": "We’ve translated ATLAS’s millions of global data points into an interactive, open-access experience.",
+    "link": "https://blog.google/innovation-and-ai/technology/ai/ai-economy-atlas-september-2026/",
+    "pubDate": "Tue, 15 Sep 2026 13:00:00 +0000",
+    "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/ATLAS-hero.max-600x600.format-webp.webp",
+    "categories": [
+      "AI"
+    ],
+    "source": "Google AI",
+    "sourceUrl": "https://blog.google/technology/ai/",
+    "territory": "AI",
+    "id": "cb3f22e240fefd83"
+  },
+  {
     "title": "For sale, Savin Couëlle’s spectacular organic villa complex on a remote Corsican island",
     "description": "Villa Pieds Dans L'Eau is a masterpiece of 70s organic architecture, built into the rocky coastline of the Corsican island of Cavallo",
     "link": "https://www.wallpaper.com/architecture/residential/savin-couelles-organic-villa-france",
@@ -141,6 +287,20 @@
     "id": "a08e6104c9925c61"
   },
   {
+    "title": "Making global data easier to explore",
+    "description": "Google and the UN system have launched the UN System Data Commons, a new open platform making global statistics accessible and easy to search.",
+    "link": "https://blog.google/innovation-and-ai/technology/ai/google-un-data-commons-platform/",
+    "pubDate": "Thu, 17 Sep 2026 20:00:00 +0000",
+    "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/data-commons.max-600x600.format-webp.webp",
+    "categories": [
+      "AI"
+    ],
+    "source": "Google AI",
+    "sourceUrl": "https://blog.google/technology/ai/",
+    "territory": "AI",
+    "id": "ea769663a9aac7d3"
+  },
+  {
     "title": "Laila Gohar Turns Whisky Tasting Into a Visual Experience",
     "description": "The artist translates the flavors and memories sparked by Highland Park’s 17-year-old single malt into surreal illustrated packaging",
     "link": "https://design-milk.com/laila-gohar-highland-park/",
@@ -154,6 +314,34 @@
     "sourceUrl": "https://design-milk.com/",
     "territory": "DESIGN",
     "id": "38a91530ce7cc7ea"
+  },
+  {
+    "title": "The eternal complement",
+    "description": "Advanced AI may matter most for the routine work behind breakthrough ideas. Explore why execution could shape the next economy and the pace of progress.",
+    "link": "https://openai.com/index/the-eternal-complement",
+    "pubDate": "Thu, 01 Oct 2026 17:00:00 GMT",
+    "image": "",
+    "categories": [
+      "INTELLIGENCE AGE"
+    ],
+    "source": "OpenAI News",
+    "sourceUrl": "https://openai.com/news/company-announcements/",
+    "territory": "AI",
+    "id": "86ebd7808b341deb"
+  },
+  {
+    "title": "How Albertsons Companies is reimagining retail from the inside out",
+    "description": "Albertsons Cos. is using ChatGPT Enterprise and the OpenAI API to help teams work faster and make grocery shopping easier for millions of customers.",
+    "link": "https://openai.com/index/albertsons-reimagining-retail",
+    "pubDate": "Thu, 01 Oct 2026 16:00:00 GMT",
+    "image": "",
+    "categories": [
+      "COMPANY"
+    ],
+    "source": "OpenAI News",
+    "sourceUrl": "https://openai.com/news/company-announcements/",
+    "territory": "AI",
+    "id": "7911d0cd0267f0f7"
   },
   {
     "title": "GorillaSharpener",
@@ -304,6 +492,18 @@
     "sourceUrl": "https://design-milk.com/",
     "territory": "DESIGN",
     "id": "67b1df2ca628bbd0"
+  },
+  {
+    "title": "The Den frees up 10-15 hours a week to grow with ChatGPT Work",
+    "description": "As it opens a new location, the social club prepares grant applications in 2 hours instead of 3 days and liquor-license materials in 3 hours instead of 4 days.",
+    "link": "https://openai.com/index/the-den-family-social",
+    "pubDate": "Thu, 01 Oct 2026 00:00:00 GMT",
+    "image": "",
+    "categories": [],
+    "source": "OpenAI News",
+    "sourceUrl": "https://openai.com/news/company-announcements/",
+    "territory": "AI",
+    "id": "23da436462149563"
   },
   {
     "title": "planted roof extends garden over tato architects’ timber house in mibu, japan",
@@ -465,6 +665,20 @@
     "id": "15aa1573a65dc7ee"
   },
   {
+    "title": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
+    "description": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
+    "link": "https://blog.google/innovation-and-ai/technology/ai/winner-future-vision-xprize/",
+    "pubDate": "Mon, 28 Sep 2026 19:00:00 +0000",
+    "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/futurevisionxprize_social.max-600x600.format-webp.webp",
+    "categories": [
+      "AI"
+    ],
+    "source": "Google AI",
+    "sourceUrl": "https://blog.google/technology/ai/",
+    "territory": "AI",
+    "id": "be93eae5fec6a620"
+  },
+  {
     "title": "What Lake Como Tells Mauro Colagreco",
     "description": "The Mirazur chef brings his kitchen to The Lake Como EDITION, with Cetino built on lake fish, Lombard cheese and producers he is still meeting Mauro Colagreco treats a new restaurant as …",
     "link": "https://coolhunting.com/food-drink/what-lake-como-tells-mauro-colagreco/",
@@ -498,6 +712,37 @@
     "sourceUrl": "https://coolhunting.com/",
     "territory": "CULTURE",
     "id": "2224518d365b1345"
+  },
+  {
+    "title": "Watch astronaut Christina Koch and Google’s James Manyika discuss space, technology, and discovery.",
+    "description": "Christina Koch sits down with James Manyika, Google’s Senior Vice President of Research, Labs, Technology & Society.",
+    "link": "https://blog.google/innovation-and-ai/technology/ai/dialogues-christina-koch/",
+    "pubDate": "Mon, 14 Sep 2026 19:00:00 +0000",
+    "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Dialogues_Christina-Koch_social.max-600x600.format-webp.webp",
+    "categories": [
+      "AI"
+    ],
+    "source": "Google AI",
+    "sourceUrl": "https://blog.google/technology/ai/",
+    "territory": "AI",
+    "id": "353e8b2788b46afd"
+  },
+  {
+    "title": "DevFest is back",
+    "description": "DevFest 2026 is back and here’s how you can connect with one of the more than 800 global events to build, secure, and scale in the agentic AI era.",
+    "link": "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026/",
+    "pubDate": "Mon, 14 Sep 2026 16:00:00 +0000",
+    "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/DevFest.max-600x600.format-webp.webp",
+    "categories": [
+      "GEMINI",
+      "GOOGLE CLOUD",
+      "DEVELOPER TOOLS",
+      "AI"
+    ],
+    "source": "Google AI",
+    "sourceUrl": "https://blog.google/technology/ai/",
+    "territory": "AI",
+    "id": "2a8fc5619ccb1a13"
   },
   {
     "title": "Wuben’s Prime Day Fall 2026 Sale Has a Different Light for Every Kind of Carry",
@@ -842,6 +1087,20 @@
     "id": "93cb3fdbdebbf201"
   },
   {
+    "title": "Our approach to EU text provenance rules",
+    "description": "How OpenAI is approaching text watermarking under EU rules. Learn where watermarks apply, how detection works, and why access starts with researchers.",
+    "link": "https://openai.com/index/eu-text-provenance",
+    "pubDate": "Mon, 05 Oct 2026 15:00:00 GMT",
+    "image": "",
+    "categories": [
+      "SAFETY"
+    ],
+    "source": "OpenAI News",
+    "sourceUrl": "https://openai.com/news/company-announcements/",
+    "territory": "AI",
+    "id": "8f05d069141835c6"
+  },
+  {
     "title": "These Glass Vases Look Better Empty, and Nobody Questions It",
     "description": "These Glass Vases Look Better Empty, and Nobody Questions It A vase usually gets its moment when the flowers arrive. Once the bouquet is gone, even an expensive one can become background scenery. That is...",
     "link": "https://www.yankodesign.com/2026/10/05/these-glass-vases-look-better-empty-and-nobody-questions-it/?utm_source=rss&utm_medium=rss&utm_campaign=these-glass-vases-look-better-empty-and-nobody-questions-it",
@@ -1109,6 +1368,20 @@
     "id": "a11744cca2ce6194"
   },
   {
+    "title": "Building advertising for the way people use AI",
+    "description": "OpenAI introduces a new visual ad format in ChatGPT and expands measurement tools, attribution partnerships, and brand suitability for advertisers.",
+    "link": "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
+    "pubDate": "Mon, 05 Oct 2026 10:00:00 GMT",
+    "image": "",
+    "categories": [
+      "PRODUCT"
+    ],
+    "source": "OpenAI News",
+    "sourceUrl": "https://openai.com/news/company-announcements/",
+    "territory": "AI",
+    "id": "737d149a8f31eef2"
+  },
+  {
     "title": "Fjällräven bets on the handmade with giant stitched banners by Miscellaneous Adventures",
     "description": "Emma and Andrew Groves have spent the last 15 years building a creative life in the Lake District. Now Fjällräven has commissioned them to hand-sew its event banners from leftover outdoor gear. I don'...",
     "link": "https://www.creativeboom.com/work/behold-these-giant-fabric-banners-that-prove-brands-as-big-as-fjallraven-are-betting-on-human-made/",
@@ -1227,6 +1500,67 @@
     "id": "2436cb30af127788"
   },
   {
+    "title": "New experts join Google’s AI & Economy team",
+    "description": "We are expanding our AI & Economy team with world-class academic advisors, fellows, and core internal researchers.",
+    "link": "https://blog.google/innovation-and-ai/technology/ai/expanding-ai-economy-research-bench/",
+    "pubDate": "Fri, 18 Sep 2026 14:00:00 +0000",
+    "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AI__Economy_team_hero.max-600x600.format-webp.webp",
+    "categories": [
+      "AI"
+    ],
+    "source": "Google AI",
+    "sourceUrl": "https://blog.google/technology/ai/",
+    "territory": "AI",
+    "id": "06ff7c2674c3c7f0"
+  },
+  {
+    "title": "Co-creating the future of fashion with Google",
+    "description": "Google worked side-by-side with designers Jane Wade and Sergio Hudson to custom-design Google Flow tools to prep for NYFW.",
+    "link": "https://blog.google/innovation-and-ai/technology/ai/google-flow-fashion-week/",
+    "pubDate": "Fri, 18 Sep 2026 13:00:00 +0000",
+    "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Blog_Header_V2.max-600x600.format-webp.webp",
+    "categories": [
+      "AI"
+    ],
+    "source": "Google AI",
+    "sourceUrl": "https://blog.google/technology/ai/",
+    "territory": "AI",
+    "id": "a1e6ad6f6e9aa4c1"
+  },
+  {
+    "title": "A model guide for the GPT-6 family",
+    "description": "Learn how startups can choose GPT-6 models, tune reasoning effort, improve prompts and skills, coordinate tools, and prepare workflows for production.",
+    "link": "https://openai.com/index/practical-guide-building-gpt-6",
+    "pubDate": "Fri, 02 Oct 2026 16:15:00 GMT",
+    "image": "",
+    "categories": [
+      "PRODUCT"
+    ],
+    "source": "OpenAI News",
+    "sourceUrl": "https://openai.com/news/company-announcements/",
+    "territory": "AI",
+    "id": "39e7e8adcae93351"
+  },
+  {
+    "title": "The latest AI news we announced in September 2026",
+    "description": "Here are Google’s latest AI updates from September 2026",
+    "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
+    "pubDate": "Fri, 02 Oct 2026 15:00:00 +0000",
+    "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/September_AI_Recap_hero.max-600x600.format-webp.webp",
+    "categories": [
+      "GOOGLE DEEPMIND",
+      "GOOGLEBOOK",
+      "AI",
+      "GEMINI APP",
+      "GEMINI MODELS",
+      "GOOGLE RESEARCH"
+    ],
+    "source": "Google AI",
+    "sourceUrl": "https://blog.google/technology/ai/",
+    "territory": "AI",
+    "id": "a55582020529daa4"
+  },
+  {
     "title": "Paola Lenti’s São Paulo Flagship Turns Architecture Into a Living Frame",
     "description": "Armentano Arquitetura pairs a precise metal-and-glass structure with a planted façade that will continue to transform the Italian furniture brand’s São Paulo home",
     "link": "https://design-milk.com/paola-lenti-sao-paulo-flagship/",
@@ -1274,10 +1608,22 @@
     "id": "1f150e020109ffc8"
   },
   {
+    "title": "Chatham scales its capital markets expertise with OpenAI",
+    "description": "Chatham Financial uses Codex and GPT-5.6 to build technology and redesign workflows, cutting trade validation from 30 minutes to under 4.",
+    "link": "https://openai.com/index/chatham-financial",
+    "pubDate": "Fri, 02 Oct 2026 00:00:00 GMT",
+    "image": "",
+    "categories": [],
+    "source": "OpenAI News",
+    "sourceUrl": "https://openai.com/news/company-announcements/",
+    "territory": "AI",
+    "id": "2fec618f3a8862c7"
+  },
+  {
     "title": "SuperBloom House Appoints Sean Daly as Director of Growth and New Business",
     "description": "Before joining SuperBloom House, Sean built his agency career at TBWA\\Chiat\\Day, Deutsch LA, and Zambezi",
     "link": "https://lbbonline.com/news/superbloom-house-sean-daly-director-growth-business",
-    "pubDate": "2026-10-06T01:10:21.583521+00:00",
+    "pubDate": "2026-10-06T01:14:16.943229+00:00",
     "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/sean-daly.E37ndeYx.png",
     "categories": [],
     "source": "LBB",
@@ -1289,7 +1635,7 @@
     "title": "Mountainfilm on Tour Returns to Chicago for First Time Since 2019",
     "description": "Filmmaker Friday Chicago and Caymanite bring the Telluride festival's touring programme to Thalia Hall on November 18, presented by The North Face",
     "link": "https://lbbonline.com/news/mountainfilm-on-tour-returns-to-chicago-for-first-time-since-2019",
-    "pubDate": "2026-10-06T01:10:21.583476+00:00",
+    "pubDate": "2026-10-06T01:14:16.943221+00:00",
     "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/caymanite-1.f4pp9Xzj.png",
     "categories": [],
     "source": "LBB",
@@ -1301,7 +1647,7 @@
     "title": "Electric Theatre Collective Launches in Warsaw",
     "description": "Spearheaded by creative director Mikolaj Valencia, he is joined by CG supervisor Marek Gajowski, compositing lead Rafał Sadowy and longtime ETC collaborator and FX lead, Igor Velichko",
     "link": "https://lbbonline.com/news/electric-theatre-collective-launches-in-warsaw",
-    "pubDate": "2026-10-06T01:10:21.583462+00:00",
+    "pubDate": "2026-10-06T01:14:16.943211+00:00",
     "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/etc-warsaw.1Jfo9liu.png",
     "categories": [],
     "source": "LBB",
@@ -1313,7 +1659,7 @@
     "title": "'FARM SCHOOL’D': Stepping Out of the Classroom and into Something Wilder",
     "description": "The team behind FARMUSE’s four-part documentary series, presented by Kubota, tells LBB’s April Summers how an initial idea about outdoor education evolved into an original series, and what they discovered along the way",
     "link": "https://lbbonline.com/news/farmschool-d-stepping-out-of-the-classroom-and-into-something-wilder",
-    "pubDate": "2026-10-06T01:10:21.583445+00:00",
+    "pubDate": "2026-10-06T01:14:16.943199+00:00",
     "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/farm-schoold-farmuse.TwvzJ-MH.png",
     "categories": [],
     "source": "LBB",
@@ -1325,7 +1671,7 @@
     "title": "One-Star Burger Reviews Become Vouchers for Carl's Jnr NZ",
     "description": "TBWA\\New Zealand created the 'One-Star Swapper' to make the most of rivals' less-than-flattering critiques",
     "link": "https://lbbonline.com/news/tbwa-nz-carls-jnr-one-star-swapper",
-    "pubDate": "2026-10-06T01:10:21.583425+00:00",
+    "pubDate": "2026-10-06T01:14:16.943184+00:00",
     "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/carls-jnr.Ivwkh0Yb.png",
     "categories": [],
     "source": "LBB",
@@ -1337,7 +1683,7 @@
     "title": "jnr. Hires Bridget Yeates as Client Services Director",
     "description": "She reunites with John Marshall, Ryan O'Connell, and Jenny Mak after two stints at Ogilvy, and four years in London at Grey. Ryan said, \"To be able to poach this level of talent might just be jnr.’s proudest moment thus far\"",
     "link": "https://lbbonline.com/news/jnr-bridget-yeates-client-services-director",
-    "pubDate": "2026-10-06T01:10:21.583413+00:00",
+    "pubDate": "2026-10-06T01:14:16.943176+00:00",
     "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/jnr-bridget-yeates.JoedCBrU.jpg",
     "categories": [],
     "source": "LBB",
@@ -1349,7 +1695,7 @@
     "title": "VML AUNZ Helps Likes of Red Cross, Foodbank, Choir of Hard Knocks For Worldwide Foundation Day",
     "description": "Paul Bradbury said of the efforts spanning Sydney, Melbourne, Brisbane, Perth, Auckland, and Wellington, “Foundation Day is one of those days that really shows what VML is about\"",
     "link": "https://lbbonline.com/news/vml-aunz-foundation-day-2026",
-    "pubDate": "2026-10-06T01:10:21.583393+00:00",
+    "pubDate": "2026-10-06T01:14:16.943162+00:00",
     "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/vml-foundation-day.y2mk02aZ.jpg",
     "categories": [],
     "source": "LBB",
@@ -1361,7 +1707,7 @@
     "title": "Rideshare Driver Tells 'Very Possibly True' Night-Out Story Featuring Boy Soda and a Snake",
     "description": "Howatson+Co's latest for Vodafone blends fact and fiction to introduce the new iPhone 18 Pro and Pro Max",
     "link": "https://lbbonline.com/news/howatson-co-vodafone-a-very-possibly-true-story",
-    "pubDate": "2026-10-06T01:10:21.583374+00:00",
+    "pubDate": "2026-10-06T01:14:16.943148+00:00",
     "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/vodafone-2.UkCT1bGR.png",
     "categories": [],
     "source": "LBB",
@@ -1373,7 +1719,7 @@
     "title": "Big Bank Boss Sings Ballad About Losing Customer Relationships For Perth Bank",
     "description": "P&N Bank's first major work from Perth indie Chapter, directed by Good Oil's David Robinson-Smith, introduces a new brand platform designed to last",
     "link": "https://lbbonline.com/news/p-n-bank-good-oil-chapter-banking-with-heart",
-    "pubDate": "2026-10-06T01:10:21.583359+00:00",
+    "pubDate": "2026-10-06T01:14:16.943138+00:00",
     "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/ballad-of-bank-boss.9ATocDdN.png",
     "categories": [],
     "source": "LBB",
@@ -1385,7 +1731,7 @@
     "title": "PROJECT ROCKIT, UnLtd Launch First National Campaign Asking Aussies to \"Give A Buck About Bullying\"",
     "description": "The fundraising initiative was led by The Royals and OMD, and is the first work in collaboration with UnLtd since it became one of the organisation's charity partners",
     "link": "https://lbbonline.com/news/project-rockit-unltd-the-royals-omd-give-a-buck-about-bullying",
-    "pubDate": "2026-10-06T01:10:21.583337+00:00",
+    "pubDate": "2026-10-06T01:14:16.943121+00:00",
     "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/project-rockit.ZfS0Ew7d.jpg",
     "categories": [],
     "source": "LBB",
@@ -1397,7 +1743,7 @@
     "title": "Bad Magic and Good Oil Personify Fun to Build New Zealand Home Loans’ Brand",
     "description": "Exclusive: ECD Thomas Darlow and director Dave Wood told LBB the new character combats category tropes and the brand’s marketing growing stale",
     "link": "https://lbbonline.com/news/bad-magic-good-oil-personify-fun-nzhl",
-    "pubDate": "2026-10-06T01:10:21.583318+00:00",
+    "pubDate": "2026-10-06T01:14:16.943107+00:00",
     "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/nzhl-bad-magic-goodoil.sLRVhMRH.png",
     "categories": [],
     "source": "LBB",
@@ -1409,13 +1755,157 @@
     "title": "Women Who Will: Debbie Shirley",
     "description": "Think HQ's research and insights director hopes \"that making a positive difference is the ultimate goal instead of focussing only on the bottom line\"",
     "link": "https://lbbonline.com/news/women-who-will-debbie-shirley",
-    "pubDate": "2026-10-06T01:10:21.583277+00:00",
+    "pubDate": "2026-10-06T01:14:16.943073+00:00",
     "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/www-debbie-shirley.YxpEC5WA.png",
     "categories": [],
     "source": "LBB",
     "sourceUrl": "https://lbbonline.com/",
     "territory": "DIRECTION",
     "id": "7ed04e47ad192293"
+  },
+  {
+    "title": "Connect multiple GitHub organizations to Figma",
+    "description": "",
+    "link": "https://www.figma.com/release-notes/?title=connect-multiple-github-organizations-to-figma",
+    "pubDate": "2026-10-05T00:00:00.000Z",
+    "image": "",
+    "categories": [],
+    "source": "Figma Release Notes",
+    "sourceUrl": "https://www.figma.com/release-notes/",
+    "territory": "DESIGN",
+    "id": "6fdf39b125911d9a"
+  },
+  {
+    "title": "Post riffs to Figma Community",
+    "description": "",
+    "link": "https://www.figma.com/release-notes/?title=post-riffs-to-figma-community",
+    "pubDate": "2026-09-30T00:00:00.000Z",
+    "image": "",
+    "categories": [],
+    "source": "Figma Release Notes",
+    "sourceUrl": "https://www.figma.com/release-notes/",
+    "territory": "DESIGN",
+    "id": "6abdd03d1a1d172e"
+  },
+  {
+    "title": "Motion adds custom styles, audio, text animations and Lottie export",
+    "description": "",
+    "link": "https://www.figma.com/release-notes/?title=motion-adds-styles-audio-animations-lottie",
+    "pubDate": "2026-09-30T00:00:00.000Z",
+    "image": "",
+    "categories": [],
+    "source": "Figma Release Notes",
+    "sourceUrl": "https://www.figma.com/release-notes/",
+    "territory": "DESIGN",
+    "id": "bd9b31b5b4226e2a"
+  },
+  {
+    "title": "Smoother design collaboration and navigation on mobile",
+    "description": "",
+    "link": "https://www.figma.com/release-notes/?title=smoother-design-collaboration",
+    "pubDate": "2026-09-30T00:00:00.000Z",
+    "image": "",
+    "categories": [],
+    "source": "Figma Release Notes",
+    "sourceUrl": "https://www.figma.com/release-notes/",
+    "territory": "DESIGN",
+    "id": "f2a69e437450ed1f"
+  },
+  {
+    "title": "Vertical wrap available in auto layout",
+    "description": "",
+    "link": "https://www.figma.com/release-notes/?title=vertical-wrap-available-in-auto-layout",
+    "pubDate": "2026-09-25T00:00:00.000Z",
+    "image": "",
+    "categories": [],
+    "source": "Figma Release Notes",
+    "sourceUrl": "https://www.figma.com/release-notes/",
+    "territory": "DESIGN",
+    "id": "3b959d0019b15171"
+  },
+  {
+    "title": "Create on-brand content with your Figma designs in Weave workflows",
+    "description": "",
+    "link": "https://www.figma.com/release-notes/?title=figma-node-on-brand-content",
+    "pubDate": "2026-09-17T00:00:00.000Z",
+    "image": "",
+    "categories": [],
+    "source": "Figma Release Notes",
+    "sourceUrl": "https://www.figma.com/release-notes/",
+    "territory": "DESIGN",
+    "id": "e5120c10ed5d7da9"
+  },
+  {
+    "title": "Preview what's inside folders",
+    "description": "",
+    "link": "https://www.figma.com/release-notes/?title=preview-inside-folders",
+    "pubDate": "2026-09-16T00:00:00.000Z",
+    "image": "",
+    "categories": [],
+    "source": "Figma Release Notes",
+    "sourceUrl": "https://www.figma.com/release-notes/",
+    "territory": "DESIGN",
+    "id": "c3110c497c98c25a"
+  },
+  {
+    "title": "Publish Weave tools to the Figma Community",
+    "description": "",
+    "link": "https://www.figma.com/release-notes/?title=publish-weave-tools-to-the-figma-community",
+    "pubDate": "2026-09-16T00:00:00.000Z",
+    "image": "",
+    "categories": [],
+    "source": "Figma Release Notes",
+    "sourceUrl": "https://www.figma.com/release-notes/",
+    "territory": "DESIGN",
+    "id": "6cff5e59594c1ae6"
+  },
+  {
+    "title": "Control opacity at scale",
+    "description": "",
+    "link": "https://www.figma.com/release-notes/?title=control-opacity-at-scale",
+    "pubDate": "2026-09-03T00:00:00.000Z",
+    "image": "",
+    "categories": [],
+    "source": "Figma Release Notes",
+    "sourceUrl": "https://www.figma.com/release-notes/",
+    "territory": "DESIGN",
+    "id": "f182a9e98ff6892f"
+  },
+  {
+    "title": "Updates to generative plugins and shaders",
+    "description": "",
+    "link": "https://www.figma.com/release-notes/?title=updates-to-generative-plugins-shaders",
+    "pubDate": "2026-09-01T00:00:00.000Z",
+    "image": "",
+    "categories": [],
+    "source": "Figma Release Notes",
+    "sourceUrl": "https://www.figma.com/release-notes/",
+    "territory": "DESIGN",
+    "id": "a4f0dba702f60266"
+  },
+  {
+    "title": "Open the agent chat panel in a new window",
+    "description": "",
+    "link": "https://www.figma.com/release-notes/?title=open-the-agent-chat-panel-in-a-new-window",
+    "pubDate": "2026-08-26T00:00:00.000Z",
+    "image": "",
+    "categories": [],
+    "source": "Figma Release Notes",
+    "sourceUrl": "https://www.figma.com/release-notes/",
+    "territory": "DESIGN",
+    "id": "012601c0abbf9d7e"
+  },
+  {
+    "title": "Erase and drag to fill for vector editing",
+    "description": "",
+    "link": "https://www.figma.com/release-notes/?title=erase-vector-editing",
+    "pubDate": "2026-08-24T00:00:00.000Z",
+    "image": "",
+    "categories": [],
+    "source": "Figma Release Notes",
+    "sourceUrl": "https://www.figma.com/release-notes/",
+    "territory": "DESIGN",
+    "id": "e83223cac68ed320"
   },
   {
     "title": "Nike Air",
