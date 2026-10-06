@@ -112,13 +112,17 @@ def parse_html_source(raw, src):
             continue
         if src.get("product") == "Midjourney" and "updates.midjourney.com/" not in low:
             continue
+        if src.get("product") == "Midjourney" and low.rstrip("/") == "https://updates.midjourney.com":
+            continue
         if src.get("product") in ("Adobe", "Firefly") and "/publish/" not in low:
             continue
         if src.get("product") == "Canva" and "/newsroom/news/" not in low:
             continue
         if src.get("product") == "Runway" and not any(part in low for part in ["/news/", "/research/", "/introducing/", "/product/"]):
             continue
-        if title.lower() in {"read more", "learn more", "discover more", "home", "news"}:
+        if src.get("product") == "Logo Histories" and "/p/" not in low:
+            continue
+        if len(title) < 12 or title.lower() in {"read more", "learn more", "discover more", "home", "news", "terms of use", "privacy policy", "subscribe", "contact"}:
             continue
         found.append((title, link))
 
@@ -216,6 +220,8 @@ for item in final:
     score = sum(1 for term in creative_terms if term in blob)
     if item["sourceKind"] == "ai":
         if any(term in blob for term in noise_terms) and score < 2:
+            score = 0
+        if item.get("product") in ("OpenAI", "Google AI") and not any(term in blob for term in ["image", "video", "visual", "creative", "design", "multimodal", "vision", "voice", "canvas", "generation"]):
             score = 0
         if item.get("product") in ("Midjourney", "Runway", "Firefly"):
             score += 2
