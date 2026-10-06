@@ -8,6 +8,11 @@ on:
       - '.github/workflows/daily.yml'
   schedule:
     - cron: '15 12 * * *'
+
+concurrency:
+  group: glermenrik-daily-engine
+  cancel-in-progress: false
+
 jobs:
   ingest:
     runs-on: ubuntu-latest
@@ -22,5 +27,10 @@ jobs:
           git config user.name 'glermenrik-daily-bot'
           git config user.email 'actions@users.noreply.github.com'
           git add data/articles.json
-          git diff --cached --quiet && echo 'No changes' || git commit -m 'chore: refresh daily edition'
+          if git diff --cached --quiet; then
+            echo 'No changes'
+            exit 0
+          fi
+          git commit -m 'chore: refresh daily edition'
+          git pull --rebase origin main
           git push
