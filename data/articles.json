@@ -119,30 +119,6 @@
     "creativeScore": 3
   },
   {
-    "title": "DevDay 2026 Recap",
-    "description": "Explore more than 20 announcements from OpenAI DevDay 2026, including GPT-6 Astra, ChatGPT, Codex, APIs, security, and new tools for builders.",
-    "link": "https://openai.com/index/devday-2026-recap",
-    "pubDate": "Tue, 29 Sep 2026 10:00:00 GMT",
-    "image": "",
-    "categories": [
-      "AI",
-      "TECH",
-      "CULTURE",
-      "COMPANY"
-    ],
-    "source": "OpenAI News",
-    "sourceUrl": "https://openai.com/news/company-announcements/",
-    "sourceKind": "ai",
-    "product": "OpenAI",
-    "territory": "AI",
-    "id": "62835f2ff6090a65",
-    "section": "AI IMPACT",
-    "designScope": "",
-    "designFocus": [],
-    "creativeScore": 2,
-    "imageState": "placeholder"
-  },
-  {
     "title": "Introducing GPT-6.1 Sol",
     "description": "Meet GPT-6.1 Sol: near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra’s standard API input and output token prices.",
     "link": "https://openai.com/index/introducing-gpt-6-1-sol",
@@ -411,31 +387,6 @@
     "hideFromAiImpact": true
   },
   {
-    "title": "Introducing dots",
-    "description": "Dots by OpenAI are proactive assistants that can keep working across complex projects and everyday tasks. Learn how dots help you stay in control while work moves forward.",
-    "link": "https://openai.com/index/introducing-dots",
-    "pubDate": "Tue, 29 Sep 2026 00:00:00 GMT",
-    "image": "",
-    "categories": [
-      "AI",
-      "TECH",
-      "CULTURE",
-      "PRODUCT"
-    ],
-    "source": "OpenAI News",
-    "sourceUrl": "https://openai.com/news/company-announcements/",
-    "sourceKind": "ai",
-    "product": "OpenAI",
-    "territory": "AI",
-    "id": "d59fa3540f9621b7",
-    "section": "AI IMPACT",
-    "designScope": "",
-    "designFocus": [],
-    "creativeScore": 0,
-    "hideFromAiImpact": true,
-    "imageState": "placeholder"
-  },
-  {
     "title": "AI for Societal Impact",
     "description": "Explore this collection to see how experts and local leaders are using AI breakthroughs to ensure everyone can share the opportunity of AI.",
     "link": "https://blog.google/innovation-and-ai/technology/ai/ai-for-societal-impact/",
@@ -530,6 +481,56 @@
     "designFocus": [],
     "creativeScore": 0,
     "hideFromAiImpact": true
+  },
+  {
+    "title": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
+    "description": "Atlassian and OpenAI are expanding their partnership to connect frontier models with enterprise knowledge and help teams plan, build, and deliver work.",
+    "link": "https://openai.com/index/atlassian-partnership",
+    "pubDate": "Tue, 06 Oct 2026 16:00:00 GMT",
+    "image": "",
+    "categories": [
+      "AI",
+      "TECH",
+      "CULTURE",
+      "COMPANY"
+    ],
+    "source": "OpenAI News",
+    "sourceUrl": "https://openai.com/news/company-announcements/",
+    "sourceKind": "ai",
+    "product": "OpenAI",
+    "territory": "AI",
+    "id": "45b05be1f2adc04f",
+    "section": "AI IMPACT",
+    "designScope": "",
+    "designFocus": [],
+    "creativeScore": 0,
+    "hideFromAiImpact": true,
+    "imageState": "placeholder"
+  },
+  {
+    "title": "Advancing computer use with Ironclad",
+    "description": "Learn how OpenAI and Ironclad are training and evaluating AI agents on complex contracting workflows to advance computer use for professional work.",
+    "link": "https://openai.com/index/advancing-computer-use-with-ironclad",
+    "pubDate": "Tue, 06 Oct 2026 10:00:00 GMT",
+    "image": "",
+    "categories": [
+      "AI",
+      "TECH",
+      "CULTURE",
+      "COMPANY"
+    ],
+    "source": "OpenAI News",
+    "sourceUrl": "https://openai.com/news/company-announcements/",
+    "sourceKind": "ai",
+    "product": "OpenAI",
+    "territory": "AI",
+    "id": "4a5bfd29e8e7fc15",
+    "section": "AI IMPACT",
+    "designScope": "",
+    "designFocus": [],
+    "creativeScore": 0,
+    "hideFromAiImpact": true,
+    "imageState": "placeholder"
   },
   {
     "title": "Making global data easier to explore",
@@ -1132,37 +1133,6 @@
     "creativeScore": 3
   },
   {
-    "title": "red wound and black stitches turn bulldozer scar into land art by the krank in corfu",
-    "description": "in wound, a familiar image of bodily trauma expands to the scale of a landscape, 'addressing the vulnerability of a natural environment that has already experienced human intervention.' The post red wound and black stitches turn bulldozer scar into land art by the krank in corfu appeared first on designboom | architecture & design magazine .",
-    "link": "https://www.designboom.com/art/red-wound-black-stitches-bulldozer-scar-land-art-the-krank-corfu-greece/",
-    "pubDate": "Mon, 05 Oct 2026 14:15:37 +0000",
-    "image": "https://www.designboom.com/wp-content/uploads/2026/10/red-wound-black-stitches-bulldozer-scar-land-art-the-krank-corfu-designboom-700-500x400-22b08q85r628.jpg",
-    "categories": [
-      "DESIGN",
-      "SPACE",
-      "TECH",
-      "OBJECT",
-      "IMAGE",
-      "ART",
-      "READERS",
-      "VIDEO",
-      "ARCHITECTURE IN GREECE",
-      "INTERACTIVE INSTALLATION",
-      "LAND ART",
-      "THE KRANK"
-    ],
-    "source": "designboom",
-    "sourceUrl": "https://www.designboom.com/",
-    "sourceKind": "culture",
-    "product": "",
-    "territory": "DESIGN",
-    "id": "b65a2da91dd114db",
-    "section": "CULTURE",
-    "designScope": "architecture-object",
-    "designFocus": [],
-    "creativeScore": 3
-  },
-  {
     "title": "ImaginaryFriend Gives MATCHALITA’s Matcha a Nightlife Ready Makeover",
     "description": "MATCHALITA brings matcha into the world of music and nightlife with packaging by ImaginaryFriend that pairs Japanese visual references with electric color and a waveform inspired graphic language. The result gives ceremonial matcha a fresh cultural context built for creative life beyond the traditional tea ritual. The post ImaginaryFriend Gives MATCHALITA’s Matcha a Nightlife Ready Makeover appeared first on DIELINE .",
     "link": "https://thedieline.com/imaginaryfriend-gives-matchalitas-matcha-a-nightlife-ready-makeover/",
@@ -1289,6 +1259,32 @@
       "TYPE",
       "PRINT",
       "MOTION"
+    ],
+    "creativeScore": 3
+  },
+  {
+    "title": "Progress Centred Around Bravery with Amy Hoffbrand",
+    "description": "The TSA account director and strategist on mentoring women in the industry and why more brands need to see the benefits of creator marketing, as part of LBB’s Women Who Will series",
+    "link": "https://lbbonline.com/news/progress-centred-around-bravery-with-amy-hoffbrand",
+    "pubDate": "",
+    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/amy-hoffbrand-tsa.iSY6ZcCu.png",
+    "categories": [
+      "DIRECTION",
+      "CULTURE",
+      "MOTION",
+      "DESIGN"
+    ],
+    "source": "LBB",
+    "sourceUrl": "https://lbbonline.com/",
+    "sourceKind": "culture",
+    "product": "",
+    "territory": "DIRECTION",
+    "id": "8eec43c479ad623a",
+    "section": "CULTURE",
+    "designScope": "motion-advertising",
+    "designFocus": [
+      "MOTION",
+      "DIRECTION"
     ],
     "creativeScore": 3
   },
@@ -1911,33 +1907,6 @@
     "creativeScore": 2
   },
   {
-    "title": "objects out of place: a collective art exhibition set inside former zurich washroom",
-    "description": "the original washroom’s cabins, washing areas, tiles, and fixtures form an integral part of the exhibition. The post objects out of place: a collective art exhibition set inside former zurich washroom appeared first on designboom | architecture & design magazine .",
-    "link": "https://www.designboom.com/design/dislocated-utility-objects-out-of-place-collective-art-exhibition-former-zurich-washroom/",
-    "pubDate": "Mon, 05 Oct 2026 18:30:52 +0000",
-    "image": "https://www.designboom.com/wp-content/uploads/2026/10/dislocated-utility-objects-out-of-place-exhibition-zurich-washroom-designboom-700-500x400-22b08q85r875.jpg",
-    "categories": [
-      "DESIGN",
-      "SPACE",
-      "TECH",
-      "OBJECT",
-      "READERS",
-      "ARCHITECTURE IN SWITZERLAND",
-      "BATHROOM DESIGN",
-      "EXHIBITION DESIGN"
-    ],
-    "source": "designboom",
-    "sourceUrl": "https://www.designboom.com/",
-    "sourceKind": "culture",
-    "product": "",
-    "territory": "DESIGN",
-    "id": "d07f57266ed7b186",
-    "section": "CULTURE",
-    "designScope": "architecture-object",
-    "designFocus": [],
-    "creativeScore": 2
-  },
-  {
     "title": "Beecee Brings Clean Beauty to a Younger Audience with Genuinely Cool Design",
     "description": "Beecee swaggers into the beauty space as clean beauty brand geared toward a younger demo. Established created a nonchalant yet carefully considered brand that achieves that elusive essence of cool. The post Beecee Brings Clean Beauty to a Younger Audience with Genuinely Cool Design appeared first on DIELINE .",
     "link": "https://thedieline.com/beecee-brings-clean-beauty-to-a-younger-audience-with-genuinely-cool-design/",
@@ -2239,11 +2208,11 @@
     "creativeScore": 2
   },
   {
-    "title": "Psyop Group Continues Strategic Expansion Across US with Free Agents Partnership",
-    "description": "The partnership with Free Agents marks a major milestone in the continued evolution of Psyop Group",
-    "link": "https://lbbonline.com/news/psyop-group-continues-strategic-expansion-across-us-with-free-agents-partnership",
+    "title": "Putting Strategy Back at the Start with Desiree Shen",
+    "description": "The dentsu China senior planning director on the modern difference between strategists and planners, nurturing creative talent, and her thoughts on common industry stereotypes, as part of LBB’s Planning for the Best series",
+    "link": "https://lbbonline.com/news/putting-strategy-back-at-the-start-with-desiree-shen",
     "pubDate": "",
-    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/Psyop-Group-x-Free-Agents-Press-Visual-LBB.L80zxDtf.png",
+    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/desiree-shen-dentsu.H_kP2WdY.png",
     "categories": [
       "DIRECTION",
       "CULTURE",
@@ -2255,7 +2224,7 @@
     "sourceKind": "culture",
     "product": "",
     "territory": "DIRECTION",
-    "id": "6627f65adbf486f1",
+    "id": "9976b534a7c7e6b9",
     "section": "CULTURE",
     "designScope": "motion-advertising",
     "designFocus": [
@@ -2265,11 +2234,11 @@
     "creativeScore": 2
   },
   {
-    "title": "COLORS Welcomes Director Amy Sarr",
-    "description": "Amy Sarr unveils 'Dakar New Wave', a film produced by Colors & Shape that portrays a new generation of Dakar fashion designers through Maison Detta, L'Artisane, Selly Raby Kane, Guiss Guiss and Maison Kébé",
-    "link": "https://lbbonline.com/news/colors-welcomes-director-amy-sarr",
+    "title": "Is the “Ozempification of Culture” Coming for Brands?",
+    "description": "OK COOL’s 2027 trend report asks where data-led refinement should end and creative risk begin as audiences push back against cultural sameness",
+    "link": "https://lbbonline.com/news/is-the-ozempification-of-culture-coming-for-brands",
     "pubDate": "",
-    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/AMY-SARR.fnzS6zBA.png",
+    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/societal-ozempification.ye1w1wgZ.jpeg",
     "categories": [
       "DIRECTION",
       "CULTURE",
@@ -2281,7 +2250,59 @@
     "sourceKind": "culture",
     "product": "",
     "territory": "DIRECTION",
-    "id": "cbbb5545f69c4294",
+    "id": "d56f334a7fe16861",
+    "section": "CULTURE",
+    "designScope": "motion-advertising",
+    "designFocus": [
+      "MOTION",
+      "DIRECTION"
+    ],
+    "creativeScore": 2
+  },
+  {
+    "title": "Stanley the Dachshund Gives a Proper Pep Talk to Show Vitality Is ‘Your Health’s Best Friend’",
+    "description": "The nationwide campaign from VCCP brings the insurance company’s brand platform to life with an inspirational hero film, produced by Arts & Sciences",
+    "link": "https://lbbonline.com/news/vitality-stanley-the-dachshund-your-healths-best-friend",
+    "pubDate": "",
+    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/vitality-health-best-friend.TVVYOw1L.png",
+    "categories": [
+      "DIRECTION",
+      "CULTURE",
+      "MOTION",
+      "DESIGN"
+    ],
+    "source": "LBB",
+    "sourceUrl": "https://lbbonline.com/",
+    "sourceKind": "culture",
+    "product": "",
+    "territory": "DIRECTION",
+    "id": "fe07ca4b959487f9",
+    "section": "CULTURE",
+    "designScope": "motion-advertising",
+    "designFocus": [
+      "MOTION",
+      "DIRECTION"
+    ],
+    "creativeScore": 2
+  },
+  {
+    "title": "AI, Data and Storytelling with John Jamison",
+    "description": "The VP of engineering at H/L on the integration of AI into workflows, recent success stories, and meta-prompting, as part of LBB’s AI Spy series",
+    "link": "https://lbbonline.com/news/ai-data-and-storytelling-with-john-jamison",
+    "pubDate": "",
+    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/john-jamison-hl.9gm-HsTA.png",
+    "categories": [
+      "DIRECTION",
+      "CULTURE",
+      "MOTION",
+      "TECH"
+    ],
+    "source": "LBB",
+    "sourceUrl": "https://lbbonline.com/",
+    "sourceKind": "culture",
+    "product": "",
+    "territory": "DIRECTION",
+    "id": "7ce68918e66fce81",
     "section": "CULTURE",
     "designScope": "motion-advertising",
     "designFocus": [
@@ -2343,6 +2364,141 @@
       "PRINT",
       "ILLUSTRATION"
     ],
+    "creativeScore": 1
+  },
+  {
+    "title": "MINI countryman goes ‘untamed’ with its most rugged setup yet for life off-road",
+    "description": "the countryman gets its most rugged setup yet, with a suspension lift, all-terrain tires, and a hard-shell roof tent. The post MINI countryman goes ‘untamed’ with its most rugged setup yet for life off-road appeared first on designboom | architecture & design magazine .",
+    "link": "https://www.designboom.com/technology/mini-countryman-untamed-edition-rugged-off-roading-lifted-suspension-all-terrain-roof-tent/",
+    "pubDate": "Tue, 06 Oct 2026 16:00:26 +0000",
+    "image": "https://www.designboom.com/wp-content/uploads/2026/10/BMW-MINI-countryman-untamed-edition-offroading-car-designboom-700-500x400-22b08q85r981.jpg",
+    "categories": [
+      "DESIGN",
+      "SPACE",
+      "TECH",
+      "OBJECT",
+      "TECHNOLOGY",
+      "BMW",
+      "CAR DESIGN",
+      "MINI"
+    ],
+    "source": "designboom",
+    "sourceUrl": "https://www.designboom.com/",
+    "sourceKind": "culture",
+    "product": "",
+    "territory": "DESIGN",
+    "id": "f9f45b6c1a43dc4f",
+    "section": "CULTURE",
+    "designScope": "architecture-object",
+    "designFocus": [],
+    "creativeScore": 1
+  },
+  {
+    "title": "rotating octagonal forms marked with community voices shape queens landmark",
+    "description": "developed in collaboration with astoria houses residents, revolving voices combines interactive structures with etched poetry to create a public space that shifts between everyday gathering and community storytelling. The post rotating octagonal forms marked with community voices shape queens landmark appeared first on designboom | architecture & design magazine .",
+    "link": "https://www.designboom.com/design/rotating-megaphone-forms-community-voices-queens-landmark-urban-conga-tamra-cosby/",
+    "pubDate": "Tue, 06 Oct 2026 15:45:55 +0000",
+    "image": "https://www.designboom.com/wp-content/uploads/2026/10/revolving-voices-urban-conga-tamra-cosby-public-artwork-astoria-houses-ny-designboom-700-500x400-22b08q85r632.jpg",
+    "categories": [
+      "DESIGN",
+      "SPACE",
+      "TECH",
+      "OBJECT",
+      "READERS",
+      "VIDEO",
+      "ARCHITECTURE IN NEW YORK",
+      "INTERACTIVE INSTALLATION",
+      "PUBLIC ART",
+      "SCULPTURE"
+    ],
+    "source": "designboom",
+    "sourceUrl": "https://www.designboom.com/",
+    "sourceKind": "culture",
+    "product": "",
+    "territory": "DESIGN",
+    "id": "ff649a1b13c20819",
+    "section": "CULTURE",
+    "designScope": "architecture-object",
+    "designFocus": [],
+    "creativeScore": 1
+  },
+  {
+    "title": "google japan puts Gboard on conveyor belts so the keys come to you",
+    "description": "the latest experiment from the gboard team reverses the usual logic of typing: this time, the keyboard does the moving. The post google japan puts Gboard on conveyor belts so the keys come to you appeared first on designboom | architecture & design magazine .",
+    "link": "https://www.designboom.com/technology/google-japan-gboard-kurukuru-conveyor-belts-keyboard/",
+    "pubDate": "Tue, 06 Oct 2026 15:25:51 +0000",
+    "image": "https://www.designboom.com/wp-content/uploads/2026/10/google-japan-gboard-kurukuru-conveyor-belts-keyboard2.jpg",
+    "categories": [
+      "DESIGN",
+      "SPACE",
+      "TECH",
+      "OBJECT",
+      "TECHNOLOGY",
+      "3D PRINTING",
+      "GOOGLE",
+      "KEYBOARDS",
+      "OPEN SOURCE",
+      "PERSONAL TECHNOLOGY"
+    ],
+    "source": "designboom",
+    "sourceUrl": "https://www.designboom.com/",
+    "sourceKind": "culture",
+    "product": "",
+    "territory": "DESIGN",
+    "id": "20ef9604c93bd3d3",
+    "section": "CULTURE",
+    "designScope": "architecture-object",
+    "designFocus": [],
+    "creativeScore": 1
+  },
+  {
+    "title": "Two new Croatian houses showcase the architectural approach of Njirić+ arhitekti",
+    "description": "Two Croatian houses, the Double-Villa Bukovac and Zagreb House Extension, are two sides of the same coin, representing the private homes built for each studio partner, Hrvoje Njirić and Iskra Filipović",
+    "link": "https://www.wallpaper.com/architecture/residential/two-croatian-houses-zagreb-njiric-arhitekti",
+    "pubDate": "Tue, 06 Oct 2026 14:49:30 +0000",
+    "image": "https://cdn.mos.cms.futurecdn.net/vxcW4GyAsiFpRkGqJE8FFf-1920-80.jpg",
+    "categories": [
+      "DESIGN",
+      "SPACE",
+      "CULTURE",
+      "TECH",
+      "RESIDENTIAL",
+      "ARCHITECTURE"
+    ],
+    "source": "Wallpaper*",
+    "sourceUrl": "https://www.wallpaper.com/",
+    "sourceKind": "culture",
+    "product": "",
+    "territory": "DESIGN",
+    "id": "213ebbcd8e2e7e36",
+    "section": "CULTURE",
+    "designScope": "architecture-object",
+    "designFocus": [],
+    "creativeScore": 1
+  },
+  {
+    "title": "Back to the '90s: Edward Enninful and Juergen Teller remember the decade's freedom, chaos and creativity",
+    "description": "To mark the Tate’s celebration of the art and fashion that defined 1990s Britain, exhibition curator Edward Enninful and photographer Juergen Teller reminisce on an eventful decade",
+    "link": "https://www.wallpaper.com/art/exhibitions-shows/back-to-the-90s-edward-enninful-and-juergen-teller-look-back-on-a-decade-defined-by-a-free-spirit-of-creative-collaboration",
+    "pubDate": "Tue, 06 Oct 2026 14:37:20 +0000",
+    "image": "https://cdn.mos.cms.futurecdn.net/F7CyZ4dvcBihQerS6ZY5xZ-1920-80.gif",
+    "categories": [
+      "DESIGN",
+      "SPACE",
+      "CULTURE",
+      "IMAGE",
+      "EXHIBITIONS & SHOWS",
+      "ART AND CULTURE"
+    ],
+    "source": "Wallpaper*",
+    "sourceUrl": "https://www.wallpaper.com/",
+    "sourceKind": "culture",
+    "product": "",
+    "territory": "DESIGN",
+    "id": "d333a76977c9b1c7",
+    "section": "CULTURE",
+    "designScope": "architecture-object",
+    "designFocus": [],
     "creativeScore": 1
   },
   {
@@ -3076,31 +3232,6 @@
     "creativeScore": 1
   },
   {
-    "title": "Sophie Calle is drawn to absence – of men, of work, of a feeling – in Margate",
-    "description": "In 'Sophie Calle: Something Missing?' at Turner Contemporary, the French artist considers the lack",
-    "link": "https://www.wallpaper.com/art/exhibitions-shows/sophie-calle-is-drawn-to-absence-of-men-of-work-of-a-feeling-in-margate",
-    "pubDate": "Mon, 05 Oct 2026 20:18:26 +0000",
-    "image": "https://cdn.mos.cms.futurecdn.net/aYXRhKWMnGWse9soHJAT83-1920-80.jpg",
-    "categories": [
-      "DESIGN",
-      "SPACE",
-      "CULTURE",
-      "TECH",
-      "EXHIBITIONS & SHOWS",
-      "ART AND CULTURE"
-    ],
-    "source": "Wallpaper*",
-    "sourceUrl": "https://www.wallpaper.com/",
-    "sourceKind": "culture",
-    "product": "",
-    "territory": "DESIGN",
-    "id": "63ff8a975f70f1da",
-    "section": "CULTURE",
-    "designScope": "architecture-object",
-    "designFocus": [],
-    "creativeScore": 1
-  },
-  {
     "title": "Design Week Mexico 2026 Opens with a Bold New Identity",
     "description": "Design Week Mexico 2026 opens today in Mexico City, and its new graphic identity leads with a giant grotesque DWM26 set in off-white on black. The whole campaign hangs on that one move: the wordmark I...",
     "link": "https://abduzeedo.com/design-week-mexico-2026-opens-bold-new-identity/",
@@ -3180,36 +3311,6 @@
       "TYPE",
       "MOTION"
     ],
-    "creativeScore": 1
-  },
-  {
-    "title": "studio KO turns historic 1960s bus palladium nightclub into five-star hotel in paris",
-    "description": "the legendary nightlife address trades its old dance hall for six floors of rooms, keeping its red neon, club downstairs, and rock ‘n’ roll pulse alive. The post studio KO turns historic 1960s bus palladium nightclub into five-star hotel in paris appeared first on designboom | architecture & design magazine .",
-    "link": "https://www.designboom.com/architecture/studio-ko-paris-bus-palladium-nightclub-five-star-hotel/",
-    "pubDate": "Mon, 05 Oct 2026 14:00:36 +0000",
-    "image": "https://www.designboom.com/wp-content/uploads/2026/10/studio-ko-paris-bus-palladium-five-star-hotel-rock-n-roll-designboom-designboom-06@2x-500x400-22b08q85r960.jpg",
-    "categories": [
-      "DESIGN",
-      "SPACE",
-      "TECH",
-      "OBJECT",
-      "ARCHITECTURE",
-      "ARCHITECTURE IN FRANCE",
-      "ARCHITECTURE IN PARIS",
-      "DESIGNER BOUTIQUE HOTELS",
-      "HOTEL ARCHITECTURE AND DESIGN",
-      "RESTAURANT AND CAFÉ DESIGN",
-      "STUDIO KO"
-    ],
-    "source": "designboom",
-    "sourceUrl": "https://www.designboom.com/",
-    "sourceKind": "culture",
-    "product": "",
-    "territory": "DESIGN",
-    "id": "7b210b7e2cdf0341",
-    "section": "CULTURE",
-    "designScope": "architecture-object",
-    "designFocus": [],
     "creativeScore": 1
   },
   {
@@ -3877,23 +3978,24 @@
     "creativeScore": 1
   },
   {
-    "title": "Tickets Released: The Immortal Awards UK Winners Night",
-    "description": "On the 21st of October, Little Black Book, Framestore and Company 3 invite you to celebrate the UK's best creative work and the teams behind it",
-    "link": "https://lbbonline.com/news/tickets-released-the-immortal-awards-uk-winners-night",
+    "title": "Fantino & Mondello Helps Canadians Keep La Dolce Vita Alive at Home with Year of Italian Charcuterie",
+    "description": "Cured meat brand and Rethink meet inviting consumers to share a photo of themselves in Italy or a moment that brings Italy to mind for a chance to win a year’s worth of free charcuterie for a year",
+    "link": "https://lbbonline.com/news/fantino-mondello-canadians-italian-charcuterie",
     "pubDate": "",
-    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/immortal-award-night-story-graphic-1.VlJ7GKcU.png",
+    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/fantino-and-mondello-la-dolce-vita.fwUd-20l.png",
     "categories": [
       "DIRECTION",
       "CULTURE",
       "MOTION",
-      "TECH"
+      "IMAGE",
+      "DESIGN"
     ],
     "source": "LBB",
     "sourceUrl": "https://lbbonline.com/",
     "sourceKind": "culture",
     "product": "",
     "territory": "DIRECTION",
-    "id": "cfc38651cf4544c2",
+    "id": "4606683b3453308a",
     "section": "CULTURE",
     "designScope": "motion-advertising",
     "designFocus": [
@@ -3903,11 +4005,11 @@
     "creativeScore": 1
   },
   {
-    "title": "The Creative Opportunity: What Cannes Lions International Festival of Creativity Can Teach Us About Merch",
-    "description": "Fireside chat with panellists Maik Hoffman, Dani Comar, Will Rust and Will Good discuss how there is far more creative potential in merch than we’re currently using",
-    "link": "https://lbbonline.com/news/the-creative-opportunity-what-cannes-lions-international-festival-of-creativity-can-teach-us-about-merch",
+    "title": "Pinnacle Names New Executive Creative Directors and Revamped Studio Structure",
+    "description": "Allison Beck and Erin Kana join PINNACLE as executive creative directors, leading newly formed studios as a wave of experiential growth fuels new momentum across the agency",
+    "link": "https://lbbonline.com/news/pinnacle-names-new-executive-creative-directors-and-revamped-studio-structure",
     "pubDate": "",
-    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/prominate-cannes-merch.bIJuJ8To.png",
+    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/allison-beck-and-erin-kana.0gTwkbxb.png",
     "categories": [
       "DIRECTION",
       "CULTURE",
@@ -3919,111 +4021,7 @@
     "sourceKind": "culture",
     "product": "",
     "territory": "DIRECTION",
-    "id": "6b23d8b69dfee8e4",
-    "section": "CULTURE",
-    "designScope": "motion-advertising",
-    "designFocus": [
-      "MOTION",
-      "DIRECTION"
-    ],
-    "creativeScore": 1
-  },
-  {
-    "title": "Shoppers Drug Mart Brings Fall Beauty Trend to Life with Pinterest’s First-Ever Beauty Trend Report",
-    "description": "Beauty Trend Report highlights the shifts in personal expression and the trending makeup looks that everyone will be trying",
-    "link": "https://lbbonline.com/news/shoppers-drug-mart-fall-beauty-pinterest-trend-report",
-    "pubDate": "",
-    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/pinterest.9jtImouZ.png",
-    "categories": [
-      "DIRECTION",
-      "CULTURE",
-      "MOTION",
-      "TECH"
-    ],
-    "source": "LBB",
-    "sourceUrl": "https://lbbonline.com/",
-    "sourceKind": "culture",
-    "product": "",
-    "territory": "DIRECTION",
-    "id": "6751a282ca580e84",
-    "section": "CULTURE",
-    "designScope": "motion-advertising",
-    "designFocus": [
-      "MOTION",
-      "DIRECTION"
-    ],
-    "creativeScore": 1
-  },
-  {
-    "title": "LOLA Normajean Appoints Paulo Areas as CCO and Shareholder",
-    "description": "Paulo Areas joins LOLA Normajean after serving as CCO of TBWA Spain and following a career leading some of the main international creative networks, including Ogilvy, VML and TBWA",
-    "link": "https://lbbonline.com/news/lola-normajean-appoints-paulo-areas-as-cco-and-shareholder",
-    "pubDate": "",
-    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/lola.6F9y9eV-.png",
-    "categories": [
-      "DIRECTION",
-      "CULTURE",
-      "MOTION",
-      "TECH"
-    ],
-    "source": "LBB",
-    "sourceUrl": "https://lbbonline.com/",
-    "sourceKind": "culture",
-    "product": "",
-    "territory": "DIRECTION",
-    "id": "42e29a225f7b81c7",
-    "section": "CULTURE",
-    "designScope": "motion-advertising",
-    "designFocus": [
-      "MOTION",
-      "DIRECTION"
-    ],
-    "creativeScore": 1
-  },
-  {
-    "title": "How 3 Decades as a Colourist Has Shaped Creative Outpost Head of Colour Mark Horrobin",
-    "description": "Across three decades in the industry, Mark has watched the role of the colourist evolve from a largely technical discipline into one of the most collaborative creative stages in production",
-    "link": "https://lbbonline.com/news/creative-outpost-head-of-colour-mark-horrobin",
-    "pubDate": "",
-    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/mark-horrobin.7ejnE8Ph.png",
-    "categories": [
-      "DIRECTION",
-      "CULTURE",
-      "MOTION",
-      "TECH"
-    ],
-    "source": "LBB",
-    "sourceUrl": "https://lbbonline.com/",
-    "sourceKind": "culture",
-    "product": "",
-    "territory": "DIRECTION",
-    "id": "319834ba88e272e5",
-    "section": "CULTURE",
-    "designScope": "motion-advertising",
-    "designFocus": [
-      "MOTION",
-      "DIRECTION"
-    ],
-    "creativeScore": 1
-  },
-  {
-    "title": "Steve Martin and Martin Short Discover Funny Side of 2% Cash Back for Wells Fargo",
-    "description": "Campaign from BBDO New York, directed by Aaron Stoller through Biscuit Filmworks, tap into the duo’s signature comedic dynamic, as they discover what their Active Cash Credit Card can unlock",
-    "link": "https://lbbonline.com/news/steve-martin-martin-short-Wells-Fargo",
-    "pubDate": "",
-    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/bbdo-new-york.tmkKxWrF.png",
-    "categories": [
-      "DIRECTION",
-      "CULTURE",
-      "MOTION",
-      "TECH"
-    ],
-    "source": "LBB",
-    "sourceUrl": "https://lbbonline.com/",
-    "sourceKind": "culture",
-    "product": "",
-    "territory": "DIRECTION",
-    "id": "becc6cae730b4f6d",
+    "id": "1d1a92dc5f6d328c",
     "section": "CULTURE",
     "designScope": "motion-advertising",
     "designFocus": [
@@ -4396,6 +4394,36 @@
       "DESIGN",
       "MAKE"
     ],
+    "creativeScore": 0
+  },
+  {
+    "title": "Waterdrop Filter’s Prime Big Deal Days Gets Your Water Ready Before Guests Do This Fall",
+    "description": "Waterdrop Filter’s Prime Big Deal Days Gets Your Water Ready Before Guests Do This Fall Fall has a way of turning the kitchen into the busiest room in the house, whether it’s earlier coffee brews, soups lingering on the stove,...",
+    "link": "https://www.yankodesign.com/2026/10/06/waterdrop-filters-prime-big-deal-days-gets-your-water-ready-before-guests-do-this-fall/?utm_source=rss&utm_medium=rss&utm_campaign=waterdrop-filters-prime-big-deal-days-gets-your-water-ready-before-guests-do-this-fall",
+    "pubDate": "Tue, 06 Oct 2026 15:00:26 +0000",
+    "image": "https://www.yankodesign.com/images/design_news/2026/09/waterdrop-filters-prime-big-deal-days-gets-your-water-ready-before-guests-do-this-fall/Waterdrop-Prime-Day-hero.jpg",
+    "categories": [
+      "DESIGN",
+      "TECH",
+      "OBJECT",
+      "APPLIANCES",
+      "DEALS",
+      "HOMES",
+      "LIFESTYLE",
+      "TECHNOLOGY",
+      "DRINKING WATER",
+      "WATER FILTER",
+      "WATERDROP"
+    ],
+    "source": "Yanko Design",
+    "sourceUrl": "https://www.yankodesign.com/",
+    "sourceKind": "culture",
+    "product": "",
+    "territory": "DESIGN",
+    "id": "3773824d55ab7ab1",
+    "section": "CULTURE",
+    "designScope": "product-tech",
+    "designFocus": [],
     "creativeScore": 0
   },
   {
@@ -5041,56 +5069,6 @@
     "id": "0c7e57a38a8ee86e",
     "section": "CULTURE",
     "designScope": "object-space",
-    "designFocus": [],
-    "creativeScore": 0
-  },
-  {
-    "title": "Vollebak Built a $50,000 “Rock Jacket” Out of 54,000 Actual Wearable Slate Tiles",
-    "description": "Vollebak Built a $50,000 “Rock Jacket” Out of 54,000 Actual Wearable Slate Tiles Rock has been around for billions of years. Humans have been around for a few million. In that time we figured out how to wear...",
-    "link": "https://www.yankodesign.com/2026/10/05/vollebak-built-a-50000-rock-jacket-out-of-54000-actual-wearable-slate-tiles/?utm_source=rss&utm_medium=rss&utm_campaign=vollebak-built-a-50000-rock-jacket-out-of-54000-actual-wearable-slate-tiles",
-    "pubDate": "Mon, 05 Oct 2026 18:20:27 +0000",
-    "image": "https://www.yankodesign.com/images/design_news/2026/10/auto-draft/vollebak_rock_jacket_1.jpg",
-    "categories": [
-      "DESIGN",
-      "TECH",
-      "OBJECT",
-      "FASHION",
-      "PRODUCT DESIGN",
-      "JACKET",
-      "VOLLEBAK"
-    ],
-    "source": "Yanko Design",
-    "sourceUrl": "https://www.yankodesign.com/",
-    "sourceKind": "culture",
-    "product": "",
-    "territory": "DESIGN",
-    "id": "18a897075a9e3b34",
-    "section": "CULTURE",
-    "designScope": "product-tech",
-    "designFocus": [],
-    "creativeScore": 0
-  },
-  {
-    "title": "Dive into Guadalajara modernism, and this lesser-known strand of Mexican architecture",
-    "description": "Guadalajara modernism boasts names such as Louis Barragán and offers fascinating insights into the development of 20th-century architecture in Mexico",
-    "link": "https://www.wallpaper.com/architecture/guadalajara-modernism-guide",
-    "pubDate": "Mon, 05 Oct 2026 13:31:17 +0000",
-    "image": "https://cdn.mos.cms.futurecdn.net/PYUfQvTdZBJoQedauGEfFC-1920-80.jpg",
-    "categories": [
-      "DESIGN",
-      "SPACE",
-      "CULTURE",
-      "TECH",
-      "ARCHITECTURE"
-    ],
-    "source": "Wallpaper*",
-    "sourceUrl": "https://www.wallpaper.com/",
-    "sourceKind": "culture",
-    "product": "",
-    "territory": "DESIGN",
-    "id": "793a60ff48c04651",
-    "section": "CULTURE",
-    "designScope": "architecture-object",
     "designFocus": [],
     "creativeScore": 0
   },
@@ -5774,11 +5752,11 @@
     "creativeScore": 0
   },
   {
-    "title": "Cadbury Finds the Funny Side of Giving Things Away",
-    "description": "Kode director Zak Razvi and VCCP reunite with Cadbury for two understated films celebrating the wonderfully confusing business of giving something away",
-    "link": "https://lbbonline.com/news/zak-razvi-finds-the-funny-in-friendship-for-cadbury-s-giveaway-give-away",
+    "title": "Tickets Released: The Inaugural Toronto Monthly Cut Screening",
+    "description": "Zulu Alpha Kilo will host LBB's global screening series in Toronto on Thursday 22nd October. Tickets are available now",
+    "link": "https://lbbonline.com/news/tickets-released-the-inaugural-toronto-monthly-cut-screening",
     "pubDate": "",
-    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/cadbury-park.0HX5mCOh.png",
+    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/london-5.IvI9awDh.png",
     "categories": [
       "DIRECTION",
       "CULTURE",
@@ -5790,7 +5768,7 @@
     "sourceKind": "culture",
     "product": "",
     "territory": "DIRECTION",
-    "id": "5f9c9569a6ebc892",
+    "id": "ea6b123b2707a75f",
     "section": "CULTURE",
     "designScope": "motion-advertising",
     "designFocus": [
@@ -5800,11 +5778,11 @@
     "creativeScore": 0
   },
   {
-    "title": "InnerGroup Appoints David Farrant as Global Head of Growth",
-    "description": "David has previously held senior growth roles at Tag, MullenLowe London, and OLIVER, where he worked as new business and implementation director",
-    "link": "https://lbbonline.com/news/innergroup-david-farrant-global-head-of-growth",
+    "title": "ATHX Games Appoints PrettyGreen to Accelerate Global Growth",
+    "description": "The appointment comes as ATHX prepares to host its 2026 World Finals in Portugal from 27–29th November",
+    "link": "https://lbbonline.com/news/athx-games-appoints-prettygreen-to-accelerate-global-growth",
     "pubDate": "",
-    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/david-farrant.XYAndafn.png",
+    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/athx-logio.BzPv2Nze.png",
     "categories": [
       "DIRECTION",
       "CULTURE",
@@ -5816,7 +5794,7 @@
     "sourceKind": "culture",
     "product": "",
     "territory": "DIRECTION",
-    "id": "59bc41ecc157b065",
+    "id": "3359fb24804db3cb",
     "section": "CULTURE",
     "designScope": "motion-advertising",
     "designFocus": [
@@ -5826,11 +5804,11 @@
     "creativeScore": 0
   },
   {
-    "title": "Hannah Waddingham Gives Paula’s Choice a Peptide-Powered Pep Talk",
-    "description": "Created by Zerotrillion New York and directed by Bodega Studios, the campaign sees the Emmy-winning actress turn a morning mirror moment into a celebration of confidence, hydration and intensity",
-    "link": "https://lbbonline.com/news/zerotrillion-peptide-pep-talk-paulas-choice-hannah-waddingham",
+    "title": "The Real AI Problem in Marketing is Organisational, not Technical",
+    "description": "Francisco Lima, head of production consultancy Amplify, on why marketing and advertising industry is facing a structural challenge",
+    "link": "https://lbbonline.com/news/the-real-ai-problem-in-marketing-is-organisational-not-technical",
     "pubDate": "",
-    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/paulas-choice-hannah-waddingham.ZBlPM5IA.png",
+    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/murphy-cobb.UQFUp8Hd.png",
     "categories": [
       "DIRECTION",
       "CULTURE",
@@ -5842,7 +5820,33 @@
     "sourceKind": "culture",
     "product": "",
     "territory": "DIRECTION",
-    "id": "c80fbe53b0a56675",
+    "id": "94c41f322e1addf9",
+    "section": "CULTURE",
+    "designScope": "motion-advertising",
+    "designFocus": [
+      "MOTION",
+      "DIRECTION"
+    ],
+    "creativeScore": 0
+  },
+  {
+    "title": "Plymouth Rock Campaign Features a Bear, an Owl and Some Unresolved Neighbourhood Tensions",
+    "description": "McKinney brings back Plymouth Rock’s “Keep Calm and Rock On” platform with a seven-foot bear, a feuding owl and a fresh dose of Northeast chaos",
+    "link": "https://lbbonline.com/news/plymouth-rock-campaign-features-a-bear-an-owl-and-some-unresolved-neighbourhood-tensions",
+    "pubDate": "",
+    "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/plymouth-rock-assurance-bear-and-owl.iMJlNi4j.png",
+    "categories": [
+      "DIRECTION",
+      "CULTURE",
+      "MOTION",
+      "TECH"
+    ],
+    "source": "LBB",
+    "sourceUrl": "https://lbbonline.com/",
+    "sourceKind": "culture",
+    "product": "",
+    "territory": "DIRECTION",
+    "id": "eae47b369e7f0757",
     "section": "CULTURE",
     "designScope": "motion-advertising",
     "designFocus": [

@@ -1,6 +1,6 @@
 {
   "editionDate": "2026-10-06",
-  "generatedAt": "2026-10-06T14:35:00.663658+00:00",
+  "generatedAt": "2026-10-06T18:24:08.991280+00:00",
   "counts": {
     "all": 221,
     "visual": 170,
@@ -43,8 +43,8 @@
       "sourcePriority": 4.0,
       "sourceRole": "editorial",
       "publishedAt": "2026-10-06T06:00:00+00:00",
-      "recencyScore": 7.64,
-      "editorialScore": 26.04,
+      "recencyScore": 7.48,
+      "editorialScore": 25.88,
       "sourceCountry": ""
     }
   ],
@@ -82,8 +82,8 @@
       "sourcePriority": 5.0,
       "sourceRole": "visual-communication",
       "publishedAt": "2026-10-06T00:00:00+00:00",
-      "recencyScore": 7.39,
-      "editorialScore": 25.19,
+      "recencyScore": 7.23,
+      "editorialScore": 25.03,
       "sourceCountry": ""
     },
     {
@@ -120,8 +120,8 @@
       "sourcePriority": 4.0,
       "sourceRole": "packaging",
       "publishedAt": "2026-10-06T11:46:40+00:00",
-      "recencyScore": 7.88,
-      "editorialScore": 24.88,
+      "recencyScore": 7.72,
+      "editorialScore": 24.72,
       "sourceCountry": ""
     },
     {
@@ -157,8 +157,8 @@
       "sourcePriority": 5.0,
       "sourceRole": "editorial",
       "publishedAt": "2026-10-05T08:00:00+00:00",
-      "recencyScore": 6.73,
-      "editorialScore": 24.73,
+      "recencyScore": 6.57,
+      "editorialScore": 24.57,
       "sourceCountry": ""
     },
     {
@@ -190,8 +190,8 @@
       "sourcePriority": 3.0,
       "sourceRole": "editorial",
       "publishedAt": "2026-10-06T08:45:54+00:00",
-      "recencyScore": 7.76,
-      "editorialScore": 23.96,
+      "recencyScore": 7.6,
+      "editorialScore": 23.8,
       "sourceCountry": ""
     },
     {
@@ -224,8 +224,8 @@
       "sourcePriority": 4.0,
       "sourceRole": "editorial",
       "publishedAt": "2026-10-05T22:06:34+00:00",
-      "recencyScore": 7.31,
-      "editorialScore": 22.91,
+      "recencyScore": 7.15,
+      "editorialScore": 22.75,
       "sourceCountry": ""
     }
   ],
@@ -263,8 +263,8 @@
       "sourcePriority": 5.0,
       "sourceRole": "visual-communication",
       "publishedAt": "2026-10-06T00:00:00+00:00",
-      "recencyScore": 7.39,
-      "editorialScore": 25.19,
+      "recencyScore": 7.23,
+      "editorialScore": 25.03,
       "sourceCountry": ""
     },
     {
@@ -301,8 +301,8 @@
       "sourcePriority": 4.0,
       "sourceRole": "packaging",
       "publishedAt": "2026-10-06T11:46:40+00:00",
-      "recencyScore": 7.88,
-      "editorialScore": 24.88,
+      "recencyScore": 7.72,
+      "editorialScore": 24.72,
       "sourceCountry": ""
     },
     {
@@ -385,8 +385,8 @@
       "sourcePriority": 4.0,
       "sourceRole": "packaging",
       "publishedAt": "2026-10-06T03:00:00+00:00",
-      "recencyScore": 7.52,
-      "editorialScore": 24.52,
+      "recencyScore": 7.36,
+      "editorialScore": 24.36,
       "sourceCountry": ""
     },
     {
@@ -418,8 +418,8 @@
       "sourcePriority": 3.0,
       "sourceRole": "editorial",
       "publishedAt": "2026-10-06T08:45:54+00:00",
-      "recencyScore": 7.76,
-      "editorialScore": 23.96,
+      "recencyScore": 7.6,
+      "editorialScore": 23.8,
       "sourceCountry": ""
     },
     {
@@ -452,8 +452,8 @@
       "sourcePriority": 4.0,
       "sourceRole": "editorial",
       "publishedAt": "2026-10-05T22:06:34+00:00",
-      "recencyScore": 7.31,
-      "editorialScore": 22.91,
+      "recencyScore": 7.15,
+      "editorialScore": 22.75,
       "sourceCountry": ""
     },
     {
@@ -486,8 +486,8 @@
       "sourcePriority": 4.0,
       "sourceRole": "editorial",
       "publishedAt": "2026-10-05T19:08:23+00:00",
-      "recencyScore": 7.19,
-      "editorialScore": 22.79,
+      "recencyScore": 7.03,
+      "editorialScore": 22.63,
       "sourceCountry": ""
     },
     {
@@ -518,8 +518,8 @@
       "sourcePriority": 3.0,
       "sourceRole": "editorial",
       "publishedAt": "2026-10-06T10:48:32+00:00",
-      "recencyScore": 7.84,
-      "editorialScore": 22.64,
+      "recencyScore": 7.68,
+      "editorialScore": 22.48,
       "sourceCountry": ""
     },
     {
@@ -549,8 +549,8 @@
       "sourcePriority": 3.0,
       "sourceRole": "editorial",
       "publishedAt": "2026-10-06T09:25:53+00:00",
-      "recencyScore": 7.79,
-      "editorialScore": 22.59,
+      "recencyScore": 7.63,
+      "editorialScore": 22.43,
       "sourceCountry": ""
     },
     {
@@ -585,45 +585,8 @@
       "sourcePriority": 4.0,
       "sourceRole": "editorial",
       "publishedAt": "2026-10-05T07:00:00+00:00",
-      "recencyScore": 6.68,
-      "editorialScore": 22.28,
-      "sourceCountry": ""
-    },
-    {
-      "title": "red wound and black stitches turn bulldozer scar into land art by the krank in corfu",
-      "description": "in wound, a familiar image of bodily trauma expands to the scale of a landscape, 'addressing the vulnerability of a natural environment that has already experienced human intervention.' The post red wound and black stitches turn bulldozer scar into land art by the krank in corfu appeared first on designboom | architecture & design magazine .",
-      "link": "https://www.designboom.com/art/red-wound-black-stitches-bulldozer-scar-land-art-the-krank-corfu-greece/",
-      "pubDate": "Mon, 05 Oct 2026 14:15:37 +0000",
-      "image": "https://www.designboom.com/wp-content/uploads/2026/10/red-wound-black-stitches-bulldozer-scar-land-art-the-krank-corfu-designboom-700-500x400-22b08q85r628.jpg",
-      "categories": [
-        "DESIGN",
-        "SPACE",
-        "TECH",
-        "OBJECT",
-        "IMAGE",
-        "ART",
-        "READERS",
-        "VIDEO",
-        "ARCHITECTURE IN GREECE",
-        "INTERACTIVE INSTALLATION",
-        "LAND ART",
-        "THE KRANK"
-      ],
-      "source": "designboom",
-      "sourceUrl": "https://www.designboom.com/",
-      "sourceKind": "culture",
-      "product": "",
-      "territory": "DESIGN",
-      "id": "b65a2da91dd114db",
-      "section": "CULTURE",
-      "designScope": "architecture-object",
-      "designFocus": [],
-      "creativeScore": 3,
-      "sourcePriority": 3.0,
-      "sourceRole": "editorial",
-      "publishedAt": "2026-10-05T14:15:37+00:00",
-      "recencyScore": 6.99,
-      "editorialScore": 21.79,
+      "recencyScore": 6.52,
+      "editorialScore": 22.12,
       "sourceCountry": ""
     },
     {
@@ -653,8 +616,8 @@
       "sourcePriority": 3.0,
       "sourceRole": "editorial",
       "publishedAt": "2026-10-06T13:20:24+00:00",
-      "recencyScore": 7.95,
-      "editorialScore": 21.35,
+      "recencyScore": 7.79,
+      "editorialScore": 21.19,
       "sourceCountry": ""
     },
     {
@@ -685,8 +648,8 @@
       "sourcePriority": 3.0,
       "sourceRole": "editorial",
       "publishedAt": "2026-10-06T11:06:00+00:00",
-      "recencyScore": 7.85,
-      "editorialScore": 21.25,
+      "recencyScore": 7.7,
+      "editorialScore": 21.1,
       "sourceCountry": ""
     },
     {
@@ -721,8 +684,40 @@
       "sourcePriority": 4.0,
       "sourceRole": "editorial",
       "publishedAt": "2026-10-05T12:00:00+00:00",
-      "recencyScore": 6.89,
-      "editorialScore": 21.09,
+      "recencyScore": 6.73,
+      "editorialScore": 20.93,
+      "sourceCountry": ""
+    },
+    {
+      "title": "studio 5.5 recombines sockets and switches into modular lighting and furniture building blocks",
+      "description": "volt face treats the switch as a starting point rather than a finishing detail. The post studio 5.5 recombines sockets and switches into modular lighting and furniture building blocks appeared first on designboom | architecture & design magazine .",
+      "link": "https://www.designboom.com/design/studio-5-5-sockets-switches-modular-lighting-furniture-building-blocks-volt-face/",
+      "pubDate": "Tue, 06 Oct 2026 02:10:16 +0000",
+      "image": "https://www.designboom.com/wp-content/uploads/2026/10/studio-5-5-sockets-switches-modular-lighting-furniture-building-blocks-volt-face-designboom-700-1-500x400-22b08q85r887.jpg",
+      "categories": [
+        "DESIGN",
+        "SPACE",
+        "TECH",
+        "OBJECT",
+        "READERS",
+        "LIGHTING DESIGN",
+        "TABLE DESIGN"
+      ],
+      "source": "designboom",
+      "sourceUrl": "https://www.designboom.com/",
+      "sourceKind": "culture",
+      "product": "",
+      "territory": "DESIGN",
+      "id": "73424bf4c1c29fb4",
+      "section": "CULTURE",
+      "designScope": "architecture-object",
+      "designFocus": [],
+      "creativeScore": 2,
+      "sourcePriority": 3.0,
+      "sourceRole": "editorial",
+      "publishedAt": "2026-10-06T02:10:16+00:00",
+      "recencyScore": 7.32,
+      "editorialScore": 20.72,
       "sourceCountry": ""
     },
     {
@@ -749,8 +744,8 @@
       "sourcePriority": 3.0,
       "sourceRole": "editorial",
       "publishedAt": "2026-10-06T00:00:00+00:00",
-      "recencyScore": 7.39,
-      "editorialScore": 20.79,
+      "recencyScore": 7.23,
+      "editorialScore": 20.63,
       "sourceCountry": ""
     },
     {
@@ -780,8 +775,8 @@
       "sourcePriority": 3.0,
       "sourceRole": "editorial",
       "publishedAt": "2026-10-05T22:30:41+00:00",
-      "recencyScore": 7.33,
-      "editorialScore": 20.73,
+      "recencyScore": 7.17,
+      "editorialScore": 20.57,
       "sourceCountry": ""
     },
     {
@@ -814,8 +809,8 @@
       "sourcePriority": 3.0,
       "sourceRole": "editorial",
       "publishedAt": "2026-10-05T19:48:59+00:00",
-      "recencyScore": 7.22,
-      "editorialScore": 20.62,
+      "recencyScore": 7.06,
+      "editorialScore": 20.46,
       "sourceCountry": ""
     },
     {
@@ -847,8 +842,8 @@
       "sourcePriority": 3.0,
       "sourceRole": "editorial",
       "publishedAt": "2026-10-06T10:12:03+00:00",
-      "recencyScore": 7.82,
-      "editorialScore": 19.82,
+      "recencyScore": 7.66,
+      "editorialScore": 19.66,
       "sourceCountry": ""
     },
     {
@@ -879,8 +874,8 @@
       "sourcePriority": 3.0,
       "sourceRole": "editorial",
       "publishedAt": "2026-10-05T23:29:59+00:00",
-      "recencyScore": 7.37,
-      "editorialScore": 19.37,
+      "recencyScore": 7.21,
+      "editorialScore": 19.21,
       "sourceCountry": ""
     },
     {
@@ -912,8 +907,8 @@
       "sourcePriority": 5.0,
       "sourceRole": "visual-thinking",
       "publishedAt": "2026-10-02T14:01:52+00:00",
-      "recencyScore": 3.98,
-      "editorialScore": 18.98,
+      "recencyScore": 3.82,
+      "editorialScore": 18.82,
       "sourceCountry": ""
     },
     {
@@ -949,8 +944,8 @@
       "sourcePriority": 5.0,
       "sourceRole": "web-design",
       "publishedAt": "2026-10-02T08:32:17+00:00",
-      "recencyScore": 3.75,
-      "editorialScore": 18.75,
+      "recencyScore": 3.59,
+      "editorialScore": 18.59,
       "sourceCountry": ""
     }
   ],
@@ -989,8 +984,8 @@
       "sourcePriority": 4.0,
       "sourceRole": "packaging",
       "publishedAt": "2026-10-06T11:46:40+00:00",
-      "recencyScore": 7.88,
-      "editorialScore": 24.88,
+      "recencyScore": 7.72,
+      "editorialScore": 24.72,
       "sourceCountry": ""
     },
     {
@@ -1073,8 +1068,8 @@
       "sourcePriority": 4.0,
       "sourceRole": "packaging",
       "publishedAt": "2026-10-06T03:00:00+00:00",
-      "recencyScore": 7.52,
-      "editorialScore": 24.52,
+      "recencyScore": 7.36,
+      "editorialScore": 24.36,
       "sourceCountry": ""
     },
     {
@@ -1107,8 +1102,8 @@
       "sourcePriority": 4.0,
       "sourceRole": "editorial",
       "publishedAt": "2026-10-05T22:06:34+00:00",
-      "recencyScore": 7.31,
-      "editorialScore": 22.91,
+      "recencyScore": 7.15,
+      "editorialScore": 22.75,
       "sourceCountry": ""
     },
     {
@@ -1141,8 +1136,8 @@
       "sourcePriority": 4.0,
       "sourceRole": "editorial",
       "publishedAt": "2026-10-05T19:08:23+00:00",
-      "recencyScore": 7.19,
-      "editorialScore": 22.79,
+      "recencyScore": 7.03,
+      "editorialScore": 22.63,
       "sourceCountry": ""
     },
     {
@@ -1177,8 +1172,8 @@
       "sourcePriority": 4.0,
       "sourceRole": "editorial",
       "publishedAt": "2026-10-05T12:00:00+00:00",
-      "recencyScore": 6.89,
-      "editorialScore": 21.09,
+      "recencyScore": 6.73,
+      "editorialScore": 20.93,
       "sourceCountry": ""
     },
     {
@@ -1213,8 +1208,8 @@
       "sourcePriority": 4.0,
       "sourceRole": "editorial",
       "publishedAt": "2026-10-05T08:00:00+00:00",
-      "recencyScore": 6.73,
-      "editorialScore": 20.93,
+      "recencyScore": 6.57,
+      "editorialScore": 20.77,
       "sourceCountry": ""
     },
     {
@@ -1250,8 +1245,8 @@
       "sourcePriority": 5.0,
       "sourceRole": "web-design",
       "publishedAt": "2026-10-02T08:32:17+00:00",
-      "recencyScore": 3.75,
-      "editorialScore": 18.75,
+      "recencyScore": 3.59,
+      "editorialScore": 18.59,
       "sourceCountry": ""
     },
     {
@@ -1284,8 +1279,8 @@
       "sourcePriority": 5.0,
       "sourceRole": "web-design",
       "publishedAt": "2026-10-02T08:31:20+00:00",
-      "recencyScore": 3.75,
-      "editorialScore": 18.75,
+      "recencyScore": 3.59,
+      "editorialScore": 18.59,
       "sourceCountry": ""
     },
     {
@@ -1443,8 +1438,8 @@
       "sourcePriority": 3.0,
       "sourceRole": "editorial",
       "publishedAt": "2026-10-06T00:00:00+00:00",
-      "recencyScore": 7.39,
-      "editorialScore": 20.79,
+      "recencyScore": 7.23,
+      "editorialScore": 20.63,
       "sourceCountry": ""
     },
     {
@@ -1505,8 +1500,8 @@
       "sourcePriority": 3.0,
       "sourceRole": "editorial",
       "publishedAt": "2026-10-05T10:00:00+00:00",
-      "recencyScore": 6.81,
-      "editorialScore": 17.61,
+      "recencyScore": 6.65,
+      "editorialScore": 17.45,
       "sourceCountry": ""
     },
     {
@@ -1598,8 +1593,8 @@
       "sourcePriority": 5.0,
       "sourceRole": "visual-thinking",
       "publishedAt": "2026-10-02T14:01:52+00:00",
-      "recencyScore": 3.98,
-      "editorialScore": 18.98,
+      "recencyScore": 3.82,
+      "editorialScore": 18.82,
       "sourceCountry": ""
     },
     {
