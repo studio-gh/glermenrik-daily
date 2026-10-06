@@ -11,7 +11,15 @@ import xml.etree.ElementTree as ET
 ROOT = Path(__file__).resolve().parents[1]
 sources = json.loads((ROOT / "data/sources.json").read_text())
 
-UA = "Mozilla/5.0 (compatible; GlermenrikCreativeDen/1.2)"
+UA = "Mozilla/5.0 (compatible; GlermenrikCreativeDen/1.3)"
+
+BLOCKED_SOURCES = {"Brand New", "BP&O", "Design Week", "Communication Arts", "Creative Review"}
+ACCESS_BLOCK_MARKERS = [
+    "subscribe to read", "subscribe to continue reading", "become a member",
+    "members only", "member-only", "only members can read", "paywall",
+    "paid subscribers", "subscriber-only", "sign in to continue",
+    "subscribe to unlock", "unlock this article"
+]
 
 def clean(s):
     s = html.unescape(s or "")
@@ -22,6 +30,20 @@ def fetch(url, timeout=15):
     req = Request(url, headers={"User-Agent": UA})
     with urlopen(req, timeout=timeout) as r:
         return r.read()
+
+def fetch_feed(url, timeout=20):
+    try:
+        return fetch(url, timeout)
+    except Exception as direct_exc:
+        fallback = "https://api.rss2json.com/v1/api.json?rss_url=" + url
+        try:
+            raw = fetch(fallback, timeout)
+            payload = json.loads(raw.decode("utf-8", "ignore"))
+            if payload.get("status") != "ok":
+                raise RuntimeError(payload.get("message") or "rss2json returned non-ok status")
+            return json.dumps(payload, ensure_ascii=False).encode("utf-8")
+        except Exception:
+            raise direct_exc
 
 def fetch_og_image(url):
     try:
@@ -50,7 +72,33 @@ def classify(title, desc):
     ]
     return [name for name, words in rules if any(word in text for word in words)] or ["TECH"]
 
+def parse_rss2json(raw):
+    payload = json.loads(raw.decode("utf-8", "ignore"))
+    if payload.get("status") != "ok":
+        return []
+    items = []
+    for e in payload.get("items", []):
+        enclosure = e.get("enclosure") or {}
+        items.append({
+            "title": clean(e.get("title", "")),
+            "description": clean(e.get("content") or e.get("description") or ""),
+            "link": e.get("link", "") or "",
+            "pubDate": e.get("pubDate", "") or e.get("published_at", "") or "",
+            "image": e.get("thumbnail", "") or enclosure.get("link", ""),
+            "categories": [str(c).upper() for c in (e.get("categories") or [])],
+        })
+    return items
+
+def is_access_blocked(item):
+    blob = (item.get("title", "") + " " + item.get("description", "")).lower()
+    return any(marker in blob for marker in ACCESS_BLOCK_MARKERS)
+
 def parse_feed(raw):
+    if raw.lstrip().startswith(b"{"):
+        try:
+            return parse_rss2json(raw)
+        except Exception:
+            return []
     root = ET.fromstring(raw)
     items = []
     entries = list(root.findall(".//item")) + list(root.findall(".//{http://www.w3.org/2005/Atom}entry"))
@@ -138,10 +186,14 @@ def parse_html_source(raw, src):
 rows = []
 
 for src in sources:
+    if src.get("name") in BLOCKED_SOURCES:
+        print("[SKIP]", src["name"], "blocked by access policy")
+        continue
     try:
         items = []
         if src.get("feed"):
-            items = parse_feed(fetch(src["feed"]))
+            items = parse_feed(fetch_feed(src["feed"]))
+            items = [x for x in items if not is_access_blocked(x)]
         else:
             for title, link in parse_html_source(fetch(src["url"]), src):
                 items.append({
@@ -153,7 +205,6 @@ for src in sources:
                     "categories": []
                 })
 
-        # Software and AI pages often omit images from RSS. Enrich only missing images.
         if src.get("kind") in ("software", "ai"):
             for item in items[:10]:
                 if not item.get("image") and item.get("link"):
@@ -166,6 +217,7 @@ for src in sources:
                 + (item.get("categories") or [])
             ))
             item.update({
+                "access": "free",
                 "source": src["name"],
                 "sourceUrl": src["url"],
                 "sourceKind": src.get("kind", "culture"),
@@ -182,7 +234,6 @@ for src in sources:
     except Exception as exc:
         print("[WARN]", src["name"], exc)
 
-# Blender's release page is an archive. Keep only newest semantic versions.
 blender_rows = [x for x in rows if x.get("product") == "Blender"]
 other_rows = [x for x in rows if x.get("product") != "Blender"]
 
@@ -193,7 +244,6 @@ def blender_version(item):
 blender_rows = sorted(blender_rows, key=blender_version, reverse=True)[:4]
 rows = other_rows + blender_rows
 
-# Deduplicate.
 seen = set()
 final = []
 for item in rows:
@@ -233,7 +283,6 @@ for item in final:
     if item["sourceKind"] == "ai" and score == 0:
         item["hideFromAiImpact"] = True
 
-# Missing-image software releases remain usable, but are marked for an intentional graphic placeholder.
 for item in final:
     if item["sourceKind"] == "software" and not item.get("image"):
         item["imageState"] = "placeholder"
