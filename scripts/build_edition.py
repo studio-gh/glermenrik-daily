@@ -42,6 +42,8 @@ for item in articles:
     source_kind = item.get("sourceKind", src.get("kind", "culture"))
     item["sourcePriority"] = priority
     item["sourceRole"] = src.get("role", item.get("sourceRole", "editorial"))
+    item["designScope"] = src.get("designScope", item.get("designScope", ""))
+    item["designFocus"] = src.get("designFocus", item.get("designFocus", []))
     item["publishedAt"] = dt.isoformat() if dt else item.get("publishedAt", "")
     item["recencyScore"] = round(recency, 2)
     item["editorialScore"] = round(priority * 2.2 + creative * 1.4 + image_bonus + recency, 2)
@@ -65,6 +67,8 @@ def diverse_select(pool, limit, source_cap=2):
 
 culture = [x for x in articles if x.get("sourceKind") in ("culture", "visual-newsletter", "archive")]
 visual = [x for x in articles if x.get("image") and not x.get("hideFromAiImpact")]
+graphic = [x for x in articles if x.get("image") and x.get("designFocus") and x.get("sourceKind") not in ("software","ai")]
+graphic = [x for x in graphic if any(f in {"DESIGN","BRAND","WEB","TYPE","PRINT","PACKAGING","MOTION","ILLUSTRATION","DIRECTION"} for f in x.get("designFocus", []))]
 tool = [x for x in articles if x.get("sourceKind") == "software"]
 ai = visible_pool([x for x in articles if x.get("sourceKind") == "ai" and x.get("creativeScore", 0) > 0])
 thinking = [x for x in articles if x.get("sourceKind") in ("thinking", "newsletter", "archive", "visual-newsletter")]
@@ -76,6 +80,7 @@ signals_pool = [x for x in articles if x not in big_thing and not x.get("hideFro
 signals = diverse_select(signals_pool, 5, source_cap=1)
 
 feast = diverse_select([x for x in visual if x not in big_thing], 20, source_cap=2)
+graphic_design = diverse_select([x for x in graphic if x not in big_thing], 18, source_cap=2)
 tool_watch = diverse_select(tool, 6, source_cap=1)
 ai_impact = diverse_select(ai, 6, source_cap=1)
 wild = diverse_select(thinking, 5, source_cap=1)
@@ -118,6 +123,7 @@ edition = {
     "counts": {
         "all": len(articles),
         "visual": len(visual),
+        "graphicDesign": len(graphic_design),
         "culture": len(culture),
         "toolWatch": len(tool_watch),
         "aiImpact": len(ai_impact)
@@ -125,6 +131,7 @@ edition = {
     "bigThing": big_thing,
     "signals": signals,
     "visualFeast": feast,
+    "graphicDesign": graphic_design,
     "toolWatch": tool_watch,
     "aiImpact": ai_impact,
     "wild": wild,
