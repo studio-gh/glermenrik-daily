@@ -1,10 +1,10 @@
 {
   "editionDate": "2026-10-06",
-  "generatedAt": "2026-10-06T14:30:35.387677+00:00",
+  "generatedAt": "2026-10-06T14:31:54.865513+00:00",
   "counts": {
     "all": 221,
     "visual": 170,
-    "graphicDesign": 17,
+    "graphicDesign": 15,
     "culture": 162,
     "toolWatch": 2,
     "aiImpact": 3
@@ -43,8 +43,8 @@
       "sourcePriority": 4.0,
       "sourceRole": "editorial",
       "publishedAt": "2026-10-06T06:00:00+00:00",
-      "recencyScore": 7.65,
-      "editorialScore": 26.05,
+      "recencyScore": 7.64,
+      "editorialScore": 26.04,
       "sourceCountry": ""
     }
   ],
@@ -82,8 +82,8 @@
       "sourcePriority": 5.0,
       "sourceRole": "visual-communication",
       "publishedAt": "2026-10-06T00:00:00+00:00",
-      "recencyScore": 7.4,
-      "editorialScore": 25.2,
+      "recencyScore": 7.39,
+      "editorialScore": 25.19,
       "sourceCountry": ""
     },
     {
@@ -263,8 +263,8 @@
       "sourcePriority": 5.0,
       "sourceRole": "visual-communication",
       "publishedAt": "2026-10-06T00:00:00+00:00",
-      "recencyScore": 7.4,
-      "editorialScore": 25.2,
+      "recencyScore": 7.39,
+      "editorialScore": 25.19,
       "sourceCountry": ""
     },
     {
@@ -518,8 +518,8 @@
       "sourcePriority": 3.0,
       "sourceRole": "editorial",
       "publishedAt": "2026-10-06T10:48:32+00:00",
-      "recencyScore": 7.85,
-      "editorialScore": 22.65,
+      "recencyScore": 7.84,
+      "editorialScore": 22.64,
       "sourceCountry": ""
     },
     {
@@ -721,8 +721,8 @@
       "sourcePriority": 4.0,
       "sourceRole": "editorial",
       "publishedAt": "2026-10-05T12:00:00+00:00",
-      "recencyScore": 6.9,
-      "editorialScore": 21.1,
+      "recencyScore": 6.89,
+      "editorialScore": 21.09,
       "sourceCountry": ""
     },
     {
@@ -749,8 +749,8 @@
       "sourcePriority": 3.0,
       "sourceRole": "editorial",
       "publishedAt": "2026-10-06T00:00:00+00:00",
-      "recencyScore": 7.4,
-      "editorialScore": 20.8,
+      "recencyScore": 7.39,
+      "editorialScore": 20.79,
       "sourceCountry": ""
     },
     {
@@ -988,8 +988,8 @@
       "sourcePriority": 5.0,
       "sourceRole": "visual-communication",
       "publishedAt": "2026-10-06T00:00:00+00:00",
-      "recencyScore": 7.4,
-      "editorialScore": 25.2,
+      "recencyScore": 7.39,
+      "editorialScore": 25.19,
       "sourceCountry": ""
     },
     {
@@ -1250,41 +1250,8 @@
       "sourcePriority": 4.0,
       "sourceRole": "editorial",
       "publishedAt": "2026-10-05T12:00:00+00:00",
-      "recencyScore": 6.9,
-      "editorialScore": 21.1,
-      "sourceCountry": ""
-    },
-    {
-      "title": "October 2026: Sketchnote Lab Dispatch",
-      "description": "5 Cool Things, This Month’s Thought, Inside the Lab 02, October Lab: Navigating Change with Sketchnotes, What Makes Your Sketchnote Tick Replay, 2026 Lab Schedule, and last month’s posts.",
-      "link": "https://www.sketchnotelab.com/p/october-2026-sketchnote-lab-dispatch",
-      "pubDate": "Fri, 02 Oct 2026 14:01:52 GMT",
-      "image": "https://substackcdn.com/image/fetch/$s_!BFyv!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8e75a606-4b46-4b71-b90d-e57c0db3cf49_3859x2364.jpeg",
-      "categories": [
-        "MAKE",
-        "NERD",
-        "DESIGN",
-        "WILD",
-        "TECH"
-      ],
-      "source": "Sketchnote Lab",
-      "sourceUrl": "https://www.sketchnotelab.com/",
-      "sourceKind": "thinking",
-      "product": "",
-      "territory": "MAKE",
-      "id": "c41c94cedd1e4882",
-      "section": "CULTURE",
-      "designScope": "visual-thinking",
-      "designFocus": [
-        "DESIGN",
-        "MAKE"
-      ],
-      "creativeScore": 0,
-      "sourcePriority": 5.0,
-      "sourceRole": "visual-thinking",
-      "publishedAt": "2026-10-02T14:01:52+00:00",
-      "recencyScore": 3.98,
-      "editorialScore": 18.98,
+      "recencyScore": 6.89,
+      "editorialScore": 21.09,
       "sourceCountry": ""
     },
     {
@@ -1359,39 +1326,6 @@
       "sourceCountry": ""
     },
     {
-      "title": "Inside the Lab: 02",
-      "description": "A second installment of what’s going on inside the Lab, only for Lab Members!",
-      "link": "https://www.sketchnotelab.com/p/inside-the-lab-02",
-      "pubDate": "Thu, 01 Oct 2026 19:01:46 GMT",
-      "image": "https://substack-post-media.s3.amazonaws.com/public/images/ecaf9d21-a18a-46c7-9a37-2048150d8c42_3611x2475.jpeg",
-      "categories": [
-        "MAKE",
-        "NERD",
-        "DESIGN",
-        "WILD",
-        "TECH"
-      ],
-      "source": "Sketchnote Lab",
-      "sourceUrl": "https://www.sketchnotelab.com/",
-      "sourceKind": "thinking",
-      "product": "",
-      "territory": "MAKE",
-      "id": "b875a6ce43689bc1",
-      "section": "CULTURE",
-      "designScope": "visual-thinking",
-      "designFocus": [
-        "DESIGN",
-        "MAKE"
-      ],
-      "creativeScore": 0,
-      "sourcePriority": 5.0,
-      "sourceRole": "visual-thinking",
-      "publishedAt": "2026-10-01T19:01:46+00:00",
-      "recencyScore": 3.19,
-      "editorialScore": 18.19,
-      "sourceCountry": ""
-    },
-    {
       "title": "Heart & Soil",
       "description": "Fonts: Cardinal , Sweet Sans , Baskerville",
       "link": "https://www.typewolf.com/site-of-the-day/heart-and-soil",
@@ -1458,70 +1392,6 @@
       "sourceCountry": ""
     },
     {
-      "title": "Psyop Group Continues Strategic Expansion Across US with Free Agents Partnership",
-      "description": "The partnership with Free Agents marks a major milestone in the continued evolution of Psyop Group",
-      "link": "https://lbbonline.com/news/psyop-group-continues-strategic-expansion-across-us-with-free-agents-partnership",
-      "pubDate": "",
-      "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/Psyop-Group-x-Free-Agents-Press-Visual-LBB.L80zxDtf.png",
-      "categories": [
-        "DIRECTION",
-        "CULTURE",
-        "MOTION",
-        "TECH"
-      ],
-      "source": "LBB",
-      "sourceUrl": "https://lbbonline.com/",
-      "sourceKind": "culture",
-      "product": "",
-      "territory": "DIRECTION",
-      "id": "6627f65adbf486f1",
-      "section": "CULTURE",
-      "designScope": "motion-advertising",
-      "designFocus": [
-        "MOTION",
-        "DIRECTION"
-      ],
-      "creativeScore": 2,
-      "sourcePriority": 3.0,
-      "sourceRole": "editorial",
-      "publishedAt": "",
-      "recencyScore": 1.0,
-      "editorialScore": 14.4,
-      "sourceCountry": ""
-    },
-    {
-      "title": "COLORS Welcomes Director Amy Sarr",
-      "description": "Amy Sarr unveils 'Dakar New Wave', a film produced by Colors & Shape that portrays a new generation of Dakar fashion designers through Maison Detta, L'Artisane, Selly Raby Kane, Guiss Guiss and Maison Kébé",
-      "link": "https://lbbonline.com/news/colors-welcomes-director-amy-sarr",
-      "pubDate": "",
-      "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/AMY-SARR.fnzS6zBA.png",
-      "categories": [
-        "DIRECTION",
-        "CULTURE",
-        "MOTION",
-        "DESIGN"
-      ],
-      "source": "LBB",
-      "sourceUrl": "https://lbbonline.com/",
-      "sourceKind": "culture",
-      "product": "",
-      "territory": "DIRECTION",
-      "id": "cbbb5545f69c4294",
-      "section": "CULTURE",
-      "designScope": "motion-advertising",
-      "designFocus": [
-        "MOTION",
-        "DIRECTION"
-      ],
-      "creativeScore": 2,
-      "sourcePriority": 3.0,
-      "sourceRole": "editorial",
-      "publishedAt": "",
-      "recencyScore": 1.0,
-      "editorialScore": 14.4,
-      "sourceCountry": ""
-    },
-    {
       "title": "Space art",
       "description": "",
       "link": "http://potw-demo.blogspot.com/feeds/3832724296882859639/comments/default",
@@ -1583,6 +1453,70 @@
       "recencyScore": 0.0,
       "editorialScore": 14.2,
       "sourceCountry": ""
+    },
+    {
+      "title": "Steve Martin and Martin Short Discover Funny Side of 2% Cash Back for Wells Fargo",
+      "description": "Campaign from BBDO New York, directed by Aaron Stoller through Biscuit Filmworks, tap into the duo’s signature comedic dynamic, as they discover what their Active Cash Credit Card can unlock",
+      "link": "https://lbbonline.com/news/steve-martin-martin-short-Wells-Fargo",
+      "pubDate": "",
+      "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/bbdo-new-york.tmkKxWrF.png",
+      "categories": [
+        "DIRECTION",
+        "CULTURE",
+        "MOTION",
+        "TECH"
+      ],
+      "source": "LBB",
+      "sourceUrl": "https://lbbonline.com/",
+      "sourceKind": "culture",
+      "product": "",
+      "territory": "DIRECTION",
+      "id": "becc6cae730b4f6d",
+      "section": "CULTURE",
+      "designScope": "motion-advertising",
+      "designFocus": [
+        "MOTION",
+        "DIRECTION"
+      ],
+      "creativeScore": 1,
+      "sourcePriority": 3.0,
+      "sourceRole": "editorial",
+      "publishedAt": "",
+      "recencyScore": 1.0,
+      "editorialScore": 13.0,
+      "sourceCountry": ""
+    },
+    {
+      "title": "Hannah Waddingham Gives Paula’s Choice a Peptide-Powered Pep Talk",
+      "description": "Created by Zerotrillion New York and directed by Bodega Studios, the campaign sees the Emmy-winning actress turn a morning mirror moment into a celebration of confidence, hydration and intensity",
+      "link": "https://lbbonline.com/news/zerotrillion-peptide-pep-talk-paulas-choice-hannah-waddingham",
+      "pubDate": "",
+      "image": "https://d3q27bh1u24u2o.cloudfront.net/resized/300/news/2026-10/paulas-choice-hannah-waddingham.ZBlPM5IA.png",
+      "categories": [
+        "DIRECTION",
+        "CULTURE",
+        "MOTION",
+        "TECH"
+      ],
+      "source": "LBB",
+      "sourceUrl": "https://lbbonline.com/",
+      "sourceKind": "culture",
+      "product": "",
+      "territory": "DIRECTION",
+      "id": "c80fbe53b0a56675",
+      "section": "CULTURE",
+      "designScope": "motion-advertising",
+      "designFocus": [
+        "MOTION",
+        "DIRECTION"
+      ],
+      "creativeScore": 0,
+      "sourcePriority": 3.0,
+      "sourceRole": "editorial",
+      "publishedAt": "",
+      "recencyScore": 1.0,
+      "editorialScore": 11.6,
+      "sourceCountry": ""
     }
   ],
   "toolWatch": [
@@ -1610,8 +1544,8 @@
       "sourcePriority": 3.0,
       "sourceRole": "editorial",
       "publishedAt": "2026-10-06T00:00:00+00:00",
-      "recencyScore": 7.4,
-      "editorialScore": 20.8,
+      "recencyScore": 7.39,
+      "editorialScore": 20.79,
       "sourceCountry": ""
     },
     {
