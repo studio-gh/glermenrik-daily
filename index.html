@@ -28,7 +28,7 @@ function card(i){return "<article class='item'><a href='"+esc(i.link)+"' target=
 function watchItem(i){return "<article class='watch-item'><div class='name'>"+esc(i.product||i.source||"SOURCE")+" <span class='badge'>"+(i.sourceKind==="software"?"FEATURE":"AI")+"</span></div><h4><a href='"+esc(i.link)+"' target='_blank' rel='noopener'>"+esc(i.title)+"</a></h4><p>"+esc(i.description||("Official update from "+(i.source||"source")))+"</p></article>"}
 function render(){
  filters();
- var a=S.items.filter(matches),culture=a.filter(function(i){return i.sourceKind==="culture"}),software=a.filter(function(i){return i.sourceKind==="software"}),ai=a.filter(function(i){return i.sourceKind==="ai"});
+ var a=S.items.filter(matches),culture=a.filter(function(i){return i.sourceKind==="culture"}),software=a.filter(function(i){return i.sourceKind==="software"}),ai=a.filter(function(i){return i.sourceKind==="ai"&&!i.hideFromAiImpact});
  if(!a.length){document.getElementById("app").innerHTML="<div class='empty'>No material in this filter yet.</div>";return}
  var h=a[0],sig=a.slice(1,5),feast=a.slice(1,17);
  var sigHtml=sig.map(function(s){return "<div class='signal'><div class='source'>"+esc(s.source||"SOURCE")+"</div><h4><a href='"+esc(s.link)+"' target='_blank' rel='noopener'>"+esc(s.title)+"</a></h4><p>"+esc(s.description||"")+"</p></div>"}).join("");
