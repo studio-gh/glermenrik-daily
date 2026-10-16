@@ -1,8 +1,14 @@
 name: Glermenrik Creative Den Engine
+
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - 'data/sources.json'
+      - 'scripts/**'
+      - '.github/workflows/daily.yml'
   schedule:
-    - cron: '15 12 * * *'
+    - cron: '15 11 * * *'
 
 concurrency:
   group: glermenrik-daily-engine
@@ -15,10 +21,15 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+
       - name: Fetch feeds
         run: python3 scripts/fetch_feeds.py
+
       - name: Build editorial edition
         run: python3 scripts/build_edition.py
+
       - name: Commit edition
         run: |
           git config user.name 'glermenrik-daily-bot'
@@ -31,3 +42,31 @@ jobs:
           git commit -m 'chore: refresh creative den edition'
           git pull --rebase origin main
           git push
+
+  deploy:
+    needs: ingest
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout latest main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
