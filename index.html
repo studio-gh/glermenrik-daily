@@ -290,6 +290,54 @@ button{cursor:pointer}
   padding-top:12px;border-top:1px solid #efe8da33;color:#aaa397;
   font:9px monospace;text-transform:uppercase;letter-spacing:.08em
 }
+.discovery-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:stretch
+}
+.discovery-panel{
+  background:var(--paper);color:var(--ink);padding:18px
+}
+.discovery-panel.muzli{background:var(--paper2)}
+.discovery-head{
+  display:flex;justify-content:space-between;gap:14px;align-items:flex-start;
+  padding-bottom:12px;margin-bottom:11px;border-bottom:1px solid var(--hair)
+}
+.discovery-head h3{font-size:29px;line-height:.95;letter-spacing:-.05em;margin:0}
+.discovery-head p{max-width:360px;font-size:11px;line-height:1.4;color:var(--muted);margin:0}
+.discovery-links{
+  display:grid;grid-template-columns:1fr 1fr;gap:8px
+}
+.discovery-link{
+  display:block;padding:11px 12px;border:1px solid var(--hair);
+  text-decoration:none;min-height:82px;transition:background .15s,color .15s,border-color .15s
+}
+.discovery-link:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.discovery-link .provider{
+  font:8px monospace;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)
+}
+.discovery-link:hover .provider{color:#c7c0b4}
+.discovery-link strong{
+  display:block;font-size:17px;line-height:1.02;margin-top:5px;letter-spacing:-.025em
+}
+.discovery-link span{
+  display:block;font-size:10px;line-height:1.3;color:var(--muted);margin-top:5px
+}
+.discovery-link:hover span{color:#c7c0b4}
+.discovery-foot{
+  display:flex;justify-content:space-between;gap:10px;align-items:center;
+  margin-top:12px;padding-top:11px;border-top:1px solid var(--hair)
+}
+.discovery-foot .mono{color:var(--muted)}
+.discovery-open{
+  display:inline-block;padding:7px 9px;border:1px solid var(--ink);
+  text-decoration:none;font:9px monospace;text-transform:uppercase;letter-spacing:.06em
+}
+.discovery-open:hover{background:var(--ink);color:var(--paper)}
+@media(max-width:1050px){
+  .discovery-grid{grid-template-columns:1fr}
+}
+@media(max-width:720px){
+  .discovery-links{grid-template-columns:1fr}
+}
 @media(max-width:1050px){
   .hero-layout,.watch-grid{grid-template-columns:1fr}
   .cut-grid{grid-template-columns:1fr 1fr}
@@ -342,6 +390,7 @@ button{cursor:pointer}
   <button class="chip" data-section="TOOL WATCH">TOOL WATCH</button>
   <button class="chip" data-section="AI IMPACT">AI IMPACT</button>
   <button class="chip" data-section="WILD">WILD</button>
+  <button class="chip" data-section="DISCOVERY">DISCOVERY</button>
   <div class="search-box">
     <input id="search" class="search" placeholder="Search the Den  /" autocomplete="off">
     <div id="searchResults" class="search-results" style="display:none"></div>
@@ -599,7 +648,7 @@ function render(){
       "<div class='wild-grid'>"+wild.map(wildCard).join("")+"</div>"+
     "</section>";
 
-  $("app").innerHTML=heroHtml+radarHtml+designHtml+feastHtml+toolHtml+aiHtml+wildHtml;
+  $("app").innerHTML=heroHtml+radarHtml+designHtml+feastHtml+toolHtml+aiHtml+wildHtml+discoveryHtml;
   document.querySelectorAll("[data-save]").forEach(function(b){b.onclick=function(ev){ev.preventDefault();save(b.getAttribute("data-save"))}});
   document.querySelectorAll("[data-rabbit]").forEach(function(b){b.onclick=function(ev){ev.preventDefault();rabbit(b.getAttribute("data-rabbit"))}});
   updateSaveUI();
