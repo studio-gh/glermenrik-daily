@@ -329,7 +329,7 @@ button{cursor:pointer}
 </header>
 
 <div class="topline mono">
-  <div id="date">TODAY</div>
+  <div id="date">EDITION</div>
   <div id="status">Loading...</div>
   <div>LOOK / THINK / MAKE / KNOW / WANDER</div>
 </div>
@@ -395,6 +395,16 @@ function date(s){
   if(!s)return"";
   var d=new Date(s);
   return isNaN(d)?"":d.toLocaleDateString("en-GB",{day:"2-digit",month:"short",year:"numeric"})
+}
+function dateTimeBrt(s){
+  if(!s)return"";
+  var d=new Date(s);
+  if(isNaN(d))return"";
+  return d.toLocaleString("en-GB",{
+    day:"2-digit",month:"short",year:"numeric",
+    hour:"2-digit",minute:"2-digit",hour12:false,
+    timeZone:"America/Sao_Paulo"
+  }).replace(","," ·")
 }
 function excerpt(s,n){
   s=String(s||"").replace(/\s+/g," ").trim();
@@ -613,8 +623,15 @@ async function load(){
     state.edition=await daily.json();
     var d=await articles.json();
     state.articles=(Array.isArray(d)?d:(d.items||[])).filter(function(x){return !isBlocked(x)});
-    $("date").textContent="TODAY / "+date(state.edition.editionDate||new Date());
-    $("status").textContent=(state.edition.counts&&state.edition.counts.all||state.articles.length)+" references · editorial cut";
+    var editionDate=state.edition.editionDate||new Date();
+    var updated=dateTimeBrt(state.edition.generatedAt);
+    var windowStart=date(state.edition.windowStart);
+    var windowEnd=date(editionDate);
+    $("date").textContent="EDITION / "+date(editionDate);
+    $("status").textContent=
+      (state.edition.counts&&state.edition.counts.all||state.articles.length)+
+      " references · UPDATED "+(updated?updated+" BRT":"TIME UNKNOWN")+
+      " · 7-DAY WINDOW "+(windowStart?windowStart+" → ":"")+windowEnd;
     render();renderFilters();renderLibrary();
   }catch(err){
     $("status").textContent="Edition unavailable";
