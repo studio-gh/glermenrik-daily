@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Creative Den</title>
 <meta name="theme-color" content="#102b46">
+<link rel="icon" href="./assets/creative-den-favicon.png" type="image/png">
+<link rel="shortcut icon" href="./assets/creative-den-favicon.png" type="image/png">
 <style>
 :root{
   --blue:#102b46;
@@ -442,7 +444,14 @@ function esc(s){
 }
 function date(s){
   if(!s)return"";
-  var d=new Date(s);
+  var raw=String(s);
+  var d;
+  if(/^\d{4}-\d{2}-\d{2}$/.test(raw)){
+    var parts=raw.split("-").map(Number);
+    d=new Date(parts[0],parts[1]-1,parts[2]);
+  }else{
+    d=new Date(raw);
+  }
   return isNaN(d)?"":d.toLocaleDateString("en-GB",{day:"2-digit",month:"short",year:"numeric"})
 }
 function dateTimeBrt(s){
