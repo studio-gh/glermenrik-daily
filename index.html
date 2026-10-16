@@ -489,6 +489,9 @@ function media(i,hero){
 function buttonSave(i){
   return "<button class='save "+(state.saved.has(i.id)?"on":"")+"' data-save='"+esc(i.id)+"'>"+(state.saved.has(i.id)?"SAVED":"SAVE")+"</button>"
 }
+function discoveryLink(title,desc,url,provider){
+  return "<a class='discovery-link' href='"+esc(url)+"' target='_blank' rel='noopener'><div class='provider'>"+esc(provider)+"</div><strong>"+esc(title)+"</strong><span>"+esc(desc)+"</span></a>"
+}
 function feastCard(i){
   return "<article class='feast-card'><a href='"+esc(i.link)+"' target='_blank' rel='noopener'>"+media(i,false)+"</a><div class='copy'><div class='mono'>"+esc(i.source||"SOURCE")+" · "+esc(date(i.publishedAt||i.pubDate)||"LIVE")+"</div><h3><a href='"+esc(i.link)+"' target='_blank' rel='noopener'>"+esc(i.title)+"</a></h3><p>"+esc(excerpt(i.description,230))+"</p><div class='save-row'><button class='action' data-rabbit='"+esc(i.id)+"'>RABBIT HOLE →</button>"+buttonSave(i)+"</div></div></article>"
 }
@@ -571,6 +574,38 @@ function makePostRadar(items){
   });
   return out
 }
+  var discoveryHtml=
+    "<section id='section-discovery' class='section section-rule'>"+
+      "<div class='section-head'><h2>DISCOVERY</h2><div class='meta mono'>LIVE INSPIRATION ROOMS</div></div>"+
+      "<div class='editorial-note'>Two places worth opening when the editorial cut is not enough. The Den stays connected to the live collections instead of copying their contents.</div>"+
+      "<div class='discovery-grid'>"+
+        "<section class='discovery-panel muzli'>"+
+          "<div class='discovery-head'><div><div class='mono'>MUZLI</div><h3>FAST VISUAL DISCOVERY</h3></div><p>Fresh design work, curated collections and search. Muzli says it collects new design work from 200+ sources every day.</p></div>"+
+          "<div class='discovery-links'>"+
+            discoveryLink("WEB DESIGN","Web pages, portfolios, landing pages and digital systems.","https://muz.li/inspiration/web-design-examples/","MUZLI")+
+            discoveryLink("LOGO & BRANDING","Marks, identity ideas and brand references.","https://muz.li/inspiration/logo/","MUZLI")+
+            discoveryLink("BRAND IDENTITY","Identity systems and applications.","https://muz.li/inspiration/brand-identity/","MUZLI")+
+            discoveryLink("PACKAGING","Packaging, labels and stationery.","https://muz.li/inspiration/packaging-design-inspiration/","MUZLI")+
+            discoveryLink("POSTERS","Print and digital poster references.","https://muz.li/inspiration/poster-design-inspiration/","MUZLI")+
+            discoveryLink("MOTION","Motion design and animated references.","https://muz.li/inspiration/motion-design/","MUZLI")+
+          "</div>"+
+          "<div class='discovery-foot'><div class='mono'>SEARCH / COLLECTIONS / PICKS</div><a class='discovery-open' href='https://muz.li/inspiration/' target='_blank' rel='noopener'>OPEN MUZLI →</a></div>"+
+        "</section>"+
+        "<section class='discovery-panel'>"+
+          "<div class='discovery-head'><div><div class='mono'>COSMOS</div><h3>DEEP VISUAL RABBIT HOLES</h3></div><p>Explore by theme, taste and visual territory. Cosmos currently surfaces Graphic Design, Branding, Typography, Interfaces and Motion.</p></div>"+
+          "<div class='discovery-links'>"+
+            discoveryLink("GRAPHIC DESIGN","Experimental graphics, posters and visual language.","https://www.cosmos.so/explore/graphic-design","COSMOS")+
+            discoveryLink("BRANDING","Identity references and visual systems.","https://www.cosmos.so/explore/branding","COSMOS")+
+            discoveryLink("TYPOGRAPHY","Type, lettering and typographic culture.","https://www.cosmos.so/explore/typography","COSMOS")+
+            discoveryLink("INTERFACES","UI, product and interaction references.","https://www.cosmos.so/explore/ui-ux","COSMOS")+
+            discoveryLink("MOTION","Motion, video and moving-image inspiration.","https://www.cosmos.so/explore/motion","COSMOS")+
+            discoveryLink("EXPLORE","The full Cosmos discovery room.","https://www.cosmos.so/explore","COSMOS")+
+          "</div>"+
+          "<div class='discovery-foot'><div class='mono'>COLLECTIONS / ELEMENTS / TASTE</div><a class='discovery-open' href='https://www.cosmos.so/explore' target='_blank' rel='noopener'>OPEN COSMOS →</a></div>"+
+        "</section>"+
+      "</div>"+
+    "</section>";
+
 function render(){
   var e=state.edition||{};
   var articles=state.articles;
