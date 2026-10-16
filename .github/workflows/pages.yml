@@ -1,7 +1,7 @@
 name: Deploy Glermenrik Daily
 on:
-  push:
-    branches: [main]
+  # Legacy manual fallback. Automatic deployment is handled by the main Creative Den workflow,
+  # which waits for the edition build to finish before publishing GitHub Pages.
   workflow_dispatch:
 permissions:
   contents: read
