@@ -180,7 +180,20 @@ button{cursor:pointer}
   border:0;background:transparent;color:var(--ink);padding:0;
   font:9px monospace;text-transform:uppercase
 }
+
 .save.on{color:var(--accent);font-weight:700}
+.review-tools{display:flex;gap:5px;align-items:center;flex-wrap:wrap;margin-top:8px}
+.review-btn{border:1px solid #13223533;background:transparent;color:var(--ink);padding:5px 7px;font:9px monospace;letter-spacing:.04em}
+.review-btn.approved.active{background:#dcebdc;border-color:#317447;color:#205a32}
+.review-btn.rejected.active{background:#f8dddd;border-color:#b42318;color:#9b1c1c}
+.rating-stars{display:inline-flex;gap:1px}
+.rating-star{border:0;background:transparent;color:#a7a095;padding:2px;font-size:16px;line-height:1}
+.rating-star.active{color:#e89b18}
+.library-filters{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0}
+.library-filter{border:1px solid var(--hair);background:transparent;padding:6px 8px;font:9px monospace}
+.library-filter.active{background:var(--ink);color:var(--paper)}
+.review-meta{font:9px monospace;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin-top:5px}
+
 .media{
   position:relative;overflow:hidden;isolation:isolate;
   background:#d8d0c2
@@ -434,7 +447,9 @@ var ACCESS_MARKERS=[
 var state={
   articles:[],
   edition:null,
-  saved:new Set(JSON.parse(localStorage.getItem("creative-den-saved")||"[]"))
+  saved:new Set(JSON.parse(localStorage.getItem("creative-den-saved")||"[]")),
+  reviews:JSON.parse(localStorage.getItem("creative-den-reviews")||"{}"),
+  libraryFilter:"ALL"
 };
 var $=function(id){return document.getElementById(id)};
 function esc(s){
@@ -495,8 +510,50 @@ function media(i,hero){
   }
   return "<div class='media has-image' style=\"--image:url('"+esc(u).replace(/'/g,"%27")+"')\"><img loading='"+(hero?"eager":"lazy")+"' src='"+esc(u)+"' alt=''><span class='image-credit'>SOURCE IMAGE · "+esc(i.source||"")+"</span></div>"
 }
+function reviewControls(i){
+  var r=state.reviews[i.id]||{};
+  var stars="";
+  if(r.status==="approved"){
+    stars="<span class='rating-stars' aria-label='Rate from one to five stars'>"+[1,2,3,4,5].map(function(n){
+      return "<button class='rating-star "+(Number(r.rating)>=n?"active":"")+"' data-rating='"+n+"' data-review='"+esc(i.id)+"' aria-label='"+n+" stars' title='"+n+" stars'>★</button>"
+    }).join("")+"</span>";
+  }
+  return "<div class='review-tools'><button class='review-btn approved "+(r.status==="approved"?"active":"")+"' data-review='"+esc(i.id)+"' data-status='approved' title='Approved for possible social posting'>✓ APPROVE</button><button class='review-btn rejected "+(r.status==="rejected"?"active":"")+"' data-review='"+esc(i.id)+"' data-status='rejected' title='Rejected'>✕ REJECT</button>"+stars+"</div>"
+}
 function buttonSave(i){
-  return "<button class='save "+(state.saved.has(i.id)?"on":"")+"' data-save='"+esc(i.id)+"'>"+(state.saved.has(i.id)?"SAVED":"SAVE")+"</button>"
+  return "<button class='save "+(state.saved.has(i.id)?"on":"")+"' data-save='"+esc(i.id)+"'>"+(state.saved.has(i.id)?"SAVED":"SAVE")+"</button>"+reviewControls(i)
+}
+function persistReview(id,status,rating,item){
+  var old=state.reviews[id]||{};
+  if(status==="clear"){delete state.reviews[id]}else{
+    state.reviews[id]={
+      status:status||old.status||"approved",
+      rating:rating==null?(old.rating||0):rating,
+      updatedAt:new Date().toISOString(),
+      item:item||old.item||state.articles.find(function(x){return x.id===id})||null
+    };
+  }
+  localStorage.setItem("creative-den-reviews",JSON.stringify(state.reviews));
+  render();
+  renderLibrary();
+}
+function bindReviewControls(){
+  document.querySelectorAll("[data-status]").forEach(function(b){
+    b.onclick=function(ev){
+      ev.preventDefault();
+      var id=b.getAttribute("data-review"),status=b.getAttribute("data-status");
+      var current=state.reviews[id]||{};
+      persistReview(id,current.status===status?"clear":status,status==="approved"?(current.rating||0):0);
+    };
+  });
+  document.querySelectorAll("[data-rating]").forEach(function(b){
+    b.onclick=function(ev){
+      ev.preventDefault();
+      var id=b.getAttribute("data-review"),rating=Number(b.getAttribute("data-rating"));
+      var current=state.reviews[id]||{};
+      persistReview(id,"approved",current.rating===rating?0:rating);
+    };
+  });
 }
 function discoveryLink(title,desc,url,provider){
   return "<a class='discovery-link' href='"+esc(url)+"' target='_blank' rel='noopener'><div class='provider'>"+esc(provider)+"</div><strong>"+esc(title)+"</strong><span>"+esc(desc)+"</span></a>"
@@ -540,10 +597,30 @@ function rabbit(id){
   updateSaveUI();$("modal").classList.add("show")
 }
 function renderLibrary(){
-  var list=state.articles.filter(function(x){return state.saved.has(x.id)});
-  $("libraryList").innerHTML=list.length?list.map(function(i){
-    return "<div class='library-item'><div class='mono'>"+esc(i.source||"SOURCE")+"</div><h3><a href='"+esc(i.link)+"' target='_blank' rel='noopener'>"+esc(i.title)+"</a></h3><p>"+esc(excerpt(i.description,230))+"</p></div>"
-  }).join(""):"<div class='library-item'><h3>Your den is empty.</h3><p>Save things that you want to come back to.</p></div>";
+  var byId={};
+  state.articles.forEach(function(x){byId[x.id]=x});
+  Object.keys(state.reviews).forEach(function(id){if(state.reviews[id]&&state.reviews[id].item)byId[id]=state.reviews[id].item});
+  var list=Object.keys(byId).map(function(id){return byId[id]}).filter(function(i){
+    var r=state.reviews[i.id]||{};
+    if(state.libraryFilter==="SAVED")return state.saved.has(i.id);
+    if(state.libraryFilter==="APPROVED")return r.status==="approved";
+    if(state.libraryFilter==="REJECTED")return r.status==="rejected";
+    if(state.libraryFilter==="RATED")return r.status==="approved"&&Number(r.rating)>0;
+    return state.saved.has(i.id)||!!r.status;
+  }).sort(function(a,b){
+    var ra=state.reviews[a.id]||{},rb=state.reviews[b.id]||{};
+    return String(rb.updatedAt||"").localeCompare(String(ra.updatedAt||""));
+  });
+  var filters=[["ALL","ALL"],["APPROVED","APPROVED"],["REJECTED","REJECTED"],["RATED","RATED"],["SAVED","SAVED"]];
+  var filterHtml="<div class='library-filters'>"+filters.map(function(f){return "<button class='library-filter "+(state.libraryFilter===f[0]?"active":"")+"' data-library-filter='"+f[0]+"'>"+f[1]+"</button>"}).join("")+"</div>";
+  $("libraryList").innerHTML=filterHtml+(list.length?list.map(function(i){
+    var r=state.reviews[i.id]||{};
+    var label=r.status==="approved"?"✓ APPROVED":r.status==="rejected"?"✕ REJECTED":state.saved.has(i.id)?"SAVED":"";
+    var stars=r.rating?" · "+r.rating+"/5 STARS":"";
+    return "<div class='library-item'><div class='mono'>"+esc(i.source||"SOURCE")+" · "+esc(label+stars)+"</div><h3><a href='"+esc(i.link||"#")+"' target='_blank' rel='noopener'>"+esc(i.title)+"</a></h3><p>"+esc(excerpt(i.description,230))+"</p><div class='review-meta'>"+(r.updatedAt?"Reviewed "+esc(dateTimeBrt(r.updatedAt))+" BRT":"Saved on this device")+"</div>"+reviewControls(i)+"</div>"
+  }).join(""):"<div class='library-item'><h3>No saved or reviewed stories yet.</h3><p>Approve, reject, rate or save a story and it will remain in this library on this device, even after the daily edition changes.</p></div>");
+  document.querySelectorAll("[data-library-filter]").forEach(function(b){b.onclick=function(){state.libraryFilter=b.getAttribute("data-library-filter");renderLibrary()}});
+  bindReviewControls();
   updateSaveUI()
 }
 function parseDt(x){var d=new Date(x.publishedAt||x.pubDate||0);return isNaN(d)?0:d.getTime()}
@@ -695,6 +772,7 @@ function render(){
   $("app").innerHTML=heroHtml+radarHtml+designHtml+feastHtml+toolHtml+aiHtml+wildHtml+discoveryHtml;
   document.querySelectorAll("[data-save]").forEach(function(b){b.onclick=function(ev){ev.preventDefault();save(b.getAttribute("data-save"))}});
   document.querySelectorAll("[data-rabbit]").forEach(function(b){b.onclick=function(ev){ev.preventDefault();rabbit(b.getAttribute("data-rabbit"))}});
+  bindReviewControls();
   updateSaveUI();
   var health=e.sourceHealth||[];
   $("health").textContent=health.filter(function(x){return x.status==="LIVE"}).length+" sources active · "+health.length+" watched"
