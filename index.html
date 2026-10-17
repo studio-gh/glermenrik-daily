@@ -417,7 +417,16 @@ button{cursor:pointer}
 <div class="drawer" id="drawer">
   <div class="drawer-inner">
     <div class="overlay-head"><h2>LIBRARY</h2><button class="close" id="closeDrawer">CLOSE</button></div>
-    <div class="mono">Saved on this device.</div>
+    <div class="mono" id="libraryStorageStatus">Local device · not synced</div>
+    <div class="account-box" style="margin:12px 0;padding:12px;border:1px solid var(--hair)">
+      <div class="mono">PRIVATE LIBRARY SYNC</div>
+      <div id="accountStatus" style="font-size:12px;margin:8px 0">Sign in by email to sync your reviews across devices.</div>
+      <form id="authForm" style="display:flex;gap:6px;flex-wrap:wrap">
+        <input id="authEmail" type="email" autocomplete="email" placeholder="Your email address" required style="min-width:0;flex:1;padding:9px;border:1px solid var(--hair);background:transparent;color:var(--ink)">
+        <button class="close" type="submit">SEND SIGN-IN LINK</button>
+      </form>
+      <button class="close" id="signOutBtn" type="button" style="display:none;margin-top:8px">SIGN OUT</button>
+    </div>
     <div id="libraryList"></div>
   </div>
 </div>
@@ -449,8 +458,14 @@ var state={
   edition:null,
   saved:new Set(JSON.parse(localStorage.getItem("creative-den-saved")||"[]")),
   reviews:JSON.parse(localStorage.getItem("creative-den-reviews")||"{}"),
-  libraryFilter:"ALL"
+  libraryFilter:"ALL",
+  supabase:null,
+  user:null,
+  syncReady:false,
+  syncBusy:false
 };
+var SUPABASE_URL="https://zgykawrmdtrkixhqlmxi.supabase.co";
+var SUPABASE_PUBLISHABLE_KEY="sb_publishable_rNSGcAsjORVl28AMRwzo3Q_WRtZ8a6B";
 var $=function(id){return document.getElementById(id)};
 function esc(s){
   return String(s==null?"":s).replace(/[&<>"']/g,function(m){
@@ -523,19 +538,71 @@ function reviewControls(i){
 function buttonSave(i){
   return "<button class='save "+(state.saved.has(i.id)?"on":"")+"' data-save='"+esc(i.id)+"'>"+(state.saved.has(i.id)?"SAVED":"SAVE")+"</button>"+reviewControls(i)
 }
-function persistReview(id,status,rating,item){
+function reviewRow(id,r){
+  var item=r.item||state.articles.find(function(x){return x.id===id})||{};
+  return {owner_id:state.user.id,article_id:id,article_url:item.link||null,article_title:item.title||id,article_source:item.source||null,article_description:item.description||null,article_image:img(item)||null,edition_date:(state.edition&&state.edition.editionDate)||null,review_status:r.status,rating:Number(r.rating)||0,updated_at:r.updatedAt||new Date().toISOString()};
+}
+async function syncReview(id){
+  if(!state.supabase||!state.user||!state.syncReady)return;
+  var r=state.reviews[id];
+  if(!r){var del=await state.supabase.from("editorial_reviews").delete().eq("owner_id",state.user.id).eq("article_id",id);if(del.error)console.error(del.error);return}
+  var result=await state.supabase.from("editorial_reviews").upsert(reviewRow(id,r),{onConflict:"owner_id,article_id"});
+  if(result.error)console.error("Creative Den review sync failed",result.error.message);
+}
+async function persistReview(id,status,rating,item){
   var old=state.reviews[id]||{};
   if(status==="clear"){delete state.reviews[id]}else{
-    state.reviews[id]={
-      status:status||old.status||"approved",
-      rating:rating==null?(old.rating||0):rating,
-      updatedAt:new Date().toISOString(),
-      item:item||old.item||state.articles.find(function(x){return x.id===id})||null
-    };
+    state.reviews[id]={status:status||old.status||"approved",rating:rating==null?(old.rating||0):rating,updatedAt:new Date().toISOString(),item:item||old.item||state.articles.find(function(x){return x.id===id})||null};
   }
   localStorage.setItem("creative-den-reviews",JSON.stringify(state.reviews));
-  render();
-  renderLibrary();
+  render();renderLibrary();await syncReview(id);
+}
+function setAccountStatus(message){var el=$("accountStatus");if(el)el.textContent=message}
+function updateAuthUI(){
+  var signedIn=!!state.user;
+  $("authEmail").style.display=signedIn?"none":"block";
+  $("authForm").querySelector("button").style.display=signedIn?"none":"block";
+  $("signOutBtn").style.display=signedIn?"inline-block":"none";
+  setAccountStatus(signedIn?"Signed in as "+state.user.email+". Preparing sync…":"Sign in by email to sync your reviews across devices.");
+  if(!signedIn)$("libraryStorageStatus").textContent="Local device · not synced";
+}
+async function migrateLocalReviews(){
+  if(!state.supabase||!state.user||state.syncBusy)return;
+  state.syncBusy=true;setAccountStatus("Syncing local reviews with your private library…");
+  try{
+    var remote=await state.supabase.from("editorial_reviews").select("*").eq("owner_id",state.user.id).order("updated_at",{ascending:false});
+    if(remote.error)throw remote.error;
+    var remoteById={};
+    (remote.data||[]).forEach(function(row){
+      remoteById[row.article_id]={status:row.review_status,rating:row.rating||0,updatedAt:row.updated_at,item:{id:row.article_id,title:row.article_title,link:row.article_url||"",source:row.article_source||"",description:row.article_description||"",image:row.article_image||""}};
+    });
+    var rowsToUpload=[];
+    Object.keys(state.reviews).forEach(function(id){
+      var local=state.reviews[id],server=remoteById[id];
+      if(!server||String(local.updatedAt||"")>String(server.updatedAt||""))rowsToUpload.push(reviewRow(id,local));
+      else state.reviews[id]=server;
+    });
+    Object.keys(remoteById).forEach(function(id){if(!state.reviews[id])state.reviews[id]=remoteById[id]});
+    if(rowsToUpload.length){var up=await state.supabase.from("editorial_reviews").upsert(rowsToUpload,{onConflict:"owner_id,article_id"});if(up.error)throw up.error}
+    localStorage.setItem("creative-den-reviews",JSON.stringify(state.reviews));
+    state.syncReady=true;setAccountStatus("Synced · "+Object.keys(state.reviews).length+" reviews in your private library.");$("libraryStorageStatus").textContent="Synced to Creative Den Brain";render();renderLibrary();
+  }catch(err){console.error("Creative Den sync error",err);state.syncReady=false;setAccountStatus("Sync could not finish: "+(err.message||"check authentication settings"));$("libraryStorageStatus").textContent="Local device · sync needs attention"}
+  finally{state.syncBusy=false}
+}
+async function initEditorialSync(){
+  if(!window.supabase||!window.supabase.createClient){setAccountStatus("Sync client did not load. Local reviews remain available.");return}
+  state.supabase=window.supabase.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY);
+  var sessionResult=await state.supabase.auth.getSession();
+  state.user=sessionResult.data&&sessionResult.data.session&&sessionResult.data.session.user||null;updateAuthUI();
+  if(state.user)await migrateLocalReviews();
+  state.supabase.auth.onAuthStateChange(function(event,session){state.user=session&&session.user||null;updateAuthUI();if(state.user)setTimeout(migrateLocalReviews,0);else{state.syncReady=false;setAccountStatus("Signed out · reviews remain on this device.");$("libraryStorageStatus").textContent="Local device · not synced"}});
+  $("authForm").addEventListener("submit",async function(ev){
+    ev.preventDefault();var email=$("authEmail").value.trim();if(!email)return;
+    setAccountStatus("Sending a secure sign-in link…");
+    var result=await state.supabase.auth.signInWithOtp({email:email,options:{emailRedirectTo:window.location.href.split("#")[0]}});
+    setAccountStatus(result.error?"Could not send link: "+result.error.message:"Check your email for the private sign-in link.");
+  });
+  $("signOutBtn").addEventListener("click",async function(){if(state.supabase)await state.supabase.auth.signOut()});
 }
 function bindReviewControls(){
   document.querySelectorAll("[data-status]").forEach(function(b){
@@ -843,6 +910,11 @@ document.addEventListener("error",function(e){
   }
 },true);
 load();
+var supabaseScript=document.createElement("script");
+supabaseScript.src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2";
+supabaseScript.onload=initEditorialSync;
+supabaseScript.onerror=function(){setAccountStatus("Could not load sync client. Local reviews remain available.")};
+document.head.appendChild(supabaseScript);
 </script>
 </body>
 </html>
