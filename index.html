@@ -570,18 +570,22 @@ async function migrateLocalReviews(){
   if(!state.supabase||!state.user||state.syncBusy)return;
   state.syncBusy=true;setAccountStatus("Syncing local reviews with your private library…");
   try{
-    var localRows=Object.keys(state.reviews).map(function(id){return reviewRow(id,state.reviews[id])});
-    if(localRows.length){var up=await state.supabase.from("editorial_reviews").upsert(localRows,{onConflict:"owner_id,article_id"});if(up.error)throw up.error}
     var remote=await state.supabase.from("editorial_reviews").select("*").eq("owner_id",state.user.id).order("updated_at",{ascending:false});
     if(remote.error)throw remote.error;
+    var remoteById={};
     (remote.data||[]).forEach(function(row){
-      var existing=state.reviews[row.article_id];
-      if(!existing||String(row.updated_at||"")>String(existing.updatedAt||"")){
-        state.reviews[row.article_id]={status:row.review_status,rating:row.rating||0,updatedAt:row.updated_at,item:{id:row.article_id,title:row.article_title,link:row.article_url||"",source:row.article_source||"",description:row.article_description||"",image:row.article_image||""}};
-      }
+      remoteById[row.article_id]={status:row.review_status,rating:row.rating||0,updatedAt:row.updated_at,item:{id:row.article_id,title:row.article_title,link:row.article_url||"",source:row.article_source||"",description:row.article_description||"",image:row.article_image||""}};
     });
+    var rowsToUpload=[];
+    Object.keys(state.reviews).forEach(function(id){
+      var local=state.reviews[id],server=remoteById[id];
+      if(!server||String(local.updatedAt||"")>String(server.updatedAt||""))rowsToUpload.push(reviewRow(id,local));
+      else state.reviews[id]=server;
+    });
+    Object.keys(remoteById).forEach(function(id){if(!state.reviews[id])state.reviews[id]=remoteById[id]});
+    if(rowsToUpload.length){var up=await state.supabase.from("editorial_reviews").upsert(rowsToUpload,{onConflict:"owner_id,article_id"});if(up.error)throw up.error}
     localStorage.setItem("creative-den-reviews",JSON.stringify(state.reviews));
-    state.syncReady=true;setAccountStatus("Synced · "+(remote.data||[]).length+" reviews in your private library.");$("libraryStorageStatus").textContent="Synced to Creative Den Brain";render();renderLibrary();
+    state.syncReady=true;setAccountStatus("Synced · "+Object.keys(state.reviews).length+" reviews in your private library.");$("libraryStorageStatus").textContent="Synced to Creative Den Brain";render();renderLibrary();
   }catch(err){console.error("Creative Den sync error",err);state.syncReady=false;setAccountStatus("Sync could not finish: "+(err.message||"check authentication settings"));$("libraryStorageStatus").textContent="Local device · sync needs attention"}
   finally{state.syncBusy=false}
 }
