@@ -8,7 +8,10 @@ on:
       - 'scripts/**'
       - '.github/workflows/daily.yml'
   schedule:
+    # Primary run: 08:15 BRT. GitHub may delay scheduled workflows, so use two fallbacks.
     - cron: '15 11 * * *'
+    - cron: '15 12 * * *'
+    - cron: '15 13 * * *'
 
 concurrency:
   group: glermenrik-daily-engine
@@ -17,6 +20,8 @@ concurrency:
 jobs:
   ingest:
     runs-on: ubuntu-latest
+    outputs:
+      needs_refresh: ${{ steps.edition_check.outputs.needs_refresh }}
     permissions:
       contents: write
     steps:
@@ -24,13 +29,29 @@ jobs:
         with:
           ref: main
 
+      - name: Check whether today's edition already exists
+        id: edition_check
+        run: |
+          TODAY=$(TZ=America/Sao_Paulo date +%F)
+          EDITION_DATE=$(python3 -c "import json; print(json.load(open('data/daily.json')).get('editionDate', ''))")
+          if [ "$GITHUB_EVENT_NAME" = "schedule" ] && [ "$EDITION_DATE" = "$TODAY" ]; then
+            echo "needs_refresh=false" >> "$GITHUB_OUTPUT"
+            echo "Today's edition ($TODAY) already exists; skipping duplicate refresh."
+          else
+            echo "needs_refresh=true" >> "$GITHUB_OUTPUT"
+            echo "Edition date is $EDITION_DATE; refreshing for $TODAY."
+          fi
+
       - name: Fetch feeds
+        if: steps.edition_check.outputs.needs_refresh == 'true'
         run: python3 scripts/fetch_feeds.py
 
       - name: Build editorial edition
+        if: steps.edition_check.outputs.needs_refresh == 'true'
         run: python3 scripts/build_edition.py
 
       - name: Commit edition
+        if: steps.edition_check.outputs.needs_refresh == 'true'
         run: |
           git config user.name 'glermenrik-daily-bot'
           git config user.email 'actions@users.noreply.github.com'
@@ -45,6 +66,7 @@ jobs:
 
   deploy:
     needs: ingest
+    if: needs.ingest.outputs.needs_refresh == 'true'
     runs-on: ubuntu-latest
     permissions:
       contents: read
