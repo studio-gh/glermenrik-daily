@@ -1,10 +1,10 @@
 {
   "editionDate": "2026-10-20",
-  "generatedAt": "2026-10-20T12:27:45.951623+00:00",
+  "generatedAt": "2026-10-20T12:30:09.435120+00:00",
   "windowDays": 7,
-  "windowStart": "2026-10-13T12:27:45.951623+00:00",
+  "windowStart": "2026-10-13T12:30:09.435120+00:00",
   "counts": {
-    "all": 230,
+    "all": 240,
     "fresh7": 126,
     "visual": 105,
     "graphicDesign": 5,
@@ -291,42 +291,6 @@
       "editorialScore": 22.89
     },
     {
-      "title": "designboom listens: what does space sound like to kengo kuma?",
-      "description": "the music of ryuichi sakamoto, brian eno, and mulatu astatke offers a glimpse into the memories, rhythms, and ideas that accompany the architect’s creative practice. The post designboom listens: what does space sound like to kengo kuma? appeared first on designboom | architecture & design magazine .",
-      "link": "https://www.designboom.com/architecture/designboom-listens-kengo-kuma-interview/",
-      "pubDate": "Tue, 20 Oct 2026 07:45:34 +0000",
-      "image": "https://www.designboom.com/wp-content/uploads/2026/10/designboom-listens-kengo-kuma-interview-designboom-700-500x400-22b08q85r071.jpg",
-      "categories": [
-        "DESIGN",
-        "SPACE",
-        "TECH",
-        "OBJECT",
-        "ARCHITECTURE",
-        "INTERVIEWS",
-        "DESIGNBOOM LISTENS",
-        "KENGO KUMA"
-      ],
-      "access": "free",
-      "source": "designboom",
-      "sourceUrl": "https://www.designboom.com/",
-      "sourceKind": "culture",
-      "product": "",
-      "territory": "DESIGN",
-      "id": "7abd0b25d19d8446",
-      "section": "CULTURE",
-      "designScope": "architecture-object",
-      "designFocus": [],
-      "creativeScore": 3,
-      "publishedAt": "2026-10-20T07:45:34+00:00",
-      "sourcePriority": 3.0,
-      "sourceRole": "editorial",
-      "sourceCountry": "",
-      "fresh7": true,
-      "ageDays": 0.2,
-      "recencyScore": 7.78,
-      "editorialScore": 22.88
-    },
-    {
       "title": "Art + Water: A Fluid Brand Identity by MacFadden & Thorpe",
       "description": "MacFadden & Thorpe and Anisha Sachar craft a fluid brand identity for Art + Water, an alternative art hub at San Francisco's Pier 29. Art school tuition has reached absurd heights. Watching emergi...",
       "link": "https://abduzeedo.com/art-water-fluid-brand-identity-macfadden-thorpe/",
@@ -362,6 +326,42 @@
       "ageDays": 0.8,
       "recencyScore": 7.08,
       "editorialScore": 22.88
+    },
+    {
+      "title": "designboom listens: what does space sound like to kengo kuma?",
+      "description": "the music of ryuichi sakamoto, brian eno, and mulatu astatke offers a glimpse into the memories, rhythms, and ideas that accompany the architect’s creative practice. The post designboom listens: what does space sound like to kengo kuma? appeared first on designboom | architecture & design magazine .",
+      "link": "https://www.designboom.com/architecture/designboom-listens-kengo-kuma-interview/",
+      "pubDate": "Tue, 20 Oct 2026 07:45:34 +0000",
+      "image": "https://www.designboom.com/wp-content/uploads/2026/10/designboom-listens-kengo-kuma-interview-designboom-700-500x400-22b08q85r071.jpg",
+      "categories": [
+        "DESIGN",
+        "SPACE",
+        "TECH",
+        "OBJECT",
+        "ARCHITECTURE",
+        "INTERVIEWS",
+        "DESIGNBOOM LISTENS",
+        "KENGO KUMA"
+      ],
+      "access": "free",
+      "source": "designboom",
+      "sourceUrl": "https://www.designboom.com/",
+      "sourceKind": "culture",
+      "product": "",
+      "territory": "DESIGN",
+      "id": "7abd0b25d19d8446",
+      "section": "CULTURE",
+      "designScope": "architecture-object",
+      "designFocus": [],
+      "creativeScore": 3,
+      "publishedAt": "2026-10-20T07:45:34+00:00",
+      "sourcePriority": 3.0,
+      "sourceRole": "editorial",
+      "sourceCountry": "",
+      "fresh7": true,
+      "ageDays": 0.2,
+      "recencyScore": 7.77,
+      "editorialScore": 22.87
     },
     {
       "title": "Pentagram's design festival identity finds a clever way to give equal billing to Arabic and English",
@@ -677,8 +677,8 @@
       "sourceCountry": "",
       "fresh7": true,
       "ageDays": 0.89,
-      "recencyScore": 6.99,
-      "editorialScore": 22.79
+      "recencyScore": 6.98,
+      "editorialScore": 22.78
     },
     {
       "title": "Can a trust mark keep your face out of AI? UnitedUs thinks so with its rebrand for Twinnin",
@@ -753,8 +753,8 @@
       "sourceCountry": "",
       "fresh7": true,
       "ageDays": 1.12,
-      "recencyScore": 6.72,
-      "editorialScore": 21.82
+      "recencyScore": 6.71,
+      "editorialScore": 21.81
     },
     {
       "title": "Willy Chavarria and Adidas unveil adiSignature, a fresh take on streetwear classics",
@@ -932,8 +932,8 @@
       "sourceCountry": "",
       "fresh7": true,
       "ageDays": 0.86,
-      "recencyScore": 7.02,
-      "editorialScore": 19.12
+      "recencyScore": 7.01,
+      "editorialScore": 19.11
     },
     {
       "title": "Offline Policy Evaluation",
@@ -1575,7 +1575,7 @@
       "name": "Typeverything Fonts",
       "kind": "visual-newsletter",
       "items": 0,
-      "totalItems": 0,
+      "totalItems": 10,
       "status": "QUIET"
     },
     {
