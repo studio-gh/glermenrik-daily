@@ -49,11 +49,15 @@ button{cursor:pointer}
 .brand img{display:block;width:100%;height:auto}
 .deck{max-width:780px;color:#c9c2b7;font-size:14px;line-height:1.5}
 .header-tools{display:flex;flex-direction:column;align-items:flex-end;gap:9px}
-.support-button{display:block;line-height:0}
-.support-button img{display:block;max-width:100%;width:108.5px !important;height:30px !important}
-@media(max-width:720px){
-  .support-button img{width:108.5px !important;height:30px !important}
+.support-button{
+  display:inline-flex;align-items:center;gap:6px;font-family:"Inter",sans-serif;
+  font-weight:600;font-size:12px;color:#1A1A1A;background:#FF961A;
+  padding:6px 12px;border-radius:999px;text-decoration:none;
+  box-shadow:0 2px 6px rgba(0,0,0,.3);
+  transition:transform .12s ease,box-shadow .12s ease;
 }
+.support-button:hover{transform:translateY(-1px);box-shadow:0 4px 10px rgba(0,0,0,.4)}
+.support-button:active{transform:scale(.96)}
 .button,.chip,.search{
   border:1px solid #efe8da55;background:transparent;color:var(--paper)
 }
@@ -393,7 +397,7 @@ button{cursor:pointer}
   <div class="header-tools">
     <button class="button" id="refresh">Refresh edition</button>
     <button class="button" id="libraryBtn">Library <span id="libraryCount">0</span></button>
-    <a class="support-button" href="https://www.buymeacoffee.com/studiogh" target="_blank" rel="noopener noreferrer" aria-label="Support Studio GH on Buy Me a Coffee"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me a Coffee" style="height:30px !important;width:108.5px !important;"></a>
+    <a class="support-button" href="https://www.buymeacoffee.com/studiogh" target="_blank" rel="noopener noreferrer" aria-label="Support Studio GH on Buy Me a Coffee">☕ Buy me a coffee</a>
   </div>
 </header>
 
