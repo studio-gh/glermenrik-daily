@@ -1,6 +1,7 @@
 name: Glermenrik Creative Den Engine
 
 on:
+  # Manual catch-up trigger: refresh the edition when a scheduled run is missed.
   workflow_dispatch:
   push:
     paths:
