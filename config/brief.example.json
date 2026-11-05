@@ -1,0 +1,37 @@
+{
+  "name": "My Daily Brief",
+  "deskLabel": "Studio / Daily Intelligence Desk",
+  "description": "A living editorial brief built from sources you choose.",
+  "timezone": "America/Sao_Paulo",
+  "windowDays": 7,
+  "theme": {
+    "background": "#102B46",
+    "paper": "#EFE8DA",
+    "text": "#132235",
+    "accent": "#FF961A"
+  },
+  "editorial": {
+    "sections": [
+      "EDITOR'S CUT",
+      "POST RADAR",
+      "DESIGN",
+      "VISUAL FEAST",
+      "TOOL WATCH",
+      "AI IMPACT",
+      "WILD"
+    ],
+    "designFocus": [
+      "graphic",
+      "web",
+      "brand",
+      "type",
+      "print",
+      "packaging"
+    ]
+  },
+  "support": {
+    "enabled": false,
+    "label": "☕ Buy me a coffee",
+    "url": ""
+  }
+}
