@@ -9,6 +9,7 @@ on:
   # Manual fallback. Edition data changes are deployed by the main Creative Den workflow,
   # after the new edition has been generated.
   workflow_dispatch:
+# Catch-up: publish the latest generated edition after an engine refresh.
 permissions:
   contents: read
   pages: write
