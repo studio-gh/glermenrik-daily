@@ -411,7 +411,8 @@ button{cursor:pointer}
   </div>
   <div class="header-tools">
     <a class="button create-brief-cta" href="./create/">Crie seu Daily Brief ↗</a>
-    <button class="button" id="refresh" title="Recarrega a edição já publicada, sem disparar uma nova coleta">Recarregar edição</button>
+    <button class="button" id="refresh" title="Atualiza a página com a edição já publicada. Não inicia uma nova coleta.">Recarregar edição</button>
+    <a class="button" href="https://github.com/studio-gh/glermenrik-daily/actions/workflows/daily.yml" target="_blank" rel="noopener" title="Abre o GitHub Actions para iniciar manualmente uma nova coleta">Gerar nova edição ↗</a>
     <button class="button" id="libraryBtn">Biblioteca <span id="libraryCount">0</span></button>
     <a class="support-button" href="https://www.buymeacoffee.com/studiogh" target="_blank" rel="noopener noreferrer" aria-label="Support Studio GH on Buy Me a Coffee">☕ Buy me a coffee</a>
   </div>
@@ -508,13 +509,13 @@ function date(s){
   }else{
     d=new Date(raw);
   }
-  return isNaN(d)?"":d.toLocaleDateString("en-GB",{day:"2-digit",month:"short",year:"numeric"})
+  return isNaN(d)?"":d.toLocaleDateString("pt-BR",{day:"2-digit",month:"short",year:"numeric"})
 }
 function dateTimeBrt(s){
   if(!s)return"";
   var d=new Date(s);
   if(isNaN(d))return"";
-  return d.toLocaleString("en-GB",{
+  return d.toLocaleString("pt-BR",{
     day:"2-digit",month:"short",year:"numeric",
     hour:"2-digit",minute:"2-digit",hour12:false,
     timeZone:"America/Sao_Paulo"
@@ -845,14 +846,14 @@ function render(){
   var toolHtml=
     "<section id='section-tool-watch' class='section section-rule'>"+
       "<div class='section-head'><h2>TOOL WATCH</h2><div class='meta mono'>RECURSOS / LANÇAMENTOS</div></div>"+
-      "<div class='watch-grid'><section class='watch-list'>"+(tools.length?tools.map(watchCard).join(""):"<div class='paper card'><h3>Nenhuma atualização relevante de ferramentas.</h3><p>Nothing passed the current creative-workflow filter.</p></div>")+"</section>"+
+      "<div class='watch-grid'><section class='watch-list'>"+(tools.length?tools.map(watchCard).join(""):"<div class='paper card'><h3>Nenhuma atualização relevante de ferramentas.</h3><p>Nenhuma atualização passou pelo filtro de relevância para o trabalho criativo.</p></div>")+"</section>"+
       "<section class='paper watch-note'><div><div class='mono'>FIGMA · ADOBE · BLENDER · CANVA</div><h3>O QUE MUDOU?</h3><p>A tool update earns a place here when it changes a real creative workflow. We care about what it lets you do differently tomorrow.</p></div><div class='note-rule'>ACOMPANHAR → ENTENDER → TESTAR</div></section></div>"+
     "</section>";
 
   var aiHtml=
     "<section id='section-ai-impact' class='section section-rule'>"+
       "<div class='section-head'><h2>AI IMPACT</h2><div class='meta mono'>CONSEQUÊNCIAS CRIATIVAS, NÃO RUÍDO SOBRE IA</div></div>"+
-      "<div class='watch-grid'><section class='watch-list'>"+(ais.length?ais.map(watchCard).join(""):"<div class='paper card'><h3>Quiet room.</h3><p>Nenhuma atualização de IA com impacto criativo relevante passou pelo filtro.</p></div>")+"</section>"+
+      "<div class='watch-grid'><section class='watch-list'>"+(ais.length?ais.map(watchCard).join(""):"<div class='paper card'><h3>Sem novidades relevantes.</h3><p>Nenhuma atualização de IA com impacto criativo relevante passou pelo filtro.</p></div>")+"</section>"+
       "<section class='paper watch-note'><div><div class='mono'>MODEL · WORKFLOW · CULTURE</div><h3>FILTRO EDITORIAL</h3><p>AI enters this room when it changes image making, motion, design tools, creative direction, authorship, provenance, or the economics of making things.</p></div><div class='note-rule'>LESS AI NEWS · MORE CREATIVE CONSEQUENCE</div></section></div>"+
     "</section>";
 
