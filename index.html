@@ -66,7 +66,7 @@ button{cursor:pointer}
   font:10px monospace;letter-spacing:.08em
 }
 .button:hover,.chip:hover,.chip.active{background:var(--paper);color:var(--blue)}
-.create-brief-cta{background:var(--accent);border-color:var(--accent);color:#17273a;font-weight:700}.create-brief-cta:hover{background:var(--paper);border-color:var(--paper);color:var(--blue)}
+.create-brief-cta{background:#fffcf4;border-color:#fffcf4;color:#ff961a;font-weight:700}.create-brief-cta:hover{background:#ff961a;border-color:#ff961a;color:#fffcf4}
 .topline{
   display:grid;grid-template-columns:1fr auto 1fr;gap:18px;align-items:center;
   border-block:1px solid #efe8da33;padding:9px 0;margin-bottom:13px
@@ -396,10 +396,10 @@ button{cursor:pointer}
     <div class="deck">A living visual culture desk. Not a firehose. A daily cut of things worth seeing, thinking about, making, and talking about.</div>
   </div>
   <div class="header-tools">
-    <button class="button" id="refresh">Refresh edition</button>
+    <a class="button create-brief-cta" href="./create/">Crie seu Daily Brief ↗</a>
+    <button class="button" id="refresh" title="Recarrega a edição já publicada, sem disparar uma nova coleta">Recarregar edição</button>
     <button class="button" id="libraryBtn">Library <span id="libraryCount">0</span></button>
     <a class="support-button" href="https://www.buymeacoffee.com/studiogh" target="_blank" rel="noopener noreferrer" aria-label="Support Studio GH on Buy Me a Coffee">☕ Buy me a coffee</a>
-    <a class="button create-brief-cta" href="./create/">Crie seu Daily Brief ↗</a>
   </div>
 </header>
 
@@ -888,7 +888,13 @@ async function load(){
     $("app").innerHTML="<div class='paper card' style='margin-top:20px'><h2>Creative Den is rebuilding.</h2><p>The shell is live. The next successful engine run will publish the next edition.</p></div>"
   }
 }
-$("refresh").onclick=load;
+$("refresh").onclick=async function(){
+  var b=$("refresh");
+  var original=b.textContent;
+  b.disabled=true;
+  b.textContent="Recarregando…";
+  try{await load()}finally{b.disabled=false;b.textContent=original}
+};
 $("libraryBtn").onclick=function(){$("drawer").classList.add("show");renderLibrary()};
 $("closeDrawer").onclick=function(){$("drawer").classList.remove("show")};
 $("closeModal").onclick=function(){$("modal").classList.remove("show")};
