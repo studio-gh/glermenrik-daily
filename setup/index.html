@@ -340,6 +340,8 @@ input[type=file]{display:none}
           <div class="section-tag">Pode pular</div>
         </div>
 
+        <details class="advanced-settings">
+          <summary>Opções avançadas <span>Fuso horário, período, cores e apoio</span></summary>
         <div class="grid2">
           <div class="field">
             <label for="timezone">Fuso horário</label>
@@ -382,9 +384,9 @@ input[type=file]{display:none}
         </div>
 
         <div class="field">
-          <label for="support">Optional support link</label>
+          <label for="support">Link de apoio (opcional)</label>
           <input class="input" id="support" placeholder="https://www.buymeacoffee.com/yourname">
-          <small>Leave blank to hide the support button.</small>
+          <small>Deixe em branco para não mostrar um botão de apoio.</small>
         </div>
         </details>
       </section>
@@ -398,7 +400,7 @@ input[type=file]{display:none}
           <div class="section-tag">Final step</div>
         </div>
 
-        <div class="status" id="status">Ready to build your brief.</div>
+        <div class="status" id="status">Seu Daily está pronto para revisar.</div>
         <div class="review-list" id="reviewList"></div>
 
         <button class="primary-action" id="downloadMain">Baixar configuração do meu Daily</button>
@@ -436,7 +438,7 @@ input[type=file]{display:none}
         </div>
         <div style="padding:13px;background:#f4eee3;border-top:1px solid var(--line);color:var(--ink);font-size:10px;line-height:1.4">
           <strong>Prévia ao vivo</strong><br>
-          This is intentionally simple. The published brief can be much richer.
+          Esta é uma prévia simplificada. A edição publicada terá mais conteúdo.
         </div>
       </div>
     </aside>
@@ -569,9 +571,9 @@ function bindFields(){
 }
 function handleLogo(file){
   if(!file)return;
-  if(file.size>1500000)return toast("Please keep the logo under 1.5 MB for a lightweight setup.");
+  if(file.size>1500000)return toast("Mantenha a logo abaixo de 1,5 MB.");
   const reader=new FileReader();
-  reader.onload=()=>{state.logo=reader.result;save();renderLogo();update();toast("Logo added.")};
+  reader.onload=()=>{state.logo=reader.result;save();renderLogo();update();toast("Logo adicionada.")};
   reader.readAsDataURL(file);
 }
 function renderLogo(){
@@ -652,7 +654,7 @@ function downloadSetup(){
   const a=document.createElement("a");a.href=URL.createObjectURL(blob);
   const safe=(state.name||"daily-brief").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
   a.download=(safe||"daily-brief")+"-setup.json";a.click();URL.revokeObjectURL(a.href);
-  toast("Setup downloaded.")
+  toast("Configuração baixada.")
 }
 function copySetup(){
   navigator.clipboard?.writeText(JSON.stringify(buildSetup(),null,2)).then(()=>toast("Setup copied.")).catch(()=>toast("Copy is not available in this browser."));
@@ -665,7 +667,7 @@ document.querySelectorAll("[data-preset]").forEach(b=>b.onclick=()=>{
   toast(b.textContent.replace("+ ","")+" added.");
 });
 $("logoFile").addEventListener("change",e=>handleLogo(e.target.files?.[0]));
-$("clearLogo").onclick=()=>{state.logo="";save();renderLogo();update();toast("Logo removed.")};
+$("clearLogo").onclick=()=>{state.logo="";save();renderLogo();update();toast("Logo removida.")};
 $("downloadBtn").onclick=downloadSetup;
 $("downloadMain").onclick=downloadSetup;
 $("downloadTop").onclick=downloadSetup;
