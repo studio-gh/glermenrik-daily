@@ -7,7 +7,7 @@ on:
     paths:
       - 'data/sources.json'
       - 'scripts/**'
-      - 'config/**'
+      - 'config/brief.json'
       - '.github/workflows/daily.yml'
   schedule:
     # Retry the daily refresh throughout the day. The job skips automatically
@@ -16,7 +16,7 @@ on:
 
 concurrency:
   group: glermenrik-daily-engine
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   ingest:
