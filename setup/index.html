@@ -210,6 +210,17 @@ input[type=file]{display:none}
   .logo-preview{width:100%;height:130px}
   .steps{grid-template-columns:1fr}
 }
+
+.advanced-settings,.technical-details{border:1px solid var(--line);background:#faf6ee;padding:12px 14px;margin:14px 0}
+.advanced-settings summary,.technical-details summary{cursor:pointer;font-size:11px;font-weight:900;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center}
+.advanced-settings summary::-webkit-details-marker,.technical-details summary::-webkit-details-marker{display:none}
+.advanced-settings summary:after,.technical-details summary:after{content:"+";font-size:16px}
+.advanced-settings[open] summary:after,.technical-details[open] summary:after{content:"−"}
+.advanced-settings summary span{font-size:10px;color:var(--muted);font-weight:500;text-align:right}
+.advanced-settings[open] summary{margin-bottom:15px}
+.technical-details[open] summary{margin-bottom:12px}
+.pending-dot{background:#d38a16!important}
+.source-health{color:#9b680c}
 </style>
 </head>
 <body>
@@ -259,7 +270,7 @@ input[type=file]{display:none}
             <h2>02 · Identidade</h2>
             <p>Como vamos chamar seu Daily?</p>
           </div>
-          <div class="section-tag">Start here</div>
+          <div class="section-tag">Opcional</div>
         </div>
 
         <div class="grid2">
@@ -309,7 +320,7 @@ input[type=file]{display:none}
           <small>Separe os links por vírgula ou use uma linha para cada endereço. Não precisa procurar links RSS.</small>
         </div>
         <div class="source-add"><button class="add-btn" id="addSource">Adicionar todas as fontes</button></div>
-        <div class="source-helper" id="sourceFeedback" role="status">Cada endereço será adicionado à lista abaixo. O teste definitivo de disponibilidade do feed acontece na etapa de publicação.</div>
+        <div class="source-helper" id="sourceFeedback" role="status">Cole quantos endereços quiser. Vamos separar por vírgula, ponto e vírgula ou quebra de linha. O feed será testado pelo engine na etapa de publicação.</div>
 
         <div class="preset-row">
           <button class="preset" data-preset="design">+ Pacote de Design</button>
@@ -375,6 +386,7 @@ input[type=file]{display:none}
           <input class="input" id="support" placeholder="https://www.buymeacoffee.com/yourname">
           <small>Leave blank to hide the support button.</small>
         </div>
+        </details>
       </section>
 
       <section class="panel" id="review">
@@ -389,8 +401,11 @@ input[type=file]{display:none}
         <div class="status" id="status">Ready to build your brief.</div>
         <div class="review-list" id="reviewList"></div>
 
+        <button class="primary-action" id="downloadMain">Baixar configuração do meu Daily</button>
+        <p style="font-size:10px;line-height:1.45;color:var(--muted);margin:9px 0 14px">Este arquivo guarda suas escolhas e será usado na etapa de publicação. A página própria e a atualização automática ainda não são criadas por este botão.</p>
+        <details class="technical-details"><summary>Ver configuração técnica (opcional)</summary>
         <div class="export-box">
-          <div class="section-tag" style="color:#c9c1b5;margin-bottom:8px">Configuração do seu Daily</div>
+          <div class="section-tag" style="color:#c9c1b5;margin-bottom:8px">Arquivo de configuração</div>
           <pre id="output"></pre>
           <div class="export-actions">
             <button class="export-btn" id="copyBtn">Copiar configuração</button>
@@ -398,9 +413,10 @@ input[type=file]{display:none}
           </div>
         </div>
 
+        </details>
         <div class="next">
-          <strong>O que acontece depois?</strong>
-          This workspace intentionally does not ask for GitHub passwords or tokens. Once the reusable engine is wired to this setup file, the goal is a simple “connect repository → publish” flow.
+          <strong>Próxima etapa do produto</strong>
+          Conectar esta configuração ao publicador para criar sua página e ativar a coleta automática. Nenhuma senha ou token do GitHub é solicitado aqui.
         </div>
       </section>
     </div>
@@ -523,8 +539,8 @@ function renderSources(){
   $("sourceCount").textContent=sources.length+" fonte"+(sources.length===1?"":"s");
   $("sourceList").innerHTML=sources.length?sources.map((s,i)=>`
     <div class="source">
-      <div class="source-dot" style="background:#2f6d4f"></div>
-      <div><div class="source-name">${escapeHtml(s.name)}</div><div class="source-url">${escapeHtml(s.url)}</div><div class="source-health">Endereço válido · feed será verificado na publicação</div></div>
+      <div class="source-dot pending-dot"></div>
+      <div><div class="source-name">${escapeHtml(s.name)}</div><div class="source-url">${escapeHtml(s.url)}</div><div class="source-health">Endereço válido · feed ainda não testado</div></div>
       <button class="source-remove" data-remove="${i}">Remover</button>
     </div>`).join(""):"<div style='padding:18px;border:1px dashed var(--line);color:var(--muted);font-size:11px'>Sua lista ainda está vazia. Cole os endereços acima ou comece por um pacote sugerido.</div>";
   document.querySelectorAll("[data-remove]").forEach(btn=>btn.onclick=()=>{sources.splice(Number(btn.dataset.remove),1);save();renderSources();update()});
@@ -651,6 +667,7 @@ document.querySelectorAll("[data-preset]").forEach(b=>b.onclick=()=>{
 $("logoFile").addEventListener("change",e=>handleLogo(e.target.files?.[0]));
 $("clearLogo").onclick=()=>{state.logo="";save();renderLogo();update();toast("Logo removed.")};
 $("downloadBtn").onclick=downloadSetup;
+$("downloadMain").onclick=downloadSetup;
 $("downloadTop").onclick=downloadSetup;
 $("copyBtn").onclick=copySetup;
 
