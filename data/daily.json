@@ -1,8 +1,8 @@
 {
   "editionDate": "2026-11-05",
-  "generatedAt": "2026-11-05T14:46:31.117938+00:00",
+  "generatedAt": "2026-11-05T14:47:05.432763+00:00",
   "windowDays": 7,
-  "windowStart": "2026-10-29T14:46:31.117938+00:00",
+  "windowStart": "2026-10-29T14:47:05.432763+00:00",
   "counts": {
     "all": 262,
     "fresh7": 131,
@@ -13,6 +13,46 @@
     "aiImpact": 2
   },
   "bigThing": [
+    {
+      "title": "Etter Studio: Playful Web Design and Selected Works",
+      "description": "Etter Studio crafts an uncompromising web design portfolio featuring generative character animations and diverse interactive projects. Zurich-based Etter Studio approaches the web with a stripped-back...",
+      "link": "https://abduzeedo.com/etter-studio-playful-web-design-and-selected-works/",
+      "pubDate": "Thu, 05 Nov 2026 14:43:32 GMT",
+      "image": "https://cms.abduzeedo.com/sites/default/files/originals/hero_etter-studio-web-design.jpg",
+      "categories": [
+        "DESIGN",
+        "DIRECTION",
+        "TECH",
+        "MOTION"
+      ],
+      "access": "free",
+      "source": "Abduzeedo",
+      "sourceUrl": "https://abduzeedo.com/",
+      "sourceKind": "culture",
+      "product": "",
+      "territory": "DESIGN",
+      "id": "ebeb124ef94f6787",
+      "section": "CULTURE",
+      "designScope": "graphic",
+      "designFocus": [
+        "DESIGN",
+        "BRAND",
+        "WEB",
+        "TYPE",
+        "MOTION"
+      ],
+      "creativeScore": 3,
+      "publishedAt": "2026-11-05T14:43:32+00:00",
+      "sourcePriority": 4.0,
+      "sourceRole": "editorial",
+      "sourceCountry": "",
+      "fresh7": true,
+      "ageDays": 0.0,
+      "recencyScore": 8.0,
+      "editorialScore": 25.3
+    }
+  ],
+  "signals": [
     {
       "title": "Mosby’s Files: Archival Web Design by tubik studio",
       "description": "In Mosby’s Files, tubik studio turns color-coded filing tabs and loose-leaf collages into an archival web design on American modernism. Built by tubik studio under Art Director Ernest Asanov, Mosby’s ...",
@@ -49,45 +89,6 @@
       "ageDays": 0.77,
       "recencyScore": 7.12,
       "editorialScore": 24.42
-    }
-  ],
-  "signals": [
-    {
-      "title": "Zed by Typotheque: 500-Style Global Typography System",
-      "description": "Inside Zed by Typotheque: Peter Bilak turns low-vision legibility trials into a 500-style global typography system on TYPE01. Peter Bilak started Zed at independent foundry Typotheque with a blunt typ...",
-      "link": "https://abduzeedo.com/zed-typotheque-500-style-global-typography-system/",
-      "pubDate": "Thu, 05 Nov 2026 14:13:39 GMT",
-      "image": "https://cms.abduzeedo.com/sites/default/files/originals/hero_inside-zed-typotheque-s-500-style-family-type01.jpg",
-      "categories": [
-        "DESIGN",
-        "DIRECTION",
-        "TECH"
-      ],
-      "access": "free",
-      "source": "Abduzeedo",
-      "sourceUrl": "https://abduzeedo.com/",
-      "sourceKind": "culture",
-      "product": "",
-      "territory": "DESIGN",
-      "id": "d116ce6bbe2a5a62",
-      "section": "CULTURE",
-      "designScope": "graphic",
-      "designFocus": [
-        "DESIGN",
-        "BRAND",
-        "WEB",
-        "TYPE",
-        "MOTION"
-      ],
-      "creativeScore": 2,
-      "publishedAt": "2026-11-05T14:13:39+00:00",
-      "sourcePriority": 4.0,
-      "sourceRole": "editorial",
-      "sourceCountry": "",
-      "fresh7": true,
-      "ageDays": 0.02,
-      "recencyScore": 7.97,
-      "editorialScore": 23.77
     },
     {
       "title": "Tatiana Egoshina finds beauty in bad typography, Italian folklore and happy accidents",
@@ -244,11 +245,11 @@
   ],
   "visualFeast": [
     {
-      "title": "Valmy: Condensed Typography by Almarena Creative",
-      "description": "Almarena Creative crafts Valmy, an expressive variable typography system featuring two distinct axes across four styles and nine weights. Almarena Creative built Valmy around a compact, condensed skel...",
-      "link": "https://abduzeedo.com/valmy-condensed-typography-almarena-creative/",
-      "pubDate": "Wed, 04 Nov 2026 20:46:49 GMT",
-      "image": "https://cms.abduzeedo.com/sites/default/files/originals/hero_valmy-typeface-almarena-creative.jpg",
+      "title": "MUDA '26: Kinetic Web Design by Etter Studio",
+      "description": "Etter Studio's web design for Zurich's MUDA pairs a squishy cobalt SVG menu with pixel-grid branding and clean Swiss exhibition layouts. Most museum menus hide in a corner. Etter Studio went the oppos...",
+      "link": "https://abduzeedo.com/muda-26-kinetic-web-design-etter-studio/",
+      "pubDate": "Tue, 03 Nov 2026 23:10:34 GMT",
+      "image": "https://cms.abduzeedo.com/sites/default/files/originals/hero_muda-hover-states.jpg",
       "categories": [
         "DESIGN",
         "DIRECTION",
@@ -260,7 +261,7 @@
       "sourceKind": "culture",
       "product": "",
       "territory": "DESIGN",
-      "id": "9fec44d56e9628bc",
+      "id": "484086c9c86f388d",
       "section": "CULTURE",
       "designScope": "graphic",
       "designFocus": [
@@ -270,15 +271,15 @@
         "TYPE",
         "MOTION"
       ],
-      "creativeScore": 2,
-      "publishedAt": "2026-11-04T20:46:49+00:00",
+      "creativeScore": 3,
+      "publishedAt": "2026-11-03T23:10:34+00:00",
       "sourcePriority": 4.0,
       "sourceRole": "editorial",
       "sourceCountry": "",
       "fresh7": true,
-      "ageDays": 0.75,
-      "recencyScore": 7.14,
-      "editorialScore": 22.94
+      "ageDays": 1.65,
+      "recencyScore": 6.11,
+      "editorialScore": 23.41
     },
     {
       "title": "Arc’teryx Rethinks Retail With a Climbing-Focused LA Store",
@@ -659,11 +660,11 @@
       "editorialScore": 15.61
     },
     {
-      "title": "Typography: Rosco Jr by TypeMates",
-      "description": "Rosco Jr by TypeMates is a typography project. Rosco Jr is a bouncy, brassy and poco-loco geo-grotesque. View the full typography gallery. Rosco Jr by TypeMates starts from a specific historical detou...",
-      "link": "https://abduzeedo.com/typography-rosco-jr-typemates/",
-      "pubDate": "Wed, 04 Nov 2026 05:23:50 GMT",
-      "image": "https://cms.abduzeedo.com/sites/default/files/originals/hero_rosco-jr-typemates.jpg",
+      "title": "Valmy: Condensed Typography by Almarena Creative",
+      "description": "Almarena Creative crafts Valmy, an expressive variable typography system featuring two distinct axes across four styles and nine weights. Almarena Creative built Valmy around a compact, condensed skel...",
+      "link": "https://abduzeedo.com/valmy-condensed-typography-almarena-creative/",
+      "pubDate": "Wed, 04 Nov 2026 20:46:49 GMT",
+      "image": "https://cms.abduzeedo.com/sites/default/files/originals/hero_valmy-typeface-almarena-creative.jpg",
       "categories": [
         "DESIGN",
         "DIRECTION",
@@ -675,7 +676,7 @@
       "sourceKind": "culture",
       "product": "",
       "territory": "DESIGN",
-      "id": "84d7bb153ec74522",
+      "id": "9fec44d56e9628bc",
       "section": "CULTURE",
       "designScope": "graphic",
       "designFocus": [
@@ -686,14 +687,14 @@
         "MOTION"
       ],
       "creativeScore": 2,
-      "publishedAt": "2026-11-04T05:23:50+00:00",
+      "publishedAt": "2026-11-04T20:46:49+00:00",
       "sourcePriority": 4.0,
       "sourceRole": "editorial",
       "sourceCountry": "",
       "fresh7": true,
-      "ageDays": 1.39,
-      "recencyScore": 6.41,
-      "editorialScore": 22.21
+      "ageDays": 0.75,
+      "recencyScore": 7.14,
+      "editorialScore": 22.94
     },
     {
       "title": "Inside LA Design Week/end 2026: A City of Creative Connections",
@@ -944,16 +945,15 @@
   ],
   "graphicDesign": [
     {
-      "title": "AI Design: Conversational Video by Tavus",
-      "description": "Tavus pushes real-time AI design into conversational video, creating interactive digital humans that see, hear, and respond face-to-face. Testing conversational interfaces usually means trading realis...",
-      "link": "https://abduzeedo.com/ai-design-conversational-video-tavus/",
-      "pubDate": "Wed, 04 Nov 2026 04:45:27 GMT",
-      "image": "https://cms.abduzeedo.com/sites/default/files/originals/hero_tavus-human-computing-company-www-tavus-io.jpg",
+      "title": "Zed by Typotheque: 500-Style Global Typography System",
+      "description": "Inside Zed by Typotheque: Peter Bilak turns low-vision legibility trials into a 500-style global typography system on TYPE01. Peter Bilak started Zed at independent foundry Typotheque with a blunt typ...",
+      "link": "https://abduzeedo.com/zed-typotheque-500-style-global-typography-system/",
+      "pubDate": "Thu, 05 Nov 2026 14:13:39 GMT",
+      "image": "https://cms.abduzeedo.com/sites/default/files/originals/hero_inside-zed-typotheque-s-500-style-family-type01.jpg",
       "categories": [
         "DESIGN",
         "DIRECTION",
-        "TECH",
-        "MOTION"
+        "TECH"
       ],
       "access": "free",
       "source": "Abduzeedo",
@@ -961,7 +961,7 @@
       "sourceKind": "culture",
       "product": "",
       "territory": "DESIGN",
-      "id": "09560bc9ee1054aa",
+      "id": "d116ce6bbe2a5a62",
       "section": "CULTURE",
       "designScope": "graphic",
       "designFocus": [
@@ -971,15 +971,15 @@
         "TYPE",
         "MOTION"
       ],
-      "creativeScore": 3,
-      "publishedAt": "2026-11-04T04:45:27+00:00",
+      "creativeScore": 2,
+      "publishedAt": "2026-11-05T14:13:39+00:00",
       "sourcePriority": 4.0,
       "sourceRole": "editorial",
       "sourceCountry": "",
       "fresh7": true,
-      "ageDays": 1.42,
-      "recencyScore": 6.38,
-      "editorialScore": 23.68
+      "ageDays": 0.02,
+      "recencyScore": 7.97,
+      "editorialScore": 23.77
     },
     {
       "title": "Yinka Ilori brings joy and colour to the Tottenham Hotspur away shirt",
@@ -1058,15 +1058,16 @@
       "editorialScore": 19.73
     },
     {
-      "title": "MUDA '26: Kinetic Web Design by Etter Studio",
-      "description": "Etter Studio's web design for Zurich's MUDA pairs a squishy cobalt SVG menu with pixel-grid branding and clean Swiss exhibition layouts. Most museum menus hide in a corner. Etter Studio went the oppos...",
-      "link": "https://abduzeedo.com/muda-26-kinetic-web-design-etter-studio/",
-      "pubDate": "Tue, 03 Nov 2026 23:10:34 GMT",
-      "image": "https://cms.abduzeedo.com/sites/default/files/originals/hero_muda-hover-states.jpg",
+      "title": "AI Design: Conversational Video by Tavus",
+      "description": "Tavus pushes real-time AI design into conversational video, creating interactive digital humans that see, hear, and respond face-to-face. Testing conversational interfaces usually means trading realis...",
+      "link": "https://abduzeedo.com/ai-design-conversational-video-tavus/",
+      "pubDate": "Wed, 04 Nov 2026 04:45:27 GMT",
+      "image": "https://cms.abduzeedo.com/sites/default/files/originals/hero_tavus-human-computing-company-www-tavus-io.jpg",
       "categories": [
         "DESIGN",
         "DIRECTION",
-        "TECH"
+        "TECH",
+        "MOTION"
       ],
       "access": "free",
       "source": "Abduzeedo",
@@ -1074,7 +1075,7 @@
       "sourceKind": "culture",
       "product": "",
       "territory": "DESIGN",
-      "id": "484086c9c86f388d",
+      "id": "09560bc9ee1054aa",
       "section": "CULTURE",
       "designScope": "graphic",
       "designFocus": [
@@ -1085,14 +1086,14 @@
         "MOTION"
       ],
       "creativeScore": 3,
-      "publishedAt": "2026-11-03T23:10:34+00:00",
+      "publishedAt": "2026-11-04T04:45:27+00:00",
       "sourcePriority": 4.0,
       "sourceRole": "editorial",
       "sourceCountry": "",
       "fresh7": true,
-      "ageDays": 1.65,
-      "recencyScore": 6.11,
-      "editorialScore": 23.41
+      "ageDays": 1.42,
+      "recencyScore": 6.38,
+      "editorialScore": 23.68
     },
     {
       "title": "Tomáš Brousil on how to choose typefaces that work in the real world",
@@ -1299,9 +1300,9 @@
     }
   ],
   "makeSomething": {
-    "reference": "Valmy: Condensed Typography by Almarena Creative",
+    "reference": "MUDA '26: Kinetic Web Design by Etter Studio",
     "source": "Abduzeedo",
-    "instruction": "Borrow the typographic move. Change the message."
+    "instruction": "Study the identity logic. Rebuild it for an unrelated subject."
   },
   "sourceHealth": [
     {
