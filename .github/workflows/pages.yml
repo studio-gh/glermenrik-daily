@@ -5,6 +5,7 @@ on:
     paths:
       - 'index.html'
       - 'setup/**'
+      - 'create/**'
       - 'assets/**'
       - 'docs/**'
       - '.github/workflows/pages.yml'
