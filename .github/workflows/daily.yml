@@ -7,12 +7,12 @@ on:
     paths:
       - 'data/sources.json'
       - 'scripts/**'
+      - 'config/**'
       - '.github/workflows/daily.yml'
   schedule:
-    # Primary run: 08:15 BRT. GitHub may delay scheduled workflows, so use two fallbacks.
-    - cron: '15 11 * * *'
-    - cron: '15 12 * * *'
-    - cron: '15 13 * * *'
+    # Retry the daily refresh throughout the day. The job skips automatically
+    # once today's edition already exists.
+    - cron: '15 */6 * * *'
 
 concurrency:
   group: glermenrik-daily-engine
