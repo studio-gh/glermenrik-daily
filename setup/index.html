@@ -65,7 +65,10 @@ h1{font-size:clamp(42px,6vw,78px);line-height:.9;letter-spacing:-.06em;margin:9p
 .progress-track{height:7px;background:rgba(244,238,227,.16);border-radius:99px;overflow:hidden;margin-top:9px}
 .progress-track span{display:block;height:100%;width:0;background:var(--accent);transition:width .25s ease}
 .progress-hint{font-size:10px;color:#d5cfc4;margin-top:7px}
-.source-health{font-size:10px;font-weight:700;margin-top:5px;color:#2f6d4f}
+.source-health{font-size:10px;font-weight:700;margin-top:5px;color:#a56a00}
+.source-dot{background:#ff961a!important}
+.layout>div:first-child{display:flex;flex-direction:column}
+#sources{order:1}#identity{order:2}#look{order:3}#review{order:4}
 .source-add .add-btn{width:100%;padding:12px}
 
 .step{
@@ -502,7 +505,7 @@ function addSource(name,url){
 }
 function addSourceBatch(){
   const raw=$("sourceUrl").value.trim();
-  const urls=raw.split(/[\\n,;]+/).map(v=>v.trim()).filter(Boolean);
+  const urls=raw.split(/[,;]+|\r?\n+/).map(v=>v.trim()).filter(Boolean);
   if(!urls.length){toast("Cole os endereços separados por vírgula ou linha.");return}
   let added=0,invalid=0,duplicates=0;
   urls.forEach(url=>{
@@ -521,7 +524,7 @@ function renderSources(){
   $("sourceList").innerHTML=sources.length?sources.map((s,i)=>`
     <div class="source">
       <div class="source-dot" style="background:#2f6d4f"></div>
-      <div><div class="source-name">${escapeHtml(s.name)}</div><div class="source-url">${escapeHtml(s.url)}</div><div class="source-health">Link válido · feed será confirmado na publicação</div></div>
+      <div><div class="source-name">${escapeHtml(s.name)}</div><div class="source-url">${escapeHtml(s.url)}</div><div class="source-health">Endereço válido · feed será verificado na publicação</div></div>
       <button class="source-remove" data-remove="${i}">Remover</button>
     </div>`).join(""):"<div style='padding:18px;border:1px dashed var(--line);color:var(--muted);font-size:11px'>Sua lista ainda está vazia. Cole os endereços acima ou comece por um pacote sugerido.</div>";
   document.querySelectorAll("[data-remove]").forEach(btn=>btn.onclick=()=>{sources.splice(Number(btn.dataset.remove),1);save();renderSources();update()});
@@ -623,6 +626,8 @@ function update(){
   $("progressLabel").textContent=score>=95?"Configuração concluída":sources.length?"Seu Daily está tomando forma":"Comece adicionando suas fontes";
   $("timeEstimate").textContent=score>=95?"1 minuto para revisar":sources.length>=5?"3 a 5 minutos restantes":"7 a 10 minutos";
   const activeStep=sources.length?(identityDone?(focusDone?4:3):2):1;
+  $("progressPercent").textContent=(activeStep===1?15:activeStep===2?45:activeStep===3?70:95)+"%";
+  $("progressFill").style.width=$("progressPercent").textContent;
   document.querySelectorAll("#setupSteps .step").forEach((el,i)=>el.classList.toggle("active",i===activeStep-1));
   save()
 }
