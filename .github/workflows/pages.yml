@@ -4,7 +4,9 @@ on:
     branches: [main]
     paths:
       - 'index.html'
+      - 'setup/**'
       - 'assets/**'
+      - 'docs/**'
       - '.github/workflows/pages.yml'
   # Manual fallback. Edition data changes are deployed by the main Creative Den workflow,
   # after the new edition has been generated.
