@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Daily Brief · Workspace</title>
+<title>Crie seu Daily Brief · Workspace</title>
 <meta name="theme-color" content="#102b46">
 <style>
 :root{
@@ -60,6 +60,14 @@ h1{font-size:clamp(42px,6vw,78px);line-height:.9;letter-spacing:-.06em;margin:9p
 .hero-note p{font-size:12px;line-height:1.5;margin:0;color:var(--muted)}
 
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:0 0 22px}
+.progress-wrap{margin:0 0 22px;padding:13px 15px;background:rgba(244,238,227,.07);border:1px solid rgba(244,238,227,.14);border-radius:12px}
+.progress-meta{display:flex;justify-content:space-between;gap:12px;font-size:11px}
+.progress-track{height:7px;background:rgba(244,238,227,.16);border-radius:99px;overflow:hidden;margin-top:9px}
+.progress-track span{display:block;height:100%;width:0;background:var(--accent);transition:width .25s ease}
+.progress-hint{font-size:10px;color:#d5cfc4;margin-top:7px}
+.source-health{font-size:10px;font-weight:700;margin-top:5px;color:#2f6d4f}
+.source-add .add-btn{width:100%;padding:12px}
+
 .step{
   border:1px solid rgba(244,238,227,.14);padding:12px 13px;min-height:70px;
   opacity:.55
@@ -206,11 +214,11 @@ input[type=file]{display:none}
   <div class="top-inner">
     <a class="brand" href="../">
       <span class="mark">D</span>
-      <strong>Daily Brief Workspace</strong>
+      <strong>Crie seu Daily Brief</strong>
     </a>
     <div class="top-actions">
-      <a class="top-btn" href="../">Back to Daily</a>
-      <button class="top-btn primary" id="downloadTop">Download setup</button>
+      <a class="top-btn" href="../">Voltar ao Creative Den</a>
+      <button class="top-btn primary" id="downloadTop">Baixar configuração</button>
     </div>
   </div>
 </header>
@@ -219,20 +227,25 @@ input[type=file]{display:none}
   <section class="hero">
     <div>
       <div class="eyebrow">Studio GH / Daily Brief Engine</div>
-      <h1>Build your own daily.</h1>
-      <p class="lede">Set up your brief visually. Add a name, logo, sources and a look. No Python. No JSON editing. No tiny config maze.</p>
+      <h1>Crie seu próprio Daily Brief.</h1>
+      <p class="lede">Escolha as fontes que você acompanha, dê uma identidade ao seu Daily e defina seus assuntos. Sem código e sem precisar entender RSS.</p>
     </div>
     <aside class="hero-note">
-      <strong>How this works</strong>
-      <p>Everything you choose here is saved in this browser while you work. At the end, download one setup file and use it to configure your own Daily Brief.</p>
+      <strong>Como funciona</strong>
+      <p>Suas escolhas ficam salvas neste navegador. Ao final, você baixa um arquivo de configuração. A publicação automática do Daily ainda será conectada numa próxima etapa.</p>
     </aside>
   </section>
 
-  <div class="steps">
-    <div class="step active"><div class="step-num">01</div><div class="step-title">Identity</div></div>
-    <div class="step"><div class="step-num">02</div><div class="step-title">Sources</div></div>
-    <div class="step"><div class="step-num">03</div><div class="step-title">Look & focus</div></div>
-    <div class="step"><div class="step-num">04</div><div class="step-title">Review & export</div></div>
+  <div class="steps" id="setupSteps">
+    <div class="step active"><div class="step-num">01</div><div class="step-title">Fontes</div></div>
+    <div class="step"><div class="step-num">02</div><div class="step-title">Identidade</div></div>
+    <div class="step"><div class="step-num">03</div><div class="step-title">Foco</div></div>
+    <div class="step"><div class="step-num">04</div><div class="step-title">Revisão</div></div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-meta"><strong id="progressLabel">Comece adicionando suas fontes</strong><span id="progressPercent">0%</span></div>
+    <div class="progress-track"><span id="progressFill"></span></div>
+    <div class="progress-hint">Tempo estimado: <strong id="timeEstimate">7 a 10 minutos</strong></div>
   </div>
 
   <div class="layout">
@@ -240,39 +253,39 @@ input[type=file]{display:none}
       <section class="panel" id="identity">
         <div class="panel-head">
           <div>
-            <h2>01 · Identity</h2>
-            <p>Give your brief a point of view.</p>
+            <h2>02 · Identidade</h2>
+            <p>Como vamos chamar seu Daily?</p>
           </div>
           <div class="section-tag">Start here</div>
         </div>
 
         <div class="grid2">
           <div class="field">
-            <label for="name">Brief name</label>
+            <label for="name">Nome do Daily</label>
             <input class="input" id="name" placeholder="My Daily Brief">
           </div>
           <div class="field">
-            <label for="desk">Desk label</label>
+            <label for="desk">Nome da editoria (opcional)</label>
             <input class="input" id="desk" placeholder="Daily Intelligence Desk">
           </div>
         </div>
 
         <div class="field">
-          <label for="description">One-line description</label>
+          <label for="description">Descrição curta</label>
           <textarea class="textarea" id="description" placeholder="A daily cut of things worth seeing, thinking about and making."></textarea>
-          <small>This appears under the title on the published brief.</small>
+          <small>Essa frase aparece abaixo do título do seu Daily.</small>
         </div>
 
         <div class="field">
-          <label>Logo</label>
+          <label>Logo (opcional)</label>
           <div class="logo-box">
-            <div class="logo-preview" id="logoPreview"><div class="logo-placeholder">No logo yet</div></div>
+            <div class="logo-preview" id="logoPreview"><div class="logo-placeholder">Sem logo por enquanto</div></div>
             <div>
-              <label class="file" for="logoFile">Add logo</label>
+              <label class="file" for="logoFile">Adicionar logo</label>
               <input id="logoFile" type="file" accept="image/png,image/jpeg,image/svg+xml,image/webp">
               <div style="height:8px"></div>
-              <small>PNG, JPG, SVG or WebP. The logo stays in this browser until you export the setup.</small>
-              <div style="margin-top:8px"><button class="source-remove" id="clearLogo">Remove logo</button></div>
+              <small>PNG, JPG, SVG ou WebP. A logo fica neste navegador até você baixar a configuração.</small>
+              <div style="margin-top:8px"><button class="source-remove" id="clearLogo">Remover logo</button></div>
             </div>
           </div>
         </div>
@@ -281,22 +294,24 @@ input[type=file]{display:none}
       <section class="panel" id="sources">
         <div class="panel-head">
           <div>
-            <h2>02 · Sources</h2>
-            <p>Paste the sites you already use. One link per source.</p>
+            <h2>01 · Fontes</h2>
+            <p>Cole vários endereços de uma vez. Separe por vírgula ou coloque um por linha.</p>
           </div>
           <div class="section-tag" id="sourceCount">0 sources</div>
         </div>
 
-        <div class="source-add">
-          <input class="input" id="sourceUrl" placeholder="https://example.com/feed.xml or https://example.com/">
-          <button class="add-btn" id="addSource">Add source</button>
+        <div class="field">
+          <label for="sourceUrl">Endereços das fontes</label>
+          <textarea class="textarea" id="sourceUrl" placeholder="https://www.itsnicethat.com/, https://www.creativeboom.com/, https://www.typewolf.com/, https://www.siteinspire.com/"></textarea>
+          <small>Separe os links por vírgula ou use uma linha para cada endereço. Não precisa procurar links RSS.</small>
         </div>
-        <div class="source-helper">Use a feed URL when you have one. A normal website link is also accepted and can be interpreted by the engine when supported.</div>
+        <div class="source-add"><button class="add-btn" id="addSource">Adicionar todas as fontes</button></div>
+        <div class="source-helper" id="sourceFeedback" role="status">Cada endereço será adicionado à lista abaixo. O teste definitivo de disponibilidade do feed acontece na etapa de publicação.</div>
 
         <div class="preset-row">
-          <button class="preset" data-preset="design">+ Design starter pack</button>
-          <button class="preset" data-preset="creative">+ Creative starter pack</button>
-          <button class="preset" data-preset="tech">+ Tech starter pack</button>
+          <button class="preset" data-preset="design">+ Pacote de Design</button>
+          <button class="preset" data-preset="creative">+ Pacote Criativo</button>
+          <button class="preset" data-preset="tech">+ Pacote de Tecnologia</button>
         </div>
 
         <div class="source-list" id="sourceList"></div>
@@ -305,15 +320,15 @@ input[type=file]{display:none}
       <section class="panel" id="look">
         <div class="panel-head">
           <div>
-            <h2>03 · Look & focus</h2>
-            <p>Shape the editorial personality without touching code.</p>
+            <h2>03 · Foco e aparência</h2>
+            <p>Escolha os assuntos e personalize a aparência. Os padrões já vêm preenchidos.</p>
           </div>
-          <div class="section-tag">Optional</div>
+          <div class="section-tag">Pode pular</div>
         </div>
 
         <div class="grid2">
           <div class="field">
-            <label for="timezone">Timezone</label>
+            <label for="timezone">Fuso horário</label>
             <select class="select" id="timezone">
               <option value="America/Sao_Paulo">São Paulo</option>
               <option value="America/New_York">New York</option>
@@ -327,24 +342,24 @@ input[type=file]{display:none}
             </select>
           </div>
           <div class="field">
-            <label for="window">Editorial window</label>
+            <label for="window">Período editorial</label>
             <select class="select" id="window">
-              <option value="3">Last 3 days</option>
-              <option value="7" selected>Last 7 days</option>
-              <option value="14">Last 14 days</option>
-              <option value="30">Last 30 days</option>
+              <option value="3">Últimos 3 dias</option>
+              <option value="7" selected>Últimos 7 dias</option>
+              <option value="14">Últimos 14 dias</option>
+              <option value="30">Últimos 30 dias</option>
             </select>
           </div>
         </div>
 
         <div class="field">
-          <label>Focus areas</label>
+          <label>Assuntos que você quer acompanhar</label>
           <div class="pills" id="focusPills"></div>
-          <small>These are signals for the editorial engine, not hard walls.</small>
+          <small>Esses assuntos ajudam a orientar a seleção. Você pode escolher mais de um.</small>
         </div>
 
         <div class="field">
-          <label>Color system</label>
+          <label>Cores do seu Daily</label>
           <div class="colors">
             <div class="color"><div style="font-size:10px;font-weight:800;margin-bottom:6px">Background</div><div class="color-row"><input type="color" id="bg"><code id="bgVal"></code></div></div>
             <div class="color"><div style="font-size:10px;font-weight:800;margin-bottom:6px">Paper</div><div class="color-row"><input type="color" id="paper"><code id="paperVal"></code></div></div>
@@ -362,8 +377,8 @@ input[type=file]{display:none}
       <section class="panel" id="review">
         <div class="panel-head">
           <div>
-            <h2>04 · Review & export</h2>
-            <p>Your setup, ready to leave this workspace.</p>
+            <h2>04 · Revise seu Daily</h2>
+            <p>Confira suas escolhas antes de baixar a configuração.</p>
           </div>
           <div class="section-tag">Final step</div>
         </div>
@@ -372,16 +387,16 @@ input[type=file]{display:none}
         <div class="review-list" id="reviewList"></div>
 
         <div class="export-box">
-          <div class="section-tag" style="color:#c9c1b5;margin-bottom:8px">Generated setup</div>
+          <div class="section-tag" style="color:#c9c1b5;margin-bottom:8px">Configuração do seu Daily</div>
           <pre id="output"></pre>
           <div class="export-actions">
-            <button class="export-btn" id="copyBtn">Copy setup</button>
-            <button class="export-btn" id="downloadBtn">Download setup.json</button>
+            <button class="export-btn" id="copyBtn">Copiar configuração</button>
+            <button class="export-btn" id="downloadBtn">Baixar configuração</button>
           </div>
         </div>
 
         <div class="next">
-          <strong>Next step</strong>
+          <strong>O que acontece depois?</strong>
           This workspace intentionally does not ask for GitHub passwords or tokens. Once the reusable engine is wired to this setup file, the goal is a simple “connect repository → publish” flow.
         </div>
       </section>
@@ -401,7 +416,7 @@ input[type=file]{display:none}
           <div class="preview-accent"></div>
         </div>
         <div style="padding:13px;background:#f4eee3;border-top:1px solid var(--line);color:var(--ink);font-size:10px;line-height:1.4">
-          <strong>Live preview</strong><br>
+          <strong>Prévia ao vivo</strong><br>
           This is intentionally simple. The published brief can be much richer.
         </div>
       </div>
@@ -474,23 +489,41 @@ function escapeHtml(v){
 function hostname(url){
   try{return new URL(url).hostname.replace(/^www\./,"")}catch(e){return "Source"}
 }
+function isHttpUrl(value){
+  try{const u=new URL(value);return u.protocol==="https:"||u.protocol==="http:"}catch(e){return false}
+}
 function addSource(name,url){
   url=String(url||"").trim();
-  if(!url)return toast("Paste a source link first.");
-  try{new URL(url)}catch(e){return toast("That link does not look valid yet.")}
-  const key=url.replace(/#.*$/,"").replace(/\/$/,"");
-  if(sources.some(s=>s.url.replace(/#.*$/,"").replace(/\/$/,"")===key))return toast("That source is already added.");
+  if(!isHttpUrl(url))return false;
+  const key=url.replace(/#.*$/,"").replace(/\\/$/,"").toLowerCase();
+  if(sources.some(s=>s.url.replace(/#.*$/,"").replace(/\\/$/,"").toLowerCase()===key))return false;
   sources.push({name:name||hostname(url),url,enabled:true});
+  return true;
+}
+function addSourceBatch(){
+  const raw=$("sourceUrl").value.trim();
+  const urls=raw.split(/[\\n,;]+/).map(v=>v.trim()).filter(Boolean);
+  if(!urls.length){toast("Cole os endereços separados por vírgula ou linha.");return}
+  let added=0,invalid=0,duplicates=0;
+  urls.forEach(url=>{
+    if(!isHttpUrl(url)){invalid++;return}
+    const key=url.replace(/#.*$/,"").replace(/\\/$/,"").toLowerCase();
+    if(sources.some(s=>s.url.replace(/#.*$/,"").replace(/\\/$/,"").toLowerCase()===key)){duplicates++;return}
+    if(addSource(hostname(url),url))added++;
+  });
+  $("sourceUrl").value="";
   save();renderSources();update();
+  const feedback=added+" adicionada(s)"+(duplicates?", "+duplicates+" duplicada(s) ignorada(s)":"")+(invalid?", "+invalid+" endereço(s) inválido(s)":"")+".";
+  $("sourceFeedback").textContent=feedback;toast(feedback);
 }
 function renderSources(){
-  $("sourceCount").textContent=sources.length+" source"+(sources.length===1?"":"s");
+  $("sourceCount").textContent=sources.length+" fonte"+(sources.length===1?"":"s");
   $("sourceList").innerHTML=sources.length?sources.map((s,i)=>`
     <div class="source">
-      <div class="source-dot"></div>
-      <div><div class="source-name">${escapeHtml(s.name)}</div><div class="source-url">${escapeHtml(s.url)}</div></div>
-      <button class="source-remove" data-remove="${i}">Remove</button>
-    </div>`).join(""):"<div style='padding:18px;border:1px dashed var(--line);color:var(--muted);font-size:11px'>No sources yet. Paste your first link above or start with a preset.</div>";
+      <div class="source-dot" style="background:#2f6d4f"></div>
+      <div><div class="source-name">${escapeHtml(s.name)}</div><div class="source-url">${escapeHtml(s.url)}</div><div class="source-health">Link válido · feed será confirmado na publicação</div></div>
+      <button class="source-remove" data-remove="${i}">Remover</button>
+    </div>`).join(""):"<div style='padding:18px;border:1px dashed var(--line);color:var(--muted);font-size:11px'>Sua lista ainda está vazia. Cole os endereços acima ou comece por um pacote sugerido.</div>";
   document.querySelectorAll("[data-remove]").forEach(btn=>btn.onclick=()=>{sources.splice(Number(btn.dataset.remove),1);save();renderSources();update()});
 }
 function renderFocus(){
@@ -582,7 +615,15 @@ function update(){
     ["Logo",state.logo?"Added":"Not added"],
     ["Support",setup.brief.support.enabled?"Enabled":"Off"]
   ].map(([a,b])=>`<div class="review-row"><span>${escapeHtml(a)}</span><strong>${escapeHtml(b)}</strong></div>`).join("");
-  $("status").textContent=sources.length?"Your brief is configured and ready to export.":"Add at least one source to make this brief useful.";
+  $("status").textContent=sources.length?"Seu Daily está configurado e pronto para baixar.":"Adicione pelo menos uma fonte para continuar.";
+  const identityDone=Boolean(state.name.trim()&&state.description.trim());
+  const focusDone=state.focus.length>0;
+  const score=Math.min(100,Math.round((sources.length?35:0)+(identityDone?25:0)+(focusDone?20:0)+20));
+  $("progressFill").style.width=score+"%";$("progressPercent").textContent=score+"%";
+  $("progressLabel").textContent=score>=95?"Configuração concluída":sources.length?"Seu Daily está tomando forma":"Comece adicionando suas fontes";
+  $("timeEstimate").textContent=score>=95?"1 minuto para revisar":sources.length>=5?"3 a 5 minutos restantes":"7 a 10 minutos";
+  const activeStep=sources.length?(identityDone?(focusDone?4:3):2):1;
+  document.querySelectorAll("#setupSteps .step").forEach((el,i)=>el.classList.toggle("active",i===activeStep-1));
   save()
 }
 function downloadSetup(){
@@ -596,8 +637,7 @@ function copySetup(){
   navigator.clipboard?.writeText(JSON.stringify(buildSetup(),null,2)).then(()=>toast("Setup copied.")).catch(()=>toast("Copy is not available in this browser."));
 }
 
-$("addSource").onclick=()=>{addSource(hostname($("sourceUrl").value),$("sourceUrl").value);$("sourceUrl").value=""};
-$("sourceUrl").addEventListener("keydown",e=>{if(e.key==="Enter")$("addSource").click()});
+$("addSource").onclick=addSourceBatch;
 document.querySelectorAll("[data-preset]").forEach(b=>b.onclick=()=>{
   const list=presets[b.dataset.preset]||[];
   list.forEach(([name,url])=>addSource(name,url));
