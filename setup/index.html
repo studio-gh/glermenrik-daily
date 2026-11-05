@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Brief · Workspace</title>
+<meta name="theme-color" content="#102b46">
+<style>
+:root{
+  --navy:#102b46;
+  --paper:#f4eee3;
+  --paper2:#ebe2d3;
+  --ink:#182637;
+  --muted:#6a675f;
+  --line:rgba(24,38,55,.14);
+  --accent:#ff961a;
+  --green:#2f6d4f;
+  --shadow:0 18px 60px rgba(7,19,31,.18)
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--navy);color:var(--paper);
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif
+}
+button,input,textarea,select{font:inherit}
+button{cursor:pointer}
+a{color:inherit}
+.top{
+  position:sticky;top:0;z-index:20;
+  background:rgba(16,43,70,.96);backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(244,238,227,.12)
+}
+.top-inner{
+  max-width:1180px;margin:auto;padding:14px 22px;
+  display:flex;justify-content:space-between;align-items:center;gap:14px
+}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.mark{
+  width:28px;height:28px;border:2px solid var(--paper);
+  display:grid;place-items:center;font-weight:800;font-size:14px
+}
+.brand strong{font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.top-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.top-btn{
+  border:1px solid rgba(244,238,227,.25);background:transparent;color:var(--paper);
+  padding:8px 11px;font-size:11px;font-weight:700;border-radius:9px
+}
+.top-btn:hover{background:var(--paper);color:var(--navy)}
+.top-btn.primary{background:var(--accent);border-color:var(--accent);color:#1b1b1b}
+.top-btn.primary:hover{filter:brightness(1.05)}
+
+.wrap{max-width:1180px;margin:auto;padding:30px 22px 70px}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:22px;align-items:end;margin-bottom:26px}
+.eyebrow{font-size:10px;text-transform:uppercase;letter-spacing:.16em;opacity:.72}
+h1{font-size:clamp(42px,6vw,78px);line-height:.9;letter-spacing:-.06em;margin:9px 0 14px}
+.lede{font-size:15px;line-height:1.5;max-width:720px;color:#d5cfc4}
+.hero-note{background:var(--paper);color:var(--ink);padding:18px;box-shadow:var(--shadow)}
+.hero-note strong{display:block;font-size:13px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:7px}
+.hero-note p{font-size:12px;line-height:1.5;margin:0;color:var(--muted)}
+
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:0 0 22px}
+.step{
+  border:1px solid rgba(244,238,227,.14);padding:12px 13px;min-height:70px;
+  opacity:.55
+}
+.step.active{opacity:1;background:rgba(244,238,227,.06)}
+.step-num{font:9px monospace;opacity:.65}.step-title{font-size:12px;font-weight:800;margin-top:5px}
+
+.layout{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(300px,.75fr);gap:16px;align-items:start}
+.panel{background:var(--paper);color:var(--ink);padding:20px;box-shadow:var(--shadow)}
+.panel + .panel{margin-top:16px}
+.panel-head{display:flex;justify-content:space-between;gap:15px;align-items:flex-start;border-bottom:1px solid var(--line);padding-bottom:13px;margin-bottom:16px}
+.panel-head h2{font-size:26px;line-height:1;letter-spacing:-.04em;margin:0}
+.panel-head p{margin:4px 0 0;color:var(--muted);font-size:11px;line-height:1.4}
+.section-tag{font:9px monospace;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:13px}
+.field label{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.08em}
+.field small{font-size:10px;line-height:1.35;color:var(--muted)}
+.input,.textarea,.select{
+  width:100%;border:1px solid var(--line);background:#faf6ee;color:var(--ink);
+  padding:11px 12px;border-radius:9px;outline:0
+}
+.input:focus,.textarea:focus,.select:focus{border-color:var(--ink);box-shadow:0 0 0 3px rgba(255,150,26,.15)}
+.textarea{min-height:90px;resize:vertical}
+
+.logo-box{
+  display:grid;grid-template-columns:128px 1fr;gap:14px;align-items:center;
+  border:1px dashed var(--line);padding:12px;background:#faf6ee
+}
+.logo-preview{
+  width:128px;height:92px;border:1px solid var(--line);display:grid;place-items:center;
+  overflow:hidden;background:var(--paper2);position:relative
+}
+.logo-preview img{max-width:100%;max-height:100%;object-fit:contain}
+.logo-placeholder{font-size:11px;text-transform:uppercase;color:var(--muted);text-align:center;padding:10px}
+.file{
+  display:inline-flex;align-items:center;gap:7px;border:1px solid var(--ink);
+  padding:9px 11px;border-radius:9px;font-size:11px;font-weight:800;background:transparent
+}
+.file:hover{background:var(--ink);color:var(--paper)}
+input[type=file]{display:none}
+
+.source-add{display:grid;grid-template-columns:1fr auto;gap:8px;margin-bottom:12px}
+.add-btn{
+  border:1px solid var(--ink);background:var(--ink);color:var(--paper);
+  padding:0 14px;border-radius:9px;font-size:11px;font-weight:800
+}
+.source-helper{font-size:10px;color:var(--muted);margin-bottom:12px}
+.preset-row{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:13px}
+.preset{
+  border:1px solid var(--line);background:transparent;color:var(--ink);
+  padding:7px 9px;border-radius:999px;font-size:10px;font-weight:800
+}
+.preset:hover{background:var(--ink);color:var(--paper)}
+.source-list{display:flex;flex-direction:column;gap:8px}
+.source{
+  border:1px solid var(--line);padding:12px;background:#faf6ee;
+  display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center
+}
+.source-dot{width:8px;height:8px;border-radius:999px;background:var(--green)}
+.source-name{font-size:12px;font-weight:800}
+.source-url{font:10px/1.35 monospace;color:var(--muted);word-break:break-all;margin-top:2px}
+.source-remove{border:1px solid var(--line);background:transparent;padding:6px 8px;border-radius:7px;font:9px monospace}
+.source-remove:hover{background:#f2d9d5}
+
+.colors{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.color{border:1px solid var(--line);padding:10px;background:#faf6ee}
+.color-row{display:flex;gap:8px;align-items:center}
+.color input{width:46px;height:34px;padding:0;border:0;background:transparent}
+.color code{font:10px monospace}
+.pills{display:flex;gap:7px;flex-wrap:wrap}
+.pill{
+  border:1px solid var(--line);padding:7px 9px;border-radius:999px;
+  font-size:10px;font-weight:800;background:transparent
+}
+.pill.active{background:var(--ink);color:var(--paper)}
+
+.preview{position:sticky;top:82px}
+.preview-card{background:var(--preview-bg,var(--paper));color:var(--preview-ink,var(--ink));padding:18px;border:1px solid rgba(255,255,255,.08)}
+.preview-logo{height:80px;display:grid;place-items:center;background:var(--preview-paper,#f6f0e5);margin-bottom:15px;overflow:hidden}
+.preview-logo img{max-width:92%;max-height:72px;object-fit:contain}
+.preview-logo .fallback{font-size:23px;font-weight:900;letter-spacing:-.05em}
+.preview-kicker{font:9px monospace;text-transform:uppercase;letter-spacing:.09em;opacity:.65}
+.preview-title{font-size:33px;line-height:.92;letter-spacing:-.05em;margin:7px 0 9px}
+.preview-desc{font-size:11px;line-height:1.45;opacity:.75}
+.preview-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:14px}
+.preview-item{padding:11px;background:rgba(255,255,255,.32);border:1px solid rgba(0,0,0,.08)}
+.preview-item strong{display:block;font-size:9px;text-transform:uppercase;letter-spacing:.08em}
+.preview-item span{display:block;font-size:10px;margin-top:4px;opacity:.65}
+.preview-accent{height:4px;background:var(--preview-accent,var(--accent));margin-top:14px}
+
+.review-list{display:flex;flex-direction:column;gap:8px;margin:12px 0}
+.review-row{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid var(--line);font-size:11px}
+.review-row span{color:var(--muted)}
+.status{
+  padding:9px 11px;background:#e4efe7;color:#225b3b;border:1px solid #bfd7c6;
+  border-radius:9px;font-size:10px;font-weight:800
+}
+.export-box{background:#17273a;color:#f4eee3;padding:14px}
+.export-box pre{white-space:pre-wrap;word-break:break-word;font:10px/1.45 monospace;max-height:280px;overflow:auto;margin:0}
+.export-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.export-btn{
+  border:1px solid #f4eee3;background:transparent;color:#f4eee3;
+  padding:8px 10px;border-radius:8px;font-size:10px;font-weight:800
+}
+.export-btn:hover{background:#f4eee3;color:#17273a}
+.primary-action{
+  width:100%;border:0;background:var(--accent);color:#1c1c1c;
+  padding:12px 14px;border-radius:9px;font-size:12px;font-weight:900
+}
+.primary-action:hover{filter:brightness(1.05)}
+.next{
+  margin-top:12px;padding:13px;background:#f6f0e5;border-left:4px solid var(--accent);
+  font-size:11px;line-height:1.45
+}
+.next strong{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
+
+.toast{
+  position:fixed;right:18px;bottom:18px;z-index:50;background:#111;color:#fff;
+  padding:10px 12px;border-radius:9px;font-size:11px;display:none;box-shadow:var(--shadow)
+}
+.toast.show{display:block}
+
+@media(max-width:900px){
+  .hero,.layout{grid-template-columns:1fr}
+  .preview{position:static}
+  .steps{grid-template-columns:1fr 1fr}
+}
+@media(max-width:650px){
+  .wrap{padding-inline:14px}
+  .top-inner{padding-inline:14px}
+  .grid2,.colors{grid-template-columns:1fr}
+  .source-add{grid-template-columns:1fr}
+  .add-btn{padding:11px}
+  .logo-box{grid-template-columns:1fr}
+  .logo-preview{width:100%;height:130px}
+  .steps{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="top-inner">
+    <a class="brand" href="../">
+      <span class="mark">D</span>
+      <strong>Daily Brief Workspace</strong>
+    </a>
+    <div class="top-actions">
+      <a class="top-btn" href="../">Back to Daily</a>
+      <button class="top-btn primary" id="downloadTop">Download setup</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <div>
+      <div class="eyebrow">Studio GH / Daily Brief Engine</div>
+      <h1>Build your own daily.</h1>
+      <p class="lede">Set up your brief visually. Add a name, logo, sources and a look. No Python. No JSON editing. No tiny config maze.</p>
+    </div>
+    <aside class="hero-note">
+      <strong>How this works</strong>
+      <p>Everything you choose here is saved in this browser while you work. At the end, download one setup file and use it to configure your own Daily Brief.</p>
+    </aside>
+  </section>
+
+  <div class="steps">
+    <div class="step active"><div class="step-num">01</div><div class="step-title">Identity</div></div>
+    <div class="step"><div class="step-num">02</div><div class="step-title">Sources</div></div>
+    <div class="step"><div class="step-num">03</div><div class="step-title">Look & focus</div></div>
+    <div class="step"><div class="step-num">04</div><div class="step-title">Review & export</div></div>
+  </div>
+
+  <div class="layout">
+    <div>
+      <section class="panel" id="identity">
+        <div class="panel-head">
+          <div>
+            <h2>01 · Identity</h2>
+            <p>Give your brief a point of view.</p>
+          </div>
+          <div class="section-tag">Start here</div>
+        </div>
+
+        <div class="grid2">
+          <div class="field">
+            <label for="name">Brief name</label>
+            <input class="input" id="name" placeholder="My Daily Brief">
+          </div>
+          <div class="field">
+            <label for="desk">Desk label</label>
+            <input class="input" id="desk" placeholder="Daily Intelligence Desk">
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="description">One-line description</label>
+          <textarea class="textarea" id="description" placeholder="A daily cut of things worth seeing, thinking about and making."></textarea>
+          <small>This appears under the title on the published brief.</small>
+        </div>
+
+        <div class="field">
+          <label>Logo</label>
+          <div class="logo-box">
+            <div class="logo-preview" id="logoPreview"><div class="logo-placeholder">No logo yet</div></div>
+            <div>
+              <label class="file" for="logoFile">Add logo</label>
+              <input id="logoFile" type="file" accept="image/png,image/jpeg,image/svg+xml,image/webp">
+              <div style="height:8px"></div>
+              <small>PNG, JPG, SVG or WebP. The logo stays in this browser until you export the setup.</small>
+              <div style="margin-top:8px"><button class="source-remove" id="clearLogo">Remove logo</button></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="sources">
+        <div class="panel-head">
+          <div>
+            <h2>02 · Sources</h2>
+            <p>Paste the sites you already use. One link per source.</p>
+          </div>
+          <div class="section-tag" id="sourceCount">0 sources</div>
+        </div>
+
+        <div class="source-add">
+          <input class="input" id="sourceUrl" placeholder="https://example.com/feed.xml or https://example.com/">
+          <button class="add-btn" id="addSource">Add source</button>
+        </div>
+        <div class="source-helper">Use a feed URL when you have one. A normal website link is also accepted and can be interpreted by the engine when supported.</div>
+
+        <div class="preset-row">
+          <button class="preset" data-preset="design">+ Design starter pack</button>
+          <button class="preset" data-preset="creative">+ Creative starter pack</button>
+          <button class="preset" data-preset="tech">+ Tech starter pack</button>
+        </div>
+
+        <div class="source-list" id="sourceList"></div>
+      </section>
+
+      <section class="panel" id="look">
+        <div class="panel-head">
+          <div>
+            <h2>03 · Look & focus</h2>
+            <p>Shape the editorial personality without touching code.</p>
+          </div>
+          <div class="section-tag">Optional</div>
+        </div>
+
+        <div class="grid2">
+          <div class="field">
+            <label for="timezone">Timezone</label>
+            <select class="select" id="timezone">
+              <option value="America/Sao_Paulo">São Paulo</option>
+              <option value="America/New_York">New York</option>
+              <option value="America/Los_Angeles">Los Angeles</option>
+              <option value="Europe/London">London</option>
+              <option value="Europe/Lisbon">Lisbon</option>
+              <option value="Europe/Berlin">Berlin</option>
+              <option value="Asia/Tokyo">Tokyo</option>
+              <option value="Australia/Sydney">Sydney</option>
+              <option value="UTC">UTC</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="window">Editorial window</label>
+            <select class="select" id="window">
+              <option value="3">Last 3 days</option>
+              <option value="7" selected>Last 7 days</option>
+              <option value="14">Last 14 days</option>
+              <option value="30">Last 30 days</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Focus areas</label>
+          <div class="pills" id="focusPills"></div>
+          <small>These are signals for the editorial engine, not hard walls.</small>
+        </div>
+
+        <div class="field">
+          <label>Color system</label>
+          <div class="colors">
+            <div class="color"><div style="font-size:10px;font-weight:800;margin-bottom:6px">Background</div><div class="color-row"><input type="color" id="bg"><code id="bgVal"></code></div></div>
+            <div class="color"><div style="font-size:10px;font-weight:800;margin-bottom:6px">Paper</div><div class="color-row"><input type="color" id="paper"><code id="paperVal"></code></div></div>
+            <div class="color"><div style="font-size:10px;font-weight:800;margin-bottom:6px">Accent</div><div class="color-row"><input type="color" id="accent"><code id="accentVal"></code></div></div>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="support">Optional support link</label>
+          <input class="input" id="support" placeholder="https://www.buymeacoffee.com/yourname">
+          <small>Leave blank to hide the support button.</small>
+        </div>
+      </section>
+
+      <section class="panel" id="review">
+        <div class="panel-head">
+          <div>
+            <h2>04 · Review & export</h2>
+            <p>Your setup, ready to leave this workspace.</p>
+          </div>
+          <div class="section-tag">Final step</div>
+        </div>
+
+        <div class="status" id="status">Ready to build your brief.</div>
+        <div class="review-list" id="reviewList"></div>
+
+        <div class="export-box">
+          <div class="section-tag" style="color:#c9c1b5;margin-bottom:8px">Generated setup</div>
+          <pre id="output"></pre>
+          <div class="export-actions">
+            <button class="export-btn" id="copyBtn">Copy setup</button>
+            <button class="export-btn" id="downloadBtn">Download setup.json</button>
+          </div>
+        </div>
+
+        <div class="next">
+          <strong>Next step</strong>
+          This workspace intentionally does not ask for GitHub passwords or tokens. Once the reusable engine is wired to this setup file, the goal is a simple “connect repository → publish” flow.
+        </div>
+      </section>
+    </div>
+
+    <aside class="preview">
+      <div class="panel" style="padding:0;overflow:hidden">
+        <div class="preview-card" id="previewCard">
+          <div class="preview-logo" id="previewLogo"><div class="fallback" id="previewFallback">DAILY</div></div>
+          <div class="preview-kicker" id="previewDesk">DAILY INTELLIGENCE DESK</div>
+          <div class="preview-title" id="previewName">My Daily Brief</div>
+          <div class="preview-desc" id="previewDesc">A daily cut of things worth seeing, thinking about and making.</div>
+          <div class="preview-grid">
+            <div class="preview-item"><strong>Window</strong><span id="previewWindow">7 days</span></div>
+            <div class="preview-item"><strong>Sources</strong><span id="previewSources">0</span></div>
+          </div>
+          <div class="preview-accent"></div>
+        </div>
+        <div style="padding:13px;background:#f4eee3;border-top:1px solid var(--line);color:var(--ink);font-size:10px;line-height:1.4">
+          <strong>Live preview</strong><br>
+          This is intentionally simple. The published brief can be much richer.
+        </div>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<div class="toast" id="toast"></div>
+<script>
+const KEY="daily-brief-workspace-v1";
+
+const presets={
+  design:[
+    ["It's Nice That","https://www.itsnicethat.com/"],
+    ["Creative Boom","https://www.creativeboom.com/"],
+    ["Abduzeedo","https://abduzeedo.com/"],
+    ["SiteInspire","https://www.siteinspire.com/"],
+    ["Typewolf","https://www.typewolf.com/"],
+    ["Packaging of the World","https://packagingoftheworld.com/"]
+  ],
+  creative:[
+    ["It's Nice That","https://www.itsnicethat.com/"],
+    ["Creative Boom","https://www.creativeboom.com/"],
+    ["Cool Hunting","https://coolhunting.com/"],
+    ["The Art of Noticing","https://robwalker.substack.com/"],
+    ["The Creative Act","https://rickrubin.substack.com/"]
+  ],
+  tech:[
+    ["Figma","https://www.figma.com/release-notes/"],
+    ["Adobe Creative Cloud","https://blog.adobe.com/en/topics/creative-cloud"],
+    ["OpenAI","https://openai.com/news/"],
+    ["Google AI","https://blog.google/technology/ai/"],
+    ["Runway","https://runwayml.com/news/"]
+  ]
+};
+
+const focusOptions=["Design","Web","Brand","Typography","Print","Packaging","Motion","AI","Culture","Technology","Creativity","Productivity"];
+
+let state={
+  name:"My Daily Brief",
+  desk:"Daily Intelligence Desk",
+  description:"A daily cut of things worth seeing, thinking about and making.",
+  timezone:"America/Sao_Paulo",
+  windowDays:7,
+  focus:["Design","Web","Brand","Typography"],
+  colors:{background:"#102B46",paper:"#F4EEE3",accent:"#FF961A"},
+  support:"",
+  logo:""
+};
+let sources=[];
+
+const $=id=>document.getElementById(id);
+function toast(msg){
+  const el=$("toast");el.textContent=msg;el.classList.add("show");
+  clearTimeout(window.__toast);window.__toast=setTimeout(()=>el.classList.remove("show"),2200)
+}
+function save(){
+  localStorage.setItem(KEY,JSON.stringify({state,sources}));
+}
+function load(){
+  try{
+    const data=JSON.parse(localStorage.getItem(KEY)||"null");
+    if(data?.state) state={...state,...data.state,colors:{...state.colors,...(data.state.colors||{})}};
+    if(Array.isArray(data?.sources)) sources=data.sources;
+  }catch(e){}
+}
+function escapeHtml(v){
+  return String(v||"").replace(/[&<>'"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;","\"":"&quot;"}[c]||c))
+}
+function hostname(url){
+  try{return new URL(url).hostname.replace(/^www\./,"")}catch(e){return "Source"}
+}
+function addSource(name,url){
+  url=String(url||"").trim();
+  if(!url)return toast("Paste a source link first.");
+  try{new URL(url)}catch(e){return toast("That link does not look valid yet.")}
+  const key=url.replace(/#.*$/,"").replace(/\/$/,"");
+  if(sources.some(s=>s.url.replace(/#.*$/,"").replace(/\/$/,"")===key))return toast("That source is already added.");
+  sources.push({name:name||hostname(url),url,enabled:true});
+  save();renderSources();update();
+}
+function renderSources(){
+  $("sourceCount").textContent=sources.length+" source"+(sources.length===1?"":"s");
+  $("sourceList").innerHTML=sources.length?sources.map((s,i)=>`
+    <div class="source">
+      <div class="source-dot"></div>
+      <div><div class="source-name">${escapeHtml(s.name)}</div><div class="source-url">${escapeHtml(s.url)}</div></div>
+      <button class="source-remove" data-remove="${i}">Remove</button>
+    </div>`).join(""):"<div style='padding:18px;border:1px dashed var(--line);color:var(--muted);font-size:11px'>No sources yet. Paste your first link above or start with a preset.</div>";
+  document.querySelectorAll("[data-remove]").forEach(btn=>btn.onclick=()=>{sources.splice(Number(btn.dataset.remove),1);save();renderSources();update()});
+}
+function renderFocus(){
+  $("focusPills").innerHTML=focusOptions.map(x=>`<button class="pill ${state.focus.includes(x)?"active":""}" data-focus="${escapeHtml(x)}">${escapeHtml(x)}</button>`).join("");
+  document.querySelectorAll("[data-focus]").forEach(b=>b.onclick=()=>{const x=b.dataset.focus;state.focus=state.focus.includes(x)?state.focus.filter(v=>v!==x):[...state.focus,x];save();renderFocus();update()})
+}
+function bindFields(){
+  ["name","desk","description","timezone","window","support"].forEach(id=>{
+    $(id).value=id==="window"?state.windowDays:state[id]||"";
+    $(id).addEventListener("input",()=>{
+      state[id]=id==="window"?Number($(id).value):$(id).value;
+      save();update()
+    })
+  });
+  ["background","paper","accent"].forEach(id=>{
+    $(id).value=state.colors[id];
+    $(id+"Val").textContent=state.colors[id];
+    $(id).addEventListener("input",()=>{
+      state.colors[id]=$(id).value.toUpperCase();
+      $(id+"Val").textContent=state.colors[id];
+      save();update()
+    })
+  });
+}
+function handleLogo(file){
+  if(!file)return;
+  if(file.size>1500000)return toast("Please keep the logo under 1.5 MB for a lightweight setup.");
+  const reader=new FileReader();
+  reader.onload=()=>{state.logo=reader.result;save();renderLogo();update();toast("Logo added.")};
+  reader.readAsDataURL(file);
+}
+function renderLogo(){
+  const box=$("logoPreview"),prev=$("previewLogo");
+  if(state.logo){
+    box.innerHTML=`<img src="${state.logo}" alt="Logo preview">`;
+    prev.innerHTML=`<img src="${state.logo}" alt="Logo">`;
+  }else{
+    box.innerHTML="<div class='logo-placeholder'>No logo yet</div>";
+    prev.innerHTML=`<div class="fallback" id="previewFallback">${escapeHtml((state.name||"DAILY").slice(0,12))}</div>`;
+  }
+}
+function buildSetup(){
+  return {
+    version:1,
+    brief:{
+      name:state.name.trim()||"My Daily Brief",
+      deskLabel:state.desk.trim()||"Daily Intelligence Desk",
+      description:state.description.trim()||"A personalized daily brief.",
+      timezone:state.timezone,
+      windowDays:Number(state.windowDays),
+      locale:navigator.language||"en-US",
+      theme:{
+        background:state.colors.background,
+        paper:state.colors.paper,
+        accent:state.colors.accent
+      },
+      branding:{logoDataUrl:state.logo||""},
+      editorial:{
+        focusAreas:state.focus,
+        sections:["EDITOR'S CUT","SIGNALS","DESIGN","VISUAL FEAST","TOOL WATCH","AI IMPACT","WILD"]
+      },
+      support:{
+        enabled:Boolean(state.support.trim()),
+        label:"☕ Buy me a coffee",
+        url:state.support.trim()
+      }
+    },
+    sources:sources.map(s=>({name:s.name,url:s.url,enabled:s.enabled!==false}))
+  }
+}
+function update(){
+  const setup=buildSetup();
+  $("previewCard").style.setProperty("--preview-bg",state.colors.background);
+  $("previewCard").style.setProperty("--preview-paper",state.colors.paper);
+  $("previewCard").style.setProperty("--preview-ink",state.colors.paper);
+  $("previewCard").style.setProperty("--preview-accent",state.colors.accent);
+  $("previewDesk").textContent=(state.desk||"Daily Intelligence Desk").toUpperCase();
+  $("previewName").textContent=state.name||"My Daily Brief";
+  $("previewDesc").textContent=state.description||"A daily cut of things worth seeing, thinking about and making.";
+  $("previewWindow").textContent=state.windowDays+" days";
+  $("previewSources").textContent=sources.length;
+  $("output").textContent=JSON.stringify(setup,null,2);
+  $("reviewList").innerHTML=[
+    ["Name",setup.brief.name],
+    ["Timezone",setup.brief.timezone],
+    ["Editorial window",setup.brief.windowDays+" days"],
+    ["Focus",setup.brief.editorial.focusAreas.join(", ")||"General"],
+    ["Sources",sources.length+" configured"],
+    ["Logo",state.logo?"Added":"Not added"],
+    ["Support",setup.brief.support.enabled?"Enabled":"Off"]
+  ].map(([a,b])=>`<div class="review-row"><span>${escapeHtml(a)}</span><strong>${escapeHtml(b)}</strong></div>`).join("");
+  $("status").textContent=sources.length?"Your brief is configured and ready to export.":"Add at least one source to make this brief useful.";
+  save()
+}
+function downloadSetup(){
+  const blob=new Blob([JSON.stringify(buildSetup(),null,2)],{type:"application/json"});
+  const a=document.createElement("a");a.href=URL.createObjectURL(blob);
+  const safe=(state.name||"daily-brief").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
+  a.download=(safe||"daily-brief")+"-setup.json";a.click();URL.revokeObjectURL(a.href);
+  toast("Setup downloaded.")
+}
+function copySetup(){
+  navigator.clipboard?.writeText(JSON.stringify(buildSetup(),null,2)).then(()=>toast("Setup copied.")).catch(()=>toast("Copy is not available in this browser."));
+}
+
+$("addSource").onclick=()=>{addSource(hostname($("sourceUrl").value),$("sourceUrl").value);$("sourceUrl").value=""};
+$("sourceUrl").addEventListener("keydown",e=>{if(e.key==="Enter")$("addSource").click()});
+document.querySelectorAll("[data-preset]").forEach(b=>b.onclick=()=>{
+  const list=presets[b.dataset.preset]||[];
+  list.forEach(([name,url])=>addSource(name,url));
+  toast(b.textContent.replace("+ ","")+" added.");
+});
+$("logoFile").addEventListener("change",e=>handleLogo(e.target.files?.[0]));
+$("clearLogo").onclick=()=>{state.logo="";save();renderLogo();update();toast("Logo removed.")};
+$("downloadBtn").onclick=downloadSetup;
+$("downloadTop").onclick=downloadSetup;
+$("copyBtn").onclick=copySetup;
+
+load();
+bindFields();
+renderFocus();
+renderSources();
+renderLogo();
+update();
+</script>
+</body>
+</html>
