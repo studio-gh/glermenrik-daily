@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Creative Den</title>
 <meta name="theme-color" content="#102b46">
+<meta name="creative-den-update-api" content="">
 <link rel="icon" href="./assets/creative-den-favicon.png" type="image/png">
 <link rel="shortcut icon" href="./assets/creative-den-favicon.png" type="image/png">
 <style>
@@ -66,6 +67,16 @@ button{cursor:pointer}
   font:10px monospace;letter-spacing:.08em
 }
 .button:hover,.chip:hover,.chip.active{background:var(--paper);color:var(--blue)}
+.update-edition-button{display:inline-flex;align-items:center;gap:8px;background:var(--accent);border-color:var(--accent);color:var(--blue);font-weight:700}
+.update-edition-button:hover{background:var(--paper);border-color:var(--paper);color:var(--blue)}
+.update-edition-button:disabled{opacity:.72;cursor:wait}
+.update-dot{width:7px;height:7px;border-radius:50%;background:currentColor;display:inline-block}
+.update-edition-button.is-busy .update-dot{animation:updatePulse 1s ease-in-out infinite}
+.update-edition-button.is-success .update-dot{background:#247a48}
+.update-edition-button.is-error .update-dot{background:#b42318}
+.update-feedback{max-width:230px;color:#d9d1c4;font:9px/1.4 monospace;letter-spacing:.02em}
+@keyframes updatePulse{0%,100%{opacity:.35;transform:scale(.8)}50%{opacity:1;transform:scale(1.25)}}
+
 .create-brief-cta{background:#fffcf4;border-color:#fffcf4;color:#ff961a;font-weight:700}.create-brief-cta:hover{background:#ff961a;border-color:#ff961a;color:#fffcf4}
 .topline{
   display:grid;grid-template-columns:1fr auto 1fr;gap:18px;align-items:center;
@@ -411,8 +422,10 @@ button{cursor:pointer}
   </div>
   <div class="header-tools">
     <a class="button create-brief-cta" href="./create/">Crie seu Daily Brief ↗</a>
-    <button class="button" id="refresh" title="Atualiza a página com a edição já publicada. Não inicia uma nova coleta.">Recarregar edição</button>
-    <a class="button" href="https://github.com/studio-gh/glermenrik-daily/actions/workflows/daily.yml" target="_blank" rel="noopener" title="Abre o GitHub Actions para iniciar manualmente uma nova coleta">Gerar nova edição ↗</a>
+    <button class="button update-edition-button" id="updateEdition" type="button" aria-live="polite">
+      <span class="update-dot" aria-hidden="true"></span><span id="updateEditionLabel">Atualizar edição</span>
+    </button>
+    <span class="update-feedback" id="updateFeedback" role="status" aria-live="polite"></span>
     <button class="button" id="libraryBtn">Biblioteca <span id="libraryCount">0</span></button>
     <a class="support-button" href="https://www.buymeacoffee.com/studiogh" target="_blank" rel="noopener noreferrer" aria-label="Support Studio GH on Buy Me a Coffee">☕ Buy me a coffee</a>
   </div>
@@ -903,12 +916,75 @@ async function load(){
     $("app").innerHTML="<div class='paper card' style='margin-top:20px'><h2>O Creative Den está sendo atualizado.</h2><p>A estrutura está no ar. A próxima atualização concluída publicará a nova edição.</p></div>"
   }
 }
-$("refresh").onclick=async function(){
-  var b=$("refresh");
-  var original=b.textContent;
-  b.disabled=true;
-  b.textContent="Recarregando…";
-  try{await load()}finally{b.disabled=false;b.textContent=original}
+// Configure the deployed Cloudflare Worker URL here after its one-time setup.
+var UPDATE_API = document.querySelector('meta[name="creative-den-update-api"]')?.content?.trim() || "";
+var updateBusy = false;
+function updateFeedback(message, stateName){
+  var button=$("updateEdition"),label=$("updateEditionLabel"),feedback=$("updateFeedback");
+  button.classList.remove("is-busy","is-success","is-error");
+  if(stateName)button.classList.add("is-"+stateName);
+  label.textContent=stateName==="busy"?"Gerando edição…":stateName==="success"?"Edição atualizada":"Atualizar edição";
+  feedback.textContent=message||"";
+}
+function wait(ms){return new Promise(function(resolve){setTimeout(resolve,ms)})}
+async function refreshPublishedEdition(previousGeneratedAt){
+  var response=await fetch("./data/daily.json?ts="+Date.now(),{cache:"no-store"});
+  if(!response.ok)throw new Error("Não foi possível verificar a edição publicada.");
+  var data=await response.json();
+  if(data.generatedAt&&data.generatedAt!==previousGeneratedAt){
+    await load();
+    return true;
+  }
+  return false;
+}
+$("updateEdition").onclick=async function(){
+  if(updateBusy)return;
+  if(!UPDATE_API){
+    updateFeedback("A conexão segura de atualização ainda precisa ser configurada.","error");
+    return;
+  }
+  updateBusy=true;
+  var button=$("updateEdition");
+  button.disabled=true;
+  button.classList.add("is-busy");
+  var previousGeneratedAt=state.edition&&state.edition.generatedAt||"";
+  updateFeedback("Solicitando uma nova edição…","busy");
+  try{
+    var response=await fetch(UPDATE_API.replace(/\\/$/,"")+"/trigger",{
+      method:"POST",headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({confirm:"UPDATE_CREATIVE_DEN"})
+    });
+    var result=await response.json().catch(function(){return {}});
+    if(!response.ok||!result.ok)throw new Error(result.error||"Não foi possível iniciar a atualização.");
+    updateFeedback("Coleta iniciada. A redação está trabalhando…","busy");
+    var started=Date.now(),completed=false;
+    while(Date.now()-started<10*60*1000){
+      await wait(5000);
+      if(result.run_id){
+        var statusResponse=await fetch(UPDATE_API.replace(/\\/$/,"")+"/status?run_id="+encodeURIComponent(result.run_id),{cache:"no-store"});
+        var run=await statusResponse.json().catch(function(){return {}});
+        if(run.status==="completed"){
+          if(run.conclusion!=="success")throw new Error("A geração terminou com erro. Tente novamente mais tarde.");
+          for(var check=0;check<12;check++){
+            if(await refreshPublishedEdition(previousGeneratedAt)){completed=true;break}
+            await wait(2500);
+          }
+          if(!completed)throw new Error("A edição foi gerada, mas a publicação ainda não apareceu. Atualize a página em instantes.");
+          break;
+        }
+        if(run.status==="queued"||run.status==="in_progress"){
+          updateFeedback(run.status==="queued"?"Na fila de atualização…":"Buscando referências e montando a edição…","busy");
+        }
+      }else if(await refreshPublishedEdition(previousGeneratedAt)){completed=true;break}
+    }
+    if(!completed)throw new Error("A atualização está demorando mais que o esperado. A edição será publicada assim que o processo terminar.");
+    updateFeedback("Nova edição publicada com sucesso.","success");
+  }catch(error){
+    updateFeedback(error.message||"Falha ao atualizar a edição.","error");
+  }finally{
+    updateBusy=false;button.disabled=false;
+    if(button.classList.contains("is-busy"))updateFeedback("","error");
+  }
 };
 $("libraryBtn").onclick=function(){$("drawer").classList.add("show");renderLibrary()};
 $("closeDrawer").onclick=function(){$("drawer").classList.remove("show")};
