@@ -950,7 +950,7 @@ $("updateEdition").onclick=async function(){
   var previousGeneratedAt=state.edition&&state.edition.generatedAt||"";
   updateFeedback("Solicitando uma nova edição…","busy");
   try{
-    var response=await fetch(UPDATE_API.replace(/\\/$/,"")+"/trigger",{
+    var response=await fetch(UPDATE_API.replace(/\/$/,"")+"/trigger",{
       method:"POST",headers:{"Content-Type":"application/json"},
       body:JSON.stringify({confirm:"UPDATE_CREATIVE_DEN"})
     });
@@ -961,7 +961,7 @@ $("updateEdition").onclick=async function(){
     while(Date.now()-started<10*60*1000){
       await wait(5000);
       if(result.run_id){
-        var statusResponse=await fetch(UPDATE_API.replace(/\\/$/,"")+"/status?run_id="+encodeURIComponent(result.run_id),{cache:"no-store"});
+        var statusResponse=await fetch(UPDATE_API.replace(/\/$/,"")+"/status?run_id="+encodeURIComponent(result.run_id),{cache:"no-store"});
         var run=await statusResponse.json().catch(function(){return {}});
         if(run.status==="completed"){
           if(run.conclusion!=="success")throw new Error("A geração terminou com erro. Tente novamente mais tarde.");
